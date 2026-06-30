@@ -35,17 +35,17 @@ See `ruter/.env.example` for all configuration options.
 cd experiments
 cp configs/subjects.example.toml configs/subjects.toml
 
-# RQ1: collect diagnostics
-python scripts/collect_diagnostics.py --config configs/subjects.toml
-python scripts/build_failure_taxonomy.py --artifacts-dir artifacts/
+# RQ1: collect diagnostics and build taxonomy
+python scripts/collect_diagnostics.py --manifest configs/subjects.toml --out artifacts/diagnostics
+python scripts/build_failure_taxonomy.py --input artifacts/diagnostics --out results/rq1
 
-# RQ2: run repair and baselines
-python scripts/run_repair.py --config configs/subjects.toml
-python scripts/run_baselines.py --config configs/subjects.toml
-python scripts/build_repair_effectiveness.py --artifacts-dir artifacts/
+# RQ2: run repair, baselines, and build effectiveness
+python scripts/run_repair.py --manifest configs/subjects.toml --out artifacts/repair
+python scripts/run_baselines.py --manifest configs/subjects.toml --out artifacts/baselines
+python scripts/build_repair_effectiveness.py --repair artifacts/repair --baselines artifacts/baselines --out results/rq2
 
-# RQ3: replay and coverage
-python ../scripts/replay_runtime.py --manifest frozen/paired_attempt_manifest.json
+# RQ3: coverage replay (requires EVAL_DIR and eval crates/ data)
+EVAL_DIR=../data python ../scripts/replay_runtime.py
 ```
 
 Pre-computed data is in `data/`. See subdirectories for per-RQ README and results.
