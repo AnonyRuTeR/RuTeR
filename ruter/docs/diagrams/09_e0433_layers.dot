@@ -1,0 +1,98 @@
+digraph e0433_layers {
+    rankdir=TB;
+    fontname="Helvetica";
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=10];
+
+    label="E0433Patcher 四层架构与候选流水线";
+    labelloc=t;
+    fontsize=14;
+    fontname="Helvetica-Bold";
+
+    // Input
+    diag [label="Diagnostic\n(E0433)", shape=ellipse, fillcolor="#FFF3E0"];
+
+    // Layer 1: Evidence Extraction
+    subgraph cluster_l1 {
+        label="第一层：证据提取 (Span & Suggestion Extraction)";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#E8F0FE4D";
+        color="#1A73E8";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        span_analyzer [label="SpanAnalyzer\n定位 primary span\n前向扫展完整路径\n(::identifier 模式)", fillcolor="#E8F0FE"];
+        path_struct [label="PathStructure 识别\nSingleIdent\nModuleAccess\nMethodCall\nNestedPath", fillcolor="#E8F0FE"];
+        comp_extract [label="CompilerSuggestion\nExtractor\n归一化建议提取", fillcolor="#E8F0FE"];
+    }
+
+    // Layer 2: Candidate Building
+    subgraph cluster_l2 {
+        label="第二层：候选构建 (Candidate Building)";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#E8F5E94D";
+        color="#2E7D32";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        p1 [label="Track P1\nMachineApplicable\n编译器建议", fillcolor="#C8E6C9"];
+        p2 [label="Track P2\nMaybeIncorrect\n参考性建议", fillcolor="#C8E6C9"];
+        r1 [label="Track R1\n包名 → crate::\n精确重写", fillcolor="#A5D6A7"];
+        r2 [label="Track R2\n符号唯一可达\n(SymbolReachabilityIndex)", fillcolor="#A5D6A7"];
+        dedup [label="(path, kind) 去重", fillcolor="#E8F5E9"];
+    }
+
+    // Layer 3: Constraint + Scoring
+    subgraph cluster_l3 {
+        label="第三层：约束过滤与评分 (PathResolver)";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#FFF9C44D";
+        color="#F57F17";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        filter [label="约束过滤\n剔除非可执行\n禁用 DependencyAction\n仅保留 High 置信度", fillcolor="#FFF9C4"];
+        scoring [label="多维评分\nKind: PathRewrite +100\nKind: UseImport +80\nConfidence: High +30\ncrate:: +10 | std:: +5\n路径长度 负分", fillcolor="#FFF9C4"];
+        sort [label="排序\nscore↓ → len↑ → alpha", fillcolor="#FFF9C4"];
+    }
+
+    // Layer 4: Fix Generation
+    subgraph cluster_l4 {
+        label="第四层：动作输出 (Fix Generation & Verify)";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#FCE4EC4D";
+        color="#C62828";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        gen [label="FixGenerator\n生成 FixAction::Replace\n保留 span 后缀\n避免扩大编辑面", fillcolor="#FCE4EC"];
+        topk [label="analyze_top_k()\nVec<RankedFixAction>\n(分数 + 路径 + 来源)", fillcolor="#FCE4EC"];
+    }
+
+    output [label="修复候选集\n(可能为空 → 移交 LLM)", shape=ellipse, fillcolor="#FFF3E0"];
+
+    // Edges
+    diag -> span_analyzer;
+    diag -> comp_extract;
+    span_analyzer -> path_struct;
+    path_struct -> p1;
+    path_struct -> p2;
+    path_struct -> r1;
+    path_struct -> r2;
+    comp_extract -> p1;
+    comp_extract -> p2;
+    p1 -> dedup;
+    p2 -> dedup;
+    r1 -> dedup;
+    r2 -> dedup;
+    dedup -> filter;
+    filter -> scoring;
+    scoring -> sort;
+    sort -> gen;
+    gen -> topk;
+    topk -> output;
+}

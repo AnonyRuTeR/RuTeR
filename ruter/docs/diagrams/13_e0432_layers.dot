@@ -1,0 +1,84 @@
+digraph e0432_layers {
+    rankdir=TB;
+    fontname="Helvetica";
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=10];
+
+    label="E0432Patcher 三轨架构与级联阻断验证";
+    labelloc=t;
+    fontsize=14;
+    fontname="Helvetica-Bold";
+
+    // Input
+    diag [label="Diagnostic\n(E0432)", shape=ellipse, fillcolor="#FFF3E0"];
+
+    // Layer 1: Evidence Extraction
+    subgraph cluster_l1 {
+        label="第一层：证据提取";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#E8F0FE4D";
+        color="#1A73E8";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        msg_parse [label="消息解析\n正则提取 head\n从反引号路径中", fillcolor="#E8F0FE"];
+        cargo_load [label="Cargo.toml 加载\nlocate_manifest()\n获取 package.name", fillcolor="#E8F0FE"];
+        ctx_detect [label="上下文检测\n单行 span？\nuse ... ; 语法？\n测试语境？", fillcolor="#E8F0FE"];
+    }
+
+    // Layer 2: Candidate Building (3 tracks)
+    subgraph cluster_l2 {
+        label="第二层：三轨候选构建";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#E8F5E94D";
+        color="#2E7D32";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        p1 [label="Track P1\n编译器建议直通车\nMachineApplicable\n贪心非重叠保留", fillcolor="#C8E6C9"];
+        r1 [label="Track R1\n根路径精确重写\nhead == package.name\n→ 替换为 crate::", fillcolor="#A5D6A7"];
+        r2 [label="Track R2\n静默裁切探测\n仅限测试语境\n注释化 use 语句", fillcolor="#FFECB3"];
+
+        track_select [label="轨道选择\nP1 命中 → 停止\nP1 miss + R1 命中 → 停止\nP1/R1 全 miss → R2", shape=diamond, fillcolor="#FFF3E0"];
+    }
+
+    // Layer 3: Cascade Blocking Validation
+    subgraph cluster_l3 {
+        label="第三层：级联阻断验证";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#FCE4EC4D";
+        color="#C62828";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        verify1 [label="条件 1\nE0432 数严格下降", fillcolor="#FCE4EC"];
+        verify2 [label="条件 2（零级联）\n不得新增 E0425\n不得新增 E0433", fillcolor="#FCE4EC"];
+        both_ok [label="同时满足？", shape=diamond, fillcolor="#FFF3E0"];
+        rollback [label="回滚修复\n降级移交 LLM", fillcolor="#FFCDD2"];
+    }
+
+    // Output
+    out_ok [label="FixAction::Replace\n(或注释化)", shape=ellipse, fillcolor="#C8E6C9"];
+    out_fail [label="空 Vec\n→ LLM 处理", shape=ellipse, fillcolor="#FFCDD2"];
+
+    // Edges
+    diag -> msg_parse;
+    diag -> ctx_detect;
+    msg_parse -> cargo_load;
+    cargo_load -> track_select;
+    ctx_detect -> track_select;
+    track_select -> p1 [label="优先"];
+    track_select -> r1 [label="P1 miss"];
+    track_select -> r2 [label="P1/R1 miss"];
+    p1 -> verify1;
+    r1 -> verify1;
+    r2 -> verify1;
+    verify1 -> verify2;
+    verify2 -> both_ok;
+    both_ok -> out_ok [label="是"];
+    both_ok -> rollback [label="否"];
+    rollback -> out_fail;
+}

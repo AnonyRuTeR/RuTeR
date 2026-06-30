@@ -1,0 +1,46 @@
+digraph data_model {
+    rankdir=TB;
+    fontname="Helvetica";
+    node [shape=record, style=filled, fontname="Helvetica", fontsize=10];
+    edge [fontname="Helvetica", fontsize=9];
+
+    label="核心数据模型关系图";
+    labelloc=t;
+    fontsize=14;
+    fontname="Helvetica-Bold";
+
+    Diagnostic [label="{Diagnostic|message: String\lmessage_type: Option\<String\>\lcode: Option\<CompilerCode\>\llevel: Severity\lspans: Vec\<SpanInfo\>\lchildren: Vec\<Diagnostic\>\lrendered: Option\<String\>\l}", fillcolor="#E8F0FE"];
+
+    CompilerCode [label="{CompilerCode|code: ErrorCode\lexplanation: Option\<String\>\l}", fillcolor="#E8F0FE"];
+
+    ErrorCode [label="{ErrorCode\n\<\<enum\>\>|E0433 · E0432 · E0560\lE0599 · E0308\lE0425 · E0382\lUnknown\l}", fillcolor="#FFF9C4"];
+
+    SpanInfo [label="{SpanInfo|file_path: PathBuf\lline_start / line_end: usize\lcolumn_start / column_end: usize\lbyte_start / byte_end: usize\lis_primary: bool\ltext: Vec\<SpanText\>\llabel: Option\<String\>\lsuggested_replacement: Option\<String\>\lapplicability: Option\<Applicability\>\lexpansion: Option\<Box\<SpanExpansion\>\>\l}", fillcolor="#E8F5E9"];
+
+    SpanText [label="{SpanText|text: String\lhighlight_start: usize\lhighlight_end: usize\l}", fillcolor="#E8F5E9"];
+
+    SpanExpansion [label="{SpanExpansion|span: Box\<SpanInfo\>\lmacro_decl_name: Option\<String\>\l}", fillcolor="#E8F5E9"];
+
+    Applicability [label="{Applicability\n\<\<enum\>\>|MachineApplicable\lMaybeIncorrect\lHasPlaceholders\lUnspecified\l}", fillcolor="#FFF9C4"];
+
+    FixAction [label="{FixAction\n\<\<enum\>\>|Insert \{ span, content \}\lReplace \{ span, content \}\lDelete \{ span \}\l}", fillcolor="#FCE4EC"];
+
+    Severity [label="{Severity\n\<\<enum\>\>|Error\lWarning\lNote\lHelp\lUnknown\l}", fillcolor="#FFF9C4"];
+
+    TestFunction [label="{TestFunction|id: String\lname: String\lmodule_path: Vec\<String\>\lfile_path: PathBuf\lline_start / line_end: usize\l}", fillcolor="#FFF3E0"];
+
+    FunctionDiagnostic [label="{FunctionDiagnostic|code: String\lmessage: String\lprimary_span_label: Option\<String\>\lprimary_span_suggestion: Option\<String\>\lchildren_messages: Vec\<String\>\lchildren_suggested_replacements: Vec\<String\>\l}", fillcolor="#FFF3E0"];
+
+    // Relationships
+    Diagnostic -> CompilerCode [label="code", arrowhead=open];
+    Diagnostic -> SpanInfo [label="spans [*]", arrowhead=open];
+    Diagnostic -> Diagnostic [label="children [*]", arrowhead=open, style=dashed];
+    Diagnostic -> Severity [label="level", arrowhead=open];
+    CompilerCode -> ErrorCode [label="code", arrowhead=open];
+    SpanInfo -> SpanText [label="text [*]", arrowhead=open];
+    SpanInfo -> SpanExpansion [label="expansion [0..1]", arrowhead=open];
+    SpanInfo -> Applicability [label="applicability", arrowhead=open];
+    SpanExpansion -> SpanInfo [label="span", arrowhead=open, style=dashed];
+    FixAction -> SpanInfo [label="span", arrowhead=open];
+    FunctionDiagnostic -> Diagnostic [label="简化自", arrowhead=open, style=dotted];
+}

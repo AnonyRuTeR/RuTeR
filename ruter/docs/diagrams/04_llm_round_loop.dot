@@ -1,0 +1,102 @@
+digraph llm_round_loop {
+    rankdir=TB;
+    fontname="Helvetica";
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=10];
+    newrank=true;
+
+    // Entry & preflight
+    entry [label="LLM 函数入口\n(round = 1)", fillcolor="#E8F0FE"];
+    preflight [label="Preflight 分析\n五维编排", fillcolor="#FFF9C4"];
+    pf_decision [label="Preflight Decision?", shape=diamond, fillcolor="#FFF3E0"];
+    comment_out [label="尝试注释化\n+ Verify 门禁", fillcolor="#FCE4EC"];
+    co_ok [label="注释验证通过？", shape=diamond, fillcolor="#FFF3E0"];
+
+    // Context injection sources (shown as external nodes feeding into round)
+    subgraph cluster_inject {
+        label="上下文注入来源";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#FFF9C44D";
+        color="#F57F17";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        inject_pf  [label="Preflight Digest(如果存在)\n(始终注入)\npreflight_interceptor_digest\nE0308/E0599/E0432/E0560 notes", fillcolor="#FFF9C4"];
+        inject_nb  [label="邻域成功摘要\n(始终注入)\nneighbor_fix_digest", fillcolor="#FFF9C4"];
+        inject_r1  [label="本地规则失败摘要\n(Round = 1 注入)\nlocal_rule_failure_digest", fillcolor="#FFF3CD"];
+        inject_rn  [label="上轮失败摘要\n(Round ≥ 2 注入)\nprevious_round_failure_digest\n(修复文本 + 失败分类 + 错误码)", fillcolor="#FFE0B2"];
+    }
+
+    subgraph cluster_round {
+        label="Round 迭代循环（每轮独立预算）";
+        labeljust=l;
+        style=dashed;
+        color="#1A73E8";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        build_ctx [label="构建 FunctionContextBundleV1\nL0: 元数据 + 约束\nL1: 目标函数 + 诊断摘要\nL2: 相关导入/类型/impl/函数\n字符预算裁剪 (≤12000)", fillcolor="#E8F5E9"];
+        build_prompt [label="组装 Prompt v2\nSystem: 修复约束\nUser: 函数源码 + 诊断\n+ 规则失败摘要\n+ Preflight notes\n+ 上轮失败记忆", fillcolor="#E8F5E9"];
+        llm_call [label="LLM 请求\n(Replay / Online API)", fillcolor="#E8F5E9"];
+        parse [label="输出解析\nrust fenced block\n> plain fn item\n> JSON fallback", fillcolor="#E8F5E9"];
+
+        subgraph cluster_candidate {
+            label="逐候选验证";
+            labeljust=l;
+            style=dotted;
+            color="#2E7D32";
+            fontname="Helvetica";
+            fontsize=11;
+            resolve [label="候选解析\nsyn 签名/属性守卫\n(不变则通过)", fillcolor="#E0F2F1"];
+            merge [label="合并动作\n冲突检测", fillcolor="#E0F2F1"];
+            verify [label="Verify 门禁\n目标函数错误清零\n+ 非目标无回归", fillcolor="#E0F2F1"];
+            cand_ok [label="接纳？", shape=diamond, fillcolor="#FFF3E0"];
+        }
+
+        round_exhausted [label="本轮所有候选均失败", shape=diamond, fillcolor="#FFCDD2"];
+        record_failure  [label="记录失败摘要\n写入 attempt_history\n(供下轮注入)", fillcolor="#FCE4EC"];
+        round_budget    [label="轮次预算耗尽？\n(round == max_rounds)", shape=diamond, fillcolor="#FFF3E0"];
+    }
+
+    budget_fallback [label="Budget Fallback\n仅 E0308 SetupHell/\nNominalHallucination + LowValue\n执行一次保守注释尝试", fillcolor="#FCE4EC"];
+    result [label="输出\nLlmReplayStageResult", fillcolor="#E8F0FE"];
+
+    // Main flow
+    entry -> preflight;
+    preflight -> pf_decision;
+    pf_decision -> comment_out    [label="SkipLlmCommentOut"];
+    pf_decision -> build_ctx      [label="ContinueToLlm(*)"];
+    comment_out -> co_ok;
+    co_ok -> result               [label="是，函数已处理"];
+    co_ok -> build_ctx            [label="否，回退继续"];
+
+    // Context injection into build_ctx
+    inject_pf -> build_ctx   [style=dashed, color="#F57F17", label=""];
+    inject_nb -> build_ctx   [style=dashed, color="#F57F17", label=""];
+    inject_r1 -> build_ctx   [style=dashed, color="#F57F17", label=""];
+    inject_rn -> build_ctx   [style=dashed, color="#F57F17", label=""];
+
+    // Round inner flow
+    build_ctx -> build_prompt;
+    build_prompt -> llm_call;
+    llm_call -> parse;
+    parse -> resolve;
+    resolve -> merge;
+    merge -> verify;
+    verify -> cand_ok;
+    cand_ok -> result             [label="是，接纳"];
+    cand_ok -> resolve            [label="否，下一候选"];
+    cand_ok -> round_exhausted    [label="候选列表耗尽"];
+
+    // Round loop back
+    round_exhausted -> record_failure;
+    record_failure -> round_budget;
+    round_budget -> build_ctx     [label="否（round++）\n注入本轮失败摘要→inject_rn", color="#1A73E8", fontcolor="#1A73E8", style=bold];
+    round_budget -> budget_fallback [label="是，预算耗尽"];
+    budget_fallback -> result;
+
+    // record → inject_rn feedback (shows how prev_round is fed back)
+    record_failure -> inject_rn   [style=dotted, color="#999999", label="写入供\n下轮使用"];
+}
+

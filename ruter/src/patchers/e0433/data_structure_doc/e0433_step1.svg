@@ -1,0 +1,127 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="726pt" height="645pt" viewBox="0.00 0.00 726.00 645.00">
+<g id="graph0" class="graph" transform="translate(59.29945143144232,577.1151919016252) scale(0.8919285234735755)" data-name="E0433Patcher_Teaching_Step1">
+
+<polygon fill="white" stroke="none" points="-18,18 -18,-627 708,-627 708,18 -18,18" style=""/>
+<text text-anchor="middle" x="345" y="-583.4" font-family="Times,serif" font-size="24.00" style="">Step 1 — Suggestion Extraction (Diagnostic -&gt; Vec&lt;CandidateFix&gt;)</text>
+<g id="clust1" class="cluster" data-name="cluster_sources">
+
+<path fill="white" stroke="#bbbbbb" d="M20,-226.4C20,-226.4 670,-226.4 670,-226.4 676,-226.4 682,-232.4 682,-238.4 682,-238.4 682,-423.6 682,-423.6 682,-429.6 676,-435.6 670,-435.6 670,-435.6 20,-435.6 20,-435.6 14,-435.6 8,-429.6 8,-423.6 8,-423.6 8,-238.4 8,-238.4 8,-232.4 14,-226.4 20,-226.4" style=""/>
+<text text-anchor="middle" x="345" y="-415.4" font-family="Times,serif" font-size="18.00" style="">Read sources (no mutation)</text>
+</g>
+<!-- in -->
+<g id="node1" class="node" pointer-events="visible" data-name="in">
+
+<path fill="#fff4d6" stroke="#444444" stroke-width="1.6" d="M430.67,-572.1C430.67,-572.1 275.33,-572.1 275.33,-572.1 269.33,-572.1 263.33,-566.1 263.33,-560.1 263.33,-560.1 263.33,-499.5 263.33,-499.5 263.33,-493.5 269.33,-487.5 275.33,-487.5 275.33,-487.5 430.67,-487.5 430.67,-487.5 436.67,-487.5 442.67,-493.5 442.67,-499.5 442.67,-499.5 442.67,-560.1 442.67,-560.1 442.67,-566.1 436.67,-572.1 430.67,-572.1" style=""/>
+<text text-anchor="middle" x="353" y="-553.8" font-family="Helvetica,sans-Serif" font-size="16.00" style="">Input: &amp;Diagnostic</text>
+<text text-anchor="middle" x="353" y="-534.6" font-family="Helvetica,sans-Serif" font-size="16.00" style="">- message</text>
+<text text-anchor="middle" x="353" y="-515.4" font-family="Helvetica,sans-Serif" font-size="16.00" style="">- span: Vec&lt;SpanInfo&gt;</text>
+<text text-anchor="middle" x="353" y="-496.2" font-family="Helvetica,sans-Serif" font-size="16.00" style="">- children</text>
+</g>
+<!-- m -->
+<g id="node2" class="node" pointer-events="visible" data-name="m">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.6" d="M405.44,-398.2C405.44,-398.2 300.56,-398.2 300.56,-398.2 294.56,-398.2 288.56,-392.2 288.56,-386.2 288.56,-386.2 288.56,-363.4 288.56,-363.4 288.56,-357.4 294.56,-351.4 300.56,-351.4 300.56,-351.4 405.44,-351.4 405.44,-351.4 411.44,-351.4 417.44,-357.4 417.44,-363.4 417.44,-363.4 417.44,-386.2 417.44,-386.2 417.44,-392.2 411.44,-398.2 405.44,-398.2" style=""/>
+<text text-anchor="middle" x="353" y="-379.6" font-family="Helvetica,sans-Serif" font-size="16.00" style="">Parse message</text>
+<text text-anchor="middle" x="353" y="-360.4" font-family="Helvetica,sans-Serif" font-size="16.00" style="">extract identifier</text>
+</g>
+<!-- in&#45;&gt;m -->
+<g id="edge1" class="edge" data-name="in-&gt;m">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" d="M353,-487.04C353,-487.04 353,-409.12 353,-409.12" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="355.98,-409.12 353,-400.62 350.03,-409.12 355.98,-409.12" style=""/>
+<text text-anchor="middle" x="367.01" y="-447.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">read</text>
+</g>
+<!-- sp -->
+<g id="node3" class="node" pointer-events="visible" data-name="sp">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.6" d="M236.15,-398.2C236.15,-398.2 27.85,-398.2 27.85,-398.2 21.85,-398.2 15.85,-392.2 15.85,-386.2 15.85,-386.2 15.85,-363.4 15.85,-363.4 15.85,-357.4 21.85,-351.4 27.85,-351.4 27.85,-351.4 236.15,-351.4 236.15,-351.4 242.15,-351.4 248.15,-357.4 248.15,-363.4 248.15,-363.4 248.15,-386.2 248.15,-386.2 248.15,-392.2 242.15,-398.2 236.15,-398.2" style=""/>
+<text text-anchor="middle" x="132" y="-379.6" font-family="Helvetica,sans-Serif" font-size="16.00" style="">Scan span[]</text>
+<text text-anchor="middle" x="132" y="-360.4" font-family="Helvetica,sans-Serif" font-size="16.00" style="">read suggested_replacement?</text>
+</g>
+<!-- in&#45;&gt;sp -->
+<g id="edge2" class="edge" data-name="in-&gt;sp">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" d="M275.85,-487.23C275.85,-441.1 275.85,-374 275.85,-374 275.85,-374 258.92,-374 258.92,-374" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="258.92,-371.03 250.42,-374 258.92,-376.98 258.92,-371.03" style=""/>
+<text text-anchor="middle" x="220.01" y="-447.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">read</text>
+</g>
+<!-- ch -->
+<g id="node4" class="node" pointer-events="visible" data-name="ch">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.6" d="M662.14,-398.2C662.14,-398.2 469.86,-398.2 469.86,-398.2 463.86,-398.2 457.86,-392.2 457.86,-386.2 457.86,-386.2 457.86,-363.4 457.86,-363.4 457.86,-357.4 463.86,-351.4 469.86,-351.4 469.86,-351.4 662.14,-351.4 662.14,-351.4 668.14,-351.4 674.14,-357.4 674.14,-363.4 674.14,-363.4 674.14,-386.2 674.14,-386.2 674.14,-392.2 668.14,-398.2 662.14,-398.2" style=""/>
+<text text-anchor="middle" x="566" y="-379.6" font-family="Helvetica,sans-Serif" font-size="16.00" style="">Scan children[]</text>
+<text text-anchor="middle" x="566" y="-360.4" font-family="Helvetica,sans-Serif" font-size="16.00" style="">read help/notes suggestions</text>
+</g>
+<!-- in&#45;&gt;ch -->
+<g id="edge3" class="edge" data-name="in-&gt;ch">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" d="M430.15,-487.23C430.15,-441.1 430.15,-374 430.15,-374 430.15,-374 447.18,-374 447.18,-374" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="447.18,-376.98 455.68,-374 447.18,-371.03 447.18,-376.98" style=""/>
+<text text-anchor="middle" x="510.01" y="-447.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">read</text>
+</g>
+<!-- cand -->
+<g id="node6" class="node" pointer-events="visible" data-name="cand">
+
+<path fill="#e9f5ff" stroke="#444444" stroke-width="1.6" d="M454.6,-163.8C454.6,-163.8 173.4,-163.8 173.4,-163.8 167.4,-163.8 161.4,-157.8 161.4,-151.8 161.4,-151.8 161.4,-129 161.4,-129 161.4,-123 167.4,-117 173.4,-117 173.4,-117 454.6,-117 454.6,-117 460.6,-117 466.6,-123 466.6,-129 466.6,-129 466.6,-151.8 466.6,-151.8 466.6,-157.8 460.6,-163.8 454.6,-163.8" style=""/>
+<text text-anchor="middle" x="314" y="-145.2" font-family="Helvetica,sans-Serif" font-size="16.00" style="">CandidateFix</text>
+<text text-anchor="middle" x="314" y="-126" font-family="Helvetica,sans-Serif" font-size="16.00" style="">{ identifier, suggested_path, confidence }</text>
+</g>
+<!-- m&#45;&gt;cand -->
+<g id="edge5" class="edge" data-name="m-&gt;cand">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" d="M353,-351.03C353,-351.03 353,-174.7 353,-174.7" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="355.98,-174.7 353,-166.2 350.03,-174.7 355.98,-174.7" style=""/>
+<text text-anchor="middle" x="380.22" y="-253.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">emit</text>
+</g>
+<!-- app -->
+<g id="node5" class="node" pointer-events="visible" data-name="app">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.6" d="M169.45,-281C169.45,-281 48.55,-281 48.55,-281 42.55,-281 36.55,-275 36.55,-269 36.55,-269 36.55,-246.2 36.55,-246.2 36.55,-240.2 42.55,-234.2 48.55,-234.2 48.55,-234.2 169.45,-234.2 169.45,-234.2 175.45,-234.2 181.45,-240.2 181.45,-246.2 181.45,-246.2 181.45,-269 181.45,-269 181.45,-275 175.45,-281 169.45,-281" style=""/>
+<text text-anchor="middle" x="109" y="-262.4" font-family="Helvetica,sans-Serif" font-size="16.00" style="">Map Applicability?</text>
+<text text-anchor="middle" x="109" y="-243.2" font-family="Helvetica,sans-Serif" font-size="16.00" style="">-&gt; Confidence</text>
+</g>
+<!-- sp&#45;&gt;app -->
+<g id="edge4" class="edge" data-name="sp-&gt;app">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" d="M109,-351.08C109,-351.08 109,-291.75 109,-291.75" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="111.98,-291.75 109,-283.25 106.03,-291.75 111.98,-291.75" style=""/>
+<text text-anchor="middle" x="171.31" y="-312" font-family="Helvetica,sans-Serif" font-size="14.00" style="">use applicability?</text>
+</g>
+<!-- sp&#45;&gt;cand -->
+<g id="edge6" class="edge" data-name="sp-&gt;cand">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" d="M214.78,-351.03C214.78,-351.03 214.78,-174.7 214.78,-174.7" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="217.75,-174.7 214.78,-166.2 211.8,-174.7 217.75,-174.7" style=""/>
+<text text-anchor="middle" x="274.22" y="-253.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">emit</text>
+</g>
+<!-- ch&#45;&gt;cand -->
+<g id="edge7" class="edge" data-name="ch-&gt;cand">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" d="M462.24,-351.03C462.24,-351.03 462.24,-174.7 462.24,-174.7" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="465.22,-174.7 462.24,-166.2 459.27,-174.7 465.22,-174.7" style=""/>
+<text text-anchor="middle" x="539.22" y="-253.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">emit</text>
+</g>
+<!-- app&#45;&gt;cand -->
+<g id="edge8" class="edge" data-name="app-&gt;cand">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" d="M171.46,-233.88C171.46,-233.88 171.46,-174.55 171.46,-174.55" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="174.44,-174.55 171.46,-166.05 168.49,-174.55 174.44,-174.55" style=""/>
+<text text-anchor="middle" x="172.14" y="-194.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">set confidence</text>
+</g>
+<!-- out -->
+<g id="node7" class="node" pointer-events="visible" data-name="out">
+
+<path fill="#dff7e3" stroke="#444444" stroke-width="1.6" d="M408.95,-46.6C408.95,-46.6 219.05,-46.6 219.05,-46.6 213.05,-46.6 207.05,-40.6 207.05,-34.6 207.05,-34.6 207.05,-11.8 207.05,-11.8 207.05,-5.8 213.05,0.2 219.05,0.2 219.05,0.2 408.95,0.2 408.95,0.2 414.95,0.2 420.95,-5.8 420.95,-11.8 420.95,-11.8 420.95,-34.6 420.95,-34.6 420.95,-40.6 414.95,-46.6 408.95,-46.6" style=""/>
+<text text-anchor="middle" x="314" y="-28" font-family="Helvetica,sans-Serif" font-size="16.00" style="">Output: Vec&lt;CandidateFix&gt;</text>
+<text text-anchor="middle" x="314" y="-8.8" font-family="Helvetica,sans-Serif" font-size="16.00" style="">(owned, ready for decision)</text>
+</g>
+<!-- cand&#45;&gt;out -->
+<g id="edge9" class="edge" data-name="cand-&gt;out">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" d="M314,-116.68C314,-116.68 314,-57.35 314,-57.35" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="316.98,-57.35 314,-48.85 311.03,-57.35 316.98,-57.35" style=""/>
+<text text-anchor="middle" x="333.84" y="-77.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">collect</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,172 @@
+{
+  "total": 29,
+  "success": 15,
+  "failures": 14,
+  "categories": {
+    "RUSTC_ERROR": 14
+  },
+  "error_codes": {
+    "E0282": 3,
+    "E0308": 9,
+    "E0599": 4
+  },
+  "truncation_types": {},
+  "details": [
+    {
+      "node_id": "<impl private::Sealed for i8>::write",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282",
+      "error_codes": [
+        "E0282"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<impl private::Sealed for i8>::write",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282",
+      "error_codes": [
+        "E0282"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<impl private::Sealed for i8>::write",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282",
+      "error_codes": [
+        "E0282"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<impl private::Sealed for u8>::write",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<impl private::Sealed for u8>::write",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<impl private::Sealed for u16>::write",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<impl private::Sealed for i32>::write",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<impl private::Sealed for isize>::write",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0599",
+      "error_codes": [
+        "E0308",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<impl private::Sealed for isize>::write",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<impl private::Sealed for usize>::write",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<impl private::Sealed for usize>::write",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0599",
+      "error_codes": [
+        "E0308",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<impl private::Sealed for i128>::write",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<impl private::Sealed for i128>::write",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<impl private::Sealed for u128>::write",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    }
+  ]
+}

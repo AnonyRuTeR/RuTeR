@@ -1,0 +1,60 @@
+digraph E0433Patcher_Teaching_Step1 {
+  graph [
+    rankdir=TB,
+    fontsize=24,
+    labelloc="t",
+    label="Step 1 — Suggestion Extraction (Diagnostic -> Vec<CandidateFix>)",
+    bgcolor="white",
+    pad="0.25",
+    nodesep="0.55",
+    ranksep="0.75",
+    splines="ortho"
+  ];
+
+  node [
+    shape=box,
+    style="rounded,filled",
+    fillcolor="#F7F7F7",
+    color="#444444",
+    penwidth=1.6,
+    fontname="Helvetica",
+    fontsize=16
+  ];
+
+  edge [
+    color="#444444",
+    penwidth=1.3,
+    fontname="Helvetica",
+    fontsize=14,
+    arrowsize=0.85
+  ];
+
+  in [label="Input: &Diagnostic\n- message\n- span: Vec<SpanInfo>\n- children", fillcolor="#FFF4D6"];
+
+  subgraph cluster_sources {
+    label="Read sources (no mutation)";
+    fontsize=18;
+    color="#BBBBBB";
+    style="rounded";
+
+    m  [label="Parse message\nextract identifier", fillcolor="#FFFFFF"];
+    sp [label="Scan span[]\nread suggested_replacement?", fillcolor="#FFFFFF"];
+    ch [label="Scan children[]\nread help/notes suggestions", fillcolor="#FFFFFF"];
+    app[label="Map Applicability?\n-> Confidence", fillcolor="#FFFFFF"];
+  }
+
+  cand [label="CandidateFix\n{ identifier, suggested_path, confidence }", fillcolor="#E9F5FF"];
+  out  [label="Output: Vec<CandidateFix>\n(owned, ready for decision)", fillcolor="#DFF7E3"];
+
+  in -> m  [label="read"];
+  in -> sp [label="read"];
+  in -> ch [label="read"];
+
+  sp -> app [label="use applicability?"];
+  m  -> cand [label="emit"];
+  sp -> cand [label="emit"];
+  ch -> cand [label="emit"];
+  app -> cand [label="set confidence"];
+
+  cand -> out [label="collect"];
+}

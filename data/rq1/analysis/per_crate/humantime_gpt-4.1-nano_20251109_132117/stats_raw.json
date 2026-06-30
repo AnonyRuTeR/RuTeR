@@ -1,0 +1,1696 @@
+{
+  "total": 165,
+  "success": 20,
+  "failures": 145,
+  "categories": {
+    "UNSTABLE_FEATURE(E0658)": 12,
+    "RUSTC_ERROR": 130,
+    "OTHER_FAILURE": 3
+  },
+  "error_codes": {
+    "E0658": 12,
+    "E0061": 7,
+    "E0599": 8,
+    "E0433": 80,
+    "E0432": 32,
+    "E0404": 1,
+    "E0063": 24,
+    "E0308": 27,
+    "E0425": 6,
+    "E0412": 1,
+    "E0560": 14,
+    "E0592": 1,
+    "E0261": 1,
+    "E0107": 1,
+    "E0283": 4
+  },
+  "truncation_types": {},
+  "details": [
+    {
+      "node_id": "duration::item_plural",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: fmt_internals",
+      "error_codes": [
+        "E0658",
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "duration::item_plural",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: fmt_internals",
+      "error_codes": [
+        "E0658",
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "duration::item_plural",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: fmt_internals",
+      "error_codes": [
+        "E0658",
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "duration::item_plural",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: fmt_internals",
+      "error_codes": [
+        "E0658"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::item_plural",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: fmt_internals",
+      "error_codes": [
+        "E0658",
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::item_plural",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::item_plural",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: fmt_internals",
+      "error_codes": [
+        "E0658",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::item_plural",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: fmt_internals",
+      "error_codes": [
+        "E0432",
+        "E0658"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::item_plural",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: fmt_internals",
+      "error_codes": [
+        "E0658",
+        "E0433",
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::item",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: fmt_internals",
+      "error_codes": [
+        "E0658"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::item",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0404",
+      "error_codes": [
+        "E0404"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::item",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: fmt_internals",
+      "error_codes": [
+        "E0658"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::item",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: fmt_internals, fmt_internals",
+      "error_codes": [
+        "E0658",
+        "E0433",
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::item",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0433, E0599",
+      "error_codes": [
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::item",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: fmt_internals",
+      "error_codes": [
+        "E0658",
+        "E0433",
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<u64 as duration::OverflowOp>::mul",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<u64 as duration::OverflowOp>::mul",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<u64 as duration::OverflowOp>::mul",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<u64 as duration::OverflowOp>::add",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::off",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::off",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::off",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::off",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0432, E0308",
+      "error_codes": [
+        "E0063",
+        "E0432",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::off",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0308, E0599",
+      "error_codes": [
+        "E0063",
+        "E0308",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::off",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0432, E0308",
+      "error_codes": [
+        "E0063",
+        "E0432",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::off",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0308",
+      "error_codes": [
+        "E0063",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::off",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0432, E0308",
+      "error_codes": [
+        "E0063",
+        "E0432",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::off",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0308",
+      "error_codes": [
+        "E0063",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::off",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0432, E0308",
+      "error_codes": [
+        "E0063",
+        "E0432",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::off",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0308",
+      "error_codes": [
+        "E0063",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::off",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0425, E0308",
+      "error_codes": [
+        "E0063",
+        "E0425",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::off",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432, E0412",
+      "error_codes": [
+        "E0432",
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::off",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::off",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0308",
+      "error_codes": [
+        "E0063",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_first_char",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0560",
+      "error_codes": [
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_first_char",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0560",
+      "error_codes": [
+        "E0308",
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_first_char",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0599",
+      "error_codes": [
+        "E0432",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_first_char",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0560",
+      "error_codes": [
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_first_char",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0560",
+      "error_codes": [
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_first_char",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0560",
+      "error_codes": [
+        "E0308",
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_first_char",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0560",
+      "error_codes": [
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_first_char",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0560",
+      "error_codes": [
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_first_char",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0560",
+      "error_codes": [
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_first_char",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432, E0592",
+      "error_codes": [
+        "E0432",
+        "E0592"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_first_char",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_first_char",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0560",
+      "error_codes": [
+        "E0308",
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_unit",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0432, E0308",
+      "error_codes": [
+        "E0063",
+        "E0432",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_unit",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0432, E0308",
+      "error_codes": [
+        "E0063",
+        "E0432",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_unit",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0432, E0308",
+      "error_codes": [
+        "E0063",
+        "E0432",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_unit",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0308",
+      "error_codes": [
+        "E0063",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_unit",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0308",
+      "error_codes": [
+        "E0063",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_unit",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0308",
+      "error_codes": [
+        "E0063",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_unit",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0308",
+      "error_codes": [
+        "E0063",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_unit",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_unit",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0261, E0433",
+      "error_codes": [
+        "E0261",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_unit",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432, E0560",
+      "error_codes": [
+        "E0432",
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_unit",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse_unit",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0432, E0308",
+      "error_codes": [
+        "E0063",
+        "E0432",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0063",
+      "error_codes": [
+        "E0063"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0560, E0433",
+      "error_codes": [
+        "E0308",
+        "E0560",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0063, E0433",
+      "error_codes": [
+        "E0063",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0063",
+      "error_codes": [
+        "E0063"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0560",
+      "error_codes": [
+        "E0308",
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0560, E0107",
+      "error_codes": [
+        "E0560",
+        "E0107"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0560, E0433",
+      "error_codes": [
+        "E0308",
+        "E0560",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0433, E0599",
+      "error_codes": [
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0308",
+      "error_codes": [
+        "E0063",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0432, E0308",
+      "error_codes": [
+        "E0063",
+        "E0432",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::Parser::<'a>::parse",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0063, E0308",
+      "error_codes": [
+        "E0063",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::FormattedDuration::get_ref",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "duration::FormattedDuration::get_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Unresolved name/path: E0425, E0433",
+      "error_codes": [
+        "E0425",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "duration::FormattedDuration::get_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "duration::FormattedDuration::get_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::FormattedDuration::get_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "duration::FormattedDuration::get_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "date::two_digits::two_digits_inner",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "date::two_digits::two_digits_inner",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "date::two_digits::two_digits_inner",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "date::two_digits::two_digits_inner",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "date::two_digits::two_digits_inner",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "date::two_digits::two_digits_inner",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "date::format_rfc3339",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "date::format_rfc3339",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "date::format_rfc3339",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "date::format_rfc3339",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "date::format_rfc3339_micros",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "date::format_rfc3339_micros",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "date::Rfc3339Timestamp::get_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Unresolved name/path: E0425, E0433",
+      "error_codes": [
+        "E0425",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "date::Rfc3339Timestamp::get_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Unresolved name/path: E0425, E0433",
+      "error_codes": [
+        "E0425",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "date::Rfc3339Timestamp::get_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Unresolved name/path: E0425, E0433",
+      "error_codes": [
+        "E0425",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "date::Rfc3339Timestamp::get_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "date::Rfc3339Timestamp::get_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "date::Rfc3339Timestamp::get_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Unresolved name/path: E0425, E0433",
+      "error_codes": [
+        "E0425",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::ops::Deref>::deref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::ops::Deref>::deref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::ops::Deref>::deref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::ops::Deref>::deref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::ops::Deref>::deref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::convert::Into<std::time::Duration>>::into",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::convert::Into<std::time::Duration>>::into",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::convert::Into<std::time::Duration>>::into",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::convert::Into<std::time::Duration>>::into",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0283",
+      "error_codes": [
+        "E0283"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::convert::Into<std::time::Duration>>::into",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0283, E0433",
+      "error_codes": [
+        "E0283",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::convert::Into<std::time::Duration>>::into",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0283, E0433",
+      "error_codes": [
+        "E0283",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::convert::From<std::time::Duration>>::from",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::convert::From<std::time::Duration>>::from",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::convert::From<std::time::Duration>>::from",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::str::FromStr>::from_str",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::str::FromStr>::from_str",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Duration as std::str::FromStr>::from_str",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::convert::AsRef<std::time::SystemTime>>::as_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::convert::AsRef<std::time::SystemTime>>::as_ref",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::convert::AsRef<std::time::SystemTime>>::as_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::convert::AsRef<std::time::SystemTime>>::as_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::convert::AsRef<std::time::SystemTime>>::as_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::convert::AsRef<std::time::SystemTime>>::as_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::convert::AsRef<std::time::SystemTime>>::as_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::convert::AsRef<std::time::SystemTime>>::as_ref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::ops::Deref>::deref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::ops::Deref>::deref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::ops::Deref>::deref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::ops::Deref>::deref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::ops::Deref>::deref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::ops::Deref>::deref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::convert::Into<std::time::SystemTime>>::into",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::convert::Into<std::time::SystemTime>>::into",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::convert::Into<std::time::SystemTime>>::into",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::convert::Into<std::time::SystemTime>>::into",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0433, E0599",
+      "error_codes": [
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::convert::Into<std::time::SystemTime>>::into",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::convert::Into<std::time::SystemTime>>::into",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0283, E0433",
+      "error_codes": [
+        "E0283",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::convert::From<std::time::SystemTime>>::from",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::convert::From<std::time::SystemTime>>::from",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::convert::From<std::time::SystemTime>>::from",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::str::FromStr>::from_str",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::str::FromStr>::from_str",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<wrapper::Timestamp as std::str::FromStr>::from_str",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    }
+  ]
+}

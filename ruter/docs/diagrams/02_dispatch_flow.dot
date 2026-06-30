@@ -1,0 +1,20 @@
+digraph dispatch_flow {
+    rankdir=TB;
+    fontname="Helvetica";
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=10];
+
+    task [label="FunctionPatchTask\n(函数级诊断集合)", fillcolor="#E8F0FE"];
+    check [label="implemented_rule_codes\n非空？", shape=diamond, fillcolor="#FFF3E0"];
+    rule [label="RulePatcher 路由\n提取 selected_rule_codes\n+ deferred_codes", fillcolor="#E8F5E9"];
+    llm [label="LlmPatcher 路由\n全部为未实现错误码", fillcolor="#FCE4EC"];
+    arbitrate [label="Span 冲突仲裁\n(Union-Find 算法)", fillcolor="#E8F5E9"];
+    output [label="FunctionDispatchDecision", fillcolor="#E8F0FE"];
+
+    task -> check;
+    check -> rule [label="是"];
+    check -> llm [label="否"];
+    rule -> arbitrate;
+    arbitrate -> output;
+    llm -> output;
+}

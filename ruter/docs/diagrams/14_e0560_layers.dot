@@ -1,0 +1,98 @@
+digraph e0560_layers {
+    rankdir=TB;
+    fontname="Helvetica";
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=10];
+
+    label="E0560Patcher 双轨架构与窄口径字段修复";
+    labelloc=t;
+    fontsize=14;
+    fontname="Helvetica-Bold";
+
+    // Input
+    diag [label="Diagnostic\n(E0560)", shape=ellipse, fillcolor="#FFF3E0"];
+
+    // Layer 1: Pattern Classification
+    subgraph cluster_l1 {
+        label="第一层：错误模式分类";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#E8F0FE4D";
+        color="#1A73E8";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        extract [label="字段信息提取\n未知字段名\n可用字段列表\n(available fields)", fillcolor="#E8F0FE"];
+        classify [label="模式分类", shape=diamond, fillcolor="#FFF3E0"];
+
+        single_typo [label="SingleFieldTypo\n单个未知字段\n+ 唯一近邻候选", fillcolor="#C8E6C9"];
+        schema_drift [label="SchemaDrift\n多个未知字段\n/ 候选不唯一\n/ 相似度不足", fillcolor="#FFCDD2"];
+        constructor_mm [label="ConstructorModeMismatch\n适合 builder/宏\n构造模式", fillcolor="#FFCDD2"];
+    }
+
+    // Layer 2: Syntax Constraint Filter
+    subgraph cluster_l2 {
+        label="第二层：语法约束过滤";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#FFF9C44D";
+        color="#F57F17";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        named_only [label="仅处理具名字段语法\nfield: expr\n(span 后紧跟 :)", fillcolor="#FFF9C4"];
+        reject_shorthand [label="拒绝处理\nfield init shorthand\n..base 推理", fillcolor="#FFCDD2"];
+    }
+
+    // Layer 3: Two-Track Candidates
+    subgraph cluster_l3 {
+        label="第三层：双轨候选构建";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#E8F5E94D";
+        color="#2E7D32";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        p1 [label="Track P1\n编译器建议直通\nMachineApplicable → High\nMaybeIncorrect → Medium", fillcolor="#C8E6C9"];
+        r1 [label="Track R1\n唯一字段名重写\nP1 无候选\n+ 单未知字段\n+ edit_distance_is_one_ascii_ci()\n唯一 distance=1 匹配", fillcolor="#A5D6A7"];
+    }
+
+    // Layer 4: Validation
+    subgraph cluster_l4 {
+        label="第四层：验证条件";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#FCE4EC4D";
+        color="#C62828";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        v1 [label="E0560 错误数下降", fillcolor="#FCE4EC"];
+        v2 [label="不得新增 E0063\n（缺字段）", fillcolor="#FCE4EC"];
+        v3 [label="不得新增 E0451\n（私有字段构造）", fillcolor="#FCE4EC"];
+    }
+
+    // Outputs
+    out_fix [label="FixAction::Replace\n（字段名替换）", shape=ellipse, fillcolor="#C8E6C9"];
+    out_empty [label="空 Vec\n→ Preflight Digest 注入\n→ LLM 处理", shape=ellipse, fillcolor="#FFCDD2"];
+
+    // Edges
+    diag -> extract;
+    extract -> classify;
+    classify -> single_typo [label="单字段\n+ 近邻唯一"];
+    classify -> schema_drift [label="多字段\n/ 不唯一"];
+    classify -> constructor_mm [label="builder/宏"];
+    schema_drift -> out_empty;
+    constructor_mm -> out_empty;
+    single_typo -> named_only;
+    named_only -> p1 [label="通过"];
+    named_only -> reject_shorthand [label="shorthand\n/ ..base"];
+    reject_shorthand -> out_empty;
+    p1 -> r1 [label="P1 无候选时"];
+    p1 -> v1;
+    r1 -> v1;
+    v1 -> v2 -> v3;
+    v3 -> out_fix [label="全通过"];
+    v3 -> out_empty [label="验证失败"];
+}

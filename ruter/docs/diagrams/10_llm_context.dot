@@ -1,0 +1,112 @@
+digraph llm_context {
+    rankdir=TB;
+    fontname="Helvetica";
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=10];
+
+    label="LLM 上下文构建 (FunctionContextBundleV1)";
+    labelloc=t;
+    fontsize=14;
+    fontname="Helvetica-Bold";
+
+    // Sources
+    src_file [label="源文件\n(.rs)", shape=folder, fillcolor="#FFF3E0"];
+    diags [label="Diagnostic[]\n(函数级)", shape=ellipse, fillcolor="#FFF3E0"];
+    rule_result [label="Rule Patcher\n验证失败摘要", shape=ellipse, fillcolor="#FFF3E0"];
+    preflight [label="Preflight\nDigestV1", shape=ellipse, fillcolor="#FFF3E0"];
+    prev_round [label="上一轮\n失败摘要", shape=ellipse, fillcolor="#FFF3E0"];
+    neighbor [label="邻域函数\n成功修复摘要", shape=ellipse, fillcolor="#FFF3E0"];
+
+    // L0
+    subgraph cluster_l0 {
+        label="L0: 元数据层";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#E8F0FE4D";
+        color="#1A73E8";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        schema_ver [label="context_schema_version\n= \"v1\"", fillcolor="#E8F0FE"];
+        func_id [label="function_id\nlocation (file, module, fn)", fillcolor="#E8F0FE"];
+        constraints [label="constraints\n(测试代码专修规则)", fillcolor="#E8F0FE"];
+    }
+
+    // L1
+    subgraph cluster_l1 {
+        label="L1: 目标函数层";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#E8F5E94D";
+        color="#2E7D32";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        fn_text [label="target_function_text\n(行号标注源码)\n硬上限 8000 字符", fillcolor="#E8F5E9"];
+        diag_digest [label="diagnostics_digest\n错误码计数\n+ 主诊断 (≤4 条)", fillcolor="#E8F5E9"];
+    }
+
+    // L2
+    subgraph cluster_l2 {
+        label="L2: 同文件语义上下文层";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#FFF9C44D";
+        color="#F57F17";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        imports [label="related_imports\n按符号过滤的 use 语句", fillcolor="#FFF9C4"];
+        type_defs [label="related_type_defs\nstruct/enum/trait 定义", fillcolor="#FFF9C4"];
+        impl_blocks [label="related_impl_blocks\nimpl 块 (符号命中)", fillcolor="#FFF9C4"];
+        fn_defs [label="related_fn_defs\n诊断反引号驱动\n(prettyplease 格式化)", fillcolor="#FFF9C4"];
+    }
+
+    // Extensions
+    subgraph cluster_ext {
+        label="扩展附件";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#F3E5F54D";
+        color="#7B1FA2";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        ext_neighbor [label="neighbor_fix_digest", fillcolor="#F3E5F5"];
+        ext_rule [label="local_rule_failure_digest\n(仅 Round 1)", fillcolor="#F3E5F5"];
+        ext_preflight [label="preflight_interceptor_digest\n(五维 KEY=value)", fillcolor="#F3E5F5"];
+        ext_prev [label="previous_round_failure_digest\n(仅 Round ≥ 2)", fillcolor="#F3E5F5"];
+    }
+
+    // Budget
+    budget [label="预算裁剪\n总上限 12,000 字符\n按固定顺序逐项弹出:\nimpl → fn_defs → type_defs\n→ imports → diagnostics\n→ local_rule → preflight\n→ prev_round", fillcolor="#FFCDD2", shape=note];
+
+    prompt [label="Prompt v2 契约\n(System + User)", fillcolor="#E8F0FE", shape=doubleoctagon];
+
+    // Edges from sources
+    src_file -> fn_text;
+    src_file -> imports;
+    src_file -> type_defs;
+    src_file -> impl_blocks;
+    src_file -> fn_defs;
+    diags -> diag_digest;
+    rule_result -> ext_rule;
+    preflight -> ext_preflight;
+    prev_round -> ext_prev;
+    neighbor -> ext_neighbor;
+
+    // To budget
+    schema_ver -> budget [style=invis];
+    fn_text -> budget [style=dotted, label="字符计数"];
+    diag_digest -> budget [style=dotted];
+    imports -> budget [style=dotted];
+    type_defs -> budget [style=dotted];
+    impl_blocks -> budget [style=dotted];
+    fn_defs -> budget [style=dotted];
+    ext_neighbor -> budget [style=dotted];
+    ext_rule -> budget [style=dotted];
+    ext_preflight -> budget [style=dotted];
+    ext_prev -> budget [style=dotted];
+
+    budget -> prompt [label="裁剪后输出"];
+}

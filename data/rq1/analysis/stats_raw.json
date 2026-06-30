@@ -1,0 +1,931 @@
+{
+  "total": 130,
+  "success": 52,
+  "failures": 78,
+  "categories": {
+    "RUSTC_ERROR": 69,
+    "UNSTABLE_FEATURE(E0658)": 7,
+    "OTHER_FAILURE": 1,
+    "TRUNCATED_BRACES": 1
+  },
+  "error_codes": {
+    "E0603": 16,
+    "E0433": 26,
+    "E0624": 1,
+    "E0593": 1,
+    "E0560": 1,
+    "E0308": 6,
+    "E0277": 6,
+    "E0658": 7,
+    "E0599": 26,
+    "E0432": 18,
+    "E0040": 2,
+    "E0369": 3,
+    "E0061": 1,
+    "E0574": 4,
+    "E0282": 1
+  },
+  "truncation_types": {
+    "TRUNCATED_BRACES": 1
+  },
+  "details": [
+    {
+      "node_id": "display::pad",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0603",
+      "error_codes": [
+        "E0603"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "display::pad",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "display::pad",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "display::pad",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0603, E0624, E0593",
+      "error_codes": [
+        "E0603",
+        "E0624",
+        "E0593"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "display::pad",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "display::pad",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0603, E0560, E0433",
+      "error_codes": [
+        "E0603",
+        "E0560",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "display::pad",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0603",
+      "error_codes": [
+        "E0603"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "display::pad",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0603",
+      "error_codes": [
+        "E0603"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "display::pad",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "display::pad",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0603",
+      "error_codes": [
+        "E0603"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "display::pad",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0603, E0308",
+      "error_codes": [
+        "E0603",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "display::pad",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "display::pad",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: fmt_internals",
+      "error_codes": [
+        "E0277",
+        "E0658",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "display::pad",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: fmt_internals, fmt_internals, fmt_internals, fmt_internals, fmt_internals, fmt_internals, fmt_internals",
+      "error_codes": [
+        "E0658",
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "eval::matches_req",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0599",
+      "error_codes": [
+        "E0432",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "eval::matches_req",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0433, E0599",
+      "error_codes": [
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "eval::matches_comparator",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "eval::matches_comparator",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "eval::matches_exact",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "eval::matches_less",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0599",
+      "error_codes": [
+        "E0432",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "eval::matches_less",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "eval::pre_is_compatible",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "eval::pre_is_compatible",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "identifier::ptr_to_repr",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "identifier::ptr_to_repr",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "identifier::decode_len::decode_len_cold",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "identifier::decode_len::decode_len_cold",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "identifier::ptr_as_str",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "identifier::ptr_as_str",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "identifier::bytes_for_varint",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "identifier::bytes_for_varint",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "identifier::Identifier::new_unchecked",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "identifier::Identifier::new_unchecked",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "identifier::Identifier::new_unchecked",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "identifier::Identifier::is_empty_or_inline",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "identifier::Identifier::is_empty_or_inline",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<identifier::Identifier as std::ops::Drop>::drop",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0040",
+      "error_codes": [
+        "E0040"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<identifier::Identifier as std::ops::Drop>::drop",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0040",
+      "error_codes": [
+        "E0040"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<identifier::Identifier as std::cmp::PartialEq>::eq",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0277, E0599",
+      "error_codes": [
+        "E0277",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<identifier::Identifier as std::cmp::PartialEq>::eq",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0277, E0599",
+      "error_codes": [
+        "E0277",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::numeric_identifier",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0603, E0369, E0599",
+      "error_codes": [
+        "E0603",
+        "E0369",
+        "E0599"
+      ],
+      "truncation_hint": "TRUNCATED_STRING",
+      "truncation_hint_reason": "Unclosed char detected.",
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::numeric_identifier",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0603, E0433",
+      "error_codes": [
+        "E0603",
+        "E0433"
+      ],
+      "truncation_hint": "TRUNCATED_STRING",
+      "truncation_hint_reason": "Unclosed char detected.",
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::dot",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0277, E0369, E0599",
+      "error_codes": [
+        "E0277",
+        "E0369",
+        "E0599"
+      ],
+      "truncation_hint": "TRUNCATED_STRING",
+      "truncation_hint_reason": "Unclosed char detected.",
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::dot",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0603, E0433",
+      "error_codes": [
+        "E0603",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::prerelease_identifier",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0599",
+      "error_codes": [
+        "E0432",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::prerelease_identifier",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0603, E0308, E0599",
+      "error_codes": [
+        "E0603",
+        "E0308",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::build_identifier",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0603, E0432, E0599",
+      "error_codes": [
+        "E0603",
+        "E0432",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::build_identifier",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::identifier",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::identifier",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::comparator",
+      "category": "TRUNCATED_BRACES",
+      "reason": "Unbalanced braces: { (30) vs } (28)",
+      "error_codes": [
+        "E0277",
+        "E0432",
+        "E0369",
+        "E0599"
+      ],
+      "truncation_hint": "TRUNCATED_BRACES",
+      "truncation_hint_reason": "Unbalanced braces: { (30) vs } (28)",
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::comparator",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0277, E0432, E0433, E0599",
+      "error_codes": [
+        "E0277",
+        "E0432",
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::<impl std::str::FromStr for Version>::from_str",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::<impl std::str::FromStr for VersionReq>::from_str",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::<impl std::str::FromStr for Comparator>::from_str",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0603, E0308, E0599",
+      "error_codes": [
+        "E0603",
+        "E0308",
+        "E0599"
+      ],
+      "truncation_hint": "TRUNCATED_STRING",
+      "truncation_hint_reason": "Unclosed char detected.",
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::<impl std::str::FromStr for BuildMetadata>::from_str",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0061, E0599",
+      "error_codes": [
+        "E0308",
+        "E0061",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::Error::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0574",
+      "error_codes": [
+        "E0574"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "parse::Error::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0574",
+      "error_codes": [
+        "E0574"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "parse::Error::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0574",
+      "error_codes": [
+        "E0574"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "parse::Error::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0574, E0433",
+      "error_codes": [
+        "E0574",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::Error::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0599",
+      "error_codes": [
+        "E0432",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "parse::Error::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "impls::<impl std::hash::Hash for identifier::Identifier>::hash",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: hashmap_internals, hashmap_internals",
+      "error_codes": [
+        "E0658"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "impls::<impl std::hash::Hash for identifier::Identifier>::hash",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: hashmap_internals, hashmap_internals",
+      "error_codes": [
+        "E0658"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "impls::<impl std::hash::Hash for identifier::Identifier>::hash",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: hashmap_internals, hashmap_internals",
+      "error_codes": [
+        "E0658"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "impls::<impl std::hash::Hash for identifier::Identifier>::hash",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0603",
+      "error_codes": [
+        "E0603"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "impls::<impl std::hash::Hash for identifier::Identifier>::hash",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0603",
+      "error_codes": [
+        "E0603"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "impls::<impl std::hash::Hash for identifier::Identifier>::hash",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0603",
+      "error_codes": [
+        "E0603"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "impls::<impl std::hash::Hash for identifier::Identifier>::hash",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: hashmap_internals, hashmap_internals, hashmap_internals",
+      "error_codes": [
+        "E0658"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "impls::<impl std::hash::Hash for identifier::Identifier>::hash",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: hashmap_internals, hashmap_internals, hashmap_internals, hashmap_internals",
+      "error_codes": [
+        "E0658"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "impls::<impl std::ops::Deref for Prerelease>::deref",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "impls::<impl std::ops::Deref for BuildMetadata>::deref",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "impls::<impl std::ops::Deref for BuildMetadata>::deref",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "impls::<impl std::cmp::PartialOrd for BuildMetadata>::partial_cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "impls::<impl std::cmp::PartialOrd for BuildMetadata>::partial_cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "impls::<impl std::cmp::Ord for Prerelease>::cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "impls::<impl std::iter::FromIterator<Comparator> for VersionReq>::from_iter",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282",
+      "error_codes": [
+        "E0282"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "impls::<impl std::iter::FromIterator<Comparator> for VersionReq>::from_iter",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0433, E0599",
+      "error_codes": [
+        "E0308",
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    }
+  ]
+}

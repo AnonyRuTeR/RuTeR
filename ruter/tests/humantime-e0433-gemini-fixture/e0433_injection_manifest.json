@@ -1,0 +1,530 @@
+{
+  "total_cases": 40,
+  "by_file": {
+    "src/duration.rs": 15,
+    "src/date.rs": 8,
+    "src/wrapper.rs": 17
+  },
+  "cases": [
+    {
+      "case": 1,
+      "func_key": "duration::item_plural",
+      "section": "parameter_instantiation",
+      "attempt": 2,
+      "target_file": "src/duration.rs",
+      "origin_span": {
+        "line": 616,
+        "col": 22
+      },
+      "original_mod_name": "tests_prepare",
+      "effective_mod_name": "tests_prepare"
+    },
+    {
+      "case": 2,
+      "func_key": "duration::item_plural",
+      "section": "parameter_instantiation",
+      "attempt": 3,
+      "target_file": "src/duration.rs",
+      "origin_span": {
+        "line": 461,
+        "col": 9
+      },
+      "original_mod_name": "tests_prepare",
+      "effective_mod_name": "tests_prepare__case_02"
+    },
+    {
+      "case": 3,
+      "func_key": "duration::Parser::<'a>::off",
+      "section": "parameter_instantiation",
+      "attempt": 1,
+      "target_file": "src/duration.rs",
+      "origin_span": {
+        "line": 669,
+        "col": 22
+      },
+      "original_mod_name": "tests_prepare",
+      "effective_mod_name": "tests_prepare__case_03"
+    },
+    {
+      "case": 4,
+      "func_key": "duration::Parser::<'a>::off",
+      "section": "parameter_instantiation",
+      "attempt": 2,
+      "target_file": "src/duration.rs",
+      "origin_span": {
+        "line": 669,
+        "col": 22
+      },
+      "original_mod_name": "tests_prepare",
+      "effective_mod_name": "tests_prepare__case_04"
+    },
+    {
+      "case": 5,
+      "func_key": "duration::Parser::<'a>::off",
+      "section": "parameter_instantiation",
+      "attempt": 3,
+      "target_file": "src/duration.rs",
+      "origin_span": {
+        "line": 669,
+        "col": 22
+      },
+      "original_mod_name": "tests_prepare",
+      "effective_mod_name": "tests_prepare__case_05"
+    },
+    {
+      "case": 6,
+      "func_key": "duration::Parser::<'a>::off",
+      "section": "test_generation",
+      "attempt": 1,
+      "target_file": "src/duration.rs",
+      "origin_span": {
+        "line": 672,
+        "col": 22
+      },
+      "original_mod_name": "tests_rug_7",
+      "effective_mod_name": "tests_rug_7"
+    },
+    {
+      "case": 7,
+      "func_key": "duration::Parser::<'a>::off",
+      "section": "test_generation",
+      "attempt": 2,
+      "target_file": "src/duration.rs",
+      "origin_span": {
+        "line": 673,
+        "col": 18
+      },
+      "original_mod_name": "tests_rug_7",
+      "effective_mod_name": "tests_rug_7__case_07"
+    },
+    {
+      "case": 8,
+      "func_key": "duration::Parser::<'a>::off",
+      "section": "test_generation",
+      "attempt": 3,
+      "target_file": "src/duration.rs",
+      "origin_span": {
+        "line": 672,
+        "col": 22
+      },
+      "original_mod_name": "tests_rug_7",
+      "effective_mod_name": "tests_rug_7__case_08"
+    },
+    {
+      "case": 9,
+      "func_key": "duration::Parser::<'a>::off",
+      "section": "test_generation",
+      "attempt": 7,
+      "target_file": "src/duration.rs",
+      "origin_span": {
+        "line": 672,
+        "col": 22
+      },
+      "original_mod_name": "tests_rug_7",
+      "effective_mod_name": "tests_rug_7__case_09"
+    },
+    {
+      "case": 10,
+      "func_key": "duration::Parser::<'a>::off",
+      "section": "test_generation",
+      "attempt": 8,
+      "target_file": "src/duration.rs",
+      "origin_span": {
+        "line": 672,
+        "col": 22
+      },
+      "original_mod_name": "tests_rug_7",
+      "effective_mod_name": "tests_rug_7__case_10"
+    },
+    {
+      "case": 11,
+      "func_key": "duration::Parser::<'a>::off",
+      "section": "test_generation",
+      "attempt": 9,
+      "target_file": "src/duration.rs",
+      "origin_span": {
+        "line": 672,
+        "col": 22
+      },
+      "original_mod_name": "tests_rug_7",
+      "effective_mod_name": "tests_rug_7__case_11"
+    },
+    {
+      "case": 12,
+      "func_key": "duration::Parser::<'a>::parse",
+      "section": "test_generation",
+      "attempt": 2,
+      "target_file": "src/duration.rs",
+      "origin_span": {
+        "line": 673,
+        "col": 21
+      },
+      "original_mod_name": "tests_rug_10",
+      "effective_mod_name": "tests_rug_10"
+    },
+    {
+      "case": 13,
+      "func_key": "duration::Parser::<'a>::parse",
+      "section": "test_generation",
+      "attempt": 7,
+      "target_file": "src/duration.rs",
+      "origin_span": {
+        "line": 672,
+        "col": 21
+      },
+      "original_mod_name": "tests_rug_10",
+      "effective_mod_name": "tests_rug_10__case_13"
+    },
+    {
+      "case": 14,
+      "func_key": "duration::FormattedDuration::get_ref",
+      "section": "test_generation",
+      "attempt": 1,
+      "target_file": "src/duration.rs",
+      "origin_span": {
+        "line": 675,
+        "col": 10
+      },
+      "original_mod_name": "tests_rug_11",
+      "effective_mod_name": "tests_rug_11"
+    },
+    {
+      "case": 15,
+      "func_key": "duration::FormattedDuration::get_ref",
+      "section": "test_generation",
+      "attempt": 2,
+      "target_file": "src/duration.rs",
+      "origin_span": {
+        "line": 675,
+        "col": 18
+      },
+      "original_mod_name": "tests_rug_11",
+      "effective_mod_name": "tests_rug_11__case_15"
+    },
+    {
+      "case": 16,
+      "func_key": "date::two_digits::two_digits_inner",
+      "section": "test_generation",
+      "attempt": 1,
+      "target_file": "src/date.rs",
+      "origin_span": {
+        "line": 671,
+        "col": 22
+      },
+      "original_mod_name": "tests_rug_13",
+      "effective_mod_name": "tests_rug_13"
+    },
+    {
+      "case": 17,
+      "func_key": "date::two_digits::two_digits_inner",
+      "section": "test_generation",
+      "attempt": 2,
+      "target_file": "src/date.rs",
+      "origin_span": {
+        "line": 671,
+        "col": 22
+      },
+      "original_mod_name": "tests_rug_13",
+      "effective_mod_name": "tests_rug_13__case_17"
+    },
+    {
+      "case": 18,
+      "func_key": "date::two_digits::two_digits_inner",
+      "section": "test_generation",
+      "attempt": 3,
+      "target_file": "src/date.rs",
+      "origin_span": {
+        "line": 671,
+        "col": 22
+      },
+      "original_mod_name": "tests_rug_13",
+      "effective_mod_name": "tests_rug_13__case_18"
+    },
+    {
+      "case": 19,
+      "func_key": "date::two_digits::two_digits_inner",
+      "section": "test_generation",
+      "attempt": 4,
+      "target_file": "src/date.rs",
+      "origin_span": {
+        "line": 671,
+        "col": 9
+      },
+      "original_mod_name": "tests_rug_13",
+      "effective_mod_name": "tests_rug_13__case_19"
+    },
+    {
+      "case": 20,
+      "func_key": "date::two_digits::two_digits_inner",
+      "section": "test_generation",
+      "attempt": 5,
+      "target_file": "src/date.rs",
+      "origin_span": {
+        "line": 671,
+        "col": 9
+      },
+      "original_mod_name": "tests_rug_13",
+      "effective_mod_name": "tests_rug_13__case_20"
+    },
+    {
+      "case": 21,
+      "func_key": "date::two_digits::two_digits_inner",
+      "section": "test_generation",
+      "attempt": 6,
+      "target_file": "src/date.rs",
+      "origin_span": {
+        "line": 671,
+        "col": 9
+      },
+      "original_mod_name": "tests_rug_13",
+      "effective_mod_name": "tests_rug_13__case_21"
+    },
+    {
+      "case": 22,
+      "func_key": "date::Rfc3339Timestamp::get_ref",
+      "section": "test_generation",
+      "attempt": 1,
+      "target_file": "src/date.rs",
+      "origin_span": {
+        "line": 903,
+        "col": 10
+      },
+      "original_mod_name": "tests_rug_22",
+      "effective_mod_name": "tests_rug_22"
+    },
+    {
+      "case": 23,
+      "func_key": "date::Rfc3339Timestamp::get_ref",
+      "section": "test_generation",
+      "attempt": 2,
+      "target_file": "src/date.rs",
+      "origin_span": {
+        "line": 903,
+        "col": 10
+      },
+      "original_mod_name": "tests_rug_22",
+      "effective_mod_name": "tests_rug_22__case_23"
+    },
+    {
+      "case": 24,
+      "func_key": "<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref",
+      "section": "parameter_instantiation",
+      "attempt": 1,
+      "target_file": "src/wrapper.rs",
+      "origin_span": {
+        "line": 110,
+        "col": 23
+      },
+      "original_mod_name": "tests_prepare",
+      "effective_mod_name": "tests_prepare"
+    },
+    {
+      "case": 25,
+      "func_key": "<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref",
+      "section": "parameter_instantiation",
+      "attempt": 2,
+      "target_file": "src/wrapper.rs",
+      "origin_span": {
+        "line": 110,
+        "col": 23
+      },
+      "original_mod_name": "tests_prepare",
+      "effective_mod_name": "tests_prepare__case_25"
+    },
+    {
+      "case": 26,
+      "func_key": "<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref",
+      "section": "test_generation",
+      "attempt": 1,
+      "target_file": "src/wrapper.rs",
+      "origin_span": {
+        "line": 111,
+        "col": 16
+      },
+      "original_mod_name": "tests_rug_23",
+      "effective_mod_name": "tests_rug_23"
+    },
+    {
+      "case": 27,
+      "func_key": "<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref",
+      "section": "test_generation",
+      "attempt": 2,
+      "target_file": "src/wrapper.rs",
+      "origin_span": {
+        "line": 111,
+        "col": 16
+      },
+      "original_mod_name": "tests_rug_23",
+      "effective_mod_name": "tests_rug_23__case_27"
+    },
+    {
+      "case": 28,
+      "func_key": "<wrapper::Duration as std::ops::Deref>::deref",
+      "section": "test_generation",
+      "attempt": 1,
+      "target_file": "src/wrapper.rs",
+      "origin_span": {
+        "line": 127,
+        "col": 16
+      },
+      "original_mod_name": "tests_rug_24",
+      "effective_mod_name": "tests_rug_24"
+    },
+    {
+      "case": 29,
+      "func_key": "<wrapper::Duration as std::ops::Deref>::deref",
+      "section": "test_generation",
+      "attempt": 2,
+      "target_file": "src/wrapper.rs",
+      "origin_span": {
+        "line": 134,
+        "col": 10
+      },
+      "original_mod_name": "tests_rug_24",
+      "effective_mod_name": "tests_rug_24__case_29"
+    },
+    {
+      "case": 30,
+      "func_key": "<wrapper::Duration as std::ops::Deref>::deref",
+      "section": "test_generation",
+      "attempt": 3,
+      "target_file": "src/wrapper.rs",
+      "origin_span": {
+        "line": 136,
+        "col": 52
+      },
+      "original_mod_name": "tests_rug_24",
+      "effective_mod_name": "tests_rug_24__case_30"
+    },
+    {
+      "case": 31,
+      "func_key": "<wrapper::Duration as std::convert::From<std::time::Duration>>::from",
+      "section": "test_generation",
+      "attempt": 1,
+      "target_file": "src/wrapper.rs",
+      "origin_span": {
+        "line": 163,
+        "col": 10
+      },
+      "original_mod_name": "tests_rug_26",
+      "effective_mod_name": "tests_rug_26"
+    },
+    {
+      "case": 32,
+      "func_key": "<wrapper::Duration as std::str::FromStr>::from_str",
+      "section": "test_generation",
+      "attempt": 1,
+      "target_file": "src/wrapper.rs",
+      "origin_span": {
+        "line": 174,
+        "col": 10
+      },
+      "original_mod_name": "tests_rug_27",
+      "effective_mod_name": "tests_rug_27"
+    },
+    {
+      "case": 33,
+      "func_key": "<wrapper::Duration as std::str::FromStr>::from_str",
+      "section": "test_generation",
+      "attempt": 2,
+      "target_file": "src/wrapper.rs",
+      "origin_span": {
+        "line": 172,
+        "col": 10
+      },
+      "original_mod_name": "tests_rug_27",
+      "effective_mod_name": "tests_rug_27__case_33"
+    },
+    {
+      "case": 34,
+      "func_key": "<wrapper::Timestamp as std::convert::AsRef<std::time::SystemTime>>::as_ref",
+      "section": "test_generation",
+      "attempt": 1,
+      "target_file": "src/wrapper.rs",
+      "origin_span": {
+        "line": 205,
+        "col": 45
+      },
+      "original_mod_name": "tests_rug_28",
+      "effective_mod_name": "tests_rug_28"
+    },
+    {
+      "case": 35,
+      "func_key": "<wrapper::Timestamp as std::convert::AsRef<std::time::SystemTime>>::as_ref",
+      "section": "test_generation",
+      "attempt": 2,
+      "target_file": "src/wrapper.rs",
+      "origin_span": {
+        "line": 217,
+        "col": 72
+      },
+      "original_mod_name": "tests_rug_28",
+      "effective_mod_name": "tests_rug_28__case_35"
+    },
+    {
+      "case": 36,
+      "func_key": "<wrapper::Timestamp as std::convert::Into<std::time::SystemTime>>::into",
+      "section": "test_generation",
+      "attempt": 1,
+      "target_file": "src/wrapper.rs",
+      "origin_span": {
+        "line": 233,
+        "col": 16
+      },
+      "original_mod_name": "tests_rug_30",
+      "effective_mod_name": "tests_rug_30"
+    },
+    {
+      "case": 37,
+      "func_key": "<wrapper::Timestamp as std::convert::Into<std::time::SystemTime>>::into",
+      "section": "test_generation",
+      "attempt": 2,
+      "target_file": "src/wrapper.rs",
+      "origin_span": {
+        "line": 242,
+        "col": 35
+      },
+      "original_mod_name": "tests_rug_30",
+      "effective_mod_name": "tests_rug_30__case_37"
+    },
+    {
+      "case": 38,
+      "func_key": "<wrapper::Timestamp as std::convert::Into<std::time::SystemTime>>::into",
+      "section": "test_generation",
+      "attempt": 3,
+      "target_file": "src/wrapper.rs",
+      "origin_span": {
+        "line": 242,
+        "col": 35
+      },
+      "original_mod_name": "tests_rug_30",
+      "effective_mod_name": "tests_rug_30__case_38"
+    },
+    {
+      "case": 39,
+      "func_key": "<wrapper::Timestamp as std::str::FromStr>::from_str",
+      "section": "test_generation",
+      "attempt": 1,
+      "target_file": "src/wrapper.rs",
+      "origin_span": {
+        "line": 266,
+        "col": 18
+      },
+      "original_mod_name": "tests_rug_32",
+      "effective_mod_name": "tests_rug_32"
+    },
+    {
+      "case": 40,
+      "func_key": "<wrapper::Timestamp as std::str::FromStr>::from_str",
+      "section": "test_generation",
+      "attempt": 2,
+      "target_file": "src/wrapper.rs",
+      "origin_span": {
+        "line": 266,
+        "col": 10
+      },
+      "original_mod_name": "tests_rug_32",
+      "effective_mod_name": "tests_rug_32__case_40"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="830pt" height="761pt" viewBox="0.00 0.00 830.32 760.80">
+<g id="graph0" class="graph" transform="translate(18,742.7999877929688) scale(1)" data-name="E0433Patcher_Teaching_Step3">
+
+<polygon fill="white" stroke="none" points="-18,18 -18,-742.8 812.32,-742.8 812.32,18 -18,18" style=""/>
+<text text-anchor="middle" x="397.16" y="-699.2" font-family="Times,serif" font-size="24.00" style="">Step 3 — Span Expansion &amp; Path Analysis (&amp;SpanInfo + &amp;str -&gt; ExtendedSpan)</text>
+<!-- in1 -->
+<g id="node1" class="node" pointer-events="visible" data-name="in1">
+
+<path fill="#fff4d6" stroke="#444444" stroke-width="1.6" d="M271.17,-688.2C271.17,-688.2 136.57,-688.2 136.57,-688.2 130.57,-688.2 124.57,-682.2 124.57,-676.2 124.57,-676.2 124.57,-653.4 124.57,-653.4 124.57,-647.4 130.57,-641.4 136.57,-641.4 136.57,-641.4 271.17,-641.4 271.17,-641.4 277.17,-641.4 283.17,-647.4 283.17,-653.4 283.17,-653.4 283.17,-676.2 283.17,-676.2 283.17,-682.2 277.17,-688.2 271.17,-688.2" style=""/>
+<text text-anchor="middle" x="203.87" y="-669.6" font-family="Helvetica,sans-Serif" font-size="16.00" style="">Input: &amp;SpanInfo</text>
+<text text-anchor="middle" x="203.87" y="-650.4" font-family="Helvetica,sans-Serif" font-size="16.00" style="">(original byte range)</text>
+</g>
+<!-- fn -->
+<g id="node3" class="node" pointer-events="visible" data-name="fn">
+
+<path fill="#e9f5ff" stroke="#444444" stroke-width="1.6" d="M489.57,-571C489.57,-571 274.17,-571 274.17,-571 268.17,-571 262.17,-565 262.17,-559 262.17,-559 262.17,-536.2 262.17,-536.2 262.17,-530.2 268.17,-524.2 274.17,-524.2 274.17,-524.2 489.57,-524.2 489.57,-524.2 495.57,-524.2 501.57,-530.2 501.57,-536.2 501.57,-536.2 501.57,-559 501.57,-559 501.57,-565 495.57,-571 489.57,-571" style=""/>
+<text text-anchor="middle" x="381.87" y="-552.4" font-family="Helvetica,sans-Serif" font-size="16.00" style="">SpanAnalyzer::analyze</text>
+<text text-anchor="middle" x="381.87" y="-533.2" font-family="Helvetica,sans-Serif" font-size="16.00" style="">extend_span + parse segments</text>
+</g>
+<!-- in1&#45;&gt;fn -->
+<g id="edge1" class="edge" data-name="in1-&gt;fn">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" d="M272.52,-641.08C272.52,-641.08 272.52,-581.75 272.52,-581.75" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="275.49,-581.75 272.52,-573.25 269.54,-581.75 275.49,-581.75" style=""/>
+<text text-anchor="middle" x="302.27" y="-602" font-family="Helvetica,sans-Serif" font-size="14.00" style="">borrow</text>
+</g>
+<!-- out -->
+<g id="node8" class="node" pointer-events="visible" data-name="out">
+
+<path fill="#dff7e3" stroke="#444444" stroke-width="1.6" d="M512.6,-65.4C512.6,-65.4 293.13,-65.4 293.13,-65.4 287.13,-65.4 281.13,-59.4 281.13,-53.4 281.13,-53.4 281.13,-12.2 281.13,-12.2 281.13,-6.2 287.13,-0.2 293.13,-0.2 293.13,-0.2 512.6,-0.2 512.6,-0.2 518.6,-0.2 524.6,-6.2 524.6,-12.2 524.6,-12.2 524.6,-53.4 524.6,-53.4 524.6,-59.4 518.6,-65.4 512.6,-65.4" style=""/>
+<text text-anchor="middle" x="402.87" y="-47.2" font-family="Helvetica,sans-Serif" font-size="16.00" style="">Output: ExtendedSpan</text>
+<text text-anchor="middle" x="402.87" y="-28" font-family="Helvetica,sans-Serif" font-size="16.00" style="">{ original_span, extended_span,</text>
+<text text-anchor="middle" x="402.87" y="-8.8" font-family="Helvetica,sans-Serif" font-size="16.00" style="">  segments, structure }</text>
+</g>
+<!-- in1&#45;&gt;out -->
+<g id="edge10" class="edge" data-name="in1-&gt;out">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" stroke-dasharray="5,2" d="M189.49,-641.15C189.49,-526.27 189.49,-32 189.49,-32 189.49,-32 270.44,-32 270.44,-32" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="270.44,-34.98 278.94,-32 270.44,-29.03 270.44,-34.98" style=""/>
+<text text-anchor="middle" x="272.87" y="-364.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">original_span snapshot</text>
+</g>
+<!-- in2 -->
+<g id="node2" class="node" pointer-events="visible" data-name="in2">
+
+<path fill="#fff4d6" stroke="#444444" stroke-width="1.6" d="M426.69,-688.2C426.69,-688.2 337.05,-688.2 337.05,-688.2 331.05,-688.2 325.05,-682.2 325.05,-676.2 325.05,-676.2 325.05,-653.4 325.05,-653.4 325.05,-647.4 331.05,-641.4 337.05,-641.4 337.05,-641.4 426.69,-641.4 426.69,-641.4 432.69,-641.4 438.69,-647.4 438.69,-653.4 438.69,-653.4 438.69,-676.2 438.69,-676.2 438.69,-682.2 432.69,-688.2 426.69,-688.2" style=""/>
+<text text-anchor="middle" x="381.87" y="-669.6" font-family="Helvetica,sans-Serif" font-size="16.00" style="">Input: &amp;str</text>
+<text text-anchor="middle" x="381.87" y="-650.4" font-family="Helvetica,sans-Serif" font-size="16.00" style="">(source code)</text>
+</g>
+<!-- in2&#45;&gt;fn -->
+<g id="edge2" class="edge" data-name="in2-&gt;fn">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" d="M381.87,-641.08C381.87,-641.08 381.87,-581.75 381.87,-581.75" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="384.84,-581.75 381.87,-573.25 378.89,-581.75 384.84,-581.75" style=""/>
+<text text-anchor="middle" x="403.27" y="-602" font-family="Helvetica,sans-Serif" font-size="14.00" style="">borrow</text>
+</g>
+<!-- scan -->
+<g id="node4" class="node" pointer-events="visible" data-name="scan">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.6" d="M448.62,-469.2C448.62,-469.2 315.12,-469.2 315.12,-469.2 309.12,-469.2 303.12,-463.2 303.12,-457.2 303.12,-457.2 303.12,-416 303.12,-416 303.12,-410 309.12,-404 315.12,-404 315.12,-404 448.62,-404 448.62,-404 454.62,-404 460.62,-410 460.62,-416 460.62,-416 460.62,-457.2 460.62,-457.2 460.62,-463.2 454.62,-469.2 448.62,-469.2" style=""/>
+<text text-anchor="middle" x="381.87" y="-451" font-family="Helvetica,sans-Serif" font-size="16.00" style="">extend_span</text>
+<text text-anchor="middle" x="381.87" y="-431.8" font-family="Helvetica,sans-Serif" font-size="16.00" style="">scan from byte_end</text>
+<text text-anchor="middle" x="381.87" y="-412.6" font-family="Helvetica,sans-Serif" font-size="16.00" style="">recognize '::' + ident</text>
+</g>
+<!-- fn&#45;&gt;scan -->
+<g id="edge3" class="edge" data-name="fn-&gt;scan">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" d="M381.87,-523.79C381.87,-523.79 381.87,-480.1 381.87,-480.1" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="384.84,-480.1 381.87,-471.6 378.89,-480.1 384.84,-480.1" style=""/>
+</g>
+<!-- seg -->
+<g id="node5" class="node" pointer-events="visible" data-name="seg">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.6" d="M657.84,-333.2C657.84,-333.2 443.9,-333.2 443.9,-333.2 437.9,-333.2 431.9,-327.2 431.9,-321.2 431.9,-321.2 431.9,-298.4 431.9,-298.4 431.9,-292.4 437.9,-286.4 443.9,-286.4 443.9,-286.4 657.84,-286.4 657.84,-286.4 663.84,-286.4 669.84,-292.4 669.84,-298.4 669.84,-298.4 669.84,-321.2 669.84,-321.2 669.84,-327.2 663.84,-333.2 657.84,-333.2" style=""/>
+<text text-anchor="middle" x="550.87" y="-314.6" font-family="Helvetica,sans-Serif" font-size="16.00" style="">segments: Vec&lt;PathSegment&gt;</text>
+<text text-anchor="middle" x="550.87" y="-295.4" font-family="Helvetica,sans-Serif" font-size="16.00" style="">(name + byte_range)</text>
+</g>
+<!-- scan&#45;&gt;seg -->
+<g id="edge4" class="edge" data-name="scan-&gt;seg">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" d="M446.44,-403.62C446.44,-403.62 446.44,-343.88 446.44,-343.88" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="449.41,-343.88 446.44,-335.38 443.46,-343.88 449.41,-343.88" style=""/>
+</g>
+<!-- ext -->
+<g id="node7" class="node" pointer-events="visible" data-name="ext">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.6" d="M441.6,-259.8C441.6,-259.8 266.13,-259.8 266.13,-259.8 260.13,-259.8 254.13,-253.8 254.13,-247.8 254.13,-247.8 254.13,-225 254.13,-225 254.13,-219 260.13,-213 266.13,-213 266.13,-213 441.6,-213 441.6,-213 447.6,-213 453.6,-219 453.6,-225 453.6,-225 453.6,-247.8 453.6,-247.8 453.6,-253.8 447.6,-259.8 441.6,-259.8" style=""/>
+<text text-anchor="middle" x="353.87" y="-241.2" font-family="Helvetica,sans-Serif" font-size="16.00" style="">extended_span: SpanInfo</text>
+<text text-anchor="middle" x="353.87" y="-222" font-family="Helvetica,sans-Serif" font-size="16.00" style="">(expanded replace range)</text>
+</g>
+<!-- scan&#45;&gt;ext -->
+<g id="edge6" class="edge" data-name="scan-&gt;ext">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" d="M367.56,-403.54C367.56,-403.54 367.56,-270.56 367.56,-270.56" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="370.54,-270.56 367.56,-262.06 364.59,-270.56 370.54,-270.56" style=""/>
+</g>
+<!-- st -->
+<g id="node6" class="node" pointer-events="visible" data-name="st">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.6" d="M588.21,-186C588.21,-186 389.53,-186 389.53,-186 383.53,-186 377.53,-180 377.53,-174 377.53,-174 377.53,-132.8 377.53,-132.8 377.53,-126.8 383.53,-120.8 389.53,-120.8 389.53,-120.8 588.21,-120.8 588.21,-120.8 594.21,-120.8 600.21,-126.8 600.21,-132.8 600.21,-132.8 600.21,-174 600.21,-174 600.21,-180 594.21,-186 588.21,-186" style=""/>
+<text text-anchor="middle" x="488.87" y="-167.8" font-family="Helvetica,sans-Serif" font-size="16.00" style="">structure: PathStructure</text>
+<text text-anchor="middle" x="488.87" y="-148.6" font-family="Helvetica,sans-Serif" font-size="16.00" style="">SingleIdent / ModuleAccess /</text>
+<text text-anchor="middle" x="488.87" y="-129.4" font-family="Helvetica,sans-Serif" font-size="16.00" style="">MethodCall / NestedPath</text>
+</g>
+<!-- seg&#45;&gt;st -->
+<g id="edge5" class="edge" data-name="seg-&gt;st">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" d="M526.76,-286.05C526.76,-286.05 526.76,-196.86 526.76,-196.86" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="529.74,-196.86 526.76,-188.36 523.79,-196.86 529.74,-196.86" style=""/>
+</g>
+<!-- seg&#45;&gt;out -->
+<g id="edge7" class="edge" data-name="seg-&gt;out">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" d="M634.82,-286.11C634.82,-218.94 634.82,-32 634.82,-32 634.82,-32 535.43,-32 535.43,-32" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="535.43,-29.03 526.93,-32 535.43,-34.98 535.43,-29.03" style=""/>
+</g>
+<!-- st&#45;&gt;out -->
+<g id="edge8" class="edge" data-name="st-&gt;out">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" d="M451.22,-120.45C451.22,-120.45 451.22,-76.18 451.22,-76.18" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="454.19,-76.18 451.22,-67.68 448.24,-76.18 454.19,-76.18" style=""/>
+</g>
+<!-- ext&#45;&gt;out -->
+<g id="edge9" class="edge" data-name="ext-&gt;out">
+
+<path fill="none" stroke="#444444" stroke-width="1.3" d="M329.35,-212.65C329.35,-212.65 329.35,-76.28 329.35,-76.28" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.3" points="332.33,-76.28 329.35,-67.78 326.38,-76.28 332.33,-76.28" style=""/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,72 @@
+{
+  "generated_from": [
+    "coverage_recovery_metrics.json",
+    "coverage_recovery_metrics_direct_llm.json",
+    "coverage_recovery_metrics_direct_agent.json"
+  ],
+  "rows": [
+    {
+      "baseline": "RuTeR",
+      "attempt_total": 1858,
+      "strict_success_total": 869,
+      "strict_success_rate": 0.467707,
+      "normalized_success_total": 908,
+      "normalized_success_rate": 0.488698,
+      "replay_eligible_total": 738,
+      "replay_eligible_rate": 0.39720129171151775,
+      "repaired_added_lines": 679.0,
+      "repaired_added_functions": 77.0,
+      "repaired_added_regions": 1174.0,
+      "coverage_contributing_repaired_total": 42,
+      "runtime_quarantined_repaired_total": 7,
+      "positive_repaired_run_total": 9,
+      "positive_repaired_crate_total": 6,
+      "business_code_escape_total": 0,
+      "external_escape_total": 0,
+      "function_scope_escape_total": 0,
+      "unsafe_success_requires_non_test_edits": 0
+    },
+    {
+      "baseline": "DirectLLM-1shot",
+      "attempt_total": 1858,
+      "strict_success_total": 217,
+      "strict_success_rate": 0.116792,
+      "normalized_success_total": 248,
+      "normalized_success_rate": 0.133477,
+      "replay_eligible_total": 236,
+      "replay_eligible_rate": 0.12701829924650163,
+      "repaired_added_lines": 1215.0,
+      "repaired_added_functions": 229.0,
+      "repaired_added_regions": 2247.0,
+      "coverage_contributing_repaired_total": 206,
+      "runtime_quarantined_repaired_total": 14,
+      "positive_repaired_run_total": 17,
+      "positive_repaired_crate_total": 9,
+      "business_code_escape_total": 0,
+      "external_escape_total": 0,
+      "function_scope_escape_total": 0,
+      "unsafe_success_requires_non_test_edits": 0
+    },
+    {
+      "baseline": "DirectAgent-3round",
+      "attempt_total": 1858,
+      "strict_success_total": 565,
+      "strict_success_rate": 0.30409,
+      "normalized_success_total": 583,
+      "normalized_success_rate": 0.313778,
+      "replay_eligible_total": 407,
+      "replay_eligible_rate": 0.21905274488697524,
+      "repaired_added_lines": 2307.0,
+      "repaired_added_functions": 452.0,
+      "repaired_added_regions": 4434.0,
+      "coverage_contributing_repaired_total": 375,
+      "runtime_quarantined_repaired_total": 27,
+      "positive_repaired_run_total": 17,
+      "positive_repaired_crate_total": 9,
+      "business_code_escape_total": 167,
+      "external_escape_total": 186,
+      "function_scope_escape_total": 1006,
+      "unsafe_success_requires_non_test_edits": 33
+    }
+  ]
+}

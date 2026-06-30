@@ -1,0 +1,6 @@
+run_id,source_id,attempt_total,attempt_resolved,attempt_repair_rate,rule_resolved,full_resolved,unresolved,strict_success,strict_success_rate,normalized_success,normalized_success_rate,strict_normalized_delta,frozen_nonempty,strict_success_frozen_nonempty,normalized_success_frozen_nonempty,strict_success_rate_frozen_nonempty,normalized_success_rate_frozen_nonempty
+humantime_direct_llm_1shot,direct_llm_1shot,46,14,0.304348,7,7,32,14,0.304348,14,0.304348,0.0,46,14,14,0.304348,0.304348
+humantime_gemini-2.5-flash-nothinking_20251109_134926,rug_existing_humantime,85,54,0.635294,19,35,31,54,0.635294,54,0.635294,0.0,85,54,54,0.635294,0.635294
+humantime_rugae_base4_humantime_replay,rugae_base4_humantime_replay,11,6,0.545455,3,3,5,4,0.363636,6,0.545455,0.181819,11,4,6,0.363636,0.545455
+humantime_rugae_hybrid4_humantime_replay,rugae_hybrid4_humantime_replay,11,6,0.545455,3,3,5,4,0.363636,6,0.545455,0.181819,11,4,6,0.363636,0.545455
+humantime_rustyunit_humantime_replay,rustyunit_humantime_replay,21,3,0.142857,0,3,18,3,0.142857,4,0.190476,0.047619,20,3,4,0.15,0.2

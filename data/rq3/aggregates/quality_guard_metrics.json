@@ -1,0 +1,568 @@
+{
+  "generated_at_utc": "2026-04-15T14:23:11+00:00",
+  "source_snapshot": {
+    "summary_file": "evaluation/phase_1A/logs/run_summary_refreshed_all_20260316_031806.json",
+    "summary_generated_at_utc": "2026-03-15T19:18:06+00:00",
+    "selected_batch_total": 1858,
+    "strict_success_total": 866,
+    "normalized_success_total": 906
+  },
+  "summary": {
+    "attempt_total": 1858,
+    "run_result_total": 68,
+    "oracle_strength_distribution": {
+      "panic_or_unwrap_driven": 227,
+      "smoke_or_no_assertion": 824,
+      "strong_assertion": 807
+    },
+    "patch_recovery_status_distribution": {
+      "full_patch_recovery_failed": 103,
+      "not_repaired_success": 952,
+      "recovered_from_full_batch_llm": 349,
+      "recovered_from_rule_artifacts": 389,
+      "rule_patch_not_recoverable": 25,
+      "unresolved_after_repair": 40
+    },
+    "replay_eligibility_distribution": {
+      "eligible": 738,
+      "ineligible": 1120
+    },
+    "coverage_effective_total": 9,
+    "coverage_effective_rate": 0.529412,
+    "failure_after_compile_taxonomy": {},
+    "flaky_rate_pilot": {
+      "subset_total": 6,
+      "flaky_total": 0,
+      "flaky_rate": 0.0,
+      "repeats": 3
+    },
+    "quality_notes": [
+      "primary quality metrics are execution-based from canonical coverage replay outputs",
+      "oracle-strength remains as a secondary static guard"
+    ]
+  },
+  "scenario_level": [
+    {
+      "scenario": "baseline",
+      "total": 17,
+      "compile_pass_total": 17,
+      "test_pass_total": 17,
+      "coverage_success_total": 17,
+      "compile_pass_rate": 1.0,
+      "test_pass_rate": 1.0,
+      "status_distribution": {
+        "success": 17
+      }
+    },
+    {
+      "scenario": "successful_only",
+      "total": 17,
+      "compile_pass_total": 17,
+      "test_pass_total": 17,
+      "coverage_success_total": 17,
+      "compile_pass_rate": 1.0,
+      "test_pass_rate": 1.0,
+      "status_distribution": {
+        "success": 17
+      }
+    },
+    {
+      "scenario": "successful_plus_repaired",
+      "total": 17,
+      "compile_pass_total": 17,
+      "test_pass_total": 17,
+      "coverage_success_total": 17,
+      "compile_pass_rate": 1.0,
+      "test_pass_rate": 1.0,
+      "status_distribution": {
+        "success": 17
+      }
+    },
+    {
+      "scenario": "repaired_only",
+      "total": 17,
+      "compile_pass_total": 17,
+      "test_pass_total": 17,
+      "coverage_success_total": 17,
+      "compile_pass_rate": 1.0,
+      "test_pass_rate": 1.0,
+      "status_distribution": {
+        "success": 17
+      }
+    }
+  ],
+  "run_level": [
+    {
+      "run_id": "humantime_claude-3-5-haiku-20241022_20251109_133407",
+      "crate": "humantime",
+      "coverage_effective": true,
+      "recovered_lines_delta": 123.0,
+      "repaired_attempt_total": 68,
+      "successful_only_compile_pass": true,
+      "successful_only_test_pass": true,
+      "successful_plus_repaired_compile_pass": true,
+      "successful_plus_repaired_test_pass": true
+    },
+    {
+      "run_id": "humantime_deepseek-v3_20251109_140004",
+      "crate": "humantime",
+      "coverage_effective": true,
+      "recovered_lines_delta": 78.0,
+      "repaired_attempt_total": 47,
+      "successful_only_compile_pass": true,
+      "successful_only_test_pass": true,
+      "successful_plus_repaired_compile_pass": true,
+      "successful_plus_repaired_test_pass": true
+    },
+    {
+      "run_id": "humantime_gemini-2.5-flash-nothinking_20251109_134926",
+      "crate": "humantime",
+      "coverage_effective": false,
+      "recovered_lines_delta": 0.0,
+      "repaired_attempt_total": 48,
+      "successful_only_compile_pass": true,
+      "successful_only_test_pass": true,
+      "successful_plus_repaired_compile_pass": true,
+      "successful_plus_repaired_test_pass": true
+    },
+    {
+      "run_id": "humantime_gemini-2.5-flash-thinking_20251109_141506",
+      "crate": "humantime",
+      "coverage_effective": true,
+      "recovered_lines_delta": 86.0,
+      "repaired_attempt_total": 28,
+      "successful_only_compile_pass": true,
+      "successful_only_test_pass": true,
+      "successful_plus_repaired_compile_pass": true,
+      "successful_plus_repaired_test_pass": true
+    },
+    {
+      "run_id": "humantime_gpt-3.5-turbo_20251109_000031",
+      "crate": "humantime",
+      "coverage_effective": false,
+      "recovered_lines_delta": 0.0,
+      "repaired_attempt_total": 36,
+      "successful_only_compile_pass": true,
+      "successful_only_test_pass": true,
+      "successful_plus_repaired_compile_pass": true,
+      "successful_plus_repaired_test_pass": true
+    },
+    {
+      "run_id": "humantime_gpt-4.1-mini_20251109_001052",
+      "crate": "humantime",
+      "coverage_effective": false,
+      "recovered_lines_delta": 0.0,
+      "repaired_attempt_total": 65,
+      "successful_only_compile_pass": true,
+      "successful_only_test_pass": true,
+      "successful_plus_repaired_compile_pass": true,
+      "successful_plus_repaired_test_pass": true
+    },
+    {
+      "run_id": "humantime_gpt-4.1-nano_20251109_132117",
+      "crate": "humantime",
+      "coverage_effective": false,
+      "recovered_lines_delta": 0.0,
+      "repaired_attempt_total": 66,
+      "successful_only_compile_pass": true,
+      "successful_only_test_pass": true,
+      "successful_plus_repaired_compile_pass": true,
+      "successful_plus_repaired_test_pass": true
+    },
+    {
+      "run_id": "humantime_gpt-4o-mini_20251108_234236",
+      "crate": "humantime",
+      "coverage_effective": false,
+      "recovered_lines_delta": 0.0,
+      "repaired_attempt_total": 57,
+      "successful_only_compile_pass": true,
+      "successful_only_test_pass": true,
+      "successful_plus_repaired_compile_pass": true,
+      "successful_plus_repaired_test_pass": true
+    },
+    {
+      "run_id": "humantime_gpt-5-nano_20251109_004846",
+      "crate": "humantime",
+      "coverage_effective": true,
+      "recovered_lines_delta": 4.0,
+      "repaired_attempt_total": 58,
+      "successful_only_compile_pass": true,
+      "successful_only_test_pass": true,
+      "successful_plus_repaired_compile_pass": true,
+      "successful_plus_repaired_test_pass": true
+    },
+    {
+      "run_id": "itoa_gemini-2.5-flash-nothinking_20251127_010109",
+      "crate": "itoa",
+      "coverage_effective": true,
+      "recovered_lines_delta": 212.0,
+      "repaired_attempt_total": 8,
+      "successful_only_compile_pass": true,
+      "successful_only_test_pass": true,
+      "successful_plus_repaired_compile_pass": true,
+      "successful_plus_repaired_test_pass": true
+    },
+    {
+      "run_id": "log_gemini-2.5-flash-nothinking_20251127_025911",
+      "crate": "log",
+      "coverage_effective": true,
+      "recovered_lines_delta": 121.0,
+      "repaired_attempt_total": 41,
+      "successful_only_compile_pass": true,
+      "successful_only_test_pass": true,
+      "successful_plus_repaired_compile_pass": true,
+      "successful_plus_repaired_test_pass": true
+    },
+    {
+      "run_id": "mio_gemini-2.5-flash-nothinking_20251127_012706",
+      "crate": "mio",
+      "coverage_effective": true,
+      "recovered_lines_delta": 24.0,
+      "repaired_attempt_total": 6,
+      "successful_only_compile_pass": true,
+      "successful_only_test_pass": true,
+      "successful_plus_repaired_compile_pass": true,
+      "successful_plus_repaired_test_pass": true
+    },
+    {
+      "run_id": "rand_gemini-2.5-flash-nothinking_20251127_025504",
+      "crate": "rand",
+      "coverage_effective": true,
+      "recovered_lines_delta": 14.0,
+      "repaired_attempt_total": 165,
+      "successful_only_compile_pass": true,
+      "successful_only_test_pass": true,
+      "successful_plus_repaired_compile_pass": true,
+      "successful_plus_repaired_test_pass": true
+    },
+    {
+      "run_id": "rust-crc32fast_gemini-2.5-flash-nothinking_20251109_235808",
+      "crate": "rust-crc32fast",
+      "coverage_effective": false,
+      "recovered_lines_delta": 0.0,
+      "repaired_attempt_total": 9,
+      "successful_only_compile_pass": true,
+      "successful_only_test_pass": true,
+      "successful_plus_repaired_compile_pass": true,
+      "successful_plus_repaired_test_pass": true
+    },
+    {
+      "run_id": "rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158",
+      "crate": "rustc-demangle",
+      "coverage_effective": true,
+      "recovered_lines_delta": 17.0,
+      "repaired_attempt_total": 19,
+      "successful_only_compile_pass": true,
+      "successful_only_test_pass": true,
+      "successful_plus_repaired_compile_pass": true,
+      "successful_plus_repaired_test_pass": true
+    },
+    {
+      "run_id": "ryu_gemini-2.5-flash-nothinking_20251127_013142",
+      "crate": "ryu",
+      "coverage_effective": false,
+      "recovered_lines_delta": 0.0,
+      "repaired_attempt_total": 7,
+      "successful_only_compile_pass": true,
+      "successful_only_test_pass": true,
+      "successful_plus_repaired_compile_pass": true,
+      "successful_plus_repaired_test_pass": true
+    },
+    {
+      "run_id": "semver_gemini-2.5-flash-nothinking_20251127_013324",
+      "crate": "semver",
+      "coverage_effective": false,
+      "recovered_lines_delta": 0.0,
+      "repaired_attempt_total": 10,
+      "successful_only_compile_pass": true,
+      "successful_only_test_pass": true,
+      "successful_plus_repaired_compile_pass": true,
+      "successful_plus_repaired_test_pass": true
+    }
+  ],
+  "crate_level": [
+    {
+      "crate": "humantime",
+      "run_total": 9,
+      "coverage_effective_total": 4,
+      "coverage_effective_rate": 0.444444,
+      "successful_only_compile_pass_rate": 1.0,
+      "successful_only_test_pass_rate": 1.0,
+      "successful_plus_repaired_compile_pass_rate": 1.0,
+      "successful_plus_repaired_test_pass_rate": 1.0,
+      "oracle_strength_distribution": {
+        "panic_or_unwrap_driven": 146,
+        "smoke_or_no_assertion": 330,
+        "strong_assertion": 468
+      }
+    },
+    {
+      "crate": "itoa",
+      "run_total": 1,
+      "coverage_effective_total": 1,
+      "coverage_effective_rate": 1.0,
+      "successful_only_compile_pass_rate": 1.0,
+      "successful_only_test_pass_rate": 1.0,
+      "successful_plus_repaired_compile_pass_rate": 1.0,
+      "successful_plus_repaired_test_pass_rate": 1.0,
+      "oracle_strength_distribution": {
+        "smoke_or_no_assertion": 3,
+        "strong_assertion": 8
+      }
+    },
+    {
+      "crate": "log",
+      "run_total": 1,
+      "coverage_effective_total": 1,
+      "coverage_effective_rate": 1.0,
+      "successful_only_compile_pass_rate": 1.0,
+      "successful_only_test_pass_rate": 1.0,
+      "successful_plus_repaired_compile_pass_rate": 1.0,
+      "successful_plus_repaired_test_pass_rate": 1.0,
+      "oracle_strength_distribution": {
+        "panic_or_unwrap_driven": 1,
+        "smoke_or_no_assertion": 93,
+        "strong_assertion": 51
+      }
+    },
+    {
+      "crate": "mio",
+      "run_total": 1,
+      "coverage_effective_total": 1,
+      "coverage_effective_rate": 1.0,
+      "successful_only_compile_pass_rate": 1.0,
+      "successful_only_test_pass_rate": 1.0,
+      "successful_plus_repaired_compile_pass_rate": 1.0,
+      "successful_plus_repaired_test_pass_rate": 1.0,
+      "oracle_strength_distribution": {
+        "panic_or_unwrap_driven": 43,
+        "smoke_or_no_assertion": 89,
+        "strong_assertion": 43
+      }
+    },
+    {
+      "crate": "rand",
+      "run_total": 1,
+      "coverage_effective_total": 1,
+      "coverage_effective_rate": 1.0,
+      "successful_only_compile_pass_rate": 1.0,
+      "successful_only_test_pass_rate": 1.0,
+      "successful_plus_repaired_compile_pass_rate": 1.0,
+      "successful_plus_repaired_test_pass_rate": 1.0,
+      "oracle_strength_distribution": {
+        "panic_or_unwrap_driven": 19,
+        "smoke_or_no_assertion": 233,
+        "strong_assertion": 103
+      }
+    },
+    {
+      "crate": "rust-crc32fast",
+      "run_total": 1,
+      "coverage_effective_total": 0,
+      "coverage_effective_rate": 0.0,
+      "successful_only_compile_pass_rate": 1.0,
+      "successful_only_test_pass_rate": 1.0,
+      "successful_plus_repaired_compile_pass_rate": 1.0,
+      "successful_plus_repaired_test_pass_rate": 1.0,
+      "oracle_strength_distribution": {
+        "panic_or_unwrap_driven": 6,
+        "smoke_or_no_assertion": 3
+      }
+    },
+    {
+      "crate": "rustc-demangle",
+      "run_total": 1,
+      "coverage_effective_total": 1,
+      "coverage_effective_rate": 1.0,
+      "successful_only_compile_pass_rate": 1.0,
+      "successful_only_test_pass_rate": 1.0,
+      "successful_plus_repaired_compile_pass_rate": 1.0,
+      "successful_plus_repaired_test_pass_rate": 1.0,
+      "oracle_strength_distribution": {
+        "panic_or_unwrap_driven": 8,
+        "smoke_or_no_assertion": 54,
+        "strong_assertion": 88
+      }
+    },
+    {
+      "crate": "ryu",
+      "run_total": 1,
+      "coverage_effective_total": 0,
+      "coverage_effective_rate": 0.0,
+      "successful_only_compile_pass_rate": 1.0,
+      "successful_only_test_pass_rate": 1.0,
+      "successful_plus_repaired_compile_pass_rate": 1.0,
+      "successful_plus_repaired_test_pass_rate": 1.0,
+      "oracle_strength_distribution": {
+        "panic_or_unwrap_driven": 1,
+        "smoke_or_no_assertion": 6,
+        "strong_assertion": 7
+      }
+    },
+    {
+      "crate": "semver",
+      "run_total": 1,
+      "coverage_effective_total": 0,
+      "coverage_effective_rate": 0.0,
+      "successful_only_compile_pass_rate": 1.0,
+      "successful_only_test_pass_rate": 1.0,
+      "successful_plus_repaired_compile_pass_rate": 1.0,
+      "successful_plus_repaired_test_pass_rate": 1.0,
+      "oracle_strength_distribution": {
+        "panic_or_unwrap_driven": 3,
+        "smoke_or_no_assertion": 13,
+        "strong_assertion": 39
+      }
+    }
+  ],
+  "flakiness_pilot": {
+    "candidates": [
+      "humantime_claude-3-5-haiku-20241022_20251109_133407",
+      "humantime_deepseek-v3_20251109_140004",
+      "humantime_gemini-2.5-flash-thinking_20251109_141506",
+      "humantime_gpt-5-nano_20251109_004846",
+      "itoa_gemini-2.5-flash-nothinking_20251127_010109",
+      "log_gemini-2.5-flash-nothinking_20251127_025911"
+    ],
+    "results": [
+      {
+        "workspace_dir": "evaluation/phase_1A_plus/aggregates/coverage_replay/workspaces/canonical/humantime_claude-3-5-haiku-20241022_20251109_133407/successful_plus_repaired",
+        "rounds": [
+          {
+            "round": 1,
+            "returncode": 0,
+            "passed": true
+          },
+          {
+            "round": 2,
+            "returncode": 0,
+            "passed": true
+          },
+          {
+            "round": 3,
+            "returncode": 0,
+            "passed": true
+          }
+        ],
+        "flaky": false,
+        "reason": "",
+        "run_id": "humantime_claude-3-5-haiku-20241022_20251109_133407"
+      },
+      {
+        "workspace_dir": "evaluation/phase_1A_plus/aggregates/coverage_replay/workspaces/canonical/humantime_deepseek-v3_20251109_140004/successful_plus_repaired",
+        "rounds": [
+          {
+            "round": 1,
+            "returncode": 0,
+            "passed": true
+          },
+          {
+            "round": 2,
+            "returncode": 0,
+            "passed": true
+          },
+          {
+            "round": 3,
+            "returncode": 0,
+            "passed": true
+          }
+        ],
+        "flaky": false,
+        "reason": "",
+        "run_id": "humantime_deepseek-v3_20251109_140004"
+      },
+      {
+        "workspace_dir": "evaluation/phase_1A_plus/aggregates/coverage_replay/workspaces/canonical/humantime_gemini-2.5-flash-thinking_20251109_141506/successful_plus_repaired",
+        "rounds": [
+          {
+            "round": 1,
+            "returncode": 0,
+            "passed": true
+          },
+          {
+            "round": 2,
+            "returncode": 0,
+            "passed": true
+          },
+          {
+            "round": 3,
+            "returncode": 0,
+            "passed": true
+          }
+        ],
+        "flaky": false,
+        "reason": "",
+        "run_id": "humantime_gemini-2.5-flash-thinking_20251109_141506"
+      },
+      {
+        "workspace_dir": "evaluation/phase_1A_plus/aggregates/coverage_replay/workspaces/canonical/humantime_gpt-5-nano_20251109_004846/successful_plus_repaired",
+        "rounds": [
+          {
+            "round": 1,
+            "returncode": 0,
+            "passed": true
+          },
+          {
+            "round": 2,
+            "returncode": 0,
+            "passed": true
+          },
+          {
+            "round": 3,
+            "returncode": 0,
+            "passed": true
+          }
+        ],
+        "flaky": false,
+        "reason": "",
+        "run_id": "humantime_gpt-5-nano_20251109_004846"
+      },
+      {
+        "workspace_dir": "evaluation/phase_1A_plus/aggregates/coverage_replay/workspaces/canonical/itoa_gemini-2.5-flash-nothinking_20251127_010109/successful_plus_repaired",
+        "rounds": [
+          {
+            "round": 1,
+            "returncode": 0,
+            "passed": true
+          },
+          {
+            "round": 2,
+            "returncode": 0,
+            "passed": true
+          },
+          {
+            "round": 3,
+            "returncode": 0,
+            "passed": true
+          }
+        ],
+        "flaky": false,
+        "reason": "",
+        "run_id": "itoa_gemini-2.5-flash-nothinking_20251127_010109"
+      },
+      {
+        "workspace_dir": "evaluation/phase_1A_plus/aggregates/coverage_replay/workspaces/canonical/log_gemini-2.5-flash-nothinking_20251127_025911/successful_plus_repaired",
+        "rounds": [
+          {
+            "round": 1,
+            "returncode": 0,
+            "passed": true
+          },
+          {
+            "round": 2,
+            "returncode": 0,
+            "passed": true
+          },
+          {
+            "round": 3,
+            "returncode": 0,
+            "passed": true
+          }
+        ],
+        "flaky": false,
+        "reason": "",
+        "run_id": "log_gemini-2.5-flash-nothinking_20251127_025911"
+      }
+    ]
+  }
+}

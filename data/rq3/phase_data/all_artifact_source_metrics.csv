@@ -1,0 +1,5 @@
+source_id,attempt_total,strict_success,strict_success_rate,normalized_success,normalized_success_rate,strict_normalized_delta,resolved_by_rule,resolved_by_full,unresolved,frozen_nonreproducible,runtime_failed
+direct_llm_1shot,46,14,0.304348,14,0.304348,0.0,7,7,32,0,0
+rug_existing_humantime,85,54,0.635294,54,0.635294,0.0,19,35,31,0,1
+rugae_base4_humantime_replay,11,4,0.363636,6,0.545455,0.181819,1,3,7,2,0
+rugae_hybrid4_humantime_replay,11,4,0.363636,6,0.545455,0.181819,1,3,7,2,0

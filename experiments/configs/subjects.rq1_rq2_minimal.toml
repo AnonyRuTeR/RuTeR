@@ -1,0 +1,26 @@
+# Minimal smoke-test manifest for RQ1/RQ2 pipeline bring-up.
+#
+# IMPORTANT:
+# Subject manifest for RuTeR pipeline
+# - These subjects are local fixtures already present in the repository.
+# - Use this manifest only to validate the reproducible pipeline end-to-end.
+
+[[subject]]
+subject_id = "humantime_e0433_gemini_fixture"
+crate_name = "humantime"
+source_type = "local_fixture"
+path = "ruter/tests/humantime-e0433-gemini-fixture"
+commit_hash = ""
+rust_toolchain = "stable"
+expected_error_codes = ["E0433"]
+notes = "Primary failing smoke-test fixture; verified cargo test --no-run reproduces uncompilable generated tests."
+
+[[subject]]
+subject_id = "humantime_e0433_demo"
+crate_name = "humantime"
+source_type = "local_fixture"
+path = "ruter/tests/humantime-e0433-demo"
+commit_hash = ""
+rust_toolchain = "stable"
+expected_error_codes = ["E0433"]
+notes = "Secondary failing local fixture; useful for validating multi-subject aggregation on a tiny fixture-only set."

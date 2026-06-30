@@ -1,0 +1,189 @@
+digraph e0308_layers_hybrid {
+    rankdir=TB;
+    fontname="Helvetica";
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=10];
+
+    label="E0308Patcher 混合策略：多源提取 + 五级分类 + 条件规则修复 + Preflight 决策";
+    labelloc=t;
+    fontsize=14;
+    fontname="Helvetica-Bold";
+
+    // Input
+    diag [label="Diagnostic\n(E0308)", shape=ellipse, fillcolor="#FFF3E0"];
+
+    // Layer 1: Multi-source type extraction
+    subgraph cluster_l1 {
+        label="第一层：多源类型提取（按优先级）";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#E8F0FE4D";
+        color="#1A73E8";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        s1 [label="① Primary span label\n置信度: High", fillcolor="#BBDEFB"];
+        s2 [label="② Child Note\n置信度: High", fillcolor="#BBDEFB"];
+        s3 [label="③ Child Help /\nsuggested_replacement\n置信度: Medium", fillcolor="#90CAF9"];
+        s4 [label="④ Main message\n（fallback）\n置信度: Low", fillcolor="#64B5F6"];
+
+        re1 [label="RE_EXPECTED_FOUND_BACKTICK\n同时匹配 expected + found", fillcolor="#E8F0FE"];
+        re2 [label="RE_EXPECTED_ONLY /\nRE_FOUND_ONLY", fillcolor="#E8F0FE"];
+        efpair [label="ExpectedFoundPair\n+ confidence", fillcolor="#E8F0FE"];
+    }
+
+    // Layer 2: Five-level classification
+    subgraph cluster_l2 {
+        label="第二层：五级分类体系（按优先级命中即停止）";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#FFF9C44D";
+        color="#F57F17";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        cls [label="分类判断\n（优先级降序）", shape=diamond, fillcolor="#FFF3E0"];
+
+        c1 [label="① SetupHell\nfmt::Formatter / *mut / *const\nUnsafeCell / Pin\n修复策略：不生成 Action\n注入 hints", fillcolor="#FFCDD2", style="rounded,filled"];
+        c2 [label="② WrapperMismatch\n一侧含 Option/Result/Box/Rc/Arc\n另一侧不含\n修复策略：不生成 Action\n注入 hints", fillcolor="#FFCDD2" ];
+        c3 [label="③ MechanicalMismatch\n去引用后基础类型相同\n/ 字符串族 / 数值族\n修复策略：不生成 Action\n注入 hints", fillcolor="#FFF9C4"];
+        c4 [label="④ NominalHallucination\n含 :: 路径或大写名义类型\ntail 相同但路径不同\n修复策略：条件生成 Action\n（见四轨修复）", fillcolor="#C8E6C9"];
+        c5 [label="⑤ Unknown\n以上不命中 / 提取失败\n修复策略：不生成 Action", fillcolor="#E8F5E9"];
+    }
+
+    // Layer 3: Four-track rule fix for NominalHallucination
+    subgraph cluster_l3 {
+        label="第三层：NominalHallucination 四轨规则修复策略（仅当分类=Nominal 时触发）";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#C8E6C94D";
+        color="#388E3C";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        check_nominal [label="分类 == NominalHallucination ?", shape=diamond, fillcolor="#FFF3E0"];
+
+        t1 [label="Track T1：编译器建议直通\n触发：诊断携带 MachineApplicable\nsuggested_replacement\n置信度：High\n动作：直接应用替换", fillcolor="#A5D6A7"];
+        
+        t2_check [label="T1 无结果 ?", shape=diamond, fillcolor="#FFF3E0"];
+        
+        t2 [label="Track T2：同模块变量绑定推断\n触发：enclosing_test_module_scope()\n找到唯一变量绑定\n置信度：Medium\n动作：替换绑定语句中的类型路径", fillcolor="#A5D6A7"];
+        
+        t3 [label="Track T3：多候选歧义\n条件：同模块 2+ 个候选\n决策：fail-closed，不生成 Action", fillcolor="#FFCDD2"];
+        
+        t4 [label="Track T4：跨模块/不安全\n条件：替换结果包含坏路径\n或 UTF-8 边界不安全\n或泛型复杂度高\n决策：fail-closed，不生成 Action", fillcolor="#FFCDD2"];
+        
+        fallback [label="模块范围回退：若无模块信息\n退回函数级搜索，都失败则\n不生成 Action，由 LLM 处理", fillcolor="#FFF9C4"];
+    }
+
+    // Layer 4: Hints Generation
+    subgraph cluster_l4 {
+        label="第四层：Hints 生成";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#E8F5E94D";
+        color="#2E7D32";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        h1 [label="SetupHell hints:\n避免构造运行时内部类型", fillcolor="#E8F5E9"];
+        h2 [label="WrapperMismatch hints:\nSome(...) / Ok(...) / ?\n包装操作建议", fillcolor="#E8F5E9"];
+        h3 [label="MechanicalMismatch hints:\n& / &mut / * / as\n.into() / .to_string()", fillcolor="#E8F5E9"];
+        h4 [label="NominalHallucination hints:\ntype paths differ;\nrule patcher will attempt\nsame-module rewrite;\nif not possible, provide\ncorrect constructor", fillcolor="#E8F5E9"];
+        h_extra [label="前 3 条\nchildren_suggested_replacements\n（补充来源）", fillcolor="#E8F5E9"];
+    }
+
+    // Layer 5: Multi-diagnostic priority selection & Preflight
+    subgraph cluster_l5 {
+        label="第五层：多诊断优先级选择与 Preflight 决策";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#FCE4EC4D";
+        color="#C62828";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        priority [label="优先级排序\nSetupHell(5) > WrapperMismatch(4)\n> MechanicalMismatch(3)\n> [Nominal + Rule-Fixable](3.5)\n> NominalHallucination(2) > Unknown(1)\n同级按 rule-fixable + confidence排序", fillcolor="#FCE4EC"];
+        pick [label="选取最高优先级\n一条用于 Preflight 决策", fillcolor="#FCE4EC"];
+    }
+
+    // Preflight Decision
+    subgraph cluster_pf {
+        label="Preflight 决策映射";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#F3E5F54D";
+        color="#7B1FA2";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        pd1 [label="SetupHell\n→ ContinueToLlmWithHints", fillcolor="#FCE4EC"];
+        pd2 [label="[Nominal + T1/T2成功]\n→ ContinueToRuleFirst\n（Enable Rule 修复）", fillcolor="#C8E6C9"];
+        pd3 [label="Nominal（Rule不可行）\n+ 其他分类\n→ ContinueToLlmWithHints", fillcolor="#FFF9C4"];
+        pd4 [label="WrapperMismatch / MechanicalMismatch\n→ ContinueToLlmWithHints", fillcolor="#FFF9C4"];
+        pd5 [label="Unknown\n→ ContinueToLlm\n（保守放行）", fillcolor="#E8F5E9"];
+    }
+
+    // Output
+    out [label="analyze() + fix_nominal()\n返回值：\n• Vec<FixAction> (若Nominal且T1/T2成功)\n• Vec<> (其他情况)\n\nPreflight Digest 注入:\nE0308_CLASSIFICATION\nE0308_EXPECTED / E0308_FOUND\nE0308_EXPECTED_ARRAY_LEN（若可解析）\nE0308_FOUND_ARRAY_LEN（若可解析）\nE0308_LEN_DELTA\nE0308_HINTS\n\nAction 动作范围：\n仅在同测试模块内执行替换", shape=ellipse, fillcolor="#E8F0FE"];
+
+    // Edges - extraction
+    diag -> s1;
+    diag -> s2;
+    diag -> s3;
+    diag -> s4;
+    s1 -> re1;
+    s2 -> re1;
+    s3 -> re2;
+    s4 -> re2;
+    re1 -> efpair;
+    re2 -> efpair;
+
+    // Classification
+    efpair -> cls;
+    cls -> c1 [label="1st check"];
+    cls -> c2 [label="2nd"];
+    cls -> c3 [label="3rd"];
+    cls -> c4 [label="4th"];
+    cls -> c5 [label="fallback"];
+
+    // Rule fix for Nominal
+    c4 -> check_nominal;
+    check_nominal -> t1 [label="Yes"];
+    t1 -> t2_check;
+    t2_check -> t2 [label="Yes"];
+    t2 -> t3;
+    t2 -> t4;
+    t2 -> fallback;
+    check_nominal -> fallback [label="No"];
+    
+    // Hints routing
+    c1 -> h1;
+    c2 -> h2;
+    c3 -> h3;
+    c4 -> h4;
+    c5 -> h_extra [style=dashed];
+    h1 -> priority;
+    h2 -> priority;
+    h3 -> priority;
+    h4 -> priority;
+    h_extra -> priority;
+    t1 -> priority [style=dashed, label="T1 success"];
+    t2 -> priority [style=dashed, label="T2 success"];
+    fallback -> priority;
+
+    // Multi-diag selection
+    priority -> pick;
+
+    // Preflight decision
+    pick -> pd1;
+    pick -> pd2 [label="Rule-Fixable"];
+    pick -> pd3;
+    pick -> pd4;
+    pick -> pd5;
+    pd1 -> out;
+    pd2 -> out;
+    pd3 -> out;
+    pd4 -> out;
+    pd5 -> out;
+}

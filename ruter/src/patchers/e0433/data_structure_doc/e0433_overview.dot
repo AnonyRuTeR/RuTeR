@@ -1,0 +1,64 @@
+digraph E0433Patcher_Teaching_Overview {
+  graph [
+    rankdir=TB,
+    fontsize=26,
+    labelloc="t",
+    label="E0433Patcher — Teaching Overview (Pipeline + Key Structures)",
+    bgcolor="white",
+    pad="0.30",
+    nodesep="0.60",
+    ranksep="0.80",
+    splines="ortho"
+  ];
+
+  node [
+    shape=box,
+    style="rounded,filled",
+    fillcolor="#F7F7F7",
+    color="#444444",
+    penwidth=1.6,
+    fontname="Helvetica",
+    fontsize=16
+  ];
+
+  edge [
+    color="#444444",
+    penwidth=1.3,
+    fontname="Helvetica",
+    fontsize=14,
+    arrowsize=0.85
+  ];
+
+  // Inputs
+  n_diag [label="Input\nDiagnostic\n(code/message/span/children)", fillcolor="#FFF4D6"];
+  n_span [label="Input\nSpanInfo\n(byte ranges + suggestion?)", fillcolor="#FFF4D6"];
+  n_src  [label="Input\nSource code &str\n(file content)", fillcolor="#FFF4D6"];
+
+  // Step boxes (high-level)
+  s1 [label="Step 1\nExtract candidates\nSuggestionExtractor::extract", fillcolor="#E9F5FF"];
+  s2 [label="Step 2\nResolve best path\nPathResolver::resolve", fillcolor="#E9F5FF"];
+  s3 [label="Step 3\nExpand span + parse structure\nSpanAnalyzer::analyze", fillcolor="#E9F5FF"];
+  s4 [label="Step 4\nGenerate fix action\nFixGenerator::generate", fillcolor="#E9F5FF"];
+
+  // Key intermediate structures
+  cands [label="Vec<CandidateFix>\n(identifier + suggested_path + confidence)", fillcolor="#FFFFFF"];
+  res   [label="ResolutionResult\nResolved | Ambiguous | Unresolved", fillcolor="#FFFFFF"];
+  ext   [label="ExtendedSpan\n(extended_span + segments + structure)", fillcolor="#FFFFFF"];
+
+  // Output
+  out [label="Output\nOption<FixAction>\n(Some Replace / None)", fillcolor="#DFF7E3"];
+
+  // Wiring
+  n_diag -> s1 [label="&Diagnostic"];
+  s1 -> cands  [label="emit"];
+  cands -> s2  [label="move"];
+  s2 -> res    [label="decide"];
+
+  n_span -> s3 [label="&SpanInfo"];
+  n_src  -> s3 [label="&str"];
+  s3 -> ext    [label="build"];
+
+  res -> s4 [label="&ResolutionResult"];
+  ext -> s4 [label="&ExtendedSpan"];
+  s4 -> out [label="Option<FixAction>"];
+}

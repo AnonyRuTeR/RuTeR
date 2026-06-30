@@ -1,0 +1,3 @@
+subject_id,exit_code,diagnostic_count,error_diagnostic_count,diagnostics_with_suggestions,diagnostics_without_suggestions,error_code_counts,status
+humantime_e0433_demo,101,50,49,11,39,"{""E0433"": 49, ""NO_CODE"": 1}",compile_failed
+humantime_e0433_gemini_fixture,101,17,11,9,8,"{""E0433"": 11, ""NO_CODE"": 1, ""unexpected_cfgs"": 2, ""unused_imports"": 3}",compile_failed

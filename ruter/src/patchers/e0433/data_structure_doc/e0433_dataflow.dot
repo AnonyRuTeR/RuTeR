@@ -1,0 +1,181 @@
+digraph E0433Patcher_Dataflow {
+  graph [
+    rankdir=TB,
+    fontsize=22,
+    labelloc="t",
+    label="E0433Patcher Dataflow (Engineering View)",
+    bgcolor="white",
+    pad="0.25",
+    nodesep="0.40",
+    ranksep="0.55",
+    splines="spline"
+  ];
+
+  node [
+    shape=box,
+    style="rounded,filled",
+    fillcolor="#F7F7F7",
+    color="#444444",
+    penwidth=1.4,
+    fontname="Helvetica",
+    fontsize=14
+  ];
+
+  edge [
+    color="#444444",
+    penwidth=1.2,
+    fontname="Helvetica",
+    fontsize=12,
+    arrowsize=0.8
+  ];
+
+  // =========================
+  // Cluster: Input Structures
+  // =========================
+  subgraph cluster_input {
+    label="Input / Core Structures";
+    fontsize=18;
+    color="#BBBBBB";
+    style="rounded";
+
+    n_diag [label="Diagnostic\n(core/diagnostic.rs)\nfields:\n- code, message\n- span: Vec<SpanInfo>\n- children: Vec<Diagnostic>", fillcolor="#FFF9E6"];
+    n_span [label="SpanInfo\n(core/span.rs)\nfields:\n- file_path\n- byte_start..byte_end\n- suggested_replacement?\n- suggestion_applicability?", fillcolor="#FFF9E6"];
+    n_src  [label="Source Code\n&str (file content)", fillcolor="#FFF9E6"];
+  }
+
+  // =========================
+  // Cluster: Step 1
+  // =========================
+  subgraph cluster_s1 {
+    label="Step 1 — Suggestion Extraction";
+    fontsize=18;
+    color="#BBBBBB";
+    style="rounded";
+
+    f_extract [label="SuggestionExtractor::extract(&Diagnostic)\n=> Vec<CandidateFix>", fillcolor="#E9F5FF"];
+    h_id      [label="extract_identifier(message)\n(parse undeclared ident)", fillcolor="#FFFFFF"];
+    h_spans   [label="extract_from_spans(&[SpanInfo], &mut Vec<CandidateFix>)\n(read suggested_replacement)", fillcolor="#FFFFFF"];
+    h_conf    [label="applicability_to_confidence(Applicability?)\n=> Confidence", fillcolor="#FFFFFF"];
+
+    ds_cand [label="CandidateFix\n(types.rs)\n{ identifier, suggested_path, confidence }", fillcolor="#E9F5FF"];
+  }
+
+  // =========================
+  // Cluster: Step 2
+  // =========================
+  subgraph cluster_s2 {
+    label="Step 2 — Path Resolution (Decision Core)";
+    fontsize=18;
+    color="#BBBBBB";
+    style="rounded";
+
+    f_resolve [label="PathResolver::resolve(Vec<CandidateFix>)\n=> ResolutionResult", fillcolor="#E9F5FF"];
+    d_high    [label="Decision: any Confidence::High ?", shape=diamond, fillcolor="#FFFFFF"];
+    d_unique  [label="Decision: unique paths == 1 ?", shape=diamond, fillcolor="#FFFFFF"];
+    d_multi   [label="Decision: still multiple after heuristic ?", shape=diamond, fillcolor="#FFFFFF"];
+
+    h_heur    [label="apply_heuristic(&[String])\nprefer crate:: > std:: > short", fillcolor="#FFFFFF"];
+
+    ds_res    [label="ResolutionResult\n(path_resolver.rs)\n- Resolved{path, confidence, source}\n- Ambiguous{candidates}\n- Unresolved{reason}", fillcolor="#E9F5FF"];
+    ds_src    [label="ResolutionSource\n{ CompilerMachineApplicable,\n  CompilerSuggestion,\n  Heuristic,\n  StdLibMap }", fillcolor="#FFFFFF"];
+  }
+
+  // =========================
+  // Cluster: Step 3
+  // =========================
+  subgraph cluster_s3 {
+    label="Step 3 — Span Expansion & Path Analysis";
+    fontsize=18;
+    color="#BBBBBB";
+    style="rounded";
+
+    f_analyze [label="SpanAnalyzer::analyze(&SpanInfo, &str)\n=> ExtendedSpan", fillcolor="#E9F5FF"];
+    h_extend  [label="extend_span(&SpanInfo, &str)\n(scan from byte_end; parse :: ident)", fillcolor="#FFFFFF"];
+    h_readid  [label="read_identifier(source, pos)\n(read one ident token)", fillcolor="#FFFFFF"];
+    h_struct  [label="analyze_structure(segments)\n=> PathStructure", fillcolor="#FFFFFF"];
+
+    ds_seg    [label="PathSegment\n{ name, byte_range }", fillcolor="#FFFFFF"];
+    ds_struct [label="PathStructure\n{ SingleIdent, ModuleAccess,\n  MethodCall, NestedPath }", fillcolor="#FFFFFF"];
+
+    ds_ext    [label="ExtendedSpan\n(types.rs)\n{ original_span,\n  extended_span,\n  segments: Vec<PathSegment>,\n  structure: PathStructure }", fillcolor="#E9F5FF"];
+  }
+
+  // =========================
+  // Cluster: Step 4
+  // =========================
+  subgraph cluster_s4 {
+    label="Step 4 — Fix Generation (Output Construction)";
+    fontsize=18;
+    color="#BBBBBB";
+    style="rounded";
+
+    f_gen     [label="FixGenerator::generate(&ExtendedSpan, &ResolutionResult)\n=> Option<FixAction>", fillcolor="#E9F5FF"];
+    d_resolved[label="Decision: ResolutionResult == Resolved ?", shape=diamond, fillcolor="#FFFFFF"];
+    h_rewrite [label="rewrite_with_suffix(&ExtendedSpan, resolved_path)\nkeep suffix (e.g., ::new)", fillcolor="#FFFFFF"];
+    d_noop    [label="Decision: no-op? (new == old)", shape=diamond, fillcolor="#FFFFFF"];
+
+    ds_fix    [label="FixAction\n(core/fix_action.rs)\nReplace{span, new_content}\nInsert{...}\nDelete{...}", fillcolor="#E9F5FF"];
+    ds_opt    [label="Option<FixAction>\nSome(FixAction) / None", fillcolor="#E9F5FF"];
+  }
+
+  // =========================
+  // Wiring: Input -> Step1
+  // =========================
+  n_diag -> f_extract [label="borrow: &Diagnostic"];
+  f_extract -> h_id   [label="read message"];
+  f_extract -> h_spans[label="read span[]"];
+  h_spans -> h_conf   [label="use suggestion_applicability?"];
+  h_id    -> ds_cand  [label="emit CandidateFix"];
+  h_spans -> ds_cand  [label="emit CandidateFix"];
+  h_conf  -> ds_cand  [label="set confidence"];
+  ds_cand -> f_resolve [label="move: Vec<CandidateFix>"];
+
+  // =========================
+  // Step2 decisions
+  // =========================
+  f_resolve -> d_high;
+  d_high -> ds_res [label="yes => Resolved\nsource=CompilerMachineApplicable"];
+  d_high -> d_unique [label="no => dedup paths"];
+
+  d_unique -> ds_res [label="yes => Resolved\nsource=CompilerSuggestion"];
+  d_unique -> h_heur [label="no => heuristic"];
+
+  h_heur -> d_multi;
+  d_multi -> ds_res [label="no => Resolved\nsource=Heuristic/StdLibMap"];
+  d_multi -> ds_res [label="yes => Ambiguous{candidates}"];
+
+  ds_src -> ds_res [style=dashed, label="metadata"];
+
+  // =========================
+  // Step3 span analysis
+  // =========================
+  n_diag -> n_span [style=dashed, label="Diagnostic.span[]"];
+  n_span -> f_analyze [label="borrow: &SpanInfo"];
+  n_src  -> f_analyze [label="borrow: &str"];
+
+  f_analyze -> h_extend;
+  h_extend  -> h_readid;
+  h_extend  -> ds_seg   [label="build segments[]"];
+  ds_seg    -> h_struct [label="segments"];
+  h_struct  -> ds_struct;
+  ds_struct -> ds_ext   [label="structure"];
+  ds_seg    -> ds_ext   [label="segments"];
+  h_extend  -> ds_ext   [label="extended_span"];
+  n_span    -> ds_ext   [label="clone -> original_span"];
+
+  // =========================
+  // Step4 fix generation
+  // =========================
+  ds_ext -> f_gen  [label="borrow: &ExtendedSpan"];
+  ds_res -> f_gen  [label="borrow: &ResolutionResult"];
+
+  f_gen -> d_resolved;
+  d_resolved -> ds_opt [label="no => None\n(Ambiguous/Unresolved)"];
+  d_resolved -> h_rewrite [label="yes => take resolved path"];
+
+  h_rewrite -> d_noop;
+  d_noop -> ds_opt [label="yes => None (no-op)"];
+  d_noop -> ds_fix [label="no => FixAction::Replace"];
+
+  ds_fix -> ds_opt [label="Some(FixAction)"];
+}

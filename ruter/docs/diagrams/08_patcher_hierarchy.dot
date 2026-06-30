@@ -1,0 +1,77 @@
+digraph patcher_hierarchy {
+    rankdir=TB;
+    fontname="Helvetica";
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=10];
+
+    label="Patcher 类型体系与修复路由";
+    labelloc=t;
+    fontsize=14;
+    fontname="Helvetica-Bold";
+
+    trait_def [label="trait Patcher\nerror_code() → ErrorCode\nanalyze(Diagnostic) → Vec<FixAction>\ndescription() → &str", shape=record, fillcolor="#E8F0FE"];
+
+    registry [label="PatcherRegistry\n(策略模式注册表)\nimplemented_error_codes()\nget_patcher(ErrorCode)", fillcolor="#FFF9C4"];
+
+    subgraph cluster_action {
+        label="Action Patchers\n直接生成 FixAction";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#E8F5E94D";
+        color="#2E7D32";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        e0433 [label="E0433Patcher\n路径未解析\n4 候选轨道\n(P1/P2/R1/R2)", fillcolor="#E8F5E9"];
+        e0432 [label="E0432Patcher\n导入未解析\n3 候选轨道\n(P1/R1/R2)", fillcolor="#E8F5E9"];
+        e0560 [label="E0560Patcher\n未知字段\n2 候选轨道\n(P1/R1)", fillcolor="#E8F5E9"];
+    }
+
+    subgraph cluster_analysis {
+        label="Analysis Patchers\nanalyze() → 空 Vec\n结果注入 Preflight";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#FCE4EC4D";
+        color="#C62828";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        e0599 [label="E0599Patcher\n方法/关联项未找到\n4 级分类\nAST 扫描可用方法", fillcolor="#FCE4EC"];
+        e0308 [label="E0308Patcher\n类型不匹配\n5 级分类\n类型差异提取", fillcolor="#FCE4EC"];
+    }
+
+    subgraph cluster_common {
+        label="公共基础设施";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#F3E5F54D";
+        color="#7B1FA2";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        suggestion [label="CompilerSuggestionExtractor\nNormalizedSuggestion\n提取 + 归一化 + 去重", fillcolor="#F3E5F5"];
+    }
+
+    // Trait relationships
+    trait_def -> registry [label="注册", arrowhead=open];
+    registry -> e0433 [arrowhead=open];
+    registry -> e0432 [arrowhead=open];
+    registry -> e0560 [arrowhead=open];
+    registry -> e0599 [arrowhead=open];
+    registry -> e0308 [arrowhead=open];
+
+    // Common usage
+    e0433 -> suggestion [style=dashed, color="#7B1FA2"];
+    e0432 -> suggestion [style=dashed, color="#7B1FA2"];
+    e0560 -> suggestion [style=dashed, color="#7B1FA2"];
+
+    // Output paths
+    fix_out [label="Vec<FixAction>\n(非空)", fillcolor="#C8E6C9", shape=ellipse];
+    analysis_out [label="Vec<FixAction>\n(空)\n→ Preflight Digest", fillcolor="#FFCDD2", shape=ellipse];
+
+    e0433 -> fix_out;
+    e0432 -> fix_out;
+    e0560 -> fix_out;
+    e0599 -> analysis_out;
+    e0308 -> analysis_out;
+}

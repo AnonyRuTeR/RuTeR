@@ -1,0 +1,5787 @@
+{
+  "total": 682,
+  "success": 174,
+  "failures": 508,
+  "categories": {
+    "RUSTC_ERROR": 482,
+    "OTHER_FAILURE": 24,
+    "UNSTABLE_FEATURE(E0658)": 1,
+    "TRUNCATED_BRACES": 1
+  },
+  "error_codes": {
+    "E0433": 336,
+    "E0412": 28,
+    "E0432": 99,
+    "E0599": 37,
+    "E0284": 1,
+    "E0658": 1,
+    "E0119": 15,
+    "E0308": 40,
+    "E0560": 6,
+    "E0603": 11,
+    "E0425": 5,
+    "E0277": 30,
+    "E0061": 14,
+    "E0405": 7,
+    "E0407": 5,
+    "E0437": 1,
+    "E0046": 1,
+    "E0063": 5,
+    "E0053": 1,
+    "E0423": 2,
+    "E0689": 1,
+    "E0608": 1,
+    "E0107": 10,
+    "E0282": 16,
+    "E0283": 4,
+    "E0790": 1,
+    "E0562": 1,
+    "E0252": 1,
+    "E0369": 2,
+    "E0576": 1
+  },
+  "truncation_types": {
+    "TRUNCATED_BRACES": 1
+  },
+  "details": [
+    {
+      "node_id": "distributions::uniform::UniformSampler::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::uniform::UniformSampler::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::uniform::UniformSampler::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::uniform::UniformSampler::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0412",
+      "error_codes": [
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::uniform::UniformSampler::sample_single",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::uniform::UniformSampler::sample_single",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::uniform::UniformSampler::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::uniform::UniformSampler::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::uniform::UniformSampler::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::uniform::UniformSampler::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::uniform::UniformSampler::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::uniform::UniformSampler::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0433, E0599",
+      "error_codes": [
+        "E0432",
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::uniform::UniformSampler::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0433, E0599",
+      "error_codes": [
+        "E0432",
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::uniform::UniformSampler::sample_single_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0284",
+      "error_codes": [
+        "E0284"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::uniform::UniformSampler::sample_single_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::uniform::Uniform::<X>::new",
+      "category": "UNSTABLE_FEATURE(E0658)",
+      "reason": "Unstable feature used: unknown",
+      "error_codes": [
+        "E0658",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::uniform::Uniform::<X>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0119",
+      "error_codes": [
+        "E0119"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::uniform::Uniform::<X>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::uniform::Uniform::<X>::new_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0119",
+      "error_codes": [
+        "E0119"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::Uniform<X> as distributions::distribution::Distribution<X>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::Uniform<X> as distributions::distribution::Distribution<X>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::Uniform<X> as distributions::distribution::Distribution<X>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<&'a Borrowed as distributions::uniform::SampleBorrow<Borrowed>>::borrow",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i8> as distributions::uniform::UniformSampler>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i8> as distributions::uniform::UniformSampler>::new_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i8> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i8> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i8> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i8> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0560",
+      "error_codes": [
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i8> as distributions::uniform::UniformSampler>::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432, E0119",
+      "error_codes": [
+        "E0432",
+        "E0119"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i8> as distributions::uniform::UniformSampler>::sample_single_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i16> as distributions::uniform::UniformSampler>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i16> as distributions::uniform::UniformSampler>::new_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i16> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i16> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i16> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i16> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i16> as distributions::uniform::UniformSampler>::sample_single_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i32> as distributions::uniform::UniformSampler>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i32> as distributions::uniform::UniformSampler>::new_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i32> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i32> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i32> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i32> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i32> as distributions::uniform::UniformSampler>::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i32> as distributions::uniform::UniformSampler>::sample_single_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i64> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i64> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i64> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i64> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0560, E0433",
+      "error_codes": [
+        "E0560",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i64> as distributions::uniform::UniformSampler>::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0119, E0433",
+      "error_codes": [
+        "E0119",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i64> as distributions::uniform::UniformSampler>::sample_single_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i128> as distributions::uniform::UniformSampler>::new_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0119, E0433",
+      "error_codes": [
+        "E0119",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i128> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i128> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i128> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i128> as distributions::uniform::UniformSampler>::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<i128> as distributions::uniform::UniformSampler>::sample_single_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<isize> as distributions::uniform::UniformSampler>::new_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<isize> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<isize> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<isize> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<isize> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0433, E0599",
+      "error_codes": [
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<isize> as distributions::uniform::UniformSampler>::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<isize> as distributions::uniform::UniformSampler>::sample_single_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u8> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u8> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u8> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u8> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u8> as distributions::uniform::UniformSampler>::sample_single_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u16> as distributions::uniform::UniformSampler>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0119, E0433",
+      "error_codes": [
+        "E0119",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u16> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u16> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u16> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u16> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u16> as distributions::uniform::UniformSampler>::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u16> as distributions::uniform::UniformSampler>::sample_single_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u32> as distributions::uniform::UniformSampler>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u32> as distributions::uniform::UniformSampler>::new_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u32> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u32> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u32> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u32> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u32> as distributions::uniform::UniformSampler>::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u64> as distributions::uniform::UniformSampler>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u64> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u64> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u64> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u64> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u64> as distributions::uniform::UniformSampler>::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<usize> as distributions::uniform::UniformSampler>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<usize> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<usize> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<usize> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<usize> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<usize> as distributions::uniform::UniformSampler>::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u128> as distributions::uniform::UniformSampler>::new_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u128> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u128> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u128> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u128> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u128> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0560",
+      "error_codes": [
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u128> as distributions::uniform::UniformSampler>::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformInt<u128> as distributions::uniform::UniformSampler>::sample_single_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformChar as distributions::uniform::UniformSampler>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": "TRUNCATED_STRING",
+      "truncation_hint_reason": "Unclosed char detected.",
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformChar as distributions::uniform::UniformSampler>::new_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": "TRUNCATED_STRING",
+      "truncation_hint_reason": "Unclosed char detected.",
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformChar as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0603, E0433",
+      "error_codes": [
+        "E0603",
+        "E0433"
+      ],
+      "truncation_hint": "TRUNCATED_STRING",
+      "truncation_hint_reason": "Unclosed char detected.",
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformChar as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": "TRUNCATED_STRING",
+      "truncation_hint_reason": "Unclosed char detected.",
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformFloat<f32> as distributions::uniform::UniformSampler>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformFloat<f32> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformFloat<f32> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformFloat<f32> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformFloat<f32> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformFloat<f32> as distributions::uniform::UniformSampler>::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformFloat<f64> as distributions::uniform::UniformSampler>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformFloat<f64> as distributions::uniform::UniformSampler>::new_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformFloat<f64> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformFloat<f64> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformFloat<f64> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformFloat<f64> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformFloat<f64> as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformFloat<f64> as distributions::uniform::UniformSampler>::sample_single",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformDuration as distributions::uniform::UniformSampler>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformDuration as distributions::uniform::UniformSampler>::new_inclusive",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformDuration as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformDuration as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformDuration as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformDuration as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::uniform::UniformDuration as distributions::uniform::UniformSampler>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::fork::get_fork_counter",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::fork::get_fork_counter",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0603, E0433",
+      "error_codes": [
+        "E0603",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::fork::fork_handler",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0603",
+      "error_codes": [
+        "E0603"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::fork::fork_handler",
+      "category": "RUSTC_ERROR",
+      "reason": "Unresolved name/path: E0425, E0433",
+      "error_codes": [
+        "E0425",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingRng::<R, Rsdr>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0277, E0599",
+      "error_codes": [
+        "E0277",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingRng::<R, Rsdr>::reseed",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0277, E0432, E0061, E0599",
+      "error_codes": [
+        "E0277",
+        "E0432",
+        "E0061",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingRng::<R, Rsdr>::reseed",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0405",
+      "error_codes": [
+        "E0405"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingRng::<R, Rsdr>::reseed",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0277",
+      "error_codes": [
+        "E0277"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingRng::<R, Rsdr>::reseed",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0405, E0433",
+      "error_codes": [
+        "E0405",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingRng::<R, Rsdr>::reseed",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingRng::<R, Rsdr>::reseed",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432, E0061",
+      "error_codes": [
+        "E0432",
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingRng::<R, Rsdr>::reseed",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432, E0061",
+      "error_codes": [
+        "E0432",
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::reseeding::ReseedingRng<R, Rsdr> as rand_core::RngCore>::next_u32",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0277, E0432",
+      "error_codes": [
+        "E0277",
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::reseeding::ReseedingRng<R, Rsdr> as rand_core::RngCore>::next_u32",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0433, E0061, E0599",
+      "error_codes": [
+        "E0433",
+        "E0061",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::reseeding::ReseedingRng<R, Rsdr> as rand_core::RngCore>::next_u64",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0277, E0432, E0061",
+      "error_codes": [
+        "E0277",
+        "E0432",
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::reseeding::ReseedingRng<R, Rsdr> as rand_core::RngCore>::next_u64",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0277, E0432, E0061",
+      "error_codes": [
+        "E0277",
+        "E0432",
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::reseeding::ReseedingRng<R, Rsdr> as rand_core::RngCore>::fill_bytes",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0277, E0432, E0433, E0061",
+      "error_codes": [
+        "E0277",
+        "E0432",
+        "E0433",
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::reseeding::ReseedingRng<R, Rsdr> as rand_core::RngCore>::fill_bytes",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0277, E0308, E0599",
+      "error_codes": [
+        "E0277",
+        "E0308",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::reseeding::ReseedingRng<R, Rsdr> as rand_core::RngCore>::try_fill_bytes",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0277, E0599",
+      "error_codes": [
+        "E0277",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::reseeding::ReseedingRng<R, Rsdr> as rand_core::RngCore>::try_fill_bytes",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0277, E0308, E0061, E0599",
+      "error_codes": [
+        "E0277",
+        "E0308",
+        "E0061",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::reseeding::ReseedingRng<R, Rsdr> as core::clone::Clone>::clone",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::reseeding::ReseedingRng<R, Rsdr> as core::clone::Clone>::clone",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0277, E0432, E0061, E0599, E0308, E0433",
+      "error_codes": [
+        "E0277",
+        "E0432",
+        "E0061",
+        "E0599",
+        "E0308",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::reseeding::ReseedingCore<R, Rsdr> as rand_core::block::BlockRngCore>::generate",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<rngs::adapter::reseeding::ReseedingCore<R, Rsdr> as rand_core::block::BlockRngCore>::generate",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0405",
+      "error_codes": [
+        "E0405"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<rngs::adapter::reseeding::ReseedingCore<R, Rsdr> as rand_core::block::BlockRngCore>::generate",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0277, E0432, E0061",
+      "error_codes": [
+        "E0277",
+        "E0432",
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<rngs::adapter::reseeding::ReseedingCore<R, Rsdr> as rand_core::block::BlockRngCore>::generate",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0277, E0432, E0433, E0061",
+      "error_codes": [
+        "E0277",
+        "E0432",
+        "E0433",
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::reseeding::ReseedingCore<R, Rsdr> as rand_core::block::BlockRngCore>::generate",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0405, E0407, E0433, E0437",
+      "error_codes": [
+        "E0405",
+        "E0407",
+        "E0433",
+        "E0437"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0046, E0433",
+      "error_codes": [
+        "E0432",
+        "E0046",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::reseed",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0405, E0412",
+      "error_codes": [
+        "E0405",
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::reseed",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0063, E0433",
+      "error_codes": [
+        "E0063",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::reseed",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0433, E0063, E0432, E0599, E0053, E0412",
+      "error_codes": [
+        "E0433",
+        "E0063",
+        "E0432",
+        "E0599",
+        "E0053",
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::reseed",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0063, E0432, E0599",
+      "error_codes": [
+        "E0063",
+        "E0432",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::is_forked",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::is_forked",
+      "category": "TRUNCATED_BRACES",
+      "reason": "Unbalanced braces: { (10) vs } (7)",
+      "error_codes": [
+        "E0423",
+        "E0405"
+      ],
+      "truncation_hint": "TRUNCATED_BRACES",
+      "truncation_hint_reason": "Unbalanced braces: { (10) vs } (7)",
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::is_forked",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::is_forked",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::reseed_and_generate",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::reseed_and_generate",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0405",
+      "error_codes": [
+        "E0405"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::reseed_and_generate",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::reseed_and_generate",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::reseeding::ReseedingCore<R, Rsdr> as core::clone::Clone>::clone",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0277, E0061, E0689, E0308, E0433",
+      "error_codes": [
+        "E0277",
+        "E0061",
+        "E0689",
+        "E0308",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::reseeding::ReseedingCore<R, Rsdr> as core::clone::Clone>::clone",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0277, E0432, E0433",
+      "error_codes": [
+        "E0277",
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::thread::ThreadRng as core::default::Default>::default",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0277, E0599",
+      "error_codes": [
+        "E0277",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::sample_weighted",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::sample_weighted",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::sample_efraimidis_spirakis",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0432, E0308",
+      "error_codes": [
+        "E0432",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::sample_efraimidis_spirakis",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::sample_floyd",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0277, E0432, E0608, E0599",
+      "error_codes": [
+        "E0277",
+        "E0432",
+        "E0608",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::sample_floyd",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::sample_inplace",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0277, E0432, E0308",
+      "error_codes": [
+        "E0277",
+        "E0432",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::sample_inplace",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::sample_rejection",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0277, E0432, E0433",
+      "error_codes": [
+        "E0277",
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::sample_rejection",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::len",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::len",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::len",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::len",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::len",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::len",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::len",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::is_empty",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::is_empty",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::is_empty",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::is_empty",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::index",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::index",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::index",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::index",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::into_vec",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0277",
+      "error_codes": [
+        "E0277"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::into_vec",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::into_vec",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::into_vec",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::iter",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::iter",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::iter",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::index::IndexVec::iter",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::IndexVec as core::iter::IntoIterator>::into_iter",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::IndexVec as core::iter::IntoIterator>::into_iter",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::IndexVec as core::cmp::PartialEq>::eq",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::IndexVec as core::cmp::PartialEq>::eq",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::IndexVec as core::convert::From<std::vec::Vec<u32>>>::from",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::index::IndexVec as core::convert::From<std::vec::Vec<u32>>>::from",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::index::IndexVec as core::convert::From<std::vec::Vec<u32>>>::from",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::index::IndexVec as core::convert::From<std::vec::Vec<u32>>>::from",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::IndexVec as core::convert::From<std::vec::Vec<usize>>>::from",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::index::IndexVec as core::convert::From<std::vec::Vec<usize>>>::from",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::index::IndexVec as core::convert::From<std::vec::Vec<usize>>>::from",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::index::IndexVec as core::convert::From<std::vec::Vec<usize>>>::from",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::IndexVecIter<'a> as core::iter::Iterator>::next",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::index::IndexVecIter<'a> as core::iter::Iterator>::next",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0107, E0599",
+      "error_codes": [
+        "E0107",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::index::IndexVecIter<'a> as core::iter::Iterator>::next",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::index::IndexVecIter<'a> as core::iter::Iterator>::next",
+      "category": "RUSTC_ERROR",
+      "reason": "Unresolved name/path: E0425",
+      "error_codes": [
+        "E0425"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::IndexVecIter<'a> as core::iter::Iterator>::next",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::IndexVecIter<'a> as core::iter::Iterator>::size_hint",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::IndexVecIter<'a> as core::iter::Iterator>::size_hint",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::IndexVecIntoIter as core::iter::Iterator>::next",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::index::IndexVecIntoIter as core::iter::Iterator>::next",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0412",
+      "error_codes": [
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::index::IndexVecIntoIter as core::iter::Iterator>::next",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0412",
+      "error_codes": [
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::index::IndexVecIntoIter as core::iter::Iterator>::next",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::IndexVecIntoIter as core::iter::Iterator>::size_hint",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::IndexVecIntoIter as core::iter::Iterator>::size_hint",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::sample_efraimidis_spirakis::Element<N> as core::cmp::PartialOrd>::partial_cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::index::sample_efraimidis_spirakis::Element<N> as core::cmp::PartialOrd>::partial_cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::index::sample_efraimidis_spirakis::Element<N> as core::cmp::PartialOrd>::partial_cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::index::sample_efraimidis_spirakis::Element<N> as core::cmp::PartialOrd>::partial_cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::index::sample_efraimidis_spirakis::Element<N> as core::cmp::PartialOrd>::partial_cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::index::sample_efraimidis_spirakis::Element<N> as core::cmp::PartialOrd>::partial_cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::index::sample_efraimidis_spirakis::Element<N> as core::cmp::PartialOrd>::partial_cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::sample_efraimidis_spirakis::Element<N> as core::cmp::PartialOrd>::partial_cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::sample_efraimidis_spirakis::Element<N> as core::cmp::Ord>::cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::sample_efraimidis_spirakis::Element<N> as core::cmp::Ord>::cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::sample_efraimidis_spirakis::Element<N> as core::cmp::PartialEq>::eq",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::index::sample_efraimidis_spirakis::Element<N> as core::cmp::PartialEq>::eq",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<u32 as seq::index::UInt>::one",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<usize as seq::index::UInt>::zero",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::gen_index",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::gen_index",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::IteratorRandom::choose",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::IteratorRandom::choose",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::IteratorRandom::choose",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::IteratorRandom::choose_stable",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0599",
+      "error_codes": [
+        "E0432",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::IteratorRandom::choose_stable",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::IteratorRandom::choose_stable",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::IteratorRandom::choose_multiple_fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282",
+      "error_codes": [
+        "E0282"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "seq::IteratorRandom::choose_multiple_fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282",
+      "error_codes": [
+        "E0282"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "seq::IteratorRandom::choose_multiple_fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282",
+      "error_codes": [
+        "E0282"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "seq::IteratorRandom::choose_multiple_fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::IteratorRandom::choose_multiple_fill",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::IteratorRandom::choose_multiple_fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::IteratorRandom::choose_multiple",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0277, E0308",
+      "error_codes": [
+        "E0277",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::IteratorRandom::choose_multiple",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "seq::IteratorRandom::choose_multiple",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<[T] as seq::SliceRandom>::choose_weighted",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0277, E0308",
+      "error_codes": [
+        "E0277",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<[T] as seq::SliceRandom>::choose_weighted",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0603, E0308",
+      "error_codes": [
+        "E0603",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::SliceChooseIter<'a, S, T> as core::iter::Iterator>::next",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0560, E0433",
+      "error_codes": [
+        "E0560",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::SliceChooseIter<'a, S, T> as core::iter::Iterator>::next",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0560",
+      "error_codes": [
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::SliceChooseIter<'a, S, T> as core::iter::Iterator>::next",
+      "category": "RUSTC_ERROR",
+      "reason": "Unresolved name/path: E0425, E0433",
+      "error_codes": [
+        "E0425",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<seq::SliceChooseIter<'a, S, T> as core::iter::Iterator>::next",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0433, E0599",
+      "error_codes": [
+        "E0432",
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::SliceChooseIter<'a, S, T> as core::iter::Iterator>::next",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0063, E0433",
+      "error_codes": [
+        "E0063",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::SliceChooseIter<'a, S, T> as core::iter::Iterator>::size_hint",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::SliceChooseIter<'a, S, T> as core::iter::Iterator>::size_hint",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432, E0560",
+      "error_codes": [
+        "E0432",
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::SliceChooseIter<'a, S, T> as core::iter::ExactSizeIterator>::len",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<seq::SliceChooseIter<'a, S, T> as core::iter::ExactSizeIterator>::len",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0433, E0599",
+      "error_codes": [
+        "E0432",
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "random",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "random",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::distribution::Distribution::sample_iter",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::distribution::Distribution::sample_iter",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::distribution::Distribution::sample_iter",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::distribution::Distribution::sample_iter",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::distribution::Distribution::sample_iter",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::distribution::Distribution::sample_iter",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::distribution::Distribution::sample_iter",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::distribution::Distribution::sample_iter",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::distribution::Distribution::sample_iter",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::distribution::DistString::sample_string",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::distribution::DistString::sample_string",
+      "category": "RUSTC_ERROR",
+      "reason": "Unresolved name/path: E0425, E0433",
+      "error_codes": [
+        "E0425",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::distribution::DistString::sample_string",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::distribution::DistString::sample_string",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::distribution::DistString::sample_string",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::distribution::DistString::sample_string",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::distribution::DistString::sample_string",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::distribution::DistString::sample_string",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<&'a D as distributions::distribution::Distribution<T>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<&'a D as distributions::distribution::Distribution<T>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282, E0283",
+      "error_codes": [
+        "E0282",
+        "E0283"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::distribution::DistIter<D, R, T> as core::iter::Iterator>::next",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::distribution::DistIter<D, R, T> as core::iter::Iterator>::next",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::distribution::DistIter<D, R, T> as core::iter::Iterator>::next",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::distribution::DistIter<D, R, T> as core::iter::Iterator>::next",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0277, E0407, E0433",
+      "error_codes": [
+        "E0277",
+        "E0407",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::distribution::DistIter<D, R, T> as core::iter::Iterator>::next",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0277, E0407, E0433",
+      "error_codes": [
+        "E0277",
+        "E0407",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::distribution::DistIter<D, R, T> as core::iter::Iterator>::size_hint",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::distribution::DistIter<D, R, T> as core::iter::Iterator>::size_hint",
+      "category": "RUSTC_ERROR",
+      "reason": "Unresolved name/path: E0277, E0407, E0433, E0425, E0412",
+      "error_codes": [
+        "E0277",
+        "E0407",
+        "E0433",
+        "E0425",
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::distribution::DistMap<D, F, T, S> as distributions::distribution::Distribution<S>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::distribution::DistMap<D, F, T, S> as distributions::distribution::Distribution<S>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::distribution::DistMap<D, F, T, S> as distributions::distribution::Distribution<S>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::distribution::DistMap<D, F, T, S> as distributions::distribution::Distribution<S>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0433, E0599",
+      "error_codes": [
+        "E0432",
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::distribution::DistMap<D, F, T, S> as distributions::distribution::Distribution<S>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0603, E0063, E0433",
+      "error_codes": [
+        "E0603",
+        "E0063",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::float::<impl distributions::distribution::Distribution<f32> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::float::<impl distributions::distribution::Distribution<f32> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0603, E0433",
+      "error_codes": [
+        "E0603",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::float::OpenClosed01 as distributions::distribution::Distribution<f32>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::float::OpenClosed01 as distributions::distribution::Distribution<f32>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::float::Open01 as distributions::distribution::Distribution<f32>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::float::Open01 as distributions::distribution::Distribution<f32>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282, E0283",
+      "error_codes": [
+        "E0282",
+        "E0283"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::float::<impl distributions::distribution::Distribution<f64> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282",
+      "error_codes": [
+        "E0282"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::float::<impl distributions::distribution::Distribution<f64> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0603, E0433",
+      "error_codes": [
+        "E0603",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::float::OpenClosed01 as distributions::distribution::Distribution<f64>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::float::OpenClosed01 as distributions::distribution::Distribution<f64>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282, E0283",
+      "error_codes": [
+        "E0282",
+        "E0283"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::float::Open01 as distributions::distribution::Distribution<f64>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::float::Open01 as distributions::distribution::Distribution<f64>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282, E0283",
+      "error_codes": [
+        "E0282",
+        "E0283"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::utils::FloatAsSIMD::lanes",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0790",
+      "error_codes": [
+        "E0790"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::utils::FloatAsSIMD::lanes",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<f32 as distributions::utils::FloatSIMDUtils>::decrease_masked",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<f32 as distributions::utils::FloatSIMDUtils>::decrease_masked",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<f32 as distributions::utils::FloatSIMDUtils>::decrease_masked",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<f32 as distributions::utils::FloatSIMDUtils>::decrease_masked",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<f32 as distributions::utils::FloatSIMDUtils>::decrease_masked",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0061",
+      "error_codes": [
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<f32 as distributions::utils::FloatSIMDUtils>::cast_from_int",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<f32 as distributions::utils::FloatSIMDUtils>::cast_from_int",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<f32 as distributions::utils::FloatSIMDUtils>::cast_from_int",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<f64 as distributions::utils::FloatSIMDUtils>::decrease_masked",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0433, E0599",
+      "error_codes": [
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<f64 as distributions::utils::FloatSIMDUtils>::decrease_masked",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::gen",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::gen",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::gen",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::gen_range",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::gen_range",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::gen_range",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::sample_iter",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0412, E0433",
+      "error_codes": [
+        "E0432",
+        "E0412",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::sample_iter",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0412, E0433",
+      "error_codes": [
+        "E0432",
+        "E0412",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::sample_iter",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0412, E0433",
+      "error_codes": [
+        "E0432",
+        "E0412",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432, E0119",
+      "error_codes": [
+        "E0432",
+        "E0119"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0119, E0433",
+      "error_codes": [
+        "E0432",
+        "E0119",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0119",
+      "error_codes": [
+        "E0119"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::try_fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0412, E0119, E0433",
+      "error_codes": [
+        "E0432",
+        "E0412",
+        "E0119",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::try_fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0119, E0433",
+      "error_codes": [
+        "E0432",
+        "E0119",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::try_fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0412, E0119, E0433",
+      "error_codes": [
+        "E0432",
+        "E0412",
+        "E0119",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::gen_bool",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0119, E0433",
+      "error_codes": [
+        "E0432",
+        "E0119",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::gen_bool",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::gen_bool",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0119, E0433",
+      "error_codes": [
+        "E0432",
+        "E0119",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::gen_ratio",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0412, E0433",
+      "error_codes": [
+        "E0432",
+        "E0412",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::gen_ratio",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rng::Rng::gen_ratio",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0407, E0119, E0433",
+      "error_codes": [
+        "E0432",
+        "E0407",
+        "E0119",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<[core::num::Wrapping<i16>] as rng::Fill>::try_fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433, E0412",
+      "error_codes": [
+        "E0433",
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<[core::num::Wrapping<i16>] as rng::Fill>::try_fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0412",
+      "error_codes": [
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<[core::num::Wrapping<i32>] as rng::Fill>::try_fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433, E0412",
+      "error_codes": [
+        "E0433",
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<[core::num::Wrapping<i32>] as rng::Fill>::try_fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433, E0412",
+      "error_codes": [
+        "E0433",
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<[core::num::Wrapping<i32>] as rng::Fill>::try_fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0603",
+      "error_codes": [
+        "E0603"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<[core::num::Wrapping<i32>] as rng::Fill>::try_fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<[T; 32] as rng::Fill>::try_fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0277",
+      "error_codes": [
+        "E0277"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<[T; 32] as rng::Fill>::try_fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0599",
+      "error_codes": [
+        "E0432",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<[T; 4096] as rng::Fill>::try_fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0277, E0432",
+      "error_codes": [
+        "E0277",
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<[T; 4096] as rng::Fill>::try_fill",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0599",
+      "error_codes": [
+        "E0432",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::bernoulli::Bernoulli::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::bernoulli::Bernoulli as distributions::distribution::Distribution<bool>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::bernoulli::Bernoulli as distributions::distribution::Distribution<bool>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::bernoulli::Bernoulli as distributions::distribution::Distribution<bool>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<distributions::bernoulli::Bernoulli as distributions::distribution::Distribution<bool>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::bernoulli::Bernoulli as distributions::distribution::Distribution<bool>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<u8> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<u8> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<u16> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<u16> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282",
+      "error_codes": [
+        "E0282"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<u32> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<u32> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282",
+      "error_codes": [
+        "E0282"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<u64> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<u64> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<u128> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<u128> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<usize> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<usize> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<i8> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282",
+      "error_codes": [
+        "E0282"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<i8> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<i16> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<i16> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282",
+      "error_codes": [
+        "E0282"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<i32> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<i32> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<i64> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<i64> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<isize> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<isize> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282",
+      "error_codes": [
+        "E0282"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<core::num::NonZeroU8> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<core::num::NonZeroU32> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<core::num::NonZeroU32> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<core::num::NonZeroU64> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<core::num::NonZeroU64> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282",
+      "error_codes": [
+        "E0282"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<core::num::NonZeroU128> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::integer::<impl distributions::distribution::Distribution<core::num::NonZeroU128> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282",
+      "error_codes": [
+        "E0282"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<char> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<char> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::DistString for distributions::Standard>::append_string",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::other::Alphanumeric as distributions::distribution::Distribution<u8>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::other::Alphanumeric as distributions::distribution::DistString>::append_string",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<bool> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<bool> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type inference failed: E0282",
+      "error_codes": [
+        "E0282"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<()> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<()> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A,)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A,)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A,)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A,)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A,)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A,)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A,)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A,)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A,)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A,)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A,)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0107",
+      "error_codes": [
+        "E0107"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0277, E0308, E0599",
+      "error_codes": [
+        "E0277",
+        "E0308",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0107, E0433",
+      "error_codes": [
+        "E0107",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0603, E0107, E0433",
+      "error_codes": [
+        "E0603",
+        "E0107",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0433",
+      "error_codes": [
+        "E0308",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0107",
+      "error_codes": [
+        "E0107"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0603, E0432, E0308",
+      "error_codes": [
+        "E0603",
+        "E0432",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0107",
+      "error_codes": [
+        "E0107"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F, G)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0107, E0433",
+      "error_codes": [
+        "E0107",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F, G)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F, G, H)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0603, E0562, E0433",
+      "error_codes": [
+        "E0603",
+        "E0562",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F, G, H)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F, G, H, I)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F, G, H, I)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F, G, H, I, J)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F, G, H, I, J)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0107, E0252",
+      "error_codes": [
+        "E0107",
+        "E0252"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F, G, H, I, J, K)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F, G, H, I, J, K)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0107",
+      "error_codes": [
+        "E0107"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F, G, H, I, J, K, L)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F, G, H, I, J, K, L)> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<[T; _]> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<[T; _]> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<[T; 32]> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<[T; 32]> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<core::option::Option<T>> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<core::option::Option<T>> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0107",
+      "error_codes": [
+        "E0107"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<core::num::Wrapping<T>> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::other::<impl distributions::distribution::Distribution<core::num::Wrapping<T>> for distributions::Standard>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::slice::Slice::<'a, T>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::slice::Slice::<'a, T>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0369, E0433",
+      "error_codes": [
+        "E0369",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::slice::Slice::<'a, T>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::slice::Slice<'a, T> as distributions::distribution::Distribution<&'a T>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::slice::Slice<'a, T> as distributions::distribution::Distribution<&'a T>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::weighted_index::WeightedIndex::<X>::new",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::weighted_index::WeightedIndex::<X>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::weighted_index::WeightedIndex::<X>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0412, E0433",
+      "error_codes": [
+        "E0412",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::weighted_index::WeightedIndex::<X>::update_weights",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0412",
+      "error_codes": [
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::weighted_index::WeightedIndex::<X>::update_weights",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433, E0412",
+      "error_codes": [
+        "E0433",
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::weighted_index::WeightedIndex::<X>::update_weights",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::weighted_index::WeightedIndex::<X>::update_weights",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::weighted_index::WeightedIndex::<X>::update_weights",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::weighted_index::WeightedIndex::<X>::update_weights",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::weighted_index::WeightedIndex::<X>::update_weights",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::weighted_index::WeightedIndex::<X>::update_weights",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::weighted_index::WeightedIndex::<X>::update_weights",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::weighted_index::WeightedIndex::<X>::update_weights",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::weighted_index::WeightedIndex<X> as distributions::distribution::Distribution<usize>>::sample",
+      "category": "OTHER_FAILURE",
+      "reason": "Compilation failed without specific error code",
+      "error_codes": [],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<distributions::weighted_index::WeightedIndex<X> as distributions::distribution::Distribution<usize>>::sample",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::weighted::alias_method::WeightedIndex::<W>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0412",
+      "error_codes": [
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::weighted::alias_method::WeightedIndex::<W>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::weighted::alias_method::WeightedIndex::<W>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "distributions::weighted::alias_method::WeightedIndex::<W>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0369, E0433, E0412",
+      "error_codes": [
+        "E0369",
+        "E0433",
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::weighted::alias_method::WeightedIndex::<W>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0412",
+      "error_codes": [
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "distributions::weighted::alias_method::WeightedIndex::<W>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433, E0412",
+      "error_codes": [
+        "E0433",
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::read::ReadRng::<R>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433, E0412",
+      "error_codes": [
+        "E0433",
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::read::ReadRng::<R>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0412",
+      "error_codes": [
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::adapter::read::ReadRng::<R>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::read::ReadRng<R> as rand_core::RngCore>::next_u32",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<rngs::adapter::read::ReadRng<R> as rand_core::RngCore>::next_u32",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<rngs::adapter::read::ReadRng<R> as rand_core::RngCore>::next_u32",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<rngs::adapter::read::ReadRng<R> as rand_core::RngCore>::next_u64",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0412",
+      "error_codes": [
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::read::ReadRng<R> as rand_core::RngCore>::fill_bytes",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::read::ReadRng<R> as rand_core::RngCore>::fill_bytes",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0412",
+      "error_codes": [
+        "E0412"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::read::ReadRng<R> as rand_core::RngCore>::try_fill_bytes",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0412, E0599",
+      "error_codes": [
+        "E0412",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::read::ReadRng<R> as rand_core::RngCore>::try_fill_bytes",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::read::ReadError as core::error::Error>::source",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0423",
+      "error_codes": [
+        "E0423"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<rngs::adapter::read::ReadError as core::error::Error>::source",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<rngs::adapter::read::ReadError as core::error::Error>::source",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<rngs::adapter::read::ReadError as core::error::Error>::source",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433, E0576",
+      "error_codes": [
+        "E0433",
+        "E0576"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::adapter::read::ReadError as core::error::Error>::source",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0433, E0599",
+      "error_codes": [
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "rngs::mock::StepRng::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::mock::StepRng as rand_core::RngCore>::next_u32",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::mock::StepRng as rand_core::RngCore>::next_u32",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0061",
+      "error_codes": [
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::mock::StepRng as rand_core::RngCore>::next_u64",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::mock::StepRng as rand_core::RngCore>::fill_bytes",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0277, E0308",
+      "error_codes": [
+        "E0277",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::mock::StepRng as rand_core::RngCore>::try_fill_bytes",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0277, E0308",
+      "error_codes": [
+        "E0277",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::std::StdRng as rand_core::SeedableRng>::from_seed",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<rngs::std::StdRng as rand_core::SeedableRng>::from_seed",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<rngs::std::StdRng as rand_core::SeedableRng>::from_seed",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<rngs::std::StdRng as rand_core::SeedableRng>::from_seed",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<rngs::std::StdRng as rand_core::SeedableRng>::from_rng",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    }
+  ]
+}

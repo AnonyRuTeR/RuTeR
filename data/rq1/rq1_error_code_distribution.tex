@@ -1,0 +1,88 @@
+\documentclass[tikz,border=3pt]{article}
+\usepackage{tikz}
+\usepackage[T1]{fontenc}
+\usepackage[paperwidth=15cm,paperheight=9cm,margin=0cm]{geometry}
+\pagestyle{empty}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\definecolor{axisgray}{HTML}{333333}
+\definecolor{gridgray}{HTML}{D9D9D9}
+\definecolor{textgray}{HTML}{222222}
+\definecolor{bar0}{HTML}{0072B2}
+\definecolor{bar1}{HTML}{D55E00}
+\definecolor{bar2}{HTML}{009E73}
+\definecolor{bar3}{HTML}{CC79A7}
+\definecolor{bar4}{HTML}{56B4E9}
+\definecolor{bar5}{HTML}{E69F00}
+\definecolor{bar6}{HTML}{8B6BBE}
+\definecolor{bar7}{HTML}{4C78A8}
+\definecolor{bar8}{HTML}{59A14F}
+\definecolor{bar9}{HTML}{F28E2B}
+\definecolor{bar10}{HTML}{B07AA1}
+\definecolor{bar11}{HTML}{76B7B2}
+\definecolor{bar12}{HTML}{999999}
+\node[anchor=west, font=\bfseries\Large, text=textgray] at (0.15,7.949999999999999) {High-frequency Rust compiler error codes};
+\node[anchor=west, font=\small, text=axisgray] at (0.15,7.549999999999999) {Main experiment: 3,700 error-code occurrences from 2,452 failed generated tests (3,183 attempts)};
+\draw[axisgray, line width=0.6pt] (2.05,1.35) -- (2.05,6.9) -- (13.7,6.9);
+\draw[axisgray, line width=0.6pt] (2.05,1.35) -- (13.7,1.35);
+\node[anchor=east, font=\scriptsize, text=axisgray] at (1.9299999999999997,1.350) {0};
+\draw[gridgray, line width=0.25pt] (2.05,2.143) -- (13.7,2.143);
+\node[anchor=east, font=\scriptsize, text=axisgray] at (1.9299999999999997,2.143) {5};
+\draw[gridgray, line width=0.25pt] (2.05,2.936) -- (13.7,2.936);
+\node[anchor=east, font=\scriptsize, text=axisgray] at (1.9299999999999997,2.936) {10};
+\draw[gridgray, line width=0.25pt] (2.05,3.729) -- (13.7,3.729);
+\node[anchor=east, font=\scriptsize, text=axisgray] at (1.9299999999999997,3.729) {15};
+\draw[gridgray, line width=0.25pt] (2.05,4.521) -- (13.7,4.521);
+\node[anchor=east, font=\scriptsize, text=axisgray] at (1.9299999999999997,4.521) {20};
+\draw[gridgray, line width=0.25pt] (2.05,5.314) -- (13.7,5.314);
+\node[anchor=east, font=\scriptsize, text=axisgray] at (1.9299999999999997,5.314) {25};
+\draw[gridgray, line width=0.25pt] (2.05,6.107) -- (13.7,6.107);
+\node[anchor=east, font=\scriptsize, text=axisgray] at (1.9299999999999997,6.107) {30};
+\draw[gridgray, line width=0.25pt] (2.05,6.900) -- (13.7,6.900);
+\node[anchor=east, font=\scriptsize, text=axisgray] at (1.9299999999999997,6.900) {35};
+\node[rotate=90, anchor=center, font=\small, text=axisgray] at (0.45,4.125) {Share of error-code occurrences (\%)};
+\filldraw[fill=bar0, draw=white, line width=0.35pt] (2.208,1.35) rectangle (2.788,6.536);
+\node[anchor=south, font=\scriptsize, text=textgray] at (2.498,6.616) {32.7};
+\node[anchor=east, rotate=45, font=\scriptsize\ttfamily, text=axisgray] at (2.598,1.170) {E0433};
+\filldraw[fill=bar1, draw=white, line width=0.35pt] (3.104,1.35) rectangle (3.684,5.121);
+\node[anchor=south, font=\scriptsize, text=textgray] at (3.394,5.201) {23.8};
+\node[anchor=east, rotate=45, font=\scriptsize\ttfamily, text=axisgray] at (3.494,1.170) {E0432};
+\filldraw[fill=bar2, draw=white, line width=0.35pt] (4.000,1.35) rectangle (4.580,3.703);
+\node[anchor=south, font=\scriptsize, text=textgray] at (4.290,3.783) {14.8};
+\node[anchor=east, rotate=45, font=\scriptsize\ttfamily, text=axisgray] at (4.390,1.170) {E0599};
+\filldraw[fill=bar3, draw=white, line width=0.35pt] (4.897,1.35) rectangle (5.477,2.237);
+\node[anchor=south, font=\scriptsize, text=textgray] at (5.187,2.317) {5.6};
+\node[anchor=east, rotate=45, font=\scriptsize\ttfamily, text=axisgray] at (5.287,1.170) {E0308};
+\filldraw[fill=bar4, draw=white, line width=0.35pt] (5.793,1.35) rectangle (6.373,2.143);
+\node[anchor=south, font=\scriptsize, text=textgray] at (6.083,2.223) {5.0};
+\node[anchor=east, rotate=45, font=\scriptsize\ttfamily, text=axisgray] at (6.183,1.170) {E0603};
+\filldraw[fill=bar5, draw=white, line width=0.35pt] (6.689,1.35) rectangle (7.269,1.864);
+\node[anchor=south, font=\scriptsize, text=textgray] at (6.979,1.944) {3.2};
+\node[anchor=east, rotate=45, font=\scriptsize\ttfamily, text=axisgray] at (7.079,1.170) {E0560};
+\filldraw[fill=bar6, draw=white, line width=0.35pt] (7.585,1.35) rectangle (8.165,1.821);
+\node[anchor=south, font=\scriptsize, text=textgray] at (7.875,1.901) {3.0};
+\node[anchor=east, rotate=45, font=\scriptsize\ttfamily, text=axisgray] at (7.975,1.170) {E0061};
+\filldraw[fill=bar7, draw=white, line width=0.35pt] (8.481,1.35) rectangle (9.061,1.697);
+\node[anchor=south, font=\scriptsize, text=textgray] at (8.771,1.777) {2.2};
+\node[anchor=east, rotate=45, font=\scriptsize\ttfamily, text=axisgray] at (8.871,1.170) {E0277};
+\filldraw[fill=bar8, draw=white, line width=0.35pt] (9.377,1.35) rectangle (9.957,1.590);
+\node[anchor=south, font=\scriptsize, text=textgray] at (9.667,1.670) {1.5};
+\node[anchor=east, rotate=45, font=\scriptsize\ttfamily, text=axisgray] at (9.767,1.170) {E0412};
+\filldraw[fill=bar9, draw=white, line width=0.35pt] (10.273,1.35) rectangle (10.853,1.547);
+\node[anchor=south, font=\scriptsize, text=textgray] at (10.563,1.627) {1.2};
+\node[anchor=east, rotate=45, font=\scriptsize\ttfamily, text=axisgray] at (10.663,1.170) {E0658};
+\filldraw[fill=bar10, draw=white, line width=0.35pt] (11.170,1.35) rectangle (11.750,1.491);
+\node[anchor=south, font=\scriptsize, text=textgray] at (11.460,1.571) {0.9};
+\node[anchor=east, rotate=45, font=\scriptsize\ttfamily, text=axisgray] at (11.560,1.170) {E0369};
+\filldraw[fill=bar11, draw=white, line width=0.35pt] (12.066,1.35) rectangle (12.646,1.483);
+\node[anchor=south, font=\scriptsize, text=textgray] at (12.356,1.563) {0.8};
+\node[anchor=east, rotate=45, font=\scriptsize\ttfamily, text=axisgray] at (12.456,1.170) {E0282};
+\filldraw[fill=bar12, draw=white, line width=0.35pt] (12.962,1.35) rectangle (13.542,2.173);
+\node[anchor=south, font=\scriptsize, text=textgray] at (13.252,2.253) {5.2};
+\node[anchor=east, rotate=45, font=\scriptsize\ttfamily, text=axisgray] at (13.352,1.170) {Other};
+\node[anchor=center, font=\small, text=axisgray] at (7.875,0.18) {Rust compiler error code};
+\draw[axisgray, line width=0.45pt] (2.498,6.986) -- (3.648,7.416);
+\node[anchor=west, align=left, font=\scriptsize, text=axisgray] at (3.698,7.436) {Path/import errors dominate:\\ E0433+E0432 = 56.5\%};
+\node[anchor=west, font=\scriptsize, text=axisgray] at (0.15,0.02) {Note: Percentages use all error-code occurrences as denominator; a failed test may contribute multiple error codes.};
+\end{tikzpicture}
+\end{document}

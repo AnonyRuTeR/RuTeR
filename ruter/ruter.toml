@@ -1,0 +1,16 @@
+[topk]
+size = 3
+
+[llm]
+enabled = false
+mode = "replay"
+timeout_secs = 60
+max_rounds = 3
+max_candidates_per_round = 3
+output_token_ratio = 2.0
+raw_response_max_chars = 4096
+debug_dump_full_io = false
+
+[llm.context]
+max_chars = 12000
+target_fn_hard_limit_chars = 8000

@@ -1,0 +1,6 @@
+source_id,attempt_total,attempt_resolved,attempt_repair_rate,strict_success,strict_success_rate,normalized_success,normalized_success_rate,strict_normalized_delta
+direct_llm_1shot,46,14,0.304348,14,0.304348,14,0.304348,0.0
+rug_existing_humantime,85,54,0.635294,54,0.635294,54,0.635294,0.0
+rugae_base4_humantime_replay,11,6,0.545455,4,0.363636,6,0.545455,0.181819
+rugae_hybrid4_humantime_replay,11,6,0.545455,4,0.363636,6,0.545455,0.181819
+rustyunit_humantime_replay,21,3,0.142857,3,0.142857,4,0.190476,0.047619

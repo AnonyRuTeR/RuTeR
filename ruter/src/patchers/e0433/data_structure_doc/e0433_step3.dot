@@ -1,0 +1,56 @@
+digraph E0433Patcher_Teaching_Step3 {
+  graph [
+    rankdir=TB,
+    fontsize=24,
+    labelloc="t",
+    label="Step 3 — Span Expansion & Path Analysis (&SpanInfo + &str -> ExtendedSpan)",
+    bgcolor="white",
+    pad="0.25",
+    nodesep="0.55",
+    ranksep="0.75",
+    splines="ortho"
+  ];
+
+  node [
+    shape=box,
+    style="rounded,filled",
+    fillcolor="#F7F7F7",
+    color="#444444",
+    penwidth=1.6,
+    fontname="Helvetica",
+    fontsize=16
+  ];
+
+  edge [
+    color="#444444",
+    penwidth=1.3,
+    fontname="Helvetica",
+    fontsize=14,
+    arrowsize=0.85
+  ];
+
+  in1 [label="Input: &SpanInfo\n(original byte range)", fillcolor="#FFF4D6"];
+  in2 [label="Input: &str\n(source code)", fillcolor="#FFF4D6"];
+
+  fn [label="SpanAnalyzer::analyze\nextend_span + parse segments", fillcolor="#E9F5FF"];
+
+  scan [label="extend_span\nscan from byte_end\nrecognize '::' + ident", fillcolor="#FFFFFF"];
+  seg  [label="segments: Vec<PathSegment>\n(name + byte_range)", fillcolor="#FFFFFF"];
+  st   [label="structure: PathStructure\nSingleIdent / ModuleAccess /\nMethodCall / NestedPath", fillcolor="#FFFFFF"];
+  ext  [label="extended_span: SpanInfo\n(expanded replace range)", fillcolor="#FFFFFF"];
+
+  out [label="Output: ExtendedSpan\n{ original_span, extended_span,\n  segments, structure }", fillcolor="#DFF7E3"];
+
+  in1 -> fn [label="borrow"];
+  in2 -> fn [label="borrow"];
+
+  fn -> scan;
+  scan -> seg;
+  seg  -> st;
+  scan -> ext;
+
+  seg -> out;
+  st  -> out;
+  ext -> out;
+  in1 -> out [style=dashed, label="original_span snapshot"];
+}

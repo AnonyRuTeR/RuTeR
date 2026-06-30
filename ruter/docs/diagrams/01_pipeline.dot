@@ -1,0 +1,44 @@
+digraph ruter_pipeline {
+    rankdir=TB;
+    fontname="Helvetica";
+    node [shape=box, style="rounded,filled", fillcolor="#E8F0FE", fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=10];
+
+    subgraph cluster_input {
+        label="输入";
+        labeljust=l;
+        style=dashed;
+        color="#999999";
+        fontname="Helvetica";
+        fontsize=11;
+        crate_path [label="Crate 目录\n(含 Cargo.toml)", shape=folder, fillcolor="#FFF3E0"];
+    }
+
+    compile [label="Stage 1: Compile\ncargo check --tests\n--message-format=json"];
+    analyze [label="Stage 2: Analyze\n解析 NDJSON → Diagnostic[]"];
+    plan [label="Stage 3: Plan\nFunction Dispatch\n+ Rule Candidates"];
+    verify [label="Stage 4: Verify\nOptimistic Greedy\n函数级验证"];
+    llm [label="Stage 4+: LLM\nPreflight → Context\n→ Prompt → Verify", fillcolor="#E8F5E9"];
+    apply [label="Stage 5: Apply\n写回源文件 / Dry-run"];
+    summarize [label="Stage 6: Summarize\n生成 6_summary.json"];
+
+    crate_path -> compile;
+    compile -> analyze [label="NDJSON"];
+    analyze -> plan [label="Diagnostic[]"];
+    plan -> verify [label="FunctionPatchTask[]\n+ RuleCandidates"];
+    verify -> llm [label="未解决函数\n(Partial Union)", style=dashed];
+    verify -> apply [label="已接纳补丁"];
+    llm -> apply [label="LLM 接纳补丁", style=dashed];
+    apply -> summarize;
+
+    subgraph cluster_output {
+        label="输出 Artifacts";
+        labeljust=l;
+        style=dashed;
+        color="#999999";
+        fontname="Helvetica";
+        fontsize=11;
+        artifacts [label="1_compile_diagnostics.json\n2_analyzed_diagnostics.json\n3_plan.json\n4_function_verify_rounds.json\n4_llm_attempts.json\n5_changes.diff\n6_summary.json", shape=note, fillcolor="#FFF9C4"];
+    }
+    summarize -> artifacts;
+}

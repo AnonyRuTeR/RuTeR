@@ -1,0 +1,317 @@
+{
+  "generated_at_utc": "2026-04-29T12:07:57+00:00",
+  "phase": "phase_1A_plus",
+  "mode": "replay_plan",
+  "source_snapshot": {
+    "summary_file": "evaluation/phase_1A/logs/run_summary_refreshed_all_20260316_031806.json",
+    "summary_generated_at_utc": "2026-03-15T19:18:06+00:00",
+    "selected_batch_total": 1858,
+    "strict_success_total": 866,
+    "normalized_success_total": 906
+  },
+  "consistency_check": {
+    "source_snapshot": {
+      "summary_file": "evaluation/phase_1A/logs/run_summary_refreshed_all_20260316_031806.json",
+      "summary_generated_at_utc": "2026-03-15T19:18:06+00:00",
+      "selected_batch_total": 1858,
+      "strict_success_total": 866,
+      "normalized_success_total": 906
+    },
+    "paired_totals": {
+      "attempt_total": 1858,
+      "strict_success_total": 217,
+      "normalized_success_total": 248
+    },
+    "matched": true,
+    "mismatch_reason": ""
+  },
+  "selected_crates": [
+    "humantime",
+    "itoa",
+    "log",
+    "mio",
+    "rand",
+    "rust-crc32fast",
+    "rustc-demangle",
+    "ryu",
+    "semver"
+  ],
+  "selected_tracks": [
+    "canonical"
+  ],
+  "tracks": {
+    "canonical": {
+      "scenarios": [
+        "baseline",
+        "successful_only",
+        "successful_plus_repaired",
+        "repaired_only"
+      ],
+      "run_total": 17,
+      "runs": [
+        {
+          "run_id": "humantime_claude-3-5-haiku-20241022_20251109_133407",
+          "crate": "humantime",
+          "model": "claude-3-5-haiku-20241022",
+          "scenario_names": [
+            "baseline",
+            "successful_only",
+            "successful_plus_repaired",
+            "repaired_only"
+          ],
+          "repaired_replay_eligible_total": 27,
+          "workspace_source": "pristine_crate",
+          "original_success_asset_total": 16,
+          "original_success_missing_target_node_total": 0
+        },
+        {
+          "run_id": "humantime_deepseek-v3_20251109_140004",
+          "crate": "humantime",
+          "model": "deepseek-v3",
+          "scenario_names": [
+            "baseline",
+            "successful_only",
+            "successful_plus_repaired",
+            "repaired_only"
+          ],
+          "repaired_replay_eligible_total": 13,
+          "workspace_source": "pristine_crate",
+          "original_success_asset_total": 21,
+          "original_success_missing_target_node_total": 0
+        },
+        {
+          "run_id": "humantime_gemini-2.5-flash-nothinking_20251109_134926",
+          "crate": "humantime",
+          "model": "gemini-2.5-flash-nothinking",
+          "scenario_names": [
+            "baseline",
+            "successful_only",
+            "successful_plus_repaired",
+            "repaired_only"
+          ],
+          "repaired_replay_eligible_total": 19,
+          "workspace_source": "pristine_crate",
+          "original_success_asset_total": 25,
+          "original_success_missing_target_node_total": 0
+        },
+        {
+          "run_id": "humantime_gemini-2.5-flash-thinking_20251109_141506",
+          "crate": "humantime",
+          "model": "gemini-2.5-flash-thinking",
+          "scenario_names": [
+            "baseline",
+            "successful_only",
+            "successful_plus_repaired",
+            "repaired_only"
+          ],
+          "repaired_replay_eligible_total": 4,
+          "workspace_source": "pristine_crate",
+          "original_success_asset_total": 25,
+          "original_success_missing_target_node_total": 0
+        },
+        {
+          "run_id": "humantime_gpt-3.5-turbo_20251109_000031",
+          "crate": "humantime",
+          "model": "gpt-3.5-turbo",
+          "scenario_names": [
+            "baseline",
+            "successful_only",
+            "successful_plus_repaired",
+            "repaired_only"
+          ],
+          "repaired_replay_eligible_total": 5,
+          "workspace_source": "pristine_crate",
+          "original_success_asset_total": 18,
+          "original_success_missing_target_node_total": 0
+        },
+        {
+          "run_id": "humantime_gpt-4.1-mini_20251109_001052",
+          "crate": "humantime",
+          "model": "gpt-4.1-mini",
+          "scenario_names": [
+            "baseline",
+            "successful_only",
+            "successful_plus_repaired",
+            "repaired_only"
+          ],
+          "repaired_replay_eligible_total": 15,
+          "workspace_source": "pristine_crate",
+          "original_success_asset_total": 21,
+          "original_success_missing_target_node_total": 0
+        },
+        {
+          "run_id": "humantime_gpt-4.1-nano_20251109_132117",
+          "crate": "humantime",
+          "model": "gpt-4.1-nano",
+          "scenario_names": [
+            "baseline",
+            "successful_only",
+            "successful_plus_repaired",
+            "repaired_only"
+          ],
+          "repaired_replay_eligible_total": 7,
+          "workspace_source": "pristine_crate",
+          "original_success_asset_total": 17,
+          "original_success_missing_target_node_total": 0
+        },
+        {
+          "run_id": "humantime_gpt-4o-mini_20251108_234236",
+          "crate": "humantime",
+          "model": "gpt-4o-mini",
+          "scenario_names": [
+            "baseline",
+            "successful_only",
+            "successful_plus_repaired",
+            "repaired_only"
+          ],
+          "repaired_replay_eligible_total": 2,
+          "workspace_source": "pristine_crate",
+          "original_success_asset_total": 16,
+          "original_success_missing_target_node_total": 0
+        },
+        {
+          "run_id": "humantime_gpt-5-nano_20251109_004846",
+          "crate": "humantime",
+          "model": "gpt-5-nano",
+          "scenario_names": [
+            "baseline",
+            "successful_only",
+            "successful_plus_repaired",
+            "repaired_only"
+          ],
+          "repaired_replay_eligible_total": 10,
+          "workspace_source": "pristine_crate",
+          "original_success_asset_total": 16,
+          "original_success_missing_target_node_total": 0
+        },
+        {
+          "run_id": "itoa_gemini-2.5-flash-nothinking_20251127_010109",
+          "crate": "itoa",
+          "model": "gemini-2.5-flash-nothinking",
+          "scenario_names": [
+            "baseline",
+            "successful_only",
+            "successful_plus_repaired",
+            "repaired_only"
+          ],
+          "repaired_replay_eligible_total": 4,
+          "workspace_source": "pristine_crate",
+          "original_success_asset_total": 14,
+          "original_success_missing_target_node_total": 0
+        },
+        {
+          "run_id": "log_gemini-2.5-flash-nothinking_20251127_025911",
+          "crate": "log",
+          "model": "gemini-2.5-flash-nothinking",
+          "scenario_names": [
+            "baseline",
+            "successful_only",
+            "successful_plus_repaired",
+            "repaired_only"
+          ],
+          "repaired_replay_eligible_total": 13,
+          "workspace_source": "pristine_crate",
+          "original_success_asset_total": 33,
+          "original_success_missing_target_node_total": 0
+        },
+        {
+          "run_id": "mio_gemini-2.5-flash-nothinking_20251127_012706",
+          "crate": "mio",
+          "model": "gemini-2.5-flash-nothinking",
+          "scenario_names": [
+            "baseline",
+            "successful_only",
+            "successful_plus_repaired",
+            "repaired_only"
+          ],
+          "repaired_replay_eligible_total": 35,
+          "workspace_source": "pristine_crate",
+          "original_success_asset_total": 4,
+          "original_success_missing_target_node_total": 0
+        },
+        {
+          "run_id": "rand_gemini-2.5-flash-nothinking_20251127_025504",
+          "crate": "rand",
+          "model": "gemini-2.5-flash-nothinking",
+          "scenario_names": [
+            "baseline",
+            "successful_only",
+            "successful_plus_repaired",
+            "repaired_only"
+          ],
+          "repaired_replay_eligible_total": 64,
+          "workspace_source": "pristine_crate",
+          "original_success_asset_total": 141,
+          "original_success_missing_target_node_total": 0
+        },
+        {
+          "run_id": "rust-crc32fast_gemini-2.5-flash-nothinking_20251109_235808",
+          "crate": "rust-crc32fast",
+          "model": "gemini-2.5-flash-nothinking",
+          "scenario_names": [
+            "baseline",
+            "successful_only",
+            "successful_plus_repaired",
+            "repaired_only"
+          ],
+          "repaired_replay_eligible_total": 9,
+          "workspace_source": "pristine_crate",
+          "original_success_asset_total": 26,
+          "original_success_missing_target_node_total": 0
+        },
+        {
+          "run_id": "rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158",
+          "crate": "rustc-demangle",
+          "model": "gemini-2.5-flash-nothinking",
+          "scenario_names": [
+            "baseline",
+            "successful_only",
+            "successful_plus_repaired",
+            "repaired_only"
+          ],
+          "repaired_replay_eligible_total": 4,
+          "workspace_source": "pristine_crate",
+          "original_success_asset_total": 11,
+          "original_success_missing_target_node_total": 0
+        },
+        {
+          "run_id": "ryu_gemini-2.5-flash-nothinking_20251127_013142",
+          "crate": "ryu",
+          "model": "gemini-2.5-flash-nothinking",
+          "scenario_names": [
+            "baseline",
+            "successful_only",
+            "successful_plus_repaired",
+            "repaired_only"
+          ],
+          "repaired_replay_eligible_total": 3,
+          "workspace_source": "pristine_crate",
+          "original_success_asset_total": 34,
+          "original_success_missing_target_node_total": 0
+        },
+        {
+          "run_id": "semver_gemini-2.5-flash-nothinking_20251127_013324",
+          "crate": "semver",
+          "model": "gemini-2.5-flash-nothinking",
+          "scenario_names": [
+            "baseline",
+            "successful_only",
+            "successful_plus_repaired",
+            "repaired_only"
+          ],
+          "repaired_replay_eligible_total": 2,
+          "workspace_source": "pristine_crate",
+          "original_success_asset_total": 39,
+          "original_success_missing_target_node_total": 0
+        }
+      ]
+    }
+  },
+  "command_templates": [
+    "python3 evaluation/phase_1A_plus/scripts/replay_coverage.py plan --track canonical --crates humantime,itoa,rand",
+    "python3 evaluation/phase_1A_plus/scripts/replay_coverage.py materialize --track canonical --crates humantime,itoa,rand",
+    "python3 evaluation/phase_1A_plus/scripts/replay_coverage.py preflight --track canonical --crates humantime,itoa,rand",
+    "python3 evaluation/phase_1A_plus/scripts/replay_coverage.py run --track canonical --crates humantime,itoa,rand",
+    "python3 evaluation/phase_1A_plus/scripts/replay_coverage.py aggregate --track both --crates humantime,itoa,rand"
+  ]
+}

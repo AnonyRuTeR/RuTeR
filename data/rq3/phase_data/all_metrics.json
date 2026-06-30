@@ -1,0 +1,305 @@
+{
+  "generated_at_utc": "2026-04-16T15:15:40+00:00",
+  "scope": "all",
+  "attempt_level": {
+    "total": 174,
+    "resolved": 83,
+    "repair_rate": 0.477011,
+    "strict_success": 79,
+    "strict_success_rate": 0.454023,
+    "normalized_success": 84,
+    "normalized_success_rate": 0.482759,
+    "strict_normalized_delta": 0.028736,
+    "frozen_nonempty_total": 173,
+    "strict_success_frozen_nonempty": 79,
+    "normalized_success_frozen_nonempty": 84,
+    "strict_success_rate_frozen_nonempty": 0.456647,
+    "normalized_success_rate_frozen_nonempty": 0.485549
+  },
+  "function_level": {
+    "total": 62,
+    "resolved": 32,
+    "salvage_rate": 0.516129
+  },
+  "run_level": {
+    "total_runs_with_results": 5,
+    "repair_rate_variance": 0.182721
+  },
+  "source_level": {
+    "total_sources_with_results": 5,
+    "rows": [
+      {
+        "source_id": "direct_llm_1shot",
+        "attempt_total": 46,
+        "attempt_resolved": 14,
+        "attempt_repair_rate": 0.304348,
+        "strict_success": 14,
+        "strict_success_rate": 0.304348,
+        "normalized_success": 14,
+        "normalized_success_rate": 0.304348,
+        "strict_normalized_delta": 0.0
+      },
+      {
+        "source_id": "rug_existing_humantime",
+        "attempt_total": 85,
+        "attempt_resolved": 54,
+        "attempt_repair_rate": 0.635294,
+        "strict_success": 54,
+        "strict_success_rate": 0.635294,
+        "normalized_success": 54,
+        "normalized_success_rate": 0.635294,
+        "strict_normalized_delta": 0.0
+      },
+      {
+        "source_id": "rugae_base4_humantime_replay",
+        "attempt_total": 11,
+        "attempt_resolved": 6,
+        "attempt_repair_rate": 0.545455,
+        "strict_success": 4,
+        "strict_success_rate": 0.363636,
+        "normalized_success": 6,
+        "normalized_success_rate": 0.545455,
+        "strict_normalized_delta": 0.181819
+      },
+      {
+        "source_id": "rugae_hybrid4_humantime_replay",
+        "attempt_total": 11,
+        "attempt_resolved": 6,
+        "attempt_repair_rate": 0.545455,
+        "strict_success": 4,
+        "strict_success_rate": 0.363636,
+        "normalized_success": 6,
+        "normalized_success_rate": 0.545455,
+        "strict_normalized_delta": 0.181819
+      },
+      {
+        "source_id": "rustyunit_humantime_replay",
+        "attempt_total": 21,
+        "attempt_resolved": 3,
+        "attempt_repair_rate": 0.142857,
+        "strict_success": 3,
+        "strict_success_rate": 0.142857,
+        "normalized_success": 4,
+        "normalized_success_rate": 0.190476,
+        "strict_normalized_delta": 0.047619
+      }
+    ],
+    "transfer_gap_vs_rug_existing": {
+      "direct_llm_1shot": {
+        "strict_success_rate_delta": -0.330946,
+        "normalized_success_rate_delta": -0.330946
+      },
+      "rug_existing_humantime": {
+        "strict_success_rate_delta": 0.0,
+        "normalized_success_rate_delta": 0.0
+      },
+      "rugae_base4_humantime_replay": {
+        "strict_success_rate_delta": -0.271658,
+        "normalized_success_rate_delta": -0.089839
+      },
+      "rugae_hybrid4_humantime_replay": {
+        "strict_success_rate_delta": -0.271658,
+        "normalized_success_rate_delta": -0.089839
+      },
+      "rustyunit_humantime_replay": {
+        "strict_success_rate_delta": -0.492437,
+        "normalized_success_rate_delta": -0.444818
+      }
+    }
+  },
+  "rq2": {
+    "by_code": {
+      "E0061": {
+        "total": 6,
+        "resolved": 0,
+        "repair_rate": 0.0
+      },
+      "E0063": {
+        "total": 4,
+        "resolved": 3,
+        "repair_rate": 0.75
+      },
+      "E0107": {
+        "total": 4,
+        "resolved": 2,
+        "repair_rate": 0.5
+      },
+      "E0116": {
+        "total": 6,
+        "resolved": 0,
+        "repair_rate": 0.0
+      },
+      "E0164": {
+        "total": 2,
+        "resolved": 1,
+        "repair_rate": 0.5
+      },
+      "E0252": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0
+      },
+      "E0255": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0
+      },
+      "E0277": {
+        "total": 3,
+        "resolved": 0,
+        "repair_rate": 0.0
+      },
+      "E0308": {
+        "total": 15,
+        "resolved": 5,
+        "repair_rate": 0.333333
+      },
+      "E0369": {
+        "total": 6,
+        "resolved": 0,
+        "repair_rate": 0.0
+      },
+      "E0404": {
+        "total": 3,
+        "resolved": 0,
+        "repair_rate": 0.0
+      },
+      "E0423": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0
+      },
+      "E0425": {
+        "total": 6,
+        "resolved": 3,
+        "repair_rate": 0.5
+      },
+      "E0428": {
+        "total": 2,
+        "resolved": 0,
+        "repair_rate": 0.0
+      },
+      "E0432": {
+        "total": 28,
+        "resolved": 15,
+        "repair_rate": 0.535714
+      },
+      "E0433": {
+        "total": 44,
+        "resolved": 27,
+        "repair_rate": 0.613636
+      },
+      "E0533": {
+        "total": 2,
+        "resolved": 0,
+        "repair_rate": 0.0
+      },
+      "E0560": {
+        "total": 13,
+        "resolved": 11,
+        "repair_rate": 0.846154
+      },
+      "E0599": {
+        "total": 50,
+        "resolved": 20,
+        "repair_rate": 0.4
+      },
+      "E0658": {
+        "total": 15,
+        "resolved": 0,
+        "repair_rate": 0.0
+      },
+      "E0659": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0
+      },
+      "E0765": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0
+      },
+      "NO_CODE": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0
+      },
+      "unsafe_code": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0
+      }
+    },
+    "by_resolution_path": {
+      "rule": 32,
+      "full": 51,
+      "unresolved": 91
+    }
+  },
+  "rq3": {
+    "target_clearance_batch_rate": 0.454023,
+    "non_target_regression_proxy_batches": 0
+  },
+  "rq5": {
+    "median_rule_duration_sec": 6.283,
+    "median_full_duration_sec": 21.371,
+    "median_verify_rounds": 1,
+    "llm_attempt_total": 2168
+  },
+  "rq6": {
+    "model_rows": [
+      {
+        "model": "direct_llm_1shot",
+        "attempt_total": 46,
+        "attempt_resolved": 14,
+        "attempt_repair_rate": 0.304348
+      },
+      {
+        "model": "gemini-2.5-flash-nothinking",
+        "attempt_total": 85,
+        "attempt_resolved": 54,
+        "attempt_repair_rate": 0.635294
+      },
+      {
+        "model": "rugae_base4_humantime_replay",
+        "attempt_total": 11,
+        "attempt_resolved": 6,
+        "attempt_repair_rate": 0.545455
+      },
+      {
+        "model": "rugae_hybrid4_humantime_replay",
+        "attempt_total": 11,
+        "attempt_resolved": 6,
+        "attempt_repair_rate": 0.545455
+      },
+      {
+        "model": "rustyunit_humantime_replay",
+        "attempt_total": 21,
+        "attempt_resolved": 3,
+        "attempt_repair_rate": 0.142857
+      }
+    ],
+    "difficulty_buckets": {
+      "multi_mixed": {
+        "total": 23,
+        "resolved": 4,
+        "repair_rate": 0.173913
+      },
+      "multi_supported_only": {
+        "total": 9,
+        "resolved": 0,
+        "repair_rate": 0.0
+      },
+      "multi_unsupported_only": {
+        "total": 2,
+        "resolved": 0,
+        "repair_rate": 0.0
+      },
+      "single_error": {
+        "total": 140,
+        "resolved": 79,
+        "repair_rate": 0.564286
+      }
+    }
+  }
+}

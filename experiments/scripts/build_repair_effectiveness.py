@@ -1,0 +1,138 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import argparse
+import csv
+import json
+from pathlib import Path
+
+from common import ensure_dir
+
+
+TRACKED_BASELINES = [
+    "no_repair",
+    "compiler_suggestion_only",
+    "rugpatcher_full",
+]
+
+
+def load_results(root: Path, baseline: str) -> list[dict]:
+    rows = []
+    base_dir = root / baseline
+    if not base_dir.exists():
+        return rows
+    for subject_dir in sorted(path for path in base_dir.iterdir() if path.is_dir()):
+        result_path = subject_dir / "baseline_result.json"
+        if result_path.exists():
+            rows.append(json.loads(result_path.read_text(encoding="utf-8")))
+    return rows
+
+
+def compute_metrics(rows: list[dict]) -> dict:
+    attempted = len(rows)
+    successful = sum(1 for row in rows if row.get("status") not in {"failed_to_run", "unsupported", None})
+    repaired = sum(1 for row in rows if row.get("status") == "repaired")
+    verification_pass = sum(1 for row in rows if row.get("verification_passed") is True)
+    prod_modified = sum(1 for row in rows if row.get("production_files_modified") is True)
+    unsupported = sum(1 for row in rows if row.get("status") == "unsupported")
+    unknown = 0
+    for row in rows:
+        if row.get("verification_passed") == "unknown" or row.get("production_files_modified") == "unknown" or row.get("target_test_preserved") == "unknown":
+            unknown += 1
+
+    per_code: dict[str, dict[str, int]] = {}
+    for row in rows:
+        initial = row.get("initial_error_codes") or {}
+        if not isinstance(initial, dict):
+            continue
+        for code, count in initial.items():
+            entry = per_code.setdefault(code, {"subjects": 0, "repaired_subjects": 0, "count": 0})
+            entry["subjects"] += 1
+            entry["count"] += int(count)
+            if row.get("status") == "repaired":
+                entry["repaired_subjects"] += 1
+    per_code_summary = "; ".join(
+        f"{code}:{vals['repaired_subjects']}/{vals['subjects']}"
+        for code, vals in sorted(per_code.items())
+    ) or "none"
+
+    return {
+        "subjects_attempted": attempted,
+        "subjects_successfully_run": successful,
+        "repaired_count": repaired,
+        "repair_rate": round(repaired / attempted, 4) if attempted else 0.0,
+        "verification_pass_count": verification_pass,
+        "verification_pass_rate": round(verification_pass / attempted, 4) if attempted else 0.0,
+        "production_files_modified_count": prod_modified,
+        "unknown_count": unknown,
+        "unsupported_count": unsupported,
+        "per_error_code_repair_summary": per_code_summary,
+    }
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Aggregate RQ2 smoke-test repair effectiveness results.")
+    parser.add_argument("--repair", required=True, help="Repair run artifact root")
+    parser.add_argument("--baselines", required=True, help="Baseline artifact root")
+    parser.add_argument("--out", required=True, help="Results root")
+    args = parser.parse_args()
+
+    repair_root = Path(args.repair).resolve()
+    baselines_root = Path(args.baselines).resolve()
+    out_root = Path(args.out).resolve()
+    tables_dir = ensure_dir(out_root / "tables")
+
+    rows = []
+    for baseline in TRACKED_BASELINES:
+        baseline_rows = load_results(baselines_root, baseline)
+        if baseline == "rugpatcher_full" and not baseline_rows:
+            # Fallback: synthesize from repair results if baseline copy was not created.
+            for subject_dir in sorted(path for path in repair_root.iterdir() if path.is_dir()):
+                result_path = subject_dir / "repair_result.json"
+                if result_path.exists():
+                    data = json.loads(result_path.read_text(encoding="utf-8"))
+                    data["baseline"] = "rugpatcher_full"
+                    baseline_rows.append(data)
+        metrics = compute_metrics(baseline_rows)
+        rows.append({"baseline": baseline, **metrics})
+
+    csv_path = tables_dir / "rq2_repair_effectiveness.csv"
+    with csv_path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=[
+                "baseline",
+                "subjects_attempted",
+                "subjects_successfully_run",
+                "repaired_count",
+                "repair_rate",
+                "verification_pass_count",
+                "verification_pass_rate",
+                "production_files_modified_count",
+                "unknown_count",
+                "unsupported_count",
+                "per_error_code_repair_summary",
+            ],
+        )
+        writer.writeheader()
+        writer.writerows(rows)
+
+    md_lines = [
+        "# RQ2 Repair Effectiveness (Smoke Test Only)",
+        "",
+        "This table is generated from the current **fixture-only** smoke-test pipeline.",
+        "This evaluation was generated by the RuTeR pipeline.",
+        "",
+        "| Baseline | Attempted | Successful | Repaired | Repair rate | Verify pass | Verify pass rate | Prod files modified | Unknown | Unsupported | Per-error-code summary |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|",
+    ]
+    for row in rows:
+        md_lines.append(
+            f"| {row['baseline']} | {row['subjects_attempted']} | {row['subjects_successfully_run']} | {row['repaired_count']} | {row['repair_rate']:.4f} | {row['verification_pass_count']} | {row['verification_pass_rate']:.4f} | {row['production_files_modified_count']} | {row['unknown_count']} | {row['unsupported_count']} | {row['per_error_code_repair_summary']} |"
+        )
+    (tables_dir / "rq2_repair_effectiveness.md").write_text("\n".join(md_lines) + "\n", encoding="utf-8")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

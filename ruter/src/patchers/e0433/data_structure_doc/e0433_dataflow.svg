@@ -1,0 +1,511 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1457pt" height="2208pt" viewBox="0.00 0.00 1457.07 2207.60">
+<g id="graph0" class="graph" transform="translate(12.020080541721882,2195.8278916220615) scale(1.0057929408369972)" data-name="E0433Patcher_Dataflow">
+
+<polygon fill="white" stroke="none" points="-18,18 -18,-2189.6 1439.07,-2189.6 1439.07,18 -18,18" style=""/>
+<text text-anchor="middle" x="710.54" y="-2147.8" font-family="Times,serif" font-size="22.00" style="">E0433Patcher Dataflow (Engineering View)</text>
+<g id="clust1" class="cluster" data-name="cluster_input">
+
+<path fill="white" stroke="#bbbbbb" d="M820,-1794.8C820,-1794.8 1151,-1794.8 1151,-1794.8 1157,-1794.8 1163,-1800.8 1163,-1806.8 1163,-1806.8 1163,-2117.2 1163,-2117.2 1163,-2123.2 1157,-2129.2 1151,-2129.2 1151,-2129.2 820,-2129.2 820,-2129.2 814,-2129.2 808,-2123.2 808,-2117.2 808,-2117.2 808,-1806.8 808,-1806.8 808,-1800.8 814,-1794.8 820,-1794.8" style=""/>
+<text text-anchor="middle" x="985.5" y="-2109" font-family="Times,serif" font-size="18.00" style="">Input / Core Structures</text>
+</g>
+<g id="clust2" class="cluster" data-name="cluster_s1">
+
+<path fill="white" stroke="#bbbbbb" d="M201,-1437.2C201,-1437.2 777,-1437.2 777,-1437.2 783,-1437.2 789,-1443.2 789,-1449.2 789,-1449.2 789,-1912 789,-1912 789,-1918 783,-1924 777,-1924 777,-1924 201,-1924 201,-1924 195,-1924 189,-1918 189,-1912 189,-1912 189,-1449.2 189,-1449.2 189,-1443.2 195,-1437.2 201,-1437.2" style=""/>
+<text text-anchor="middle" x="489" y="-1903.8" font-family="Times,serif" font-size="18.00" style="">Step 1 — Suggestion Extraction</text>
+</g>
+<g id="clust3" class="cluster" data-name="cluster_s2">
+
+<path fill="white" stroke="#bbbbbb" d="M20,-622C20,-622 791,-622 791,-622 797,-622 803,-628 803,-634 803,-634 803,-1390.8 803,-1390.8 803,-1396.8 797,-1402.8 791,-1402.8 791,-1402.8 20,-1402.8 20,-1402.8 14,-1402.8 8,-1396.8 8,-1390.8 8,-1390.8 8,-634 8,-634 8,-628 14,-622 20,-622" style=""/>
+<text text-anchor="middle" x="405.5" y="-1382.6" font-family="Times,serif" font-size="18.00" style="">Step 2 — Path Resolution (Decision Core)</text>
+</g>
+<g id="clust4" class="cluster" data-name="cluster_s3">
+
+<path fill="white" stroke="#bbbbbb" d="M977,-1039.6C977,-1039.6 1361,-1039.6 1361,-1039.6 1367,-1039.6 1373,-1045.6 1373,-1051.6 1373,-1051.6 1373,-1748.4 1373,-1748.4 1373,-1754.4 1367,-1760.4 1361,-1760.4 1361,-1760.4 977,-1760.4 977,-1760.4 971,-1760.4 965,-1754.4 965,-1748.4 965,-1748.4 965,-1051.6 965,-1051.6 965,-1045.6 971,-1039.6 977,-1039.6" style=""/>
+<text text-anchor="middle" x="1169" y="-1740.2" font-family="Times,serif" font-size="18.00" style="">Step 3 — Span Expansion &amp; Path Analysis</text>
+</g>
+<g id="clust5" class="cluster" data-name="cluster_s4">
+
+<path fill="white" stroke="#bbbbbb" d="M569,-8C569,-8 1147,-8 1147,-8 1153,-8 1159,-14 1159,-20 1159,-20 1159,-575.6 1159,-575.6 1159,-581.6 1153,-587.6 1147,-587.6 1147,-587.6 569,-587.6 569,-587.6 563,-587.6 557,-581.6 557,-575.6 557,-575.6 557,-20 557,-20 557,-14 563,-8 569,-8" style=""/>
+<text text-anchor="middle" x="858" y="-567.4" font-family="Times,serif" font-size="18.00" style="">Step 4 — Fix Generation (Output Construction)</text>
+</g>
+<!-- n_diag -->
+<g id="node1" class="node" pointer-events="visible" data-name="n_diag">
+
+<path fill="#fff9e6" stroke="#444444" stroke-width="1.4" d="M991.7,-2091.5C991.7,-2091.5 828.3,-2091.5 828.3,-2091.5 822.3,-2091.5 816.3,-2085.5 816.3,-2079.5 816.3,-2079.5 816.3,-1994.9 816.3,-1994.9 816.3,-1988.9 822.3,-1982.9 828.3,-1982.9 828.3,-1982.9 991.7,-1982.9 991.7,-1982.9 997.7,-1982.9 1003.7,-1988.9 1003.7,-1994.9 1003.7,-1994.9 1003.7,-2079.5 1003.7,-2079.5 1003.7,-2085.5 997.7,-2091.5 991.7,-2091.5" style=""/>
+<text text-anchor="middle" x="910" y="-2075" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Diagnostic</text>
+<text text-anchor="middle" x="910" y="-2058.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">(core/diagnostic.rs)</text>
+<text text-anchor="middle" x="910" y="-2041.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">fields:</text>
+<text text-anchor="middle" x="910" y="-2024.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">- code, message</text>
+<text text-anchor="middle" x="910" y="-2007.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">- span: Vec&lt;SpanInfo&gt;</text>
+<text text-anchor="middle" x="910" y="-1991" font-family="Helvetica,sans-Serif" font-size="14.00" style="">- children: Vec&lt;Diagnostic&gt;</text>
+</g>
+<!-- n_span -->
+<g id="node2" class="node" pointer-events="visible" data-name="n_span">
+
+<path fill="#fff9e6" stroke="#444444" stroke-width="1.4" d="M988.77,-1928.2C988.77,-1928.2 831.23,-1928.2 831.23,-1928.2 825.23,-1928.2 819.23,-1922.2 819.23,-1916.2 819.23,-1916.2 819.23,-1815 819.23,-1815 819.23,-1809 825.23,-1803 831.23,-1803 831.23,-1803 988.77,-1803 988.77,-1803 994.77,-1803 1000.77,-1809 1000.77,-1815 1000.77,-1815 1000.77,-1916.2 1000.77,-1916.2 1000.77,-1922.2 994.77,-1928.2 988.77,-1928.2" style=""/>
+<text text-anchor="middle" x="910" y="-1911.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">SpanInfo</text>
+<text text-anchor="middle" x="910" y="-1895" font-family="Helvetica,sans-Serif" font-size="14.00" style="">(core/span.rs)</text>
+<text text-anchor="middle" x="910" y="-1878.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">fields:</text>
+<text text-anchor="middle" x="910" y="-1861.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">- file_path</text>
+<text text-anchor="middle" x="910" y="-1844.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">- byte_start..byte_end</text>
+<text text-anchor="middle" x="910" y="-1827.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">- suggested_replacement?</text>
+<text text-anchor="middle" x="910" y="-1811" font-family="Helvetica,sans-Serif" font-size="14.00" style="">- suggestion_applicability?</text>
+</g>
+<!-- n_diag&#45;&gt;n_span -->
+<g id="edge18" class="edge" data-name="n_diag-&gt;n_span">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" stroke-dasharray="5,2" d="M910,-1982.54C910,-1968.45 910,-1953.02 910,-1938.16" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="912.8,-1938.31 910,-1930.31 907.2,-1938.31 912.8,-1938.31" style=""/>
+<text text-anchor="middle" x="956.03" y="-1952" font-family="Helvetica,sans-Serif" font-size="12.00" style="">Diagnostic.span[]</text>
+</g>
+<!-- f_extract -->
+<g id="node4" class="node" pointer-events="visible" data-name="f_extract">
+
+<path fill="#e9f5ff" stroke="#444444" stroke-width="1.4" d="M653.89,-1886.2C653.89,-1886.2 402.11,-1886.2 402.11,-1886.2 396.11,-1886.2 390.11,-1880.2 390.11,-1874.2 390.11,-1874.2 390.11,-1857 390.11,-1857 390.11,-1851 396.11,-1845 402.11,-1845 402.11,-1845 653.89,-1845 653.89,-1845 659.89,-1845 665.89,-1851 665.89,-1857 665.89,-1857 665.89,-1874.2 665.89,-1874.2 665.89,-1880.2 659.89,-1886.2 653.89,-1886.2" style=""/>
+<text text-anchor="middle" x="528" y="-1869.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">SuggestionExtractor::extract(&amp;Diagnostic)</text>
+<text text-anchor="middle" x="528" y="-1853" font-family="Helvetica,sans-Serif" font-size="14.00" style="">=&gt; Vec&lt;CandidateFix&gt;</text>
+</g>
+<!-- n_diag&#45;&gt;f_extract -->
+<g id="edge1" class="edge" data-name="n_diag-&gt;f_extract">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M816.06,-1994.49C742.37,-1961.78 642.42,-1917.4 581.71,-1890.45" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="583.15,-1888.02 574.71,-1887.34 580.88,-1893.14 583.15,-1888.02" style=""/>
+<text text-anchor="middle" x="795.69" y="-1952" font-family="Helvetica,sans-Serif" font-size="12.00" style="">borrow: &amp;Diagnostic</text>
+</g>
+<!-- f_analyze -->
+<g id="node16" class="node" pointer-events="visible" data-name="f_analyze">
+
+<path fill="#e9f5ff" stroke="#444444" stroke-width="1.4" d="M1227.08,-1722.6C1227.08,-1722.6 984.92,-1722.6 984.92,-1722.6 978.92,-1722.6 972.92,-1716.6 972.92,-1710.6 972.92,-1710.6 972.92,-1693.4 972.92,-1693.4 972.92,-1687.4 978.92,-1681.4 984.92,-1681.4 984.92,-1681.4 1227.08,-1681.4 1227.08,-1681.4 1233.08,-1681.4 1239.08,-1687.4 1239.08,-1693.4 1239.08,-1693.4 1239.08,-1710.6 1239.08,-1710.6 1239.08,-1716.6 1233.08,-1722.6 1227.08,-1722.6" style=""/>
+<text text-anchor="middle" x="1106" y="-1706.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">SpanAnalyzer::analyze(&amp;SpanInfo, &amp;str)</text>
+<text text-anchor="middle" x="1106" y="-1689.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">=&gt; ExtendedSpan</text>
+</g>
+<!-- n_span&#45;&gt;f_analyze -->
+<g id="edge19" class="edge" data-name="n_span-&gt;f_analyze">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M947.5,-1802.67C956.69,-1790.39 967.2,-1778.26 978.61,-1768.4 998.03,-1751.61 1022.52,-1737.72 1044.83,-1727.13" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="1045.84,-1729.74 1051.93,-1723.84 1043.49,-1724.66 1045.84,-1729.74" style=""/>
+<text text-anchor="middle" x="1027.7" y="-1772" font-family="Helvetica,sans-Serif" font-size="12.00" style="">borrow: &amp;SpanInfo</text>
+</g>
+<!-- ds_ext -->
+<g id="node22" class="node" pointer-events="visible" data-name="ds_ext">
+
+<path fill="#e9f5ff" stroke="#444444" stroke-width="1.4" d="M1193.95,-1156.3C1193.95,-1156.3 996.05,-1156.3 996.05,-1156.3 990.05,-1156.3 984.05,-1150.3 984.05,-1144.3 984.05,-1144.3 984.05,-1059.7 984.05,-1059.7 984.05,-1053.7 990.05,-1047.7 996.05,-1047.7 996.05,-1047.7 1193.95,-1047.7 1193.95,-1047.7 1199.95,-1047.7 1205.95,-1053.7 1205.95,-1059.7 1205.95,-1059.7 1205.95,-1144.3 1205.95,-1144.3 1205.95,-1150.3 1199.95,-1156.3 1193.95,-1156.3" style=""/>
+<text text-anchor="middle" x="1095" y="-1139.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">ExtendedSpan</text>
+<text text-anchor="middle" x="1095" y="-1123" font-family="Helvetica,sans-Serif" font-size="14.00" style="">(types.rs)</text>
+<text text-anchor="middle" x="1095" y="-1106.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">{ original_span,</text>
+<text text-anchor="middle" x="1095" y="-1089.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">  extended_span,</text>
+<text text-anchor="middle" x="1095" y="-1072.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">  segments: Vec&lt;PathSegment&gt;,</text>
+<text text-anchor="middle" x="1095" y="-1055.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">  structure: PathStructure }</text>
+</g>
+<!-- n_span&#45;&gt;ds_ext -->
+<g id="edge29" class="edge" data-name="n_span-&gt;ds_ext">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M860.41,-1802.73C842.22,-1774.09 826,-1738.57 826,-1703 826,-1703 826,-1703 826,-1239 826,-1167.51 902.61,-1133.59 974.06,-1117.5" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="974.64,-1120.24 981.87,-1115.82 973.46,-1114.77 974.64,-1120.24" style=""/>
+<text text-anchor="middle" x="884.87" y="-1470.8" font-family="Helvetica,sans-Serif" font-size="12.00" style="">clone -&gt; original_span</text>
+</g>
+<!-- n_src -->
+<g id="node3" class="node" pointer-events="visible" data-name="n_src">
+
+<path fill="#fff9e6" stroke="#444444" stroke-width="1.4" d="M1142.81,-2057.8C1142.81,-2057.8 1045.19,-2057.8 1045.19,-2057.8 1039.19,-2057.8 1033.19,-2051.8 1033.19,-2045.8 1033.19,-2045.8 1033.19,-2028.6 1033.19,-2028.6 1033.19,-2022.6 1039.19,-2016.6 1045.19,-2016.6 1045.19,-2016.6 1142.81,-2016.6 1142.81,-2016.6 1148.81,-2016.6 1154.81,-2022.6 1154.81,-2028.6 1154.81,-2028.6 1154.81,-2045.8 1154.81,-2045.8 1154.81,-2051.8 1148.81,-2057.8 1142.81,-2057.8" style=""/>
+<text text-anchor="middle" x="1094" y="-2041.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Source Code</text>
+<text text-anchor="middle" x="1094" y="-2024.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">&amp;str (file content)</text>
+</g>
+<!-- n_src&#45;&gt;f_analyze -->
+<g id="edge20" class="edge" data-name="n_src-&gt;f_analyze">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M1094.72,-2016.11C1096.76,-1959.5 1102.56,-1798.51 1104.95,-1732.14" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="1107.74,-1732.61 1105.23,-1724.51 1102.14,-1732.41 1107.74,-1732.61" style=""/>
+<text text-anchor="middle" x="1134.34" y="-1862" font-family="Helvetica,sans-Serif" font-size="12.00" style="">borrow: &amp;str</text>
+</g>
+<!-- h_id -->
+<g id="node5" class="node" pointer-events="visible" data-name="h_id">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.4" d="M371.35,-1661C371.35,-1661 210.65,-1661 210.65,-1661 204.65,-1661 198.65,-1655 198.65,-1649 198.65,-1649 198.65,-1631.8 198.65,-1631.8 198.65,-1625.8 204.65,-1619.8 210.65,-1619.8 210.65,-1619.8 371.35,-1619.8 371.35,-1619.8 377.35,-1619.8 383.35,-1625.8 383.35,-1631.8 383.35,-1631.8 383.35,-1649 383.35,-1649 383.35,-1655 377.35,-1661 371.35,-1661" style=""/>
+<text text-anchor="middle" x="291" y="-1644.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">extract_identifier(message)</text>
+<text text-anchor="middle" x="291" y="-1627.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">(parse undeclared ident)</text>
+</g>
+<!-- f_extract&#45;&gt;h_id -->
+<g id="edge2" class="edge" data-name="f_extract-&gt;h_id">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M452.04,-1844.56C406.96,-1828.85 352.28,-1802.44 319,-1760.4 298.76,-1734.84 292.73,-1697.11 291.14,-1671.02" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="293.94,-1670.98 290.8,-1663.11 288.35,-1671.22 293.94,-1670.98" style=""/>
+<text text-anchor="middle" x="376.02" y="-1772" font-family="Helvetica,sans-Serif" font-size="12.00" style="">read message</text>
+</g>
+<!-- h_spans -->
+<g id="node6" class="node" pointer-events="visible" data-name="h_spans">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.4" d="M710.24,-1722.6C710.24,-1722.6 345.76,-1722.6 345.76,-1722.6 339.76,-1722.6 333.76,-1716.6 333.76,-1710.6 333.76,-1710.6 333.76,-1693.4 333.76,-1693.4 333.76,-1687.4 339.76,-1681.4 345.76,-1681.4 345.76,-1681.4 710.24,-1681.4 710.24,-1681.4 716.24,-1681.4 722.24,-1687.4 722.24,-1693.4 722.24,-1693.4 722.24,-1710.6 722.24,-1710.6 722.24,-1716.6 716.24,-1722.6 710.24,-1722.6" style=""/>
+<text text-anchor="middle" x="528" y="-1706.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">extract_from_spans(&amp;[SpanInfo], &amp;mut Vec&lt;CandidateFix&gt;)</text>
+<text text-anchor="middle" x="528" y="-1689.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">(read suggested_replacement)</text>
+</g>
+<!-- f_extract&#45;&gt;h_spans -->
+<g id="edge3" class="edge" data-name="f_extract-&gt;h_spans">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M528,-1844.78C528,-1816.68 528,-1765.03 528,-1732.43" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="530.8,-1732.79 528,-1724.79 525.2,-1732.79 530.8,-1732.79" style=""/>
+<text text-anchor="middle" x="558.02" y="-1772" font-family="Helvetica,sans-Serif" font-size="12.00" style="">read span[]</text>
+</g>
+<!-- ds_cand -->
+<g id="node8" class="node" pointer-events="visible" data-name="ds_cand">
+
+<path fill="#e9f5ff" stroke="#444444" stroke-width="1.4" d="M611.46,-1503.8C611.46,-1503.8 366.54,-1503.8 366.54,-1503.8 360.54,-1503.8 354.54,-1497.8 354.54,-1491.8 354.54,-1491.8 354.54,-1457 354.54,-1457 354.54,-1451 360.54,-1445 366.54,-1445 366.54,-1445 611.46,-1445 611.46,-1445 617.46,-1445 623.46,-1451 623.46,-1457 623.46,-1457 623.46,-1491.8 623.46,-1491.8 623.46,-1497.8 617.46,-1503.8 611.46,-1503.8" style=""/>
+<text text-anchor="middle" x="489" y="-1487" font-family="Helvetica,sans-Serif" font-size="14.00" style="">CandidateFix</text>
+<text text-anchor="middle" x="489" y="-1470.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">(types.rs)</text>
+<text text-anchor="middle" x="489" y="-1453.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">{ identifier, suggested_path, confidence }</text>
+</g>
+<!-- h_id&#45;&gt;ds_cand -->
+<g id="edge5" class="edge" data-name="h_id-&gt;ds_cand">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M256.56,-1619.38C249.99,-1613.86 244.01,-1607.25 240.29,-1599.6 232.2,-1582.97 229.47,-1572.99 240.29,-1558 264.99,-1523.77 304.45,-1503.5 344.73,-1491.57" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="345.45,-1494.28 352.4,-1489.42 343.94,-1488.89 345.45,-1494.28" style=""/>
+<text text-anchor="middle" x="289.35" y="-1575.2" font-family="Helvetica,sans-Serif" font-size="12.00" style="">emit CandidateFix</text>
+</g>
+<!-- h_conf -->
+<g id="node7" class="node" pointer-events="visible" data-name="h_conf">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.4" d="M614.37,-1599.4C614.37,-1599.4 363.63,-1599.4 363.63,-1599.4 357.63,-1599.4 351.63,-1593.4 351.63,-1587.4 351.63,-1587.4 351.63,-1570.2 351.63,-1570.2 351.63,-1564.2 357.63,-1558.2 363.63,-1558.2 363.63,-1558.2 614.37,-1558.2 614.37,-1558.2 620.37,-1558.2 626.37,-1564.2 626.37,-1570.2 626.37,-1570.2 626.37,-1587.4 626.37,-1587.4 626.37,-1593.4 620.37,-1599.4 614.37,-1599.4" style=""/>
+<text text-anchor="middle" x="489" y="-1583" font-family="Helvetica,sans-Serif" font-size="14.00" style="">applicability_to_confidence(Applicability?)</text>
+<text text-anchor="middle" x="489" y="-1566.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">=&gt; Confidence</text>
+</g>
+<!-- h_spans&#45;&gt;h_conf -->
+<g id="edge4" class="edge" data-name="h_spans-&gt;h_conf">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M521.56,-1680.99C515.27,-1661.42 505.61,-1631.42 498.45,-1609.16" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="501.12,-1608.33 496.01,-1601.57 495.79,-1610.05 501.12,-1608.33" style=""/>
+<text text-anchor="middle" x="593.05" y="-1636.8" font-family="Helvetica,sans-Serif" font-size="12.00" style="">use suggestion_applicability?</text>
+</g>
+<!-- h_spans&#45;&gt;ds_cand -->
+<g id="edge6" class="edge" data-name="h_spans-&gt;ds_cand">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M639.17,-1681.01C657.23,-1675.58 672,-1668.99 678,-1661.2 689.27,-1646.55 682.94,-1637.42 678,-1619.6 669.47,-1588.82 664.06,-1580.09 641,-1558 620.15,-1538.03 593.52,-1521.41 568.4,-1508.44" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="569.98,-1506.1 561.57,-1505 567.46,-1511.1 569.98,-1506.1" style=""/>
+<text text-anchor="middle" x="720.35" y="-1575.2" font-family="Helvetica,sans-Serif" font-size="12.00" style="">emit CandidateFix</text>
+</g>
+<!-- h_conf&#45;&gt;ds_cand -->
+<g id="edge7" class="edge" data-name="h_conf-&gt;ds_cand">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M489,-1558.06C489,-1545.47 489,-1528.74 489,-1513.63" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="491.8,-1513.81 489,-1505.81 486.2,-1513.81 491.8,-1513.81" style=""/>
+<text text-anchor="middle" x="527.69" y="-1527.2" font-family="Helvetica,sans-Serif" font-size="12.00" style="">set confidence</text>
+</g>
+<!-- f_resolve -->
+<g id="node9" class="node" pointer-events="visible" data-name="f_resolve">
+
+<path fill="#e9f5ff" stroke="#444444" stroke-width="1.4" d="M619.74,-1365C619.74,-1365 358.26,-1365 358.26,-1365 352.26,-1365 346.26,-1359 346.26,-1353 346.26,-1353 346.26,-1335.8 346.26,-1335.8 346.26,-1329.8 352.26,-1323.8 358.26,-1323.8 358.26,-1323.8 619.74,-1323.8 619.74,-1323.8 625.74,-1323.8 631.74,-1329.8 631.74,-1335.8 631.74,-1335.8 631.74,-1353 631.74,-1353 631.74,-1359 625.74,-1365 619.74,-1365" style=""/>
+<text text-anchor="middle" x="489" y="-1348.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">PathResolver::resolve(Vec&lt;CandidateFix&gt;)</text>
+<text text-anchor="middle" x="489" y="-1331.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">=&gt; ResolutionResult</text>
+</g>
+<!-- ds_cand&#45;&gt;f_resolve -->
+<g id="edge8" class="edge" data-name="ds_cand-&gt;f_resolve">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M489,-1444.67C489,-1423.9 489,-1395.91 489,-1374.95" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="491.8,-1375.1 489,-1367.1 486.2,-1375.1 491.8,-1375.1" style=""/>
+<text text-anchor="middle" x="559.71" y="-1414.4" font-family="Helvetica,sans-Serif" font-size="12.00" style="">move: Vec&lt;CandidateFix&gt;</text>
+</g>
+<!-- d_high -->
+<g id="node10" class="node" pointer-events="visible" data-name="d_high">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.4" d="M477.04,-1257.01C477.04,-1257.01 283.38,-1240.99 283.38,-1240.99 277.4,-1240.49 277.4,-1239.51 283.38,-1239.01 283.38,-1239.01 477.04,-1222.99 477.04,-1222.99 483.02,-1222.49 494.98,-1222.49 500.96,-1222.99 500.96,-1222.99 694.62,-1239.01 694.62,-1239.01 700.6,-1239.51 700.6,-1240.49 694.62,-1240.99 694.62,-1240.99 500.96,-1257.01 500.96,-1257.01 494.98,-1257.51 483.02,-1257.51 477.04,-1257.01" style=""/>
+<text text-anchor="middle" x="489" y="-1235.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Decision: any Confidence::High ?</text>
+</g>
+<!-- f_resolve&#45;&gt;d_high -->
+<g id="edge9" class="edge" data-name="f_resolve-&gt;d_high">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M489,-1323.66C489,-1307.82 489,-1285.42 489,-1267.94" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="491.8,-1268.11 489,-1260.11 486.2,-1268.11 491.8,-1268.11" style=""/>
+</g>
+<!-- d_unique -->
+<g id="node11" class="node" pointer-events="visible" data-name="d_unique">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.4" d="M365.05,-1118.9C365.05,-1118.9 192.83,-1103.1 192.83,-1103.1 186.86,-1102.55 186.86,-1101.45 192.83,-1100.9 192.83,-1100.9 365.05,-1085.1 365.05,-1085.1 371.03,-1084.55 382.97,-1084.55 388.95,-1085.1 388.95,-1085.1 561.17,-1100.9 561.17,-1100.9 567.14,-1101.45 567.14,-1102.55 561.17,-1103.1 561.17,-1103.1 388.95,-1118.9 388.95,-1118.9 382.97,-1119.45 371.03,-1119.45 365.05,-1118.9" style=""/>
+<text text-anchor="middle" x="377" y="-1097.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Decision: unique paths == 1 ?</text>
+</g>
+<!-- d_high&#45;&gt;d_unique -->
+<g id="edge11" class="edge" data-name="d_high-&gt;d_unique">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M475.71,-1222.86C456.01,-1198.94 418.94,-1153.93 396.26,-1126.39" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="398.67,-1124.91 391.43,-1120.52 394.35,-1128.47 398.67,-1124.91" style=""/>
+<text text-anchor="middle" x="497.04" y="-1180" font-family="Helvetica,sans-Serif" font-size="12.00" style="">no =&gt; dedup paths</text>
+</g>
+<!-- ds_res -->
+<g id="node14" class="node" pointer-events="visible" data-name="ds_res">
+
+<path fill="#e9f5ff" stroke="#444444" stroke-width="1.4" d="M742.31,-722C742.31,-722 521.69,-722 521.69,-722 515.69,-722 509.69,-716 509.69,-710 509.69,-710 509.69,-642 509.69,-642 509.69,-636 515.69,-630 521.69,-630 521.69,-630 742.31,-630 742.31,-630 748.31,-630 754.31,-636 754.31,-642 754.31,-642 754.31,-710 754.31,-710 754.31,-716 748.31,-722 742.31,-722" style=""/>
+<text text-anchor="middle" x="632" y="-705.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">ResolutionResult</text>
+<text text-anchor="middle" x="632" y="-688.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">(path_resolver.rs)</text>
+<text text-anchor="middle" x="632" y="-671.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">- Resolved{path, confidence, source}</text>
+<text text-anchor="middle" x="632" y="-655" font-family="Helvetica,sans-Serif" font-size="14.00" style="">- Ambiguous{candidates}</text>
+<text text-anchor="middle" x="632" y="-638.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">- Unresolved{reason}</text>
+</g>
+<!-- d_high&#45;&gt;ds_res -->
+<g id="edge10" class="edge" data-name="d_high-&gt;ds_res">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M511.62,-1223.52C524.42,-1214.45 540.52,-1202.49 554,-1190.8 644.91,-1111.92 755.09,-954.73 765,-931.6 798.2,-854.1 816.99,-812.66 771,-742 767.93,-737.28 764.42,-732.9 760.56,-728.82" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="762.76,-727.06 755.06,-723.53 758.87,-731.09 762.76,-727.06" style=""/>
+<text text-anchor="middle" x="849.88" y="-976" font-family="Helvetica,sans-Serif" font-size="12.00" style="">yes =&gt; Resolved</text>
+<text text-anchor="middle" x="849.88" y="-961.6" font-family="Helvetica,sans-Serif" font-size="12.00" style="">source=CompilerMachineApplicable</text>
+</g>
+<!-- h_heur -->
+<g id="node13" class="node" pointer-events="visible" data-name="h_heur">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.4" d="M480.35,-993C480.35,-993 319.65,-993 319.65,-993 313.65,-993 307.65,-987 307.65,-981 307.65,-981 307.65,-963.8 307.65,-963.8 307.65,-957.8 313.65,-951.8 319.65,-951.8 319.65,-951.8 480.35,-951.8 480.35,-951.8 486.35,-951.8 492.35,-957.8 492.35,-963.8 492.35,-963.8 492.35,-981 492.35,-981 492.35,-987 486.35,-993 480.35,-993" style=""/>
+<text text-anchor="middle" x="400" y="-976.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">apply_heuristic(&amp;[String])</text>
+<text text-anchor="middle" x="400" y="-959.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">prefer crate:: &gt; std:: &gt; short</text>
+</g>
+<!-- d_unique&#45;&gt;h_heur -->
+<g id="edge13" class="edge" data-name="d_unique-&gt;h_heur">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M380.1,-1083.79C383.85,-1063.01 390.21,-1027.74 394.73,-1002.66" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="397.43,-1003.42 396.1,-995.05 391.92,-1002.43 397.43,-1003.42" style=""/>
+<text text-anchor="middle" x="432.36" y="-1016.8" font-family="Helvetica,sans-Serif" font-size="12.00" style="">no =&gt; heuristic</text>
+</g>
+<!-- d_unique&#45;&gt;ds_res -->
+<g id="edge12" class="edge" data-name="d_unique-&gt;ds_res">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M399.93,-1085.8C421.04,-1071.51 452.94,-1049.14 479,-1027.6 541.21,-976.18 538.29,-938 610.92,-902.8 666.32,-875.95 706.29,-928.09 748,-882.8 790.44,-836.71 787.34,-795.66 755,-742 752.27,-737.47 749.11,-733.25 745.62,-729.3" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="747.84,-727.57 740.25,-723.8 743.83,-731.48 747.84,-727.57" style=""/>
+<text text-anchor="middle" x="686.54" y="-920.8" font-family="Helvetica,sans-Serif" font-size="12.00" style="">yes =&gt; Resolved</text>
+<text text-anchor="middle" x="686.54" y="-906.4" font-family="Helvetica,sans-Serif" font-size="12.00" style="">source=CompilerSuggestion</text>
+</g>
+<!-- d_multi -->
+<g id="node12" class="node" pointer-events="visible" data-name="d_multi">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.4" d="M478.03,-853.91C478.03,-853.91 258.85,-837.69 258.85,-837.69 252.87,-837.24 252.87,-836.36 258.85,-835.91 258.85,-835.91 478.03,-819.69 478.03,-819.69 484.02,-819.24 495.98,-819.24 501.97,-819.69 501.97,-819.69 721.15,-835.91 721.15,-835.91 727.13,-836.36 727.13,-837.24 721.15,-837.69 721.15,-837.69 501.97,-853.91 501.97,-853.91 495.98,-854.36 484.02,-854.36 478.03,-853.91" style=""/>
+<text text-anchor="middle" x="490" y="-832.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Decision: still multiple after heuristic ?</text>
+</g>
+<!-- d_multi&#45;&gt;ds_res -->
+<g id="edge15" class="edge" data-name="d_multi-&gt;ds_res">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M459.09,-820.59C426.72,-802.61 383.45,-771.4 405.6,-742 418.29,-725.15 457.53,-711.32 499.85,-700.82" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="500.33,-703.59 507.45,-698.99 499.01,-698.14 500.33,-703.59" style=""/>
+<text text-anchor="middle" x="481.2" y="-760" font-family="Helvetica,sans-Serif" font-size="12.00" style="">no =&gt; Resolved</text>
+<text text-anchor="middle" x="481.2" y="-745.6" font-family="Helvetica,sans-Serif" font-size="12.00" style="">source=Heuristic/StdLibMap</text>
+</g>
+<!-- d_multi&#45;&gt;ds_res -->
+<g id="edge16" class="edge" data-name="d_multi-&gt;ds_res">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M508.61,-819.69C522.94,-806.96 542.94,-788.45 559,-770.8 570.72,-757.92 582.64,-743.34 593.36,-729.58" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="595.4,-731.52 598.08,-723.48 590.97,-728.1 595.4,-731.52" style=""/>
+<text text-anchor="middle" x="665.73" y="-752.8" font-family="Helvetica,sans-Serif" font-size="12.00" style="">yes =&gt; Ambiguous{candidates}</text>
+</g>
+<!-- h_heur&#45;&gt;d_multi -->
+<g id="edge14" class="edge" data-name="h_heur-&gt;d_multi">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M413.47,-951.4C429.51,-927.59 456.28,-887.85 473.53,-862.25" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="475.83,-863.85 477.97,-855.65 471.18,-860.72 475.83,-863.85" style=""/>
+</g>
+<!-- f_gen -->
+<g id="node23" class="node" pointer-events="visible" data-name="f_gen">
+
+<path fill="#e9f5ff" stroke="#444444" stroke-width="1.4" d="M1043.21,-549.8C1043.21,-549.8 672.79,-549.8 672.79,-549.8 666.79,-549.8 660.79,-543.8 660.79,-537.8 660.79,-537.8 660.79,-520.6 660.79,-520.6 660.79,-514.6 666.79,-508.6 672.79,-508.6 672.79,-508.6 1043.21,-508.6 1043.21,-508.6 1049.21,-508.6 1055.21,-514.6 1055.21,-520.6 1055.21,-520.6 1055.21,-537.8 1055.21,-537.8 1055.21,-543.8 1049.21,-549.8 1043.21,-549.8" style=""/>
+<text text-anchor="middle" x="858" y="-533.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">FixGenerator::generate(&amp;ExtendedSpan, &amp;ResolutionResult)</text>
+<text text-anchor="middle" x="858" y="-516.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">=&gt; Option&lt;FixAction&gt;</text>
+</g>
+<!-- ds_res&#45;&gt;f_gen -->
+<g id="edge31" class="edge" data-name="ds_res-&gt;f_gen">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M702.89,-629.58C741.03,-605.14 786.65,-575.92 818.5,-555.51" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="819.94,-557.91 825.17,-551.24 816.92,-553.2 819.94,-557.91" style=""/>
+<text text-anchor="middle" x="823.03" y="-599.2" font-family="Helvetica,sans-Serif" font-size="12.00" style="">borrow: &amp;ResolutionResult</text>
+</g>
+<!-- ds_src -->
+<g id="node15" class="node" pointer-events="visible" data-name="ds_src">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.4" d="M205.99,-882.8C205.99,-882.8 28.01,-882.8 28.01,-882.8 22.01,-882.8 16.01,-876.8 16.01,-870.8 16.01,-870.8 16.01,-802.8 16.01,-802.8 16.01,-796.8 22.01,-790.8 28.01,-790.8 28.01,-790.8 205.99,-790.8 205.99,-790.8 211.99,-790.8 217.99,-796.8 217.99,-802.8 217.99,-802.8 217.99,-870.8 217.99,-870.8 217.99,-876.8 211.99,-882.8 205.99,-882.8" style=""/>
+<text text-anchor="middle" x="117" y="-866.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">ResolutionSource</text>
+<text text-anchor="middle" x="117" y="-849.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">{ CompilerMachineApplicable,</text>
+<text text-anchor="middle" x="117" y="-832.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">  CompilerSuggestion,</text>
+<text text-anchor="middle" x="117" y="-815.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">  Heuristic,</text>
+<text text-anchor="middle" x="117" y="-799" font-family="Helvetica,sans-Serif" font-size="14.00" style="">  StdLibMap }</text>
+</g>
+<!-- ds_src&#45;&gt;ds_res -->
+<g id="edge17" class="edge" data-name="ds_src-&gt;ds_res">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" stroke-dasharray="5,2" d="M216.02,-790.36C255.02,-773.61 300.56,-755.46 342.97,-742 393.51,-725.96 450.23,-712.29 499.94,-701.69" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="500.44,-704.45 507.69,-700.06 499.28,-698.97 500.44,-704.45" style=""/>
+<text text-anchor="middle" x="368.02" y="-752.8" font-family="Helvetica,sans-Serif" font-size="12.00" style="">metadata</text>
+</g>
+<!-- h_extend -->
+<g id="node17" class="node" pointer-events="visible" data-name="h_extend">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.4" d="M1283.5,-1599.4C1283.5,-1599.4 1070.5,-1599.4 1070.5,-1599.4 1064.5,-1599.4 1058.5,-1593.4 1058.5,-1587.4 1058.5,-1587.4 1058.5,-1570.2 1058.5,-1570.2 1058.5,-1564.2 1064.5,-1558.2 1070.5,-1558.2 1070.5,-1558.2 1283.5,-1558.2 1283.5,-1558.2 1289.5,-1558.2 1295.5,-1564.2 1295.5,-1570.2 1295.5,-1570.2 1295.5,-1587.4 1295.5,-1587.4 1295.5,-1593.4 1289.5,-1599.4 1283.5,-1599.4" style=""/>
+<text text-anchor="middle" x="1177" y="-1583" font-family="Helvetica,sans-Serif" font-size="14.00" style="">extend_span(&amp;SpanInfo, &amp;str)</text>
+<text text-anchor="middle" x="1177" y="-1566.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">(scan from byte_end; parse :: ident)</text>
+</g>
+<!-- f_analyze&#45;&gt;h_extend -->
+<g id="edge21" class="edge" data-name="f_analyze-&gt;h_extend">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M1117.72,-1680.99C1129.34,-1661.16 1147.23,-1630.61 1160.33,-1608.26" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="1162.71,-1609.73 1164.34,-1601.41 1157.88,-1606.9 1162.71,-1609.73" style=""/>
+</g>
+<!-- h_readid -->
+<g id="node18" class="node" pointer-events="visible" data-name="h_readid">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.4" d="M1147.42,-1495C1147.42,-1495 984.58,-1495 984.58,-1495 978.58,-1495 972.58,-1489 972.58,-1483 972.58,-1483 972.58,-1465.8 972.58,-1465.8 972.58,-1459.8 978.58,-1453.8 984.58,-1453.8 984.58,-1453.8 1147.42,-1453.8 1147.42,-1453.8 1153.42,-1453.8 1159.42,-1459.8 1159.42,-1465.8 1159.42,-1465.8 1159.42,-1483 1159.42,-1483 1159.42,-1489 1153.42,-1495 1147.42,-1495" style=""/>
+<text text-anchor="middle" x="1066" y="-1478.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">read_identifier(source, pos)</text>
+<text text-anchor="middle" x="1066" y="-1461.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">(read one ident token)</text>
+</g>
+<!-- h_extend&#45;&gt;h_readid -->
+<g id="edge22" class="edge" data-name="h_extend-&gt;h_readid">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M1155.33,-1557.81C1137.99,-1541.81 1113.52,-1519.24 1094.58,-1501.76" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="1096.72,-1499.93 1088.95,-1496.57 1092.93,-1504.05 1096.72,-1499.93" style=""/>
+</g>
+<!-- ds_seg -->
+<g id="node20" class="node" pointer-events="visible" data-name="ds_seg">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.4" d="M1321.99,-1495C1321.99,-1495 1200.01,-1495 1200.01,-1495 1194.01,-1495 1188.01,-1489 1188.01,-1483 1188.01,-1483 1188.01,-1465.8 1188.01,-1465.8 1188.01,-1459.8 1194.01,-1453.8 1200.01,-1453.8 1200.01,-1453.8 1321.99,-1453.8 1321.99,-1453.8 1327.99,-1453.8 1333.99,-1459.8 1333.99,-1465.8 1333.99,-1465.8 1333.99,-1483 1333.99,-1483 1333.99,-1489 1327.99,-1495 1321.99,-1495" style=""/>
+<text text-anchor="middle" x="1261" y="-1478.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">PathSegment</text>
+<text text-anchor="middle" x="1261" y="-1461.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">{ name, byte_range }</text>
+</g>
+<!-- h_extend&#45;&gt;ds_seg -->
+<g id="edge23" class="edge" data-name="h_extend-&gt;ds_seg">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M1193.2,-1558.06C1206.13,-1542.29 1224.39,-1520.03 1238.7,-1502.58" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="1240.51,-1504.8 1243.42,-1496.84 1236.18,-1501.25 1240.51,-1504.8" style=""/>
+<text text-anchor="middle" x="1262.69" y="-1527.2" font-family="Helvetica,sans-Serif" font-size="12.00" style="">build segments[]</text>
+</g>
+<!-- h_extend&#45;&gt;ds_ext -->
+<g id="edge28" class="edge" data-name="h_extend-&gt;ds_ext">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M1268.48,-1557.79C1283.89,-1552.54 1299.31,-1546.03 1313,-1538 1331.81,-1526.96 1339.57,-1523.71 1348,-1503.6 1359.41,-1476.38 1354.47,-1465.99 1348,-1437.2 1318.65,-1306.52 1291.66,-1271.16 1197,-1176.4 1192.44,-1171.84 1187.58,-1167.35 1182.53,-1162.98" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="1184.35,-1160.85 1176.43,-1157.84 1180.74,-1165.13 1184.35,-1160.85" style=""/>
+<text text-anchor="middle" x="1380.04" y="-1340.8" font-family="Helvetica,sans-Serif" font-size="12.00" style="">extended_span</text>
+</g>
+<!-- h_struct -->
+<g id="node19" class="node" pointer-events="visible" data-name="h_struct">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.4" d="M1181.02,-1365C1181.02,-1365 1008.98,-1365 1008.98,-1365 1002.98,-1365 996.98,-1359 996.98,-1353 996.98,-1353 996.98,-1335.8 996.98,-1335.8 996.98,-1329.8 1002.98,-1323.8 1008.98,-1323.8 1008.98,-1323.8 1181.02,-1323.8 1181.02,-1323.8 1187.02,-1323.8 1193.02,-1329.8 1193.02,-1335.8 1193.02,-1335.8 1193.02,-1353 1193.02,-1353 1193.02,-1359 1187.02,-1365 1181.02,-1365" style=""/>
+<text text-anchor="middle" x="1095" y="-1348.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">analyze_structure(segments)</text>
+<text text-anchor="middle" x="1095" y="-1331.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">=&gt; PathStructure</text>
+</g>
+<!-- ds_struct -->
+<g id="node21" class="node" pointer-events="visible" data-name="ds_struct">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.4" d="M1181.83,-1269.4C1181.83,-1269.4 1008.17,-1269.4 1008.17,-1269.4 1002.17,-1269.4 996.17,-1263.4 996.17,-1257.4 996.17,-1257.4 996.17,-1222.6 996.17,-1222.6 996.17,-1216.6 1002.17,-1210.6 1008.17,-1210.6 1008.17,-1210.6 1181.83,-1210.6 1181.83,-1210.6 1187.83,-1210.6 1193.83,-1216.6 1193.83,-1222.6 1193.83,-1222.6 1193.83,-1257.4 1193.83,-1257.4 1193.83,-1263.4 1187.83,-1269.4 1181.83,-1269.4" style=""/>
+<text text-anchor="middle" x="1095" y="-1252.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">PathStructure</text>
+<text text-anchor="middle" x="1095" y="-1235.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">{ SingleIdent, ModuleAccess,</text>
+<text text-anchor="middle" x="1095" y="-1219" font-family="Helvetica,sans-Serif" font-size="14.00" style="">  MethodCall, NestedPath }</text>
+</g>
+<!-- h_struct&#45;&gt;ds_struct -->
+<g id="edge25" class="edge" data-name="h_struct-&gt;ds_struct">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M1095,-1323.66C1095,-1311.07 1095,-1294.34 1095,-1279.23" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="1097.8,-1279.41 1095,-1271.41 1092.2,-1279.41 1097.8,-1279.41" style=""/>
+</g>
+<!-- ds_seg&#45;&gt;h_struct -->
+<g id="edge24" class="edge" data-name="ds_seg-&gt;h_struct">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M1211.4,-1453.42C1195.46,-1445.81 1178.24,-1436.26 1163.97,-1425.2 1144.95,-1410.45 1127.27,-1389.8 1114.58,-1373.2" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="1116.88,-1371.61 1109.85,-1366.88 1112.39,-1374.96 1116.88,-1371.61" style=""/>
+<text text-anchor="middle" x="1189.01" y="-1414.4" font-family="Helvetica,sans-Serif" font-size="12.00" style="">segments</text>
+</g>
+<!-- ds_seg&#45;&gt;ds_ext -->
+<g id="edge27" class="edge" data-name="ds_seg-&gt;ds_ext">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M1256.1,-1453.36C1248.45,-1421.68 1233.45,-1358.03 1222.97,-1303.6 1215.08,-1262.58 1227.46,-1247.77 1208,-1210.8 1198.94,-1193.58 1186.08,-1177.55 1172.26,-1163.39" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="1174.35,-1161.52 1166.7,-1157.87 1170.41,-1165.49 1174.35,-1161.52" style=""/>
+<text text-anchor="middle" x="1248.01" y="-1292.8" font-family="Helvetica,sans-Serif" font-size="12.00" style="">segments</text>
+</g>
+<!-- ds_struct&#45;&gt;ds_ext -->
+<g id="edge26" class="edge" data-name="ds_struct-&gt;ds_ext">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M1095,-1210.16C1095,-1197.31 1095,-1181.63 1095,-1166.27" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="1097.8,-1166.6 1095,-1158.6 1092.2,-1166.6 1097.8,-1166.6" style=""/>
+<text text-anchor="middle" x="1118.34" y="-1180" font-family="Helvetica,sans-Serif" font-size="12.00" style="">structure</text>
+</g>
+<!-- ds_ext&#45;&gt;f_gen -->
+<g id="edge30" class="edge" data-name="ds_ext-&gt;f_gen">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M1011.62,-1047.49C990.66,-1027.45 974,-1002.4 974,-973.4 974,-973.4 974,-973.4 974,-675 974,-624.39 930.31,-581.36 896.55,-555.67" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="898.64,-553.73 890.55,-551.22 895.31,-558.23 898.64,-553.73" style=""/>
+<text text-anchor="middle" x="1039.04" y="-833.2" font-family="Helvetica,sans-Serif" font-size="12.00" style="">borrow: &amp;ExtendedSpan</text>
+</g>
+<!-- d_resolved -->
+<g id="node24" class="node" pointer-events="visible" data-name="d_resolved">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.4" d="M846.03,-466.6C846.03,-466.6 599.12,-450.2 599.12,-450.2 593.13,-449.8 593.13,-449 599.12,-448.6 599.12,-448.6 846.03,-432.2 846.03,-432.2 852.01,-431.8 863.99,-431.8 869.97,-432.2 869.97,-432.2 1116.88,-448.6 1116.88,-448.6 1122.87,-449 1122.87,-449.8 1116.88,-450.2 1116.88,-450.2 869.97,-466.6 869.97,-466.6 863.99,-467 852.01,-467 846.03,-466.6" style=""/>
+<text text-anchor="middle" x="858" y="-445.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Decision: ResolutionResult == Resolved ?</text>
+</g>
+<!-- f_gen&#45;&gt;d_resolved -->
+<g id="edge32" class="edge" data-name="f_gen-&gt;d_resolved">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M858,-508.16C858,-498.78 858,-487.46 858,-477.33" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="860.8,-477.54 858,-469.54 855.2,-477.54 860.8,-477.54" style=""/>
+</g>
+<!-- h_rewrite -->
+<g id="node25" class="node" pointer-events="visible" data-name="h_rewrite">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.4" d="M961.9,-376.8C961.9,-376.8 648.1,-376.8 648.1,-376.8 642.1,-376.8 636.1,-370.8 636.1,-364.8 636.1,-364.8 636.1,-347.6 636.1,-347.6 636.1,-341.6 642.1,-335.6 648.1,-335.6 648.1,-335.6 961.9,-335.6 961.9,-335.6 967.9,-335.6 973.9,-341.6 973.9,-347.6 973.9,-347.6 973.9,-364.8 973.9,-364.8 973.9,-370.8 967.9,-376.8 961.9,-376.8" style=""/>
+<text text-anchor="middle" x="805" y="-360.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">rewrite_with_suffix(&amp;ExtendedSpan, resolved_path)</text>
+<text text-anchor="middle" x="805" y="-343.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">keep suffix (e.g., ::new)</text>
+</g>
+<!-- d_resolved&#45;&gt;h_rewrite -->
+<g id="edge34" class="edge" data-name="d_resolved-&gt;h_rewrite">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M848.28,-431.67C840.71,-418.66 830.05,-400.31 821.2,-385.08" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="823.86,-384.08 817.42,-378.57 819.02,-386.89 823.86,-384.08" style=""/>
+<text text-anchor="middle" x="905.71" y="-400.6" font-family="Helvetica,sans-Serif" font-size="12.00" style="">yes =&gt; take resolved path</text>
+</g>
+<!-- ds_opt -->
+<g id="node28" class="node" pointer-events="visible" data-name="ds_opt">
+
+<path fill="#e9f5ff" stroke="#444444" stroke-width="1.4" d="M949.11,-57.4C949.11,-57.4 808.89,-57.4 808.89,-57.4 802.89,-57.4 796.89,-51.4 796.89,-45.4 796.89,-45.4 796.89,-28.2 796.89,-28.2 796.89,-22.2 802.89,-16.2 808.89,-16.2 808.89,-16.2 949.11,-16.2 949.11,-16.2 955.11,-16.2 961.11,-22.2 961.11,-28.2 961.11,-28.2 961.11,-45.4 961.11,-45.4 961.11,-51.4 955.11,-57.4 949.11,-57.4" style=""/>
+<text text-anchor="middle" x="879" y="-41" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Option&lt;FixAction&gt;</text>
+<text text-anchor="middle" x="879" y="-24.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Some(FixAction) / None</text>
+</g>
+<!-- d_resolved&#45;&gt;ds_opt -->
+<g id="edge33" class="edge" data-name="d_resolved-&gt;ds_opt">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M930.96,-435.87C973.56,-423.9 1019,-400.89 1019,-357.2 1019,-357.2 1019,-357.2 1019,-157 1019,-136.88 1025.19,-128.73 1014,-112 999.04,-89.63 974.98,-73.38 951.28,-61.89" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="952.67,-59.45 944.23,-58.64 950.32,-64.54 952.67,-59.45" style=""/>
+<text text-anchor="middle" x="1085.03" y="-280" font-family="Helvetica,sans-Serif" font-size="12.00" style="">no =&gt; None</text>
+<text text-anchor="middle" x="1085.03" y="-265.6" font-family="Helvetica,sans-Serif" font-size="12.00" style="">(Ambiguous/Unresolved)</text>
+</g>
+<!-- d_noop -->
+<g id="node26" class="node" pointer-events="visible" data-name="d_noop">
+
+<path fill="#ffffff" stroke="#444444" stroke-width="1.4" d="M751.05,-293.31C751.05,-293.31 577.34,-277.49 577.34,-277.49 571.37,-276.94 571.37,-275.86 577.34,-275.31 577.34,-275.31 751.05,-259.49 751.05,-259.49 757.02,-258.94 768.98,-258.94 774.95,-259.49 774.95,-259.49 948.66,-275.31 948.66,-275.31 954.63,-275.86 954.63,-276.94 948.66,-277.49 948.66,-277.49 774.95,-293.31 774.95,-293.31 768.98,-293.86 757.02,-293.86 751.05,-293.31" style=""/>
+<text text-anchor="middle" x="763" y="-272.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Decision: no-op? (new == old)</text>
+</g>
+<!-- h_rewrite&#45;&gt;d_noop -->
+<g id="edge35" class="edge" data-name="h_rewrite-&gt;d_noop">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M794.18,-335.16C788.79,-325.18 782.22,-313 776.5,-302.4" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="779.06,-301.26 772.8,-295.55 774.14,-303.92 779.06,-301.26" style=""/>
+</g>
+<!-- ds_fix -->
+<g id="node27" class="node" pointer-events="visible" data-name="ds_fix">
+
+<path fill="#e9f5ff" stroke="#444444" stroke-width="1.4" d="M809.25,-204C809.25,-204 638.75,-204 638.75,-204 632.75,-204 626.75,-198 626.75,-192 626.75,-192 626.75,-124 626.75,-124 626.75,-118 632.75,-112 638.75,-112 638.75,-112 809.25,-112 809.25,-112 815.25,-112 821.25,-118 821.25,-124 821.25,-124 821.25,-192 821.25,-192 821.25,-198 815.25,-204 809.25,-204" style=""/>
+<text text-anchor="middle" x="724" y="-187.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">FixAction</text>
+<text text-anchor="middle" x="724" y="-170.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">(core/fix_action.rs)</text>
+<text text-anchor="middle" x="724" y="-153.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Replace{span, new_content}</text>
+<text text-anchor="middle" x="724" y="-137" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Insert{...}</text>
+<text text-anchor="middle" x="724" y="-120.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Delete{...}</text>
+</g>
+<!-- d_noop&#45;&gt;ds_fix -->
+<g id="edge37" class="edge" data-name="d_noop-&gt;ds_fix">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M749.33,-259.4C744.71,-253.2 739.96,-245.82 736.93,-238.4 733.78,-230.7 731.4,-222.28 729.6,-213.9" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="732.39,-213.6 728.14,-206.27 726.89,-214.65 732.39,-213.6" style=""/>
+<text text-anchor="middle" x="804.04" y="-227.6" font-family="Helvetica,sans-Serif" font-size="12.00" style="">no =&gt; FixAction::Replace</text>
+</g>
+<!-- d_noop&#45;&gt;ds_opt -->
+<g id="edge36" class="edge" data-name="d_noop-&gt;ds_opt">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M836.84,-264.65C851.3,-259.11 864.82,-250.81 874,-238.4 911.21,-188.1 898.67,-109.64 887.87,-67.29" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="890.58,-66.59 885.81,-59.59 885.18,-68.05 890.58,-66.59" style=""/>
+<text text-anchor="middle" x="953.03" y="-154.4" font-family="Helvetica,sans-Serif" font-size="12.00" style="">yes =&gt; None (no-op)</text>
+</g>
+<!-- ds_fix&#45;&gt;ds_opt -->
+<g id="edge38" class="edge" data-name="ds_fix-&gt;ds_opt">
+
+<path fill="none" stroke="#444444" stroke-width="1.2" d="M750.76,-111.69C759.62,-99.43 770.32,-86.98 782.31,-77.6 789.95,-71.62 798.61,-66.41 807.54,-61.9" style=""/>
+<polygon fill="#444444" stroke="#444444" stroke-width="1.2" points="808.5,-64.54 814.51,-58.57 806.08,-59.49 808.5,-64.54" style=""/>
+<text text-anchor="middle" x="827.34" y="-81.2" font-family="Helvetica,sans-Serif" font-size="12.00" style="">Some(FixAction)</text>
+</g>
+</g>
+</svg>

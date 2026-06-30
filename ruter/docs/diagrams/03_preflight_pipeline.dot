@@ -1,0 +1,28 @@
+digraph preflight_pipeline {
+    rankdir=LR;
+    fontname="Helvetica";
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=10];
+
+    lv [label="① LowValue\n检测", fillcolor="#E8F0FE"];
+    e0599 [label="② E0599\n分析", fillcolor="#E8F0FE"];
+    e0308 [label="③ E0308\n分析", fillcolor="#E8F0FE"];
+    e0432 [label="④ E0432\n分析", fillcolor="#E8F0FE"];
+    e0560 [label="⑤ E0560\n分析", fillcolor="#E8F0FE"];
+    digest [label="PreflightInterceptor\nDigestV1\n(KEY=value notes)", fillcolor="#FFF9C4"];
+    decision [label="PreflightDecision", shape=diamond, fillcolor="#FFF3E0"];
+
+    cont [label="ContinueToLlm", fillcolor="#E8F5E9"];
+    hints [label="ContinueToLlm\nWithHints", fillcolor="#E8F5E9"];
+    skip [label="SkipLlm\nCommentOut", fillcolor="#FCE4EC"];
+
+    lv -> digest;
+    e0599 -> digest;
+    e0308 -> digest;
+    e0432 -> digest;
+    e0560 -> digest;
+    digest -> decision;
+    decision -> cont [label="默认"];
+    decision -> hints [label="可修复提示"];
+    decision -> skip [label="高风险"];
+}

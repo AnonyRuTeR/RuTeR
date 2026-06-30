@@ -1,0 +1,110 @@
+digraph e0599_layers {
+    rankdir=TB;
+    fontname="Helvetica";
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=10];
+
+    label="E0599Patcher Analysis 流程：两级扫描 + 五级分类";
+    labelloc=t;
+    fontsize=14;
+    fontname="Helvetica-Bold";
+
+    // Input
+    diag [label="Diagnostic\n(E0599)", shape=ellipse, fillcolor="#FFF3E0"];
+
+    // Layer 1: Message Parsing
+    subgraph cluster_l1 {
+        label="第一层：消息解析";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#E8F0FE4D";
+        color="#1A73E8";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        regex_extract [label="正则提取\n(type_name, method_name)\n二元组", fillcolor="#E8F0FE"];
+        normalize [label="类型名归一化\n去除泛型参数\n取最后 :: 段", fillcolor="#E8F0FE"];
+    }
+
+    // Layer 2: Two-Level AST Scan
+    subgraph cluster_l2 {
+        label="第二层：两级 AST 扫描策略";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#E8F5E94D";
+        color="#2E7D32";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        scan_l1 [label="L1：同文件扫描\n扫描 impl TypeName { }\nforced scope: 当前 .rs 文件", fillcolor="#C8E6C9"];
+        scan_check [label="同文件 impl 数 == 0？", shape=diamond, fillcolor="#FFF3E0"];
+        scan_l2 [label="L2：Crate 范围扫描\nwalkdir 递归\n跳过 target/ .git/ .ruter/", fillcolor="#A5D6A7"];
+        syn_parse [label="syn 解析每个文件\n匹配 Type::Path 段\n收集可用方法签名\n(BTreeSet 去重排序)", fillcolor="#E8F5E9"];
+    }
+
+    // Layer 3: Classification
+    subgraph cluster_l3 {
+        label="第三层：五级分类体系";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#FFF9C44D";
+        color="#F57F17";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        cls [label="分类判断", shape=diamond, fillcolor="#FFF3E0"];
+        c1 [label="SevereNoStruct\n整个 crate 内\n找不到任何 impl\n【最高风险】", fillcolor="#FFCDD2"];
+        c2 [label="SevereEmptyImpl\nimpl 存在\n但无任何方法\n【高风险】", fillcolor="#FFCDD2"];
+        c3 [label="PartialMissingMethod\n有其他方法\n但无目标方法\n【中风险】", fillcolor="#FFF9C4"];
+        c4 [label="MisplacedFreeFunction\n目标更像自由函数\n非关联函数\n【中风险】", fillcolor="#FFE0B2"];
+        c5 [label="MinimalPass\n方法存在\n/ enum/trait 保守降级\n【低风险】", fillcolor="#C8E6C9"];
+    }
+
+    // Layer 4: Preflight Decision
+    subgraph cluster_l4 {
+        label="第四层：Preflight 决策映射";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#FCE4EC4D";
+        color="#C62828";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        d1 [label="(Severe*) + LowValue\n→ SkipLlmCommentOut\n（需 verify 通过）", fillcolor="#FCE4EC"];
+        d2 [label="MisplacedFreeFunction\n→ ContinueToLlmWithHints\n注入命名空间修复提示 + 自由函数签名", fillcolor="#FFE0B2"];
+        d3 [label="PartialMissing\n→ ContinueToLlm\n（保守放行）", fillcolor="#FFF9C4"];
+        d4 [label="MinimalPass / 分析失败\n→ ContinueToLlm\n（保守放行）", fillcolor="#E8F5E9"];
+    }
+
+    // Output
+    out_analyze [label="E0599Analysis\n(分类 + 方法签名集合)", shape=note, fillcolor="#FFF9C4"];
+    out_empty [label="analyze() → 空 Vec\n(Analysis Patcher)\n+ Preflight Digest 注入:\nE0599_CLASSIFICATION\nE0599_SUMMARY\nE0599_METHOD_SIGNATURES", shape=ellipse, fillcolor="#E8F0FE"];
+
+    // Edges
+    diag -> regex_extract;
+    regex_extract -> normalize;
+    normalize -> scan_l1;
+    scan_l1 -> scan_check;
+    scan_check -> scan_l2 [label="是（扩大范围）"];
+    scan_check -> syn_parse [label="否（已足够）"];
+    scan_l2 -> syn_parse;
+    syn_parse -> cls;
+    cls -> c1;
+    cls -> c2;
+    cls -> c3;
+    cls -> c4;
+    cls -> c5;
+    c1 -> out_analyze;
+    c2 -> out_analyze;
+    c3 -> out_analyze;
+    c4 -> out_analyze;
+    c5 -> out_analyze;
+    out_analyze -> d1 [label="Severe + LowValue"];
+    out_analyze -> d2 [label="MisplacedFreeFunction"];
+    out_analyze -> d3 [label="PartialMissing"];
+    out_analyze -> d4 [label="MinimalPass"];
+    d1 -> out_empty;
+    d2 -> out_empty;
+    d3 -> out_empty;
+    d4 -> out_empty;
+}

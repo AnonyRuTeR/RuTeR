@@ -1,0 +1,1973 @@
+{
+  "total": 213,
+  "success": 45,
+  "failures": 168,
+  "categories": {
+    "RUSTC_ERROR": 168
+  },
+  "error_codes": {
+    "E0433": 95,
+    "E0425": 5,
+    "E0432": 45,
+    "E0369": 1,
+    "E0599": 38,
+    "E0308": 30,
+    "E0061": 13,
+    "E0560": 27,
+    "E0063": 3,
+    "E0277": 5,
+    "E0261": 1,
+    "E0404": 1,
+    "E0405": 1,
+    "E0615": 1
+  },
+  "truncation_types": {},
+  "details": [
+    {
+      "node_id": "eq_ignore_ascii_case::to_ascii_uppercase",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "eq_ignore_ascii_case::to_ascii_uppercase",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "set_logger",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "set_logger",
+      "category": "RUSTC_ERROR",
+      "reason": "Unresolved name/path: E0425, E0433",
+      "error_codes": [
+        "E0425",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "set_logger",
+      "category": "RUSTC_ERROR",
+      "reason": "Unresolved name/path: E0425, E0433",
+      "error_codes": [
+        "E0425",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "set_logger",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432, E0369",
+      "error_codes": [
+        "E0432",
+        "E0369"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "set_logger",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0599",
+      "error_codes": [
+        "E0432",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "set_logger_inner",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "set_logger_racy",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "set_logger_racy",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "logger",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "logger",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "__private_api_log",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "__private_api_log",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "__private_api_enabled",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "__private_api_enabled",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::clone::Clone>::clone",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::clone::Clone>::clone",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialEq>::eq",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialEq>::eq",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialEq<LevelFilter>>::eq",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialEq<LevelFilter>>::eq",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd>::partial_cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0425, E0433, E0599",
+      "error_codes": [
+        "E0425",
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd>::partial_cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0433, E0061, E0599",
+      "error_codes": [
+        "E0433",
+        "E0061",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd>::lt",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd>::lt",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd>::le",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd>::le",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0433",
+      "error_codes": [
+        "E0308",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd>::gt",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd>::gt",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd>::ge",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd>::ge",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd<LevelFilter>>::partial_cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd<LevelFilter>>::partial_cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0433, E0599",
+      "error_codes": [
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd<LevelFilter>>::lt",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd<LevelFilter>>::lt",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd<LevelFilter>>::le",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd<LevelFilter>>::le",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd<LevelFilter>>::gt",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd<LevelFilter>>::gt",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd<LevelFilter>>::ge",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0433, E0599",
+      "error_codes": [
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::PartialOrd<LevelFilter>>::ge",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::Ord>::cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0433, E0599",
+      "error_codes": [
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::cmp::Ord>::cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<Level as core::str::FromStr>::from_str",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Level::to_level_filter",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::clone::Clone>::clone",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::clone::Clone>::clone",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialEq>::eq",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialEq>::eq",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialEq<Level>>::eq",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialEq<Level>>::eq",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd>::partial_cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd>::partial_cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd>::lt",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd>::lt",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd>::le",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd>::le",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0433",
+      "error_codes": [
+        "E0308",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd>::gt",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd>::gt",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0433",
+      "error_codes": [
+        "E0308",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd>::ge",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd>::ge",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd<Level>>::partial_cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0432, E0433, E0308",
+      "error_codes": [
+        "E0432",
+        "E0433",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd<Level>>::partial_cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0433, E0061, E0599",
+      "error_codes": [
+        "E0432",
+        "E0433",
+        "E0061",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd<Level>>::lt",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd<Level>>::lt",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd<Level>>::le",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd<Level>>::le",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd<Level>>::gt",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd<Level>>::gt",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd<Level>>::ge",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::PartialOrd<Level>>::ge",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::Ord>::cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0433, E0599",
+      "error_codes": [
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::cmp::Ord>::cmp",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0433, E0061, E0599",
+      "error_codes": [
+        "E0433",
+        "E0061",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<LevelFilter as core::str::FromStr>::from_str",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "MaybeStaticStr::<'a>::get",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "MaybeStaticStr::<'a>::get",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "MaybeStaticStr::<'a>::get",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "Record::<'a>::args",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0560",
+      "error_codes": [
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "Record::<'a>::args",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0063",
+      "error_codes": [
+        "E0063"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "Record::<'a>::args",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0063",
+      "error_codes": [
+        "E0063"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "Record::<'a>::args",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0560",
+      "error_codes": [
+        "E0308",
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::args",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0277, E0432, E0560, E0308",
+      "error_codes": [
+        "E0277",
+        "E0432",
+        "E0560",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::args",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0432, E0560, E0308",
+      "error_codes": [
+        "E0432",
+        "E0560",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::args",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0432, E0560, E0308",
+      "error_codes": [
+        "E0432",
+        "E0560",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::metadata",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::metadata",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0261, E0599",
+      "error_codes": [
+        "E0261",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::metadata",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0433, E0599",
+      "error_codes": [
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::metadata",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::level",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0432, E0433, E0308, E0599",
+      "error_codes": [
+        "E0432",
+        "E0433",
+        "E0308",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::level",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0433, E0599",
+      "error_codes": [
+        "E0432",
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::level",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::level",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::target",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::target",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::target",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0599",
+      "error_codes": [
+        "E0308",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::target",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::module_path",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0404, E0432, E0405",
+      "error_codes": [
+        "E0404",
+        "E0432",
+        "E0405"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::module_path",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0599",
+      "error_codes": [
+        "E0432",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::module_path",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::module_path",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0560, E0433",
+      "error_codes": [
+        "E0560",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::module_path_static",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0432, E0433, E0308, E0599",
+      "error_codes": [
+        "E0432",
+        "E0433",
+        "E0308",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::module_path_static",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::module_path_static",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0560, E0433, E0599",
+      "error_codes": [
+        "E0432",
+        "E0560",
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::module_path_static",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::file",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0615, E0433",
+      "error_codes": [
+        "E0432",
+        "E0615",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::file",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0560",
+      "error_codes": [
+        "E0308",
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::file",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0432, E0560, E0433, E0308",
+      "error_codes": [
+        "E0432",
+        "E0560",
+        "E0433",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::file",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0277, E0308, E0560, E0433",
+      "error_codes": [
+        "E0277",
+        "E0308",
+        "E0560",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::file_static",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0560, E0599",
+      "error_codes": [
+        "E0560",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::file_static",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0560, E0599",
+      "error_codes": [
+        "E0560",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::file_static",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0560",
+      "error_codes": [
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::file_static",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0560, E0433, E0599",
+      "error_codes": [
+        "E0560",
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::line",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0560",
+      "error_codes": [
+        "E0308",
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::line",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0560",
+      "error_codes": [
+        "E0308",
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::line",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0560",
+      "error_codes": [
+        "E0308",
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Record::<'a>::line",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0560",
+      "error_codes": [
+        "E0308",
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::args",
+      "category": "RUSTC_ERROR",
+      "reason": "Unresolved name/path: E0425, E0433",
+      "error_codes": [
+        "E0425",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::args",
+      "category": "RUSTC_ERROR",
+      "reason": "Unresolved name/path: E0425, E0433",
+      "error_codes": [
+        "E0425",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::args",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::args",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::args",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0061, E0599",
+      "error_codes": [
+        "E0432",
+        "E0061",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::args",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0599",
+      "error_codes": [
+        "E0432",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::args",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::metadata",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::metadata",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::metadata",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::metadata",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0061, E0599",
+      "error_codes": [
+        "E0061",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::metadata",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0277, E0560",
+      "error_codes": [
+        "E0277",
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::level",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0061, E0599",
+      "error_codes": [
+        "E0061",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::level",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0277, E0308",
+      "error_codes": [
+        "E0277",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::level",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0277, E0308, E0560",
+      "error_codes": [
+        "E0277",
+        "E0308",
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::level",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0061",
+      "error_codes": [
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::target",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0063, E0560",
+      "error_codes": [
+        "E0063",
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::module_path",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::module_path_static",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433, E0061",
+      "error_codes": [
+        "E0432",
+        "E0433",
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::module_path_static",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0433, E0599",
+      "error_codes": [
+        "E0432",
+        "E0433",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::module_path_static",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0433, E0061, E0599",
+      "error_codes": [
+        "E0432",
+        "E0433",
+        "E0061",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::module_path_static",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0061, E0599",
+      "error_codes": [
+        "E0061",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::build",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::build",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0560",
+      "error_codes": [
+        "E0308",
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "RecordBuilder::<'a>::build",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0560",
+      "error_codes": [
+        "E0308",
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Metadata::<'a>::level",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0432, E0061, E0599",
+      "error_codes": [
+        "E0432",
+        "E0061",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Metadata::<'a>::level",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0061",
+      "error_codes": [
+        "E0308",
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Metadata::<'a>::level",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0560",
+      "error_codes": [
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Metadata::<'a>::level",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0061",
+      "error_codes": [
+        "E0308",
+        "E0061"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Metadata::<'a>::target",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0560",
+      "error_codes": [
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Metadata::<'a>::target",
+      "category": "RUSTC_ERROR",
+      "reason": "Method/field not found: E0599",
+      "error_codes": [
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Metadata::<'a>::target",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0560",
+      "error_codes": [
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "Metadata::<'a>::target",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0560",
+      "error_codes": [
+        "E0560"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "MetadataBuilder::<'a>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "MetadataBuilder::<'a>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "MetadataBuilder::<'a>::new",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "MetadataBuilder::<'a>::level",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "MetadataBuilder::<'a>::level",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<NopLogger as Log>::enabled",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<NopLogger as Log>::enabled",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<NopLogger as Log>::enabled",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<NopLogger as Log>::enabled",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308, E0599",
+      "error_codes": [
+        "E0308",
+        "E0599"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<NopLogger as Log>::enabled",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0432, E0433",
+      "error_codes": [
+        "E0432",
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<NopLogger as Log>::log",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<NopLogger as Log>::log",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<NopLogger as Log>::log",
+      "category": "RUSTC_ERROR",
+      "reason": "Failed to resolve import: E0433",
+      "error_codes": [
+        "E0433"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "parameter_instantiation"
+    },
+    {
+      "node_id": "<NopLogger as Log>::log",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<&T as Log>::enabled",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<&T as Log>::log",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0432, E0308",
+      "error_codes": [
+        "E0432",
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<&T as Log>::log",
+      "category": "RUSTC_ERROR",
+      "reason": "Compiler errors: E0432",
+      "error_codes": [
+        "E0432"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    },
+    {
+      "node_id": "<&T as Log>::flush",
+      "category": "RUSTC_ERROR",
+      "reason": "Type mismatch errors: E0308",
+      "error_codes": [
+        "E0308"
+      ],
+      "truncation_hint": null,
+      "truncation_hint_reason": null,
+      "section": "test_generation"
+    }
+  ]
+}

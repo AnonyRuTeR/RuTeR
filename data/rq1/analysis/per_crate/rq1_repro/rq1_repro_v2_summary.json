@@ -1,0 +1,325 @@
+{
+  "runs_processed": 16,
+  "compile_ok_runs": 0,
+  "compile_error_runs": 16,
+  "error_distribution": {
+    "E0433": 400,
+    "E0599": 231,
+    "E0603": 107,
+    "E0560": 99,
+    "E0432": 87,
+    "E0277": 39,
+    "E0308": 38,
+    "E0412": 35,
+    "E0061": 33,
+    "E0658": 28,
+    "E0063": 10,
+    "E0407": 9,
+    "E0616": 7,
+    "E0119": 7,
+    "E0425": 6,
+    "E0405": 5,
+    "E0423": 4,
+    "E0609": 4,
+    "E0422": 3,
+    "E0659": 3,
+    "E0046": 3,
+    "E0283": 2,
+    "E0533": 2,
+    "E0116": 1,
+    "E0261": 1,
+    "E0596": 1,
+    "E0252": 1,
+    "E0437": 1,
+    "E0531": 1,
+    "E0220": 1,
+    "E0040": 1
+  },
+  "per_run": [
+    {
+      "run": "humantime_claude-3-5-haiku-20241022_20251109_133407",
+      "crate": "humantime",
+      "model": "claude-3-5-haiku-20241022",
+      "status": "ok",
+      "total_attempts": 139,
+      "injected_modules": 32,
+      "compile_ok": false,
+      "errors": {
+        "E0433": 8,
+        "E0603": 2,
+        "E0599": 13,
+        "E0061": 1,
+        "E0560": 1,
+        "E0283": 1
+      }
+    },
+    {
+      "run": "humantime_deepseek-v3_20251109_140004",
+      "crate": "humantime",
+      "model": "deepseek-v3",
+      "status": "ok",
+      "total_attempts": 101,
+      "injected_modules": 32,
+      "compile_ok": false,
+      "errors": {
+        "E0433": 7,
+        "E0432": 1,
+        "E0603": 2,
+        "E0658": 1,
+        "E0277": 1,
+        "E0061": 1,
+        "E0599": 3,
+        "E0063": 2,
+        "E0423": 2
+      }
+    },
+    {
+      "run": "humantime_gemini-2.5-flash-nothinking_20251109_134926",
+      "crate": "humantime",
+      "model": "gemini-2.5-flash-nothinking",
+      "status": "ok",
+      "total_attempts": 110,
+      "injected_modules": 32,
+      "compile_ok": false,
+      "errors": {
+        "E0432": 1,
+        "E0433": 13,
+        "E0603": 2,
+        "E0116": 1,
+        "E0658": 6,
+        "E0061": 6,
+        "E0599": 26,
+        "E0560": 8,
+        "E0533": 2
+      }
+    },
+    {
+      "run": "humantime_gemini-2.5-flash-thinking_20251109_141506",
+      "crate": "humantime",
+      "model": "gemini-2.5-flash-thinking",
+      "status": "ok",
+      "total_attempts": 95,
+      "injected_modules": 32,
+      "compile_ok": false,
+      "errors": {
+        "E0433": 8,
+        "E0603": 2,
+        "E0599": 13,
+        "E0560": 2,
+        "E0616": 6
+      }
+    },
+    {
+      "run": "humantime_gpt-3.5-turbo_20251109_000031",
+      "crate": "humantime",
+      "model": "gpt-3.5-turbo",
+      "status": "ok",
+      "total_attempts": 133,
+      "injected_modules": 32,
+      "compile_ok": false,
+      "errors": {
+        "E0433": 13,
+        "E0432": 1,
+        "E0261": 1,
+        "E0603": 2,
+        "E0658": 2,
+        "E0061": 3,
+        "E0063": 2,
+        "E0308": 2,
+        "E0599": 5
+      }
+    },
+    {
+      "run": "humantime_gpt-4.1-mini_20251109_001052",
+      "crate": "humantime",
+      "model": "gpt-4.1-mini",
+      "status": "ok",
+      "total_attempts": 122,
+      "injected_modules": 32,
+      "compile_ok": false,
+      "errors": {
+        "E0433": 15,
+        "E0603": 2,
+        "E0658": 2,
+        "E0061": 2,
+        "E0599": 6,
+        "E0616": 1,
+        "E0596": 1
+      }
+    },
+    {
+      "run": "humantime_gpt-4.1-nano_20251109_132117",
+      "crate": "humantime",
+      "model": "gpt-4.1-nano",
+      "status": "ok",
+      "total_attempts": 145,
+      "injected_modules": 32,
+      "compile_ok": false,
+      "errors": {
+        "E0433": 8,
+        "E0599": 4,
+        "E0423": 2
+      }
+    },
+    {
+      "run": "humantime_gpt-4o-mini_20251108_234236",
+      "crate": "humantime",
+      "model": "gpt-4o-mini",
+      "status": "ok",
+      "total_attempts": 137,
+      "injected_modules": 32,
+      "compile_ok": false,
+      "errors": {
+        "E0433": 14,
+        "E0432": 8,
+        "E0603": 2,
+        "E0658": 2,
+        "E0061": 2,
+        "E0599": 7,
+        "E0277": 1
+      }
+    },
+    {
+      "run": "humantime_gpt-5-nano_20251109_004846",
+      "crate": "humantime",
+      "model": "gpt-5-nano",
+      "status": "ok",
+      "total_attempts": 138,
+      "injected_modules": 32,
+      "compile_ok": false,
+      "errors": {
+        "E0433": 18,
+        "E0603": 4,
+        "E0658": 1,
+        "E0061": 1,
+        "E0599": 3,
+        "E0283": 1
+      }
+    },
+    {
+      "run": "itoa_gemini-2.5-flash-nothinking_20251127_010109",
+      "crate": "itoa",
+      "model": "gemini-2.5-flash-nothinking",
+      "status": "ok",
+      "total_attempts": 25,
+      "injected_modules": 18,
+      "compile_ok": false,
+      "errors": {
+        "E0308": 9,
+        "E0599": 3
+      }
+    },
+    {
+      "run": "log_gemini-2.5-flash-nothinking_20251127_025911",
+      "crate": "log",
+      "model": "gemini-2.5-flash-nothinking",
+      "status": "ok",
+      "total_attempts": 178,
+      "injected_modules": 86,
+      "compile_ok": false,
+      "errors": {
+        "E0433": 52,
+        "E0432": 14,
+        "E0599": 22,
+        "E0061": 6,
+        "E0308": 10,
+        "E0560": 19,
+        "E0277": 1
+      }
+    },
+    {
+      "run": "rand_gemini-2.5-flash-nothinking_20251127_025504",
+      "crate": "rand",
+      "model": "gemini-2.5-flash-nothinking",
+      "status": "ok",
+      "total_attempts": 496,
+      "injected_modules": 309,
+      "compile_ok": false,
+      "errors": {
+        "E0252": 1,
+        "E0432": 46,
+        "E0433": 120,
+        "E0407": 9,
+        "E0437": 1,
+        "E0412": 27,
+        "E0425": 6,
+        "E0422": 3,
+        "E0405": 5,
+        "E0531": 1,
+        "E0659": 3,
+        "E0603": 81,
+        "E0220": 1,
+        "E0119": 7,
+        "E0046": 3
+      }
+    },
+    {
+      "run": "rust-crc32fast_gemini-2.5-flash-nothinking_20251109_235808",
+      "crate": "rust-crc32fast",
+      "model": "gemini-2.5-flash-nothinking",
+      "status": "ok",
+      "total_attempts": 35,
+      "injected_modules": 27,
+      "compile_ok": false,
+      "errors": {
+        "E0433": 1
+      }
+    },
+    {
+      "run": "rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158",
+      "crate": "rustc-demangle",
+      "model": "gemini-2.5-flash-nothinking",
+      "status": "ok",
+      "total_attempts": 161,
+      "injected_modules": 47,
+      "compile_ok": false,
+      "errors": {
+        "E0432": 9,
+        "E0433": 102,
+        "E0412": 8,
+        "E0560": 69,
+        "E0308": 11,
+        "E0063": 6,
+        "E0277": 30,
+        "E0599": 72,
+        "E0658": 3,
+        "E0061": 3,
+        "E0609": 4
+      }
+    },
+    {
+      "run": "ryu_gemini-2.5-flash-nothinking_20251127_013142",
+      "crate": "ryu",
+      "model": "gemini-2.5-flash-nothinking",
+      "status": "ok",
+      "total_attempts": 48,
+      "injected_modules": 39,
+      "compile_ok": false,
+      "errors": {
+        "E0433": 15,
+        "E0432": 1,
+        "E0599": 2
+      }
+    },
+    {
+      "run": "semver_gemini-2.5-flash-nothinking_20251127_013324",
+      "crate": "semver",
+      "model": "gemini-2.5-flash-nothinking",
+      "status": "ok",
+      "total_attempts": 94,
+      "injected_modules": 66,
+      "compile_ok": false,
+      "errors": {
+        "E0432": 6,
+        "E0433": 6,
+        "E0603": 8,
+        "E0658": 11,
+        "E0061": 8,
+        "E0599": 52,
+        "E0308": 6,
+        "E0277": 6,
+        "E0040": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+digraph module_layers {
+    rankdir=TB;
+    fontname="Helvetica";
+    compound=true;
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=10];
+    newrank=true;
+
+    label="ruter 模块层次架构";
+    labelloc=t;
+    fontsize=14;
+    fontname="Helvetica-Bold";
+
+    subgraph cluster_app {
+        label="应用层 (main.rs 私有模块)";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#FFF3E04D";
+        color="#E6A817";
+        fontname="Helvetica-Bold";
+        fontsize=12;
+
+        cli [label="cli\nCLI 参数解析\n(clap derive)", fillcolor="#FFF3E0"];
+        config [label="config\n配置解析\nCLI > ENV > TOML > 默认", fillcolor="#FFF3E0"];
+        runtime [label="runtime\n运行时编排\n(stages, workflow,\nartifacts, reporter)", fillcolor="#FFF3E0"];
+        llm [label="llm\nLLM 修复器\n(executor, preflight,\nclient, prompt)", fillcolor="#FFF3E0"];
+    }
+
+    subgraph cluster_lib {
+        label="库层 (lib.rs 公共导出)";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#E8F0FE4D";
+        color="#1A73E8";
+        fontname="Helvetica-Bold";
+        fontsize=12;
+
+        patchers [label="patchers\nPatcher trait\n+ PatcherRegistry\n+ 5 个错误码实现", fillcolor="#E8F0FE"];
+        coordinator [label="coordinator\nPatchCoordinator\n冲突检测 + 候选排序", fillcolor="#E8F0FE"];
+        transformer [label="transformer\nCodeTransformer\n字节级替换", fillcolor="#E8F0FE"];
+        parser [label="parser\nJsonParser\nNDJSON → Diagnostic[]", fillcolor="#E8F0FE"];
+        core [label="core\n核心数据模型\nDiagnostic, SpanInfo,\nFixAction, ErrorCode,\nTestFunction", fillcolor="#E8F0FE"];
+    }
+
+    subgraph cluster_external {
+        label="外部依赖";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#F3E5F54D";
+        color="#7B1FA2";
+        fontname="Helvetica-Bold";
+        fontsize=12;
+
+        syn_dep [label="syn\nAST 解析\n(full + visit)", fillcolor="#F3E5F5"];
+        serde [label="serde + serde_json\n序列化", fillcolor="#F3E5F5"];
+        reqwest [label="reqwest\nHTTP 客户端\n(blocking + rustls)", fillcolor="#F3E5F5"];
+        clap [label="clap\nCLI 框架\n(derive)", fillcolor="#F3E5F5"];
+    }
+
+    // App -> Lib dependencies
+    cli -> config [style=dashed];
+    cli -> runtime;
+    runtime -> llm;
+    runtime -> patchers;
+    runtime -> coordinator;
+    runtime -> transformer;
+    runtime -> parser;
+    llm -> patchers [label="Preflight\n分析注入"];
+    llm -> core;
+
+    // Lib internal dependencies
+    patchers -> core;
+    coordinator -> patchers;
+    coordinator -> transformer;
+    transformer -> core;
+    parser -> core;
+
+    // External deps
+    patchers -> syn_dep [style=dotted, color="#7B1FA2"];
+    parser -> serde [style=dotted, color="#7B1FA2"];
+    llm -> reqwest [style=dotted, color="#7B1FA2"];
+    cli -> clap [style=dotted, color="#7B1FA2"];
+}

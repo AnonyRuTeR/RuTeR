@@ -1,0 +1,61 @@
+digraph E0433Patcher_Teaching_Step4 {
+  graph [
+    rankdir=TB,
+    fontsize=24,
+    labelloc="t",
+    label="Step 4 — Fix Generation (&ExtendedSpan + &ResolutionResult -> Option<FixAction>)",
+    bgcolor="white",
+    pad="0.25",
+    nodesep="0.55",
+    ranksep="0.75",
+    splines="ortho"
+  ];
+
+  node [
+    shape=box,
+    style="rounded,filled",
+    fillcolor="#F7F7F7",
+    color="#444444",
+    penwidth=1.6,
+    fontname="Helvetica",
+    fontsize=16
+  ];
+
+  edge [
+    color="#444444",
+    penwidth=1.3,
+    fontname="Helvetica",
+    fontsize=14,
+    arrowsize=0.85
+  ];
+
+  in1 [label="Input: &ExtendedSpan\n(where to edit)\n- extended_span\n- segments/structure", fillcolor="#FFF4D6"];
+  in2 [label="Input: &ResolutionResult\n(what path to use)\nResolved/Ambiguous/Unresolved", fillcolor="#FFF4D6"];
+
+  fn [label="FixGenerator::generate", fillcolor="#E9F5FF"];
+
+  d1 [label="ResolutionResult == Resolved ?", shape=diamond, fillcolor="#FFFFFF"];
+  rw [label="rewrite_with_suffix\nresolved_path + keep suffix\n(e.g., ::new)", fillcolor="#FFFFFF"];
+  d2 [label="no-op?\n(new == old)", shape=diamond, fillcolor="#FFFFFF"];
+
+  none1 [label="None\nAmbiguous/Unresolved", fillcolor="#FFE9E9"];
+  none2 [label="None\nno-op (already correct)", fillcolor="#FFE9E9"];
+  fix  [label="Some(FixAction::Replace)\n{ span=extended_span,\n  new_content }", fillcolor="#DFF7E3"];
+
+  out [label="Output: Option<FixAction>", fillcolor="#E9F5FF"];
+
+  in1 -> fn [label="borrow"];
+  in2 -> fn [label="borrow"];
+  fn -> d1;
+
+  d1 -> none1 [label="no"];
+  d1 -> rw    [label="yes"];
+  rw -> d2;
+
+  d2 -> none2 [label="yes"];
+  d2 -> fix   [label="no"];
+
+  none1 -> out;
+  none2 -> out;
+  fix   -> out;
+}

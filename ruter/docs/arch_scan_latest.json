@@ -1,0 +1,257 @@
+{
+  "repo_root": "<REPO_ROOT>",
+  "src_root": "<REPO_ROOT>/src",
+  "summary": {
+    "file_count": 96,
+    "line_count": 19331,
+    "module_count": 9,
+    "top3_line_concentration_ratio": 0.1053
+  },
+  "top_files": [
+    {
+      "path": "src/llm/executor/round_runner.rs",
+      "module": "llm",
+      "lines": 887,
+      "non_empty_lines": 841
+    },
+    {
+      "path": "src/patchers/e0433/tests.rs",
+      "module": "patchers",
+      "lines": 589,
+      "non_empty_lines": 534
+    },
+    {
+      "path": "src/runtime/stages.rs",
+      "module": "runtime",
+      "lines": 560,
+      "non_empty_lines": 504
+    },
+    {
+      "path": "src/patchers/e0308/analyzer.rs",
+      "module": "patchers",
+      "lines": 521,
+      "non_empty_lines": 467
+    },
+    {
+      "path": "src/runtime/function/dispatch.rs",
+      "module": "runtime",
+      "lines": 476,
+      "non_empty_lines": 425
+    },
+    {
+      "path": "src/patchers/e0433/patcher.rs",
+      "module": "patchers",
+      "lines": 466,
+      "non_empty_lines": 404
+    },
+    {
+      "path": "src/runtime/function/index.rs",
+      "module": "runtime",
+      "lines": 452,
+      "non_empty_lines": 403
+    },
+    {
+      "path": "src/runtime/stages/verify_flow.rs",
+      "module": "runtime",
+      "lines": 444,
+      "non_empty_lines": 402
+    },
+    {
+      "path": "src/llm/schema.rs",
+      "module": "llm",
+      "lines": 440,
+      "non_empty_lines": 399
+    },
+    {
+      "path": "src/patchers/e0433/path_resolver.rs",
+      "module": "patchers",
+      "lines": 435,
+      "non_empty_lines": 382
+    }
+  ],
+  "modules": [
+    {
+      "module": "runtime",
+      "file_count": 26,
+      "lines": 6056,
+      "non_empty_lines": 5472,
+      "largest_file": "src/runtime/stages.rs",
+      "largest_file_lines": 560
+    },
+    {
+      "module": "llm",
+      "file_count": 25,
+      "lines": 5823,
+      "non_empty_lines": 5358,
+      "largest_file": "src/llm/executor/round_runner.rs",
+      "largest_file_lines": 887
+    },
+    {
+      "module": "patchers",
+      "file_count": 27,
+      "lines": 5615,
+      "non_empty_lines": 4989,
+      "largest_file": "src/patchers/e0433/tests.rs",
+      "largest_file_lines": 589
+    },
+    {
+      "module": "coordinator",
+      "file_count": 3,
+      "lines": 648,
+      "non_empty_lines": 580,
+      "largest_file": "src/coordinator/patch_coordinator/tests.rs",
+      "largest_file_lines": 384
+    },
+    {
+      "module": "_root",
+      "file_count": 3,
+      "lines": 368,
+      "non_empty_lines": 317,
+      "largest_file": "src/config.rs",
+      "largest_file_lines": 347
+    },
+    {
+      "module": "transformer",
+      "file_count": 2,
+      "lines": 265,
+      "non_empty_lines": 223,
+      "largest_file": "src/transformer/code_transformer.rs",
+      "largest_file_lines": 262
+    },
+    {
+      "module": "cli",
+      "file_count": 1,
+      "lines": 220,
+      "non_empty_lines": 186,
+      "largest_file": "src/cli/mod.rs",
+      "largest_file_lines": 220
+    },
+    {
+      "module": "core",
+      "file_count": 7,
+      "lines": 209,
+      "non_empty_lines": 187,
+      "largest_file": "src/core/span.rs",
+      "largest_file_lines": 49
+    },
+    {
+      "module": "parser",
+      "file_count": 2,
+      "lines": 127,
+      "non_empty_lines": 103,
+      "largest_file": "src/parser/json_parser.rs",
+      "largest_file_lines": 125
+    }
+  ],
+  "findings": [
+    {
+      "severity": "warning",
+      "code": "RUNTIME_LLM_MISPLACEMENT",
+      "path": "src/runtime/workflow.rs",
+      "message": "Runtime file contains multiple LLM-domain signals; verify whether this code should live under src/llm",
+      "evidence": {
+        "matched_keywords": [
+          "llm",
+          "model"
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "code": "MODULE_OVERLOADED",
+      "path": "src/llm",
+      "message": "Module has 25 files and 5823 lines; consider splitting into capability-focused submodules",
+      "evidence": {
+        "file_count": 25,
+        "lines": 5823,
+        "largest_file": "src/llm/executor/round_runner.rs",
+        "largest_file_lines": 887
+      }
+    },
+    {
+      "severity": "warning",
+      "code": "MODULE_OVERLOADED",
+      "path": "src/patchers",
+      "message": "Module has 27 files and 5615 lines; consider splitting into capability-focused submodules",
+      "evidence": {
+        "file_count": 27,
+        "lines": 5615,
+        "largest_file": "src/patchers/e0433/tests.rs",
+        "largest_file_lines": 589
+      }
+    },
+    {
+      "severity": "warning",
+      "code": "MODULE_OVERLOADED",
+      "path": "src/runtime",
+      "message": "Module has 26 files and 6056 lines; consider splitting into capability-focused submodules",
+      "evidence": {
+        "file_count": 26,
+        "lines": 6056,
+        "largest_file": "src/runtime/stages.rs",
+        "largest_file_lines": 560
+      }
+    },
+    {
+      "severity": "warning",
+      "code": "FILE_LARGE",
+      "path": "src/llm/executor/round_runner.rs",
+      "message": "File has 887 lines (>= 600); consider extraction of focused submodules",
+      "evidence": {
+        "lines": 887
+      }
+    },
+    {
+      "severity": "info",
+      "code": "LLM_RUNTIME_COUPLING",
+      "path": "src/llm/executor.rs",
+      "message": "LLM file includes runtime orchestration signals; check for boundary leakage",
+      "evidence": {
+        "matched_keywords": [
+          "artifact",
+          "stage",
+          "verify"
+        ]
+      }
+    },
+    {
+      "severity": "info",
+      "code": "LLM_RUNTIME_COUPLING",
+      "path": "src/llm/executor/preflight_flow.rs",
+      "message": "LLM file includes runtime orchestration signals; check for boundary leakage",
+      "evidence": {
+        "matched_keywords": [
+          "artifact",
+          "stage",
+          "verify"
+        ]
+      }
+    },
+    {
+      "severity": "info",
+      "code": "LLM_RUNTIME_COUPLING",
+      "path": "src/llm/executor/round_runner.rs",
+      "message": "LLM file includes runtime orchestration signals; check for boundary leakage",
+      "evidence": {
+        "matched_keywords": [
+          "artifact",
+          "stage",
+          "verify"
+        ]
+      }
+    },
+    {
+      "severity": "info",
+      "code": "LLM_RUNTIME_COUPLING",
+      "path": "src/llm/executor/verify_port.rs",
+      "message": "LLM file includes runtime orchestration signals; check for boundary leakage",
+      "evidence": {
+        "matched_keywords": [
+          "artifact",
+          "stage",
+          "verify"
+        ]
+      }
+    }
+  ]
+}

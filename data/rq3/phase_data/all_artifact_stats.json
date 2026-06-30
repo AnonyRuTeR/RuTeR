@@ -1,0 +1,702 @@
+{
+  "generated_at_utc": "2026-03-12T16:54:42+00:00",
+  "scope": "all",
+  "attempt_level": {
+    "attempt_total": 153,
+    "strict_success": 76,
+    "strict_success_rate": 0.496732,
+    "normalized_success": 80,
+    "normalized_success_rate": 0.522876,
+    "strict_normalized_delta": 0.026144
+  },
+  "source_level": {
+    "baseline_source": "rug_existing_humantime",
+    "rows": [
+      {
+        "source_id": "direct_llm_1shot",
+        "attempt_total": 46,
+        "strict_success": 14,
+        "strict_success_rate": 0.304348,
+        "normalized_success": 14,
+        "normalized_success_rate": 0.304348,
+        "strict_normalized_delta": 0.0,
+        "resolved_by_rule": 7,
+        "resolved_by_full": 7,
+        "unresolved": 32,
+        "frozen_nonreproducible": 0,
+        "runtime_failed": 0
+      },
+      {
+        "source_id": "rug_existing_humantime",
+        "attempt_total": 85,
+        "strict_success": 54,
+        "strict_success_rate": 0.635294,
+        "normalized_success": 54,
+        "normalized_success_rate": 0.635294,
+        "strict_normalized_delta": 0.0,
+        "resolved_by_rule": 19,
+        "resolved_by_full": 35,
+        "unresolved": 31,
+        "frozen_nonreproducible": 0,
+        "runtime_failed": 1
+      },
+      {
+        "source_id": "rugae_base4_humantime_replay",
+        "attempt_total": 11,
+        "strict_success": 4,
+        "strict_success_rate": 0.363636,
+        "normalized_success": 6,
+        "normalized_success_rate": 0.545455,
+        "strict_normalized_delta": 0.181819,
+        "resolved_by_rule": 1,
+        "resolved_by_full": 3,
+        "unresolved": 7,
+        "frozen_nonreproducible": 2,
+        "runtime_failed": 0
+      },
+      {
+        "source_id": "rugae_hybrid4_humantime_replay",
+        "attempt_total": 11,
+        "strict_success": 4,
+        "strict_success_rate": 0.363636,
+        "normalized_success": 6,
+        "normalized_success_rate": 0.545455,
+        "strict_normalized_delta": 0.181819,
+        "resolved_by_rule": 1,
+        "resolved_by_full": 3,
+        "unresolved": 7,
+        "frozen_nonreproducible": 2,
+        "runtime_failed": 0
+      }
+    ],
+    "transfer_gap_vs_baseline": {
+      "direct_llm_1shot": {
+        "strict_success_rate_delta": -0.330946,
+        "normalized_success_rate_delta": -0.330946
+      },
+      "rug_existing_humantime": {
+        "strict_success_rate_delta": 0.0,
+        "normalized_success_rate_delta": 0.0
+      },
+      "rugae_base4_humantime_replay": {
+        "strict_success_rate_delta": -0.271658,
+        "normalized_success_rate_delta": -0.089839
+      },
+      "rugae_hybrid4_humantime_replay": {
+        "strict_success_rate_delta": -0.271658,
+        "normalized_success_rate_delta": -0.089839
+      }
+    }
+  },
+  "repro_quality": {
+    "repro_mismatch_total": 4,
+    "env_repro_zero_error_total": 4,
+    "frozen_nonreproducible_total": 4
+  },
+  "error_level": {
+    "rows": [
+      {
+        "error_code": "E0061",
+        "bucket": "E_CODE",
+        "attempt_total": 6,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0,
+        "resolved_by_rule": 0,
+        "resolved_by_full": 0,
+        "unresolved": 6,
+        "frozen_nonreproducible": 0
+      },
+      {
+        "error_code": "E0063",
+        "bucket": "E_CODE",
+        "attempt_total": 4,
+        "strict_success": 3,
+        "strict_success_rate": 0.75,
+        "normalized_success": 3,
+        "normalized_success_rate": 0.75,
+        "resolved_by_rule": 0,
+        "resolved_by_full": 3,
+        "unresolved": 1,
+        "frozen_nonreproducible": 0
+      },
+      {
+        "error_code": "E0107",
+        "bucket": "E_CODE",
+        "attempt_total": 4,
+        "strict_success": 2,
+        "strict_success_rate": 0.5,
+        "normalized_success": 2,
+        "normalized_success_rate": 0.5,
+        "resolved_by_rule": 0,
+        "resolved_by_full": 2,
+        "unresolved": 2,
+        "frozen_nonreproducible": 0
+      },
+      {
+        "error_code": "E0116",
+        "bucket": "E_CODE",
+        "attempt_total": 6,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0,
+        "resolved_by_rule": 0,
+        "resolved_by_full": 0,
+        "unresolved": 6,
+        "frozen_nonreproducible": 0
+      },
+      {
+        "error_code": "E0164",
+        "bucket": "E_CODE",
+        "attempt_total": 2,
+        "strict_success": 1,
+        "strict_success_rate": 0.5,
+        "normalized_success": 1,
+        "normalized_success_rate": 0.5,
+        "resolved_by_rule": 0,
+        "resolved_by_full": 1,
+        "unresolved": 1,
+        "frozen_nonreproducible": 0
+      },
+      {
+        "error_code": "E0277",
+        "bucket": "E_CODE",
+        "attempt_total": 3,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0,
+        "resolved_by_rule": 0,
+        "resolved_by_full": 0,
+        "unresolved": 3,
+        "frozen_nonreproducible": 0
+      },
+      {
+        "error_code": "E0308",
+        "bucket": "E_CODE",
+        "attempt_total": 11,
+        "strict_success": 5,
+        "strict_success_rate": 0.454545,
+        "normalized_success": 5,
+        "normalized_success_rate": 0.454545,
+        "resolved_by_rule": 0,
+        "resolved_by_full": 5,
+        "unresolved": 6,
+        "frozen_nonreproducible": 0
+      },
+      {
+        "error_code": "E0404",
+        "bucket": "E_CODE",
+        "attempt_total": 3,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0,
+        "resolved_by_rule": 0,
+        "resolved_by_full": 0,
+        "unresolved": 3,
+        "frozen_nonreproducible": 0
+      },
+      {
+        "error_code": "E0423",
+        "bucket": "E_CODE",
+        "attempt_total": 1,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0,
+        "resolved_by_rule": 0,
+        "resolved_by_full": 0,
+        "unresolved": 1,
+        "frozen_nonreproducible": 0
+      },
+      {
+        "error_code": "E0425",
+        "bucket": "E_CODE",
+        "attempt_total": 3,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0,
+        "resolved_by_rule": 0,
+        "resolved_by_full": 0,
+        "unresolved": 3,
+        "frozen_nonreproducible": 0
+      },
+      {
+        "error_code": "E0428",
+        "bucket": "E_CODE",
+        "attempt_total": 2,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0,
+        "resolved_by_rule": 0,
+        "resolved_by_full": 0,
+        "unresolved": 2,
+        "frozen_nonreproducible": 0
+      },
+      {
+        "error_code": "E0432",
+        "bucket": "E_CODE",
+        "attempt_total": 24,
+        "strict_success": 11,
+        "strict_success_rate": 0.458333,
+        "normalized_success": 15,
+        "normalized_success_rate": 0.625,
+        "resolved_by_rule": 9,
+        "resolved_by_full": 2,
+        "unresolved": 13,
+        "frozen_nonreproducible": 4
+      },
+      {
+        "error_code": "E0433",
+        "bucket": "E_CODE",
+        "attempt_total": 43,
+        "strict_success": 27,
+        "strict_success_rate": 0.627907,
+        "normalized_success": 27,
+        "normalized_success_rate": 0.627907,
+        "resolved_by_rule": 19,
+        "resolved_by_full": 8,
+        "unresolved": 16,
+        "frozen_nonreproducible": 0
+      },
+      {
+        "error_code": "E0533",
+        "bucket": "E_CODE",
+        "attempt_total": 2,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0,
+        "resolved_by_rule": 0,
+        "resolved_by_full": 0,
+        "unresolved": 2,
+        "frozen_nonreproducible": 0
+      },
+      {
+        "error_code": "E0560",
+        "bucket": "E_CODE",
+        "attempt_total": 13,
+        "strict_success": 11,
+        "strict_success_rate": 0.846154,
+        "normalized_success": 11,
+        "normalized_success_rate": 0.846154,
+        "resolved_by_rule": 0,
+        "resolved_by_full": 11,
+        "unresolved": 2,
+        "frozen_nonreproducible": 0
+      },
+      {
+        "error_code": "E0599",
+        "bucket": "E_CODE",
+        "attempt_total": 47,
+        "strict_success": 20,
+        "strict_success_rate": 0.425532,
+        "normalized_success": 20,
+        "normalized_success_rate": 0.425532,
+        "resolved_by_rule": 0,
+        "resolved_by_full": 20,
+        "unresolved": 27,
+        "frozen_nonreproducible": 0
+      },
+      {
+        "error_code": "E0658",
+        "bucket": "E_CODE",
+        "attempt_total": 14,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0,
+        "resolved_by_rule": 0,
+        "resolved_by_full": 0,
+        "unresolved": 14,
+        "frozen_nonreproducible": 0
+      },
+      {
+        "error_code": "E0765",
+        "bucket": "E_CODE",
+        "attempt_total": 1,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0,
+        "resolved_by_rule": 0,
+        "resolved_by_full": 0,
+        "unresolved": 1,
+        "frozen_nonreproducible": 0
+      },
+      {
+        "error_code": "unsafe_code",
+        "bucket": "NON_E_CODE",
+        "attempt_total": 1,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0,
+        "resolved_by_rule": 0,
+        "resolved_by_full": 0,
+        "unresolved": 1,
+        "frozen_nonreproducible": 0
+      }
+    ]
+  },
+  "run_error_level": {
+    "rows": [
+      {
+        "run_id": "humantime_direct_llm_1shot",
+        "error_code": "E0061",
+        "attempt_total": 6,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_direct_llm_1shot",
+        "error_code": "E0116",
+        "attempt_total": 3,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_direct_llm_1shot",
+        "error_code": "E0164",
+        "attempt_total": 1,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_direct_llm_1shot",
+        "error_code": "E0277",
+        "attempt_total": 1,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_direct_llm_1shot",
+        "error_code": "E0308",
+        "attempt_total": 1,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_direct_llm_1shot",
+        "error_code": "E0404",
+        "attempt_total": 3,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_direct_llm_1shot",
+        "error_code": "E0423",
+        "attempt_total": 1,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_direct_llm_1shot",
+        "error_code": "E0425",
+        "attempt_total": 3,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_direct_llm_1shot",
+        "error_code": "E0428",
+        "attempt_total": 2,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_direct_llm_1shot",
+        "error_code": "E0432",
+        "attempt_total": 10,
+        "resolved_attempt": 7,
+        "resolved_rate": 0.7,
+        "strict_success": 7,
+        "normalized_success": 7
+      },
+      {
+        "run_id": "humantime_direct_llm_1shot",
+        "error_code": "E0433",
+        "attempt_total": 1,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_direct_llm_1shot",
+        "error_code": "E0533",
+        "attempt_total": 1,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_direct_llm_1shot",
+        "error_code": "E0599",
+        "attempt_total": 23,
+        "resolved_attempt": 7,
+        "resolved_rate": 0.304348,
+        "strict_success": 7,
+        "normalized_success": 7
+      },
+      {
+        "run_id": "humantime_direct_llm_1shot",
+        "error_code": "E0658",
+        "attempt_total": 3,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_direct_llm_1shot",
+        "error_code": "unsafe_code",
+        "attempt_total": 1,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_gemini-2.5-flash-nothinking_20251109_134926",
+        "error_code": "E0063",
+        "attempt_total": 4,
+        "resolved_attempt": 3,
+        "resolved_rate": 0.75,
+        "strict_success": 3,
+        "normalized_success": 3
+      },
+      {
+        "run_id": "humantime_gemini-2.5-flash-nothinking_20251109_134926",
+        "error_code": "E0107",
+        "attempt_total": 4,
+        "resolved_attempt": 2,
+        "resolved_rate": 0.5,
+        "strict_success": 2,
+        "normalized_success": 2
+      },
+      {
+        "run_id": "humantime_gemini-2.5-flash-nothinking_20251109_134926",
+        "error_code": "E0116",
+        "attempt_total": 3,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_gemini-2.5-flash-nothinking_20251109_134926",
+        "error_code": "E0164",
+        "attempt_total": 1,
+        "resolved_attempt": 1,
+        "resolved_rate": 1.0,
+        "strict_success": 1,
+        "normalized_success": 1
+      },
+      {
+        "run_id": "humantime_gemini-2.5-flash-nothinking_20251109_134926",
+        "error_code": "E0308",
+        "attempt_total": 2,
+        "resolved_attempt": 1,
+        "resolved_rate": 0.5,
+        "strict_success": 1,
+        "normalized_success": 1
+      },
+      {
+        "run_id": "humantime_gemini-2.5-flash-nothinking_20251109_134926",
+        "error_code": "E0432",
+        "attempt_total": 4,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_gemini-2.5-flash-nothinking_20251109_134926",
+        "error_code": "E0433",
+        "attempt_total": 40,
+        "resolved_attempt": 27,
+        "resolved_rate": 0.675,
+        "strict_success": 27,
+        "normalized_success": 27
+      },
+      {
+        "run_id": "humantime_gemini-2.5-flash-nothinking_20251109_134926",
+        "error_code": "E0533",
+        "attempt_total": 1,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_gemini-2.5-flash-nothinking_20251109_134926",
+        "error_code": "E0560",
+        "attempt_total": 13,
+        "resolved_attempt": 11,
+        "resolved_rate": 0.846154,
+        "strict_success": 11,
+        "normalized_success": 11
+      },
+      {
+        "run_id": "humantime_gemini-2.5-flash-nothinking_20251109_134926",
+        "error_code": "E0599",
+        "attempt_total": 22,
+        "resolved_attempt": 13,
+        "resolved_rate": 0.590909,
+        "strict_success": 13,
+        "normalized_success": 13
+      },
+      {
+        "run_id": "humantime_gemini-2.5-flash-nothinking_20251109_134926",
+        "error_code": "E0658",
+        "attempt_total": 9,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_gemini-2.5-flash-nothinking_20251109_134926",
+        "error_code": "E0765",
+        "attempt_total": 1,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_rugae_base4_humantime_replay",
+        "error_code": "E0277",
+        "attempt_total": 1,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_rugae_base4_humantime_replay",
+        "error_code": "E0308",
+        "attempt_total": 4,
+        "resolved_attempt": 2,
+        "resolved_rate": 0.5,
+        "strict_success": 2,
+        "normalized_success": 2
+      },
+      {
+        "run_id": "humantime_rugae_base4_humantime_replay",
+        "error_code": "E0432",
+        "attempt_total": 5,
+        "resolved_attempt": 2,
+        "resolved_rate": 0.4,
+        "strict_success": 2,
+        "normalized_success": 4
+      },
+      {
+        "run_id": "humantime_rugae_base4_humantime_replay",
+        "error_code": "E0433",
+        "attempt_total": 1,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_rugae_base4_humantime_replay",
+        "error_code": "E0599",
+        "attempt_total": 1,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_rugae_base4_humantime_replay",
+        "error_code": "E0658",
+        "attempt_total": 1,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_rugae_hybrid4_humantime_replay",
+        "error_code": "E0277",
+        "attempt_total": 1,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_rugae_hybrid4_humantime_replay",
+        "error_code": "E0308",
+        "attempt_total": 4,
+        "resolved_attempt": 2,
+        "resolved_rate": 0.5,
+        "strict_success": 2,
+        "normalized_success": 2
+      },
+      {
+        "run_id": "humantime_rugae_hybrid4_humantime_replay",
+        "error_code": "E0432",
+        "attempt_total": 5,
+        "resolved_attempt": 2,
+        "resolved_rate": 0.4,
+        "strict_success": 2,
+        "normalized_success": 4
+      },
+      {
+        "run_id": "humantime_rugae_hybrid4_humantime_replay",
+        "error_code": "E0433",
+        "attempt_total": 1,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_rugae_hybrid4_humantime_replay",
+        "error_code": "E0599",
+        "attempt_total": 1,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      },
+      {
+        "run_id": "humantime_rugae_hybrid4_humantime_replay",
+        "error_code": "E0658",
+        "attempt_total": 1,
+        "resolved_attempt": 0,
+        "resolved_rate": 0.0,
+        "strict_success": 0,
+        "normalized_success": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+digraph artifact_timeline {
+    rankdir=LR;
+    fontname="Helvetica";
+    node [fontname="Helvetica", fontsize=10];
+    edge [fontname="Helvetica", fontsize=9];
+
+    label="Artifact 产出时间线";
+    labelloc=t;
+    fontsize=14;
+    fontname="Helvetica-Bold";
+
+    // Stages
+    node [shape=box, style="rounded,filled"];
+    s1 [label="Stage 1\nCompile", fillcolor="#E8F0FE"];
+    s2 [label="Stage 2\nAnalyze", fillcolor="#E8F0FE"];
+    s3 [label="Stage 3\nPlan", fillcolor="#E8F5E9"];
+    s4 [label="Stage 4\nVerify", fillcolor="#FFF9C4"];
+    s4_llm [label="Stage 4+\nLLM", fillcolor="#E8F5E9"];
+    s5 [label="Stage 5\nApply", fillcolor="#FCE4EC"];
+    s6 [label="Stage 6\nSummarize", fillcolor="#E8F0FE"];
+
+    // Artifacts
+    node [shape=note, style=filled];
+    a1 [label="1_compile_\ndiagnostics.json", fillcolor="#BBDEFB"];
+    a2 [label="2_analyzed_\ndiagnostics.json", fillcolor="#BBDEFB"];
+    a3a [label="3_plan.json", fillcolor="#C8E6C9"];
+    a3b [label="3_plan_\ncandidates.json", fillcolor="#C8E6C9"];
+    a3c [label="3_function_\ndispatch_report.json", fillcolor="#C8E6C9"];
+    a3d [label="3_function_\nrule_candidates.json", fillcolor="#C8E6C9"];
+    a4a [label="verify/\n4_report.json\n4_function_verify_rounds.json\n4_check.stdout.log\n4_check.stderr.log", fillcolor="#FFF9C4"];
+    a4b [label="4_partial_plan.json", fillcolor="#FFF9C4"];
+    a4c [label="4_llm_handoff.json\n4_llm_attempts.json\n4_llm_contexts.json\n4_llm_io_debug.json", fillcolor="#C8E6C9"];
+    a5a [label="5_changes.diff", fillcolor="#FFCDD2"];
+    a5b [label="5_updated/\n(源文件副本)", fillcolor="#FFCDD2"];
+    a6 [label="6_summary.json", fillcolor="#BBDEFB"];
+
+    // Stage flow
+    s1 -> s2 -> s3 -> s4 -> s4_llm -> s5 -> s6;
+
+    // Stage -> Artifact
+    s1 -> a1 [style=dashed];
+    s2 -> a2 [style=dashed];
+    s3 -> a3a [style=dashed];
+    s3 -> a3b [style=dashed];
+    s3 -> a3c [style=dashed];
+    s3 -> a3d [style=dashed];
+    s4 -> a4a [style=dashed];
+    s4 -> a4b [style=dashed];
+    s4_llm -> a4c [style=dashed];
+    s5 -> a5a [style=dashed];
+    s5 -> a5b [style=dashed];
+    s6 -> a6 [style=dashed];
+}

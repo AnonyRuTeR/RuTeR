@@ -1,0 +1,46 @@
+digraph fix_flow {
+    rankdir=TB;
+    fontname="Helvetica";
+    node [shape=box, style="rounded,filled", fillcolor="#E8F0FE", fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=10];
+
+    compile [label="Stage 1: Compile\ncargo check --tests\n--message-format=json"];
+    analyze [label="Stage 2: Analyze\nJsonParser → Diagnostic[]\n+ normalize_paths()"];
+    plan [label="Stage 3: Plan"];
+
+    subgraph cluster_plan {
+        label="Plan 内部";
+        labeljust=l;
+        style=dashed;
+        color="#666666";
+        fontname="Helvetica";
+        fontsize=11;
+        func_index [label="FunctionIndex::build()\nAST 扫描测试函数", fillcolor="#E8F5E9"];
+        dispatch [label="build_dispatch_output()\nRuleFirst 分发", fillcolor="#E8F5E9"];
+        rule_plan [label="plan_rule_candidates()\n规则候选生成", fillcolor="#E8F5E9"];
+    }
+
+    verify [label="Stage 4: Verify"];
+    subgraph cluster_verify {
+        label="Verify 内部";
+        labeljust=l;
+        style=dashed;
+        color="#666666";
+        fontname="Helvetica";
+        fontsize=11;
+        optimistic [label="run_optimistic_greedy()\n逐轮 rank 提升验证", fillcolor="#FFF9C4"];
+        partial [label="compose_function_union_plan()\n函数级合并", fillcolor="#FFF9C4"];
+        llm_stage [label="maybe_run_llm_stage()\n条件性 LLM 执行", fillcolor="#E8F5E9", style="rounded,filled,dashed"];
+    }
+
+    apply_stage [label="Stage 5: Apply\n写回源文件 / Dry-run\n+ 备份"];
+    summarize [label="Stage 6: Summarize\n生成 RunSummary"];
+
+    compile -> analyze;
+    analyze -> plan;
+    plan -> func_index -> dispatch -> rule_plan;
+    rule_plan -> verify;
+    verify -> optimistic -> partial -> llm_stage;
+    llm_stage -> apply_stage;
+    apply_stage -> summarize;
+}

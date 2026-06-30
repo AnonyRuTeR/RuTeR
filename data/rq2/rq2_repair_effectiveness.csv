@@ -1,0 +1,4 @@
+baseline,subjects_attempted,subjects_successfully_run,repaired_count,repair_rate,verification_pass_count,verification_pass_rate,production_files_modified_count,unknown_count,unsupported_count,per_error_code_repair_summary
+no_repair,2,2,0,0.0,0,0.0,0,0,0,E0433:0/2; NO_CODE:0/2; unexpected_cfgs:0/1; unused_imports:0/1
+compiler_suggestion_only,2,1,0,0.0,0,0.0,0,2,1,E0433:0/2; NO_CODE:0/2; unexpected_cfgs:0/1; unused_imports:0/1
+rugpatcher_full,2,2,1,0.5,1,0.5,0,2,0,E0433:1/2

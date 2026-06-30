@@ -1,0 +1,47 @@
+[package]
+name = "ruter"
+version = "0.1.0"
+edition = "2024"
+description = "An automated unit test code repair framework for Rust"
+
+[dependencies]
+# 枚举辅助
+strum = { version = "0.26", features = ["derive"] } 
+
+# 错误处理
+anyhow = "1.0"
+thiserror = "2.0"
+
+# 序列化/反序列化 (用于解析编译器 JSON)
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# 文本处理
+regex = "1.11"
+diff = "0.1"
+
+# 系统与文件操作
+walkdir = "2.5"
+
+# 命令行接口
+clap = { version = "4.5", features = ["derive"] }
+
+# 日志与追踪
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+# 语法分析 (用于符号索引，开启 full 以支持解析大部分语法)
+syn = { version = "2.0", features = ["full", "extra-traits", "visit"] }
+quote = "1.0" # 生成代码片段辅助
+proc-macro2 = { version = "1.0", features = ["span-locations"] }
+prettyplease = "0.2"
+
+# 项目配置分析
+toml = "0.8"
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "json", "rustls-tls"] }
+dotenvy = "0.15"
+
+[dev-dependencies]
+# 测试辅助
+tempfile = "3.10"
+pretty_assertions = "1.4" # 让测试失败时的 diff 更易读

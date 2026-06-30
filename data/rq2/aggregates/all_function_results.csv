@@ -1,0 +1,567 @@
+run_id,node_id,attempt_count,final_resolved,resolution_path
+humantime_claude-3-5-haiku-20241022_20251109_133407,<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref,3,True,rule
+humantime_claude-3-5-haiku-20241022_20251109_133407,<wrapper::Duration as std::convert::From<std::time::Duration>>::from,3,True,rule
+humantime_claude-3-5-haiku-20241022_20251109_133407,<wrapper::Duration as std::convert::Into<std::time::Duration>>::into,6,True,full
+humantime_claude-3-5-haiku-20241022_20251109_133407,<wrapper::Duration as std::ops::Deref>::deref,6,True,rule
+humantime_claude-3-5-haiku-20241022_20251109_133407,<wrapper::Duration as std::str::FromStr>::from_str,3,True,rule
+humantime_claude-3-5-haiku-20241022_20251109_133407,<wrapper::Timestamp as std::convert::AsRef<std::time::SystemTime>>::as_ref,3,True,rule
+humantime_claude-3-5-haiku-20241022_20251109_133407,<wrapper::Timestamp as std::convert::From<std::time::SystemTime>>::from,3,True,rule
+humantime_claude-3-5-haiku-20241022_20251109_133407,<wrapper::Timestamp as std::convert::Into<std::time::SystemTime>>::into,6,True,rule
+humantime_claude-3-5-haiku-20241022_20251109_133407,<wrapper::Timestamp as std::ops::Deref>::deref,6,True,rule
+humantime_claude-3-5-haiku-20241022_20251109_133407,<wrapper::Timestamp as std::str::FromStr>::from_str,3,True,rule
+humantime_claude-3-5-haiku-20241022_20251109_133407,date::Rfc3339Timestamp::get_ref,12,True,full
+humantime_claude-3-5-haiku-20241022_20251109_133407,date::two_digits::two_digits_inner,6,True,full
+humantime_claude-3-5-haiku-20241022_20251109_133407,duration::FormattedDuration::get_ref,3,True,rule
+humantime_claude-3-5-haiku-20241022_20251109_133407,duration::Parser::<'a>::off,12,True,full
+humantime_claude-3-5-haiku-20241022_20251109_133407,duration::Parser::<'a>::parse,12,True,full
+humantime_claude-3-5-haiku-20241022_20251109_133407,duration::Parser::<'a>::parse_first_char,12,True,full
+humantime_claude-3-5-haiku-20241022_20251109_133407,duration::Parser::<'a>::parse_unit,12,True,full
+humantime_claude-3-5-haiku-20241022_20251109_133407,duration::item,6,True,full
+humantime_claude-3-5-haiku-20241022_20251109_133407,duration::item_plural,6,False,unresolved
+humantime_deepseek-v3_20251109_140004,<wrapper::Duration as std::convert::From<std::time::Duration>>::from,3,True,rule
+humantime_deepseek-v3_20251109_140004,<wrapper::Duration as std::str::FromStr>::from_str,3,True,rule
+humantime_deepseek-v3_20251109_140004,<wrapper::Timestamp as std::convert::AsRef<std::time::SystemTime>>::as_ref,1,True,rule
+humantime_deepseek-v3_20251109_140004,<wrapper::Timestamp as std::convert::From<std::time::SystemTime>>::from,3,True,rule
+humantime_deepseek-v3_20251109_140004,<wrapper::Timestamp as std::ops::Deref>::deref,1,True,rule
+humantime_deepseek-v3_20251109_140004,<wrapper::Timestamp as std::str::FromStr>::from_str,3,True,rule
+humantime_deepseek-v3_20251109_140004,date::two_digits::two_digits_inner,6,True,full
+humantime_deepseek-v3_20251109_140004,duration::Parser::<'a>::off,12,True,full
+humantime_deepseek-v3_20251109_140004,duration::Parser::<'a>::parse,12,True,full
+humantime_deepseek-v3_20251109_140004,duration::Parser::<'a>::parse_first_char,12,True,full
+humantime_deepseek-v3_20251109_140004,duration::Parser::<'a>::parse_unit,12,True,full
+humantime_deepseek-v3_20251109_140004,duration::item,6,True,full
+humantime_deepseek-v3_20251109_140004,duration::item_plural,6,True,full
+humantime_gemini-2.5-flash-nothinking_20251109_134926,<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref,2,True,rule
+humantime_gemini-2.5-flash-nothinking_20251109_134926,<wrapper::Duration as std::convert::From<std::time::Duration>>::from,1,True,rule
+humantime_gemini-2.5-flash-nothinking_20251109_134926,<wrapper::Duration as std::ops::Deref>::deref,3,True,rule
+humantime_gemini-2.5-flash-nothinking_20251109_134926,<wrapper::Duration as std::str::FromStr>::from_str,2,True,rule
+humantime_gemini-2.5-flash-nothinking_20251109_134926,<wrapper::Timestamp as std::convert::AsRef<std::time::SystemTime>>::as_ref,2,True,rule
+humantime_gemini-2.5-flash-nothinking_20251109_134926,<wrapper::Timestamp as std::convert::Into<std::time::SystemTime>>::into,3,True,rule
+humantime_gemini-2.5-flash-nothinking_20251109_134926,<wrapper::Timestamp as std::str::FromStr>::from_str,2,True,rule
+humantime_gemini-2.5-flash-nothinking_20251109_134926,date::Rfc3339Timestamp::get_ref,2,True,rule
+humantime_gemini-2.5-flash-nothinking_20251109_134926,date::two_digits::two_digits_inner,6,True,full
+humantime_gemini-2.5-flash-nothinking_20251109_134926,duration::FormattedDuration::get_ref,2,True,rule
+humantime_gemini-2.5-flash-nothinking_20251109_134926,duration::Parser::<'a>::off,12,True,full
+humantime_gemini-2.5-flash-nothinking_20251109_134926,duration::Parser::<'a>::parse,12,True,full
+humantime_gemini-2.5-flash-nothinking_20251109_134926,duration::Parser::<'a>::parse_first_char,12,True,full
+humantime_gemini-2.5-flash-nothinking_20251109_134926,duration::Parser::<'a>::parse_unit,12,True,full
+humantime_gemini-2.5-flash-nothinking_20251109_134926,duration::item,6,False,unresolved
+humantime_gemini-2.5-flash-nothinking_20251109_134926,duration::item_plural,6,False,unresolved
+humantime_gemini-2.5-flash-thinking_20251109_141506,<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref,3,True,rule
+humantime_gemini-2.5-flash-thinking_20251109_141506,<wrapper::Duration as std::str::FromStr>::from_str,3,True,rule
+humantime_gemini-2.5-flash-thinking_20251109_141506,<wrapper::Timestamp as std::convert::From<std::time::SystemTime>>::from,2,True,rule
+humantime_gemini-2.5-flash-thinking_20251109_141506,<wrapper::Timestamp as std::ops::Deref>::deref,4,True,rule
+humantime_gemini-2.5-flash-thinking_20251109_141506,<wrapper::Timestamp as std::str::FromStr>::from_str,3,True,rule
+humantime_gemini-2.5-flash-thinking_20251109_141506,date::two_digits,1,True,full
+humantime_gemini-2.5-flash-thinking_20251109_141506,date::two_digits::two_digits_inner,6,True,full
+humantime_gemini-2.5-flash-thinking_20251109_141506,duration::Parser::<'a>::off,12,True,full
+humantime_gemini-2.5-flash-thinking_20251109_141506,duration::Parser::<'a>::parse,12,True,full
+humantime_gemini-2.5-flash-thinking_20251109_141506,duration::Parser::<'a>::parse_first_char,12,True,full
+humantime_gemini-2.5-flash-thinking_20251109_141506,duration::Parser::<'a>::parse_unit,12,True,full
+humantime_gpt-3.5-turbo_20251109_000031,<u64 as duration::OverflowOp>::add,3,True,rule
+humantime_gpt-3.5-turbo_20251109_000031,<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref,4,True,rule
+humantime_gpt-3.5-turbo_20251109_000031,<wrapper::Duration as std::convert::From<std::time::Duration>>::from,3,True,rule
+humantime_gpt-3.5-turbo_20251109_000031,<wrapper::Duration as std::convert::Into<std::time::Duration>>::into,6,True,full
+humantime_gpt-3.5-turbo_20251109_000031,<wrapper::Duration as std::ops::Deref>::deref,6,True,rule
+humantime_gpt-3.5-turbo_20251109_000031,<wrapper::Duration as std::str::FromStr>::from_str,3,True,rule
+humantime_gpt-3.5-turbo_20251109_000031,<wrapper::Timestamp as std::convert::AsRef<std::time::SystemTime>>::as_ref,6,True,rule
+humantime_gpt-3.5-turbo_20251109_000031,<wrapper::Timestamp as std::convert::From<std::time::SystemTime>>::from,3,True,rule
+humantime_gpt-3.5-turbo_20251109_000031,<wrapper::Timestamp as std::convert::Into<std::time::SystemTime>>::into,1,False,unresolved
+humantime_gpt-3.5-turbo_20251109_000031,<wrapper::Timestamp as std::ops::Deref>::deref,1,True,rule
+humantime_gpt-3.5-turbo_20251109_000031,date::Rfc3339Timestamp::get_ref,3,True,full
+humantime_gpt-3.5-turbo_20251109_000031,date::two_digits::two_digits_inner,6,True,full
+humantime_gpt-3.5-turbo_20251109_000031,duration::FormattedDuration::get_ref,3,True,full
+humantime_gpt-3.5-turbo_20251109_000031,duration::Parser::<'a>::off,12,True,full
+humantime_gpt-3.5-turbo_20251109_000031,duration::Parser::<'a>::parse,12,True,full
+humantime_gpt-3.5-turbo_20251109_000031,duration::Parser::<'a>::parse_first_char,12,True,full
+humantime_gpt-3.5-turbo_20251109_000031,duration::Parser::<'a>::parse_unit,12,True,rule
+humantime_gpt-3.5-turbo_20251109_000031,duration::item,6,False,unresolved
+humantime_gpt-3.5-turbo_20251109_000031,duration::item_plural,6,True,full
+humantime_gpt-3.5-turbo_20251109_000031,duration::parse_duration,6,True,rule
+humantime_gpt-4.1-mini_20251109_001052,<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref,4,True,rule
+humantime_gpt-4.1-mini_20251109_001052,<wrapper::Duration as std::convert::From<std::time::Duration>>::from,3,True,rule
+humantime_gpt-4.1-mini_20251109_001052,<wrapper::Duration as std::convert::Into<std::time::Duration>>::into,6,True,rule
+humantime_gpt-4.1-mini_20251109_001052,<wrapper::Duration as std::ops::Deref>::deref,4,True,rule
+humantime_gpt-4.1-mini_20251109_001052,<wrapper::Duration as std::str::FromStr>::from_str,3,True,rule
+humantime_gpt-4.1-mini_20251109_001052,<wrapper::Timestamp as std::convert::AsRef<std::time::SystemTime>>::as_ref,4,True,rule
+humantime_gpt-4.1-mini_20251109_001052,<wrapper::Timestamp as std::convert::From<std::time::SystemTime>>::from,3,True,rule
+humantime_gpt-4.1-mini_20251109_001052,<wrapper::Timestamp as std::convert::Into<std::time::SystemTime>>::into,1,True,rule
+humantime_gpt-4.1-mini_20251109_001052,<wrapper::Timestamp as std::ops::Deref>::deref,4,True,rule
+humantime_gpt-4.1-mini_20251109_001052,<wrapper::Timestamp as std::str::FromStr>::from_str,3,True,rule
+humantime_gpt-4.1-mini_20251109_001052,date::Rfc3339Timestamp::get_ref,1,True,rule
+humantime_gpt-4.1-mini_20251109_001052,date::two_digits::two_digits_inner,6,True,full
+humantime_gpt-4.1-mini_20251109_001052,duration::FormattedDuration::get_ref,1,True,full
+humantime_gpt-4.1-mini_20251109_001052,duration::Parser::<'a>::off,12,True,full
+humantime_gpt-4.1-mini_20251109_001052,duration::Parser::<'a>::parse,12,True,full
+humantime_gpt-4.1-mini_20251109_001052,duration::Parser::<'a>::parse_first_char,10,True,full
+humantime_gpt-4.1-mini_20251109_001052,duration::Parser::<'a>::parse_unit,12,True,full
+humantime_gpt-4.1-mini_20251109_001052,duration::item,6,True,full
+humantime_gpt-4.1-mini_20251109_001052,duration::item_plural,6,True,full
+humantime_gpt-4.1-nano_20251109_132117,<u64 as duration::OverflowOp>::add,1,True,rule
+humantime_gpt-4.1-nano_20251109_132117,<u64 as duration::OverflowOp>::mul,3,True,rule
+humantime_gpt-4.1-nano_20251109_132117,<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref,5,True,rule
+humantime_gpt-4.1-nano_20251109_132117,<wrapper::Duration as std::convert::From<std::time::Duration>>::from,3,True,rule
+humantime_gpt-4.1-nano_20251109_132117,<wrapper::Duration as std::convert::Into<std::time::Duration>>::into,6,True,rule
+humantime_gpt-4.1-nano_20251109_132117,<wrapper::Duration as std::ops::Deref>::deref,5,True,rule
+humantime_gpt-4.1-nano_20251109_132117,<wrapper::Duration as std::str::FromStr>::from_str,3,True,rule
+humantime_gpt-4.1-nano_20251109_132117,<wrapper::Timestamp as std::convert::AsRef<std::time::SystemTime>>::as_ref,6,True,rule
+humantime_gpt-4.1-nano_20251109_132117,<wrapper::Timestamp as std::convert::From<std::time::SystemTime>>::from,3,True,rule
+humantime_gpt-4.1-nano_20251109_132117,<wrapper::Timestamp as std::convert::Into<std::time::SystemTime>>::into,6,True,rule
+humantime_gpt-4.1-nano_20251109_132117,<wrapper::Timestamp as std::ops::Deref>::deref,6,True,rule
+humantime_gpt-4.1-nano_20251109_132117,<wrapper::Timestamp as std::str::FromStr>::from_str,3,True,rule
+humantime_gpt-4.1-nano_20251109_132117,date::Rfc3339Timestamp::get_ref,3,True,rule
+humantime_gpt-4.1-nano_20251109_132117,date::format_rfc3339,4,True,rule
+humantime_gpt-4.1-nano_20251109_132117,date::format_rfc3339_micros,2,True,rule
+humantime_gpt-4.1-nano_20251109_132117,date::two_digits::two_digits_inner,6,True,full
+humantime_gpt-4.1-nano_20251109_132117,duration::FormattedDuration::get_ref,3,True,full
+humantime_gpt-4.1-nano_20251109_132117,duration::Parser::<'a>::off,12,True,full
+humantime_gpt-4.1-nano_20251109_132117,duration::Parser::<'a>::parse,12,True,full
+humantime_gpt-4.1-nano_20251109_132117,duration::Parser::<'a>::parse_first_char,12,True,full
+humantime_gpt-4.1-nano_20251109_132117,duration::Parser::<'a>::parse_unit,12,True,full
+humantime_gpt-4.1-nano_20251109_132117,duration::item,6,True,full
+humantime_gpt-4.1-nano_20251109_132117,duration::item_plural,6,True,full
+humantime_gpt-4o-mini_20251108_234236,<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref,6,True,rule
+humantime_gpt-4o-mini_20251108_234236,<wrapper::Duration as std::convert::From<std::time::Duration>>::from,3,True,rule
+humantime_gpt-4o-mini_20251108_234236,<wrapper::Duration as std::convert::Into<std::time::Duration>>::into,6,True,rule
+humantime_gpt-4o-mini_20251108_234236,<wrapper::Duration as std::ops::Deref>::deref,4,True,rule
+humantime_gpt-4o-mini_20251108_234236,<wrapper::Duration as std::str::FromStr>::from_str,3,True,rule
+humantime_gpt-4o-mini_20251108_234236,<wrapper::Timestamp as std::convert::AsRef<std::time::SystemTime>>::as_ref,6,True,rule
+humantime_gpt-4o-mini_20251108_234236,<wrapper::Timestamp as std::convert::From<std::time::SystemTime>>::from,3,True,rule
+humantime_gpt-4o-mini_20251108_234236,<wrapper::Timestamp as std::convert::Into<std::time::SystemTime>>::into,6,True,rule
+humantime_gpt-4o-mini_20251108_234236,<wrapper::Timestamp as std::ops::Deref>::deref,6,True,rule
+humantime_gpt-4o-mini_20251108_234236,<wrapper::Timestamp as std::str::FromStr>::from_str,2,True,rule
+humantime_gpt-4o-mini_20251108_234236,date::two_digits,4,True,full
+humantime_gpt-4o-mini_20251108_234236,date::two_digits::two_digits_inner,6,True,full
+humantime_gpt-4o-mini_20251108_234236,duration::Parser::<'a>::off,12,True,full
+humantime_gpt-4o-mini_20251108_234236,duration::Parser::<'a>::parse,12,True,full
+humantime_gpt-4o-mini_20251108_234236,duration::Parser::<'a>::parse_first_char,12,True,full
+humantime_gpt-4o-mini_20251108_234236,duration::Parser::<'a>::parse_unit,12,True,full
+humantime_gpt-4o-mini_20251108_234236,duration::item,6,False,unresolved
+humantime_gpt-4o-mini_20251108_234236,duration::item_plural,6,False,unresolved
+humantime_gpt-4o-mini_20251108_234236,duration::parse_duration,6,True,rule
+humantime_gpt-5-nano_20251109_004846,<wrapper::Duration as std::convert::AsRef<std::time::Duration>>::as_ref,6,True,rule
+humantime_gpt-5-nano_20251109_004846,<wrapper::Duration as std::convert::From<std::time::Duration>>::from,3,True,rule
+humantime_gpt-5-nano_20251109_004846,<wrapper::Duration as std::convert::Into<std::time::Duration>>::into,6,True,rule
+humantime_gpt-5-nano_20251109_004846,<wrapper::Duration as std::ops::Deref>::deref,6,True,rule
+humantime_gpt-5-nano_20251109_004846,<wrapper::Duration as std::str::FromStr>::from_str,3,True,rule
+humantime_gpt-5-nano_20251109_004846,<wrapper::Timestamp as std::convert::AsRef<std::time::SystemTime>>::as_ref,6,True,rule
+humantime_gpt-5-nano_20251109_004846,<wrapper::Timestamp as std::convert::From<std::time::SystemTime>>::from,3,True,rule
+humantime_gpt-5-nano_20251109_004846,<wrapper::Timestamp as std::convert::Into<std::time::SystemTime>>::into,6,True,rule
+humantime_gpt-5-nano_20251109_004846,<wrapper::Timestamp as std::ops::Deref>::deref,6,True,rule
+humantime_gpt-5-nano_20251109_004846,<wrapper::Timestamp as std::str::FromStr>::from_str,3,True,rule
+humantime_gpt-5-nano_20251109_004846,date::Rfc3339Timestamp::get_ref,5,True,full
+humantime_gpt-5-nano_20251109_004846,date::two_digits::two_digits_inner,6,True,full
+humantime_gpt-5-nano_20251109_004846,duration::FormattedDuration::get_ref,9,True,rule
+humantime_gpt-5-nano_20251109_004846,duration::Parser::<'a>::off,12,True,full
+humantime_gpt-5-nano_20251109_004846,duration::Parser::<'a>::parse,12,True,full
+humantime_gpt-5-nano_20251109_004846,duration::Parser::<'a>::parse_first_char,12,False,unresolved
+humantime_gpt-5-nano_20251109_004846,duration::Parser::<'a>::parse_unit,12,False,unresolved
+humantime_gpt-5-nano_20251109_004846,duration::item,6,True,rule
+itoa_gemini-2.5-flash-nothinking_20251127_010109,<impl private::Sealed for i128>::write,2,True,full
+itoa_gemini-2.5-flash-nothinking_20251127_010109,<impl private::Sealed for i32>::write,1,True,full
+itoa_gemini-2.5-flash-nothinking_20251127_010109,<impl private::Sealed for isize>::write,2,False,unresolved
+itoa_gemini-2.5-flash-nothinking_20251127_010109,<impl private::Sealed for u128>::write,1,True,full
+itoa_gemini-2.5-flash-nothinking_20251127_010109,<impl private::Sealed for u16>::write,1,True,full
+itoa_gemini-2.5-flash-nothinking_20251127_010109,<impl private::Sealed for u8>::write,2,True,full
+itoa_gemini-2.5-flash-nothinking_20251127_010109,<impl private::Sealed for usize>::write,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<&T as Log>::enabled,1,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<&T as Log>::flush,1,True,full
+log_gemini-2.5-flash-nothinking_20251127_025911,<&T as Log>::log,2,True,full
+log_gemini-2.5-flash-nothinking_20251127_025911,<Level as core::clone::Clone>::clone,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<Level as core::cmp::Ord>::cmp,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<Level as core::cmp::PartialEq<LevelFilter>>::eq,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<Level as core::cmp::PartialEq>::eq,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<Level as core::cmp::PartialOrd<LevelFilter>>::ge,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<Level as core::cmp::PartialOrd<LevelFilter>>::gt,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<Level as core::cmp::PartialOrd<LevelFilter>>::le,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<Level as core::cmp::PartialOrd<LevelFilter>>::lt,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<Level as core::cmp::PartialOrd<LevelFilter>>::partial_cmp,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<Level as core::cmp::PartialOrd>::ge,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<Level as core::cmp::PartialOrd>::gt,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<Level as core::cmp::PartialOrd>::le,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<Level as core::cmp::PartialOrd>::lt,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<Level as core::cmp::PartialOrd>::partial_cmp,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<Level as core::str::FromStr>::from_str,1,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<LevelFilter as core::clone::Clone>::clone,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<LevelFilter as core::cmp::Ord>::cmp,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<LevelFilter as core::cmp::PartialEq<Level>>::eq,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<LevelFilter as core::cmp::PartialEq>::eq,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<LevelFilter as core::cmp::PartialOrd<Level>>::ge,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<LevelFilter as core::cmp::PartialOrd<Level>>::gt,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<LevelFilter as core::cmp::PartialOrd<Level>>::le,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<LevelFilter as core::cmp::PartialOrd<Level>>::lt,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<LevelFilter as core::cmp::PartialOrd<Level>>::partial_cmp,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<LevelFilter as core::cmp::PartialOrd>::ge,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<LevelFilter as core::cmp::PartialOrd>::gt,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<LevelFilter as core::cmp::PartialOrd>::le,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<LevelFilter as core::cmp::PartialOrd>::lt,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<LevelFilter as core::cmp::PartialOrd>::partial_cmp,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<LevelFilter as core::str::FromStr>::from_str,1,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,<NopLogger as Log>::enabled,2,True,rule
+log_gemini-2.5-flash-nothinking_20251127_025911,<NopLogger as Log>::log,1,True,rule
+log_gemini-2.5-flash-nothinking_20251127_025911,Level::to_level_filter,1,True,full
+log_gemini-2.5-flash-nothinking_20251127_025911,Metadata::<'a>::level,4,True,full
+log_gemini-2.5-flash-nothinking_20251127_025911,Metadata::<'a>::target,4,True,full
+log_gemini-2.5-flash-nothinking_20251127_025911,MetadataBuilder::<'a>::new,3,True,rule
+log_gemini-2.5-flash-nothinking_20251127_025911,Record::<'a>::args,4,True,full
+log_gemini-2.5-flash-nothinking_20251127_025911,Record::<'a>::file,4,True,full
+log_gemini-2.5-flash-nothinking_20251127_025911,Record::<'a>::file_static,4,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,Record::<'a>::level,4,True,full
+log_gemini-2.5-flash-nothinking_20251127_025911,Record::<'a>::line,4,True,full
+log_gemini-2.5-flash-nothinking_20251127_025911,Record::<'a>::metadata,4,True,rule
+log_gemini-2.5-flash-nothinking_20251127_025911,Record::<'a>::module_path,4,True,rule
+log_gemini-2.5-flash-nothinking_20251127_025911,Record::<'a>::module_path_static,4,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,Record::<'a>::target,4,True,full
+log_gemini-2.5-flash-nothinking_20251127_025911,RecordBuilder::<'a>::args,4,True,rule
+log_gemini-2.5-flash-nothinking_20251127_025911,RecordBuilder::<'a>::build,3,True,full
+log_gemini-2.5-flash-nothinking_20251127_025911,RecordBuilder::<'a>::level,4,True,full
+log_gemini-2.5-flash-nothinking_20251127_025911,RecordBuilder::<'a>::metadata,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,RecordBuilder::<'a>::module_path,1,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,RecordBuilder::<'a>::module_path_static,4,True,full
+log_gemini-2.5-flash-nothinking_20251127_025911,RecordBuilder::<'a>::target,1,True,full
+log_gemini-2.5-flash-nothinking_20251127_025911,__private_api_enabled,2,True,rule
+log_gemini-2.5-flash-nothinking_20251127_025911,__private_api_log,2,True,rule
+log_gemini-2.5-flash-nothinking_20251127_025911,eq_ignore_ascii_case::to_ascii_uppercase,2,True,full
+log_gemini-2.5-flash-nothinking_20251127_025911,logger,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,set_logger,2,False,unresolved
+log_gemini-2.5-flash-nothinking_20251127_025911,set_logger_inner,1,True,rule
+log_gemini-2.5-flash-nothinking_20251127_025911,set_logger_racy,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,<&'a event::events::Events as std::iter::IntoIterator>::into_iter,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,<event::events::Iter<'a> as std::iter::Iterator>::count,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,<event::events::Iter<'a> as std::iter::Iterator>::next,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,<event::events::Iter<'a> as std::iter::Iterator>::size_hint,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,<interest::Interest as std::ops::BitOr>::bitor,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,<interest::Interest as std::ops::BitOrAssign>::bitor_assign,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,<poll::Poll as std::os::fd::AsRawFd>::as_raw_fd,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,<poll::Registry as std::os::fd::AsRawFd>::as_raw_fd,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,<std::boxed::Box<T> as event::source::Source>::deregister,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,<std::boxed::Box<T> as event::source::Source>::register,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,<std::boxed::Box<T> as event::source::Source>::reregister,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,<sys::shell::selector::Selector as std::os::fd::AsRawFd>::as_raw_fd,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,event::event::Event::from_sys_event_ref,3,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,event::event::Event::is_aio,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,event::event::Event::is_error,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,event::event::Event::is_lio,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,event::event::Event::is_priority,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,event::event::Event::is_read_closed,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,event::event::Event::is_readable,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,event::event::Event::is_writable,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,event::event::Event::is_write_closed,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,event::event::Event::token,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,event::events::Events::capacity,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,event::events::Events::clear,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,event::events::Events::is_empty,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,event::events::Events::iter,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,event::events::Events::sys,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,event::events::Events::with_capacity,3,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,interest::Interest::add,4,True,full
+mio_gemini-2.5-flash-nothinking_20251127_012706,interest::Interest::is_lio,4,True,full
+mio_gemini-2.5-flash-nothinking_20251127_012706,interest::Interest::is_readable,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,poll::Poll::poll,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,poll::Poll::registry,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,poll::Registry::deregister,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,poll::Registry::register,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,poll::Registry::register_waker,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,poll::Registry::reregister,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,poll::Registry::selector,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,poll::Registry::try_clone,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,sys::shell::selector::Selector::register_waker,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,sys::shell::selector::Selector::select,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,sys::shell::selector::Selector::try_clone,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,sys::shell::selector::event::debug_details,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,sys::shell::selector::event::is_aio,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,sys::shell::selector::event::is_error,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,sys::shell::selector::event::is_lio,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,sys::shell::selector::event::is_priority,2,True,full
+mio_gemini-2.5-flash-nothinking_20251127_012706,sys::shell::selector::event::is_read_closed,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,sys::shell::selector::event::is_readable,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,sys::shell::selector::event::is_writable,2,True,full
+mio_gemini-2.5-flash-nothinking_20251127_012706,sys::shell::selector::event::is_write_closed,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,sys::shell::selector::event::token,2,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,sys::shell::waker::Waker::new,3,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,sys::shell::waker::Waker::wake,4,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,token::<impl std::convert::From<token::Token> for usize>::from,1,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,waker::Waker::new,3,False,unresolved
+mio_gemini-2.5-flash-nothinking_20251127_012706,waker::Waker::wake,4,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,<&'a Borrowed as distributions::uniform::SampleBorrow<Borrowed>>::borrow,1,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<&'a D as distributions::distribution::Distribution<T>>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<[T; 32] as rng::Fill>::try_fill,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<[T; 4096] as rng::Fill>::try_fill,2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,<[T] as seq::SliceRandom>::choose_weighted,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<[core::num::Wrapping<i16>] as rng::Fill>::try_fill,1,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,<[core::num::Wrapping<i32>] as rng::Fill>::try_fill,2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::bernoulli::Bernoulli as distributions::distribution::Distribution<bool>>::sample,2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,"<distributions::distribution::DistIter<D, R, T> as core::iter::Iterator>::next",2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,"<distributions::distribution::DistIter<D, R, T> as core::iter::Iterator>::size_hint",2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,"<distributions::distribution::DistMap<D, F, T, S> as distributions::distribution::Distribution<S>>::sample",2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::float::Open01 as distributions::distribution::Distribution<f32>>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::float::Open01 as distributions::distribution::Distribution<f64>>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::float::OpenClosed01 as distributions::distribution::Distribution<f32>>::sample,2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::float::OpenClosed01 as distributions::distribution::Distribution<f64>>::sample,2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::other::Alphanumeric as distributions::distribution::DistString>::append_string,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::other::Alphanumeric as distributions::distribution::Distribution<u8>>::sample,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,"<distributions::slice::Slice<'a, T> as distributions::distribution::Distribution<&'a T>>::sample",2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::Uniform<X> as distributions::distribution::Distribution<X>>::sample,2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformChar as distributions::uniform::UniformSampler>::new,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformChar as distributions::uniform::UniformSampler>::new_inclusive,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformChar as distributions::uniform::UniformSampler>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformDuration as distributions::uniform::UniformSampler>::new,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformDuration as distributions::uniform::UniformSampler>::new_inclusive,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformDuration as distributions::uniform::UniformSampler>::sample,2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformFloat<f32> as distributions::uniform::UniformSampler>::new,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformFloat<f32> as distributions::uniform::UniformSampler>::sample,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformFloat<f32> as distributions::uniform::UniformSampler>::sample_single,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformFloat<f64> as distributions::uniform::UniformSampler>::new,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformFloat<f64> as distributions::uniform::UniformSampler>::new_inclusive,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformFloat<f64> as distributions::uniform::UniformSampler>::sample,2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformFloat<f64> as distributions::uniform::UniformSampler>::sample_single,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i128> as distributions::uniform::UniformSampler>::new_inclusive,1,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i128> as distributions::uniform::UniformSampler>::sample_single,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i128> as distributions::uniform::UniformSampler>::sample_single_inclusive,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i16> as distributions::uniform::UniformSampler>::new,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i16> as distributions::uniform::UniformSampler>::new_inclusive,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i16> as distributions::uniform::UniformSampler>::sample,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i16> as distributions::uniform::UniformSampler>::sample_single_inclusive,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i32> as distributions::uniform::UniformSampler>::new,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i32> as distributions::uniform::UniformSampler>::new_inclusive,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i32> as distributions::uniform::UniformSampler>::sample,1,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i32> as distributions::uniform::UniformSampler>::sample_single,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i32> as distributions::uniform::UniformSampler>::sample_single_inclusive,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i64> as distributions::uniform::UniformSampler>::sample,1,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i64> as distributions::uniform::UniformSampler>::sample_single,1,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i64> as distributions::uniform::UniformSampler>::sample_single_inclusive,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i8> as distributions::uniform::UniformSampler>::new,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i8> as distributions::uniform::UniformSampler>::new_inclusive,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i8> as distributions::uniform::UniformSampler>::sample,1,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i8> as distributions::uniform::UniformSampler>::sample_single,1,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<i8> as distributions::uniform::UniformSampler>::sample_single_inclusive,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<isize> as distributions::uniform::UniformSampler>::new_inclusive,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<isize> as distributions::uniform::UniformSampler>::sample,1,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<isize> as distributions::uniform::UniformSampler>::sample_single,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<isize> as distributions::uniform::UniformSampler>::sample_single_inclusive,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<u128> as distributions::uniform::UniformSampler>::new_inclusive,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<u128> as distributions::uniform::UniformSampler>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<u128> as distributions::uniform::UniformSampler>::sample_single,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<u128> as distributions::uniform::UniformSampler>::sample_single_inclusive,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<u16> as distributions::uniform::UniformSampler>::new,1,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<u16> as distributions::uniform::UniformSampler>::sample,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<u16> as distributions::uniform::UniformSampler>::sample_single,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<u16> as distributions::uniform::UniformSampler>::sample_single_inclusive,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<u32> as distributions::uniform::UniformSampler>::new,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<u32> as distributions::uniform::UniformSampler>::new_inclusive,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<u32> as distributions::uniform::UniformSampler>::sample,1,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<u32> as distributions::uniform::UniformSampler>::sample_single,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<u64> as distributions::uniform::UniformSampler>::new,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<u64> as distributions::uniform::UniformSampler>::sample,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<u64> as distributions::uniform::UniformSampler>::sample_single,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<u8> as distributions::uniform::UniformSampler>::sample,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<u8> as distributions::uniform::UniformSampler>::sample_single_inclusive,1,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<usize> as distributions::uniform::UniformSampler>::new,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<usize> as distributions::uniform::UniformSampler>::sample,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::uniform::UniformInt<usize> as distributions::uniform::UniformSampler>::sample_single,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<distributions::weighted_index::WeightedIndex<X> as distributions::distribution::Distribution<usize>>::sample,2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,<f32 as distributions::utils::FloatSIMDUtils>::decrease_masked,2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<f64 as distributions::utils::FloatSIMDUtils>::decrease_masked,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<rngs::adapter::read::ReadError as core::error::Error>::source,2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<rngs::adapter::read::ReadRng<R> as rand_core::RngCore>::fill_bytes,2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<rngs::adapter::read::ReadRng<R> as rand_core::RngCore>::next_u64,1,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<rngs::adapter::read::ReadRng<R> as rand_core::RngCore>::try_fill_bytes,2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,"<rngs::adapter::reseeding::ReseedingCore<R, Rsdr> as core::clone::Clone>::clone",2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,"<rngs::adapter::reseeding::ReseedingCore<R, Rsdr> as rand_core::block::BlockRngCore>::generate",2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,"<rngs::adapter::reseeding::ReseedingRng<R, Rsdr> as core::clone::Clone>::clone",2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,"<rngs::adapter::reseeding::ReseedingRng<R, Rsdr> as rand_core::RngCore>::fill_bytes",2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,"<rngs::adapter::reseeding::ReseedingRng<R, Rsdr> as rand_core::RngCore>::next_u32",2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,"<rngs::adapter::reseeding::ReseedingRng<R, Rsdr> as rand_core::RngCore>::next_u64",2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,"<rngs::adapter::reseeding::ReseedingRng<R, Rsdr> as rand_core::RngCore>::try_fill_bytes",2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,<rngs::mock::StepRng as rand_core::RngCore>::fill_bytes,1,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<rngs::mock::StepRng as rand_core::RngCore>::next_u32,2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<rngs::mock::StepRng as rand_core::RngCore>::next_u64,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<rngs::mock::StepRng as rand_core::RngCore>::try_fill_bytes,1,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<rngs::std::StdRng as rand_core::SeedableRng>::from_rng,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<rngs::std::StdRng as rand_core::SeedableRng>::from_seed,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<rngs::thread::ThreadRng as core::default::Default>::default,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,"<seq::SliceChooseIter<'a, S, T> as core::iter::ExactSizeIterator>::len",2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,"<seq::SliceChooseIter<'a, S, T> as core::iter::Iterator>::next",2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,"<seq::SliceChooseIter<'a, S, T> as core::iter::Iterator>::size_hint",2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,<seq::index::IndexVec as core::cmp::PartialEq>::eq,2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,<seq::index::IndexVec as core::convert::From<std::vec::Vec<u32>>>::from,1,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<seq::index::IndexVec as core::convert::From<std::vec::Vec<usize>>>::from,1,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<seq::index::IndexVec as core::iter::IntoIterator>::into_iter,2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,<seq::index::IndexVecIntoIter as core::iter::Iterator>::next,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,<seq::index::IndexVecIntoIter as core::iter::Iterator>::size_hint,2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,<seq::index::IndexVecIter<'a> as core::iter::Iterator>::next,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<seq::index::IndexVecIter<'a> as core::iter::Iterator>::size_hint,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,<seq::index::sample_efraimidis_spirakis::Element<N> as core::cmp::Ord>::cmp,2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,<seq::index::sample_efraimidis_spirakis::Element<N> as core::cmp::PartialEq>::eq,2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,<seq::index::sample_efraimidis_spirakis::Element<N> as core::cmp::PartialOrd>::partial_cmp,2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,<u32 as seq::index::UInt>::one,1,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,<usize as seq::index::UInt>::zero,1,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::bernoulli::Bernoulli::new,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::distribution::DistString::sample_string,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::distribution::Distribution::sample_iter,3,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::float::<impl distributions::distribution::Distribution<f32> for distributions::Standard>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::float::<impl distributions::distribution::Distribution<f64> for distributions::Standard>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::integer::<impl distributions::distribution::Distribution<core::num::NonZeroU128> for distributions::Standard>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::integer::<impl distributions::distribution::Distribution<core::num::NonZeroU32> for distributions::Standard>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::integer::<impl distributions::distribution::Distribution<core::num::NonZeroU64> for distributions::Standard>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::integer::<impl distributions::distribution::Distribution<core::num::NonZeroU8> for distributions::Standard>::sample,1,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::integer::<impl distributions::distribution::Distribution<i16> for distributions::Standard>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::integer::<impl distributions::distribution::Distribution<i32> for distributions::Standard>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::integer::<impl distributions::distribution::Distribution<i64> for distributions::Standard>::sample,2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::integer::<impl distributions::distribution::Distribution<i8> for distributions::Standard>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::integer::<impl distributions::distribution::Distribution<isize> for distributions::Standard>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::integer::<impl distributions::distribution::Distribution<u128> for distributions::Standard>::sample,2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::integer::<impl distributions::distribution::Distribution<u16> for distributions::Standard>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::integer::<impl distributions::distribution::Distribution<u32> for distributions::Standard>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::integer::<impl distributions::distribution::Distribution<u64> for distributions::Standard>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::integer::<impl distributions::distribution::Distribution<u8> for distributions::Standard>::sample,2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::integer::<impl distributions::distribution::Distribution<usize> for distributions::Standard>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::other::<impl distributions::distribution::DistString for distributions::Standard>::append_string,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::other::<impl distributions::distribution::Distribution<()> for distributions::Standard>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,"distributions::other::<impl distributions::distribution::Distribution<(A, B)> for distributions::Standard>::sample",2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,"distributions::other::<impl distributions::distribution::Distribution<(A, B, C)> for distributions::Standard>::sample",2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,"distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D)> for distributions::Standard>::sample",2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,"distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E)> for distributions::Standard>::sample",2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,"distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F)> for distributions::Standard>::sample",2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,"distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F, G)> for distributions::Standard>::sample",2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,"distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F, G, H)> for distributions::Standard>::sample",2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,"distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F, G, H, I)> for distributions::Standard>::sample",2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,"distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F, G, H, I, J)> for distributions::Standard>::sample",2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,"distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F, G, H, I, J, K)> for distributions::Standard>::sample",2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,"distributions::other::<impl distributions::distribution::Distribution<(A, B, C, D, E, F, G, H, I, J, K, L)> for distributions::Standard>::sample",2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,"distributions::other::<impl distributions::distribution::Distribution<(A,)> for distributions::Standard>::sample",2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::other::<impl distributions::distribution::Distribution<[T; 32]> for distributions::Standard>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::other::<impl distributions::distribution::Distribution<[T; _]> for distributions::Standard>::sample,2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::other::<impl distributions::distribution::Distribution<bool> for distributions::Standard>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::other::<impl distributions::distribution::Distribution<char> for distributions::Standard>::sample,2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::other::<impl distributions::distribution::Distribution<core::num::Wrapping<T>> for distributions::Standard>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::other::<impl distributions::distribution::Distribution<core::option::Option<T>> for distributions::Standard>::sample,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,"distributions::slice::Slice::<'a, T>::new",3,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::uniform::Uniform::<X>::new,3,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::uniform::Uniform::<X>::new_inclusive,1,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::uniform::UniformSampler::sample_single_inclusive,2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::utils::FloatAsSIMD::lanes,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::weighted::alias_method::WeightedIndex::<W>::new,3,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::weighted_index::WeightedIndex::<X>::new,3,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,distributions::weighted_index::WeightedIndex::<X>::update_weights,4,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,random,2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,rng::Rng::fill,3,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,rng::Rng::gen,3,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,rng::Rng::gen_bool,3,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,rng::Rng::gen_range,3,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,rng::Rng::gen_ratio,3,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,rng::Rng::sample,3,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,rng::Rng::sample_iter,3,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,rng::Rng::try_fill,3,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,rngs::adapter::read::ReadRng::<R>::new,3,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,"rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::is_forked",4,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,"rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::new",3,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,"rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::reseed",4,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,"rngs::adapter::reseeding::ReseedingCore::<R, Rsdr>::reseed_and_generate",4,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,"rngs::adapter::reseeding::ReseedingRng::<R, Rsdr>::new",1,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,"rngs::adapter::reseeding::ReseedingRng::<R, Rsdr>::reseed",4,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,rngs::adapter::reseeding::fork::fork_handler,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,rngs::adapter::reseeding::fork::get_fork_counter,2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,rngs::mock::StepRng::new,1,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,seq::IteratorRandom::choose,3,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,seq::IteratorRandom::choose_multiple,3,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,seq::IteratorRandom::choose_multiple_fill,3,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,seq::IteratorRandom::choose_stable,3,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,seq::gen_index,2,True,rule
+rand_gemini-2.5-flash-nothinking_20251127_025504,seq::index::IndexVec::index,4,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,seq::index::IndexVec::into_vec,4,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,seq::index::IndexVec::is_empty,4,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,seq::index::IndexVec::iter,4,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,seq::index::IndexVec::len,4,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,seq::index::sample,2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,seq::index::sample_efraimidis_spirakis,2,True,full
+rand_gemini-2.5-flash-nothinking_20251127_025504,seq::index::sample_floyd,2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,seq::index::sample_inplace,2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,seq::index::sample_rejection,2,False,unresolved
+rand_gemini-2.5-flash-nothinking_20251127_025504,seq::index::sample_weighted,2,True,rule
+rust-crc32fast_gemini-2.5-flash-nothinking_20251109_235808,baseline::State::new,1,True,rule
+rust-crc32fast_gemini-2.5-flash-nothinking_20251109_235808,specialized::State::combine,1,True,rule
+rust-crc32fast_gemini-2.5-flash-nothinking_20251109_235808,specialized::State::finalize,1,True,rule
+rust-crc32fast_gemini-2.5-flash-nothinking_20251109_235808,specialized::State::new,1,True,rule
+rust-crc32fast_gemini-2.5-flash-nothinking_20251109_235808,specialized::State::reset,1,True,rule
+rust-crc32fast_gemini-2.5-flash-nothinking_20251109_235808,specialized::State::update,4,True,rule
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,<SizeLimitedFmtAdapter<F> as core::fmt::Write>::write_str,2,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,Demangle::<'a>::as_str,4,True,full
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,legacy::demangle,2,True,rule
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::HexNibbles::<'s>::try_parse_str_chars,4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::HexNibbles::<'s>::try_parse_str_chars::{closure#2}::{closure#0}::utf8_len_from_first_byte,3,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::HexNibbles::<'s>::try_parse_uint,1,True,rule
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::Ident::<'s>::punycode_decode,4,True,rule
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::Ident::<'s>::try_small_punycode_decode,4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::ParseError::message,1,True,rule
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::Parser::<'s>::backref,1,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::Parser::<'s>::digit_10,4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::Parser::<'s>::digit_62,4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::Parser::<'s>::disambiguator,4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::Parser::<'s>::eat,4,True,full
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::Parser::<'s>::hex_nibbles,4,True,full
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::Parser::<'s>::ident,4,True,full
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::Parser::<'s>::integer_62,4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::Parser::<'s>::namespace,4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::Parser::<'s>::next,4,True,full
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::Parser::<'s>::opt_integer_62,4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::Parser::<'s>::peek,4,True,full
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::Parser::<'s>::pop_depth,4,True,full
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,v0::Parser::<'s>::push_depth,4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,"v0::Printer::<'a, 'b, 's>::eat",4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,"v0::Printer::<'a, 'b, 's>::in_binder",4,True,full
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,"v0::Printer::<'a, 'b, 's>::pop_depth",4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,"v0::Printer::<'a, 'b, 's>::print",4,True,full
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,"v0::Printer::<'a, 'b, 's>::print_backref",4,True,full
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,"v0::Printer::<'a, 'b, 's>::print_const",4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,"v0::Printer::<'a, 'b, 's>::print_const_str_literal",4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,"v0::Printer::<'a, 'b, 's>::print_const_uint",4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,"v0::Printer::<'a, 'b, 's>::print_dyn_trait",4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,"v0::Printer::<'a, 'b, 's>::print_generic_arg",4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,"v0::Printer::<'a, 'b, 's>::print_lifetime_from_index",4,True,full
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,"v0::Printer::<'a, 'b, 's>::print_pat",4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,"v0::Printer::<'a, 'b, 's>::print_path",4,True,full
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,"v0::Printer::<'a, 'b, 's>::print_path_maybe_open_generics",4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,"v0::Printer::<'a, 'b, 's>::print_quoted_escaped_chars",4,True,full
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,"v0::Printer::<'a, 'b, 's>::print_sep_list",4,True,full
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,"v0::Printer::<'a, 'b, 's>::print_type",4,False,unresolved
+rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158,"v0::Printer::<'a, 'b, 's>::skipping_printing",4,True,full
+ryu_gemini-2.5-flash-nothinking_20251127_013142,<buffer::Buffer as core::clone::Clone>::clone,2,True,rule
+ryu_gemini-2.5-flash-nothinking_20251127_013142,<buffer::Buffer as core::default::Default>::default,1,True,full
+ryu_gemini-2.5-flash-nothinking_20251127_013142,<f64 as buffer::Sealed>::write_to_ryu_buffer,1,True,full
+ryu_gemini-2.5-flash-nothinking_20251127_013142,buffer::Buffer::format,1,True,rule
+ryu_gemini-2.5-flash-nothinking_20251127_013142,buffer::Buffer::format_finite,1,True,rule
+ryu_gemini-2.5-flash-nothinking_20251127_013142,d2s::d2d,2,True,rule
+ryu_gemini-2.5-flash-nothinking_20251127_013142,pretty::format32,2,False,unresolved
+ryu_gemini-2.5-flash-nothinking_20251127_013142,pretty::format64,2,False,unresolved
+ryu_gemini-2.5-flash-nothinking_20251127_013142,pretty::mantissa::write_mantissa_long,2,True,rule
+semver_gemini-2.5-flash-nothinking_20251127_013324,<identifier::Identifier as std::cmp::PartialEq>::eq,2,False,unresolved
+semver_gemini-2.5-flash-nothinking_20251127_013324,<identifier::Identifier as std::ops::Drop>::drop,2,True,full
+semver_gemini-2.5-flash-nothinking_20251127_013324,display::pad,2,False,unresolved
+semver_gemini-2.5-flash-nothinking_20251127_013324,eval::matches_comparator,2,False,unresolved
+semver_gemini-2.5-flash-nothinking_20251127_013324,eval::matches_exact,1,False,unresolved
+semver_gemini-2.5-flash-nothinking_20251127_013324,eval::matches_less,2,False,unresolved
+semver_gemini-2.5-flash-nothinking_20251127_013324,eval::matches_req,2,True,full
+semver_gemini-2.5-flash-nothinking_20251127_013324,eval::pre_is_compatible,2,False,unresolved
+semver_gemini-2.5-flash-nothinking_20251127_013324,identifier::Identifier::is_empty_or_inline,2,False,unresolved
+semver_gemini-2.5-flash-nothinking_20251127_013324,identifier::Identifier::new_unchecked,3,True,rule
+semver_gemini-2.5-flash-nothinking_20251127_013324,identifier::bytes_for_varint,2,True,full
+semver_gemini-2.5-flash-nothinking_20251127_013324,identifier::decode_len::decode_len_cold,2,False,unresolved
+semver_gemini-2.5-flash-nothinking_20251127_013324,identifier::ptr_as_str,2,True,full
+semver_gemini-2.5-flash-nothinking_20251127_013324,identifier::ptr_to_repr,2,True,full
+semver_gemini-2.5-flash-nothinking_20251127_013324,impls::<impl std::cmp::Ord for Prerelease>::cmp,1,True,rule
+semver_gemini-2.5-flash-nothinking_20251127_013324,impls::<impl std::cmp::PartialOrd for BuildMetadata>::partial_cmp,2,True,rule
+semver_gemini-2.5-flash-nothinking_20251127_013324,impls::<impl std::hash::Hash for identifier::Identifier>::hash,2,False,unresolved
+semver_gemini-2.5-flash-nothinking_20251127_013324,impls::<impl std::iter::FromIterator<Comparator> for VersionReq>::from_iter,1,False,unresolved
+semver_gemini-2.5-flash-nothinking_20251127_013324,impls::<impl std::ops::Deref for BuildMetadata>::deref,2,True,rule
+semver_gemini-2.5-flash-nothinking_20251127_013324,parse::<impl std::str::FromStr for BuildMetadata>::from_str,1,False,unresolved
+semver_gemini-2.5-flash-nothinking_20251127_013324,parse::<impl std::str::FromStr for Comparator>::from_str,1,False,unresolved
+semver_gemini-2.5-flash-nothinking_20251127_013324,parse::<impl std::str::FromStr for Version>::from_str,1,True,rule
+semver_gemini-2.5-flash-nothinking_20251127_013324,parse::<impl std::str::FromStr for VersionReq>::from_str,1,True,rule
+semver_gemini-2.5-flash-nothinking_20251127_013324,parse::Error::new,3,False,unresolved
+semver_gemini-2.5-flash-nothinking_20251127_013324,parse::build_identifier,2,False,unresolved
+semver_gemini-2.5-flash-nothinking_20251127_013324,parse::comparator,2,False,unresolved
+semver_gemini-2.5-flash-nothinking_20251127_013324,parse::dot,2,False,unresolved
+semver_gemini-2.5-flash-nothinking_20251127_013324,parse::identifier,2,False,unresolved
+semver_gemini-2.5-flash-nothinking_20251127_013324,parse::numeric_identifier,2,False,unresolved
+semver_gemini-2.5-flash-nothinking_20251127_013324,parse::prerelease_identifier,2,False,unresolved

@@ -1,0 +1,606 @@
+{
+  "generated_at_utc": "2026-03-15T11:04:47+00:00",
+  "scope": "all",
+  "attempt_level": {
+    "total": 1858,
+    "resolved": 869,
+    "repair_rate": 0.467707,
+    "strict_success": 869,
+    "strict_success_rate": 0.467707,
+    "normalized_success": 908,
+    "normalized_success_rate": 0.488698,
+    "strict_normalized_delta": 0.020991,
+    "frozen_nonempty_total": 1803,
+    "strict_success_frozen_nonempty": 863,
+    "normalized_success_frozen_nonempty": 879,
+    "strict_success_rate_frozen_nonempty": 0.478647,
+    "normalized_success_rate_frozen_nonempty": 0.487521
+  },
+  "function_level": {
+    "total": 566,
+    "resolved": 366,
+    "salvage_rate": 0.646643
+  },
+  "run_level": {
+    "total_runs_with_results": 17,
+    "repair_rate_variance": 0.202702
+  },
+  "rq2": {
+    "by_code": {
+      "E0026": {
+        "total": 1,
+        "resolved": 1,
+        "repair_rate": 1.0,
+        "strict_success": 1,
+        "strict_success_rate": 1.0,
+        "normalized_success": 1,
+        "normalized_success_rate": 1.0
+      },
+      "E0027": {
+        "total": 1,
+        "resolved": 1,
+        "repair_rate": 1.0,
+        "strict_success": 1,
+        "strict_success_rate": 1.0,
+        "normalized_success": 1,
+        "normalized_success_rate": 1.0
+      },
+      "E0034": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0040": {
+        "total": 2,
+        "resolved": 2,
+        "repair_rate": 1.0,
+        "strict_success": 2,
+        "strict_success_rate": 1.0,
+        "normalized_success": 2,
+        "normalized_success_rate": 1.0
+      },
+      "E0046": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0053": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0061": {
+        "total": 69,
+        "resolved": 10,
+        "repair_rate": 0.144928,
+        "strict_success": 10,
+        "strict_success_rate": 0.144928,
+        "normalized_success": 10,
+        "normalized_success_rate": 0.144928
+      },
+      "E0063": {
+        "total": 97,
+        "resolved": 48,
+        "repair_rate": 0.494845,
+        "strict_success": 48,
+        "strict_success_rate": 0.494845,
+        "normalized_success": 48,
+        "normalized_success_rate": 0.494845
+      },
+      "E0071": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0107": {
+        "total": 25,
+        "resolved": 6,
+        "repair_rate": 0.24,
+        "strict_success": 6,
+        "strict_success_rate": 0.24,
+        "normalized_success": 6,
+        "normalized_success_rate": 0.24
+      },
+      "E0116": {
+        "total": 3,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0119": {
+        "total": 15,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0133": {
+        "total": 1,
+        "resolved": 1,
+        "repair_rate": 1.0,
+        "strict_success": 1,
+        "strict_success_rate": 1.0,
+        "normalized_success": 1,
+        "normalized_success_rate": 1.0
+      },
+      "E0164": {
+        "total": 1,
+        "resolved": 1,
+        "repair_rate": 1.0,
+        "strict_success": 1,
+        "strict_success_rate": 1.0,
+        "normalized_success": 1,
+        "normalized_success_rate": 1.0
+      },
+      "E0223": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0252": {
+        "total": 2,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0261": {
+        "total": 25,
+        "resolved": 3,
+        "repair_rate": 0.12,
+        "strict_success": 3,
+        "strict_success_rate": 0.12,
+        "normalized_success": 3,
+        "normalized_success_rate": 0.12
+      },
+      "E0277": {
+        "total": 71,
+        "resolved": 13,
+        "repair_rate": 0.183099,
+        "strict_success": 13,
+        "strict_success_rate": 0.183099,
+        "normalized_success": 13,
+        "normalized_success_rate": 0.183099
+      },
+      "E0282": {
+        "total": 13,
+        "resolved": 10,
+        "repair_rate": 0.769231,
+        "strict_success": 10,
+        "strict_success_rate": 0.769231,
+        "normalized_success": 10,
+        "normalized_success_rate": 0.769231
+      },
+      "E0283": {
+        "total": 15,
+        "resolved": 1,
+        "repair_rate": 0.066667,
+        "strict_success": 1,
+        "strict_success_rate": 0.066667,
+        "normalized_success": 1,
+        "normalized_success_rate": 0.066667
+      },
+      "E0284": {
+        "total": 1,
+        "resolved": 1,
+        "repair_rate": 1.0,
+        "strict_success": 1,
+        "strict_success_rate": 1.0,
+        "normalized_success": 1,
+        "normalized_success_rate": 1.0
+      },
+      "E0308": {
+        "total": 203,
+        "resolved": 88,
+        "repair_rate": 0.433498,
+        "strict_success": 88,
+        "strict_success_rate": 0.433498,
+        "normalized_success": 88,
+        "normalized_success_rate": 0.433498
+      },
+      "E0369": {
+        "total": 24,
+        "resolved": 6,
+        "repair_rate": 0.25,
+        "strict_success": 6,
+        "strict_success_rate": 0.25,
+        "normalized_success": 6,
+        "normalized_success_rate": 0.25
+      },
+      "E0404": {
+        "total": 3,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0405": {
+        "total": 6,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0407": {
+        "total": 5,
+        "resolved": 1,
+        "repair_rate": 0.2,
+        "strict_success": 1,
+        "strict_success_rate": 0.2,
+        "normalized_success": 1,
+        "normalized_success_rate": 0.2
+      },
+      "E0412": {
+        "total": 39,
+        "resolved": 8,
+        "repair_rate": 0.205128,
+        "strict_success": 8,
+        "strict_success_rate": 0.205128,
+        "normalized_success": 8,
+        "normalized_success_rate": 0.205128
+      },
+      "E0423": {
+        "total": 2,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0425": {
+        "total": 17,
+        "resolved": 3,
+        "repair_rate": 0.176471,
+        "strict_success": 3,
+        "strict_success_rate": 0.176471,
+        "normalized_success": 3,
+        "normalized_success_rate": 0.176471
+      },
+      "E0432": {
+        "total": 341,
+        "resolved": 86,
+        "repair_rate": 0.252199,
+        "strict_success": 86,
+        "strict_success_rate": 0.252199,
+        "normalized_success": 91,
+        "normalized_success_rate": 0.266862
+      },
+      "E0433": {
+        "total": 1082,
+        "resolved": 564,
+        "repair_rate": 0.521257,
+        "strict_success": 564,
+        "strict_success_rate": 0.521257,
+        "normalized_success": 574,
+        "normalized_success_rate": 0.530499
+      },
+      "E0434": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0437": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0533": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0560": {
+        "total": 128,
+        "resolved": 77,
+        "repair_rate": 0.601562,
+        "strict_success": 77,
+        "strict_success_rate": 0.601562,
+        "normalized_success": 77,
+        "normalized_success_rate": 0.601562
+      },
+      "E0562": {
+        "total": 2,
+        "resolved": 1,
+        "repair_rate": 0.5,
+        "strict_success": 1,
+        "strict_success_rate": 0.5,
+        "normalized_success": 1,
+        "normalized_success_rate": 0.5
+      },
+      "E0574": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0576": {
+        "total": 1,
+        "resolved": 1,
+        "repair_rate": 1.0,
+        "strict_success": 1,
+        "strict_success_rate": 1.0,
+        "normalized_success": 1,
+        "normalized_success_rate": 1.0
+      },
+      "E0586": {
+        "total": 3,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0592": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0599": {
+        "total": 441,
+        "resolved": 93,
+        "repair_rate": 0.210884,
+        "strict_success": 93,
+        "strict_success_rate": 0.210884,
+        "normalized_success": 95,
+        "normalized_success_rate": 0.21542
+      },
+      "E0603": {
+        "total": 27,
+        "resolved": 5,
+        "repair_rate": 0.185185,
+        "strict_success": 5,
+        "strict_success_rate": 0.185185,
+        "normalized_success": 5,
+        "normalized_success_rate": 0.185185
+      },
+      "E0608": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0609": {
+        "total": 6,
+        "resolved": 3,
+        "repair_rate": 0.5,
+        "strict_success": 3,
+        "strict_success_rate": 0.5,
+        "normalized_success": 3,
+        "normalized_success_rate": 0.5
+      },
+      "E0614": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0615": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0616": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0658": {
+        "total": 84,
+        "resolved": 9,
+        "repair_rate": 0.107143,
+        "strict_success": 9,
+        "strict_success_rate": 0.107143,
+        "normalized_success": 9,
+        "normalized_success_rate": 0.107143
+      },
+      "E0689": {
+        "total": 1,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0765": {
+        "total": 4,
+        "resolved": 0,
+        "repair_rate": 0.0,
+        "strict_success": 0,
+        "strict_success_rate": 0.0,
+        "normalized_success": 0,
+        "normalized_success_rate": 0.0
+      },
+      "E0790": {
+        "total": 1,
+        "resolved": 1,
+        "repair_rate": 1.0,
+        "strict_success": 1,
+        "strict_success_rate": 1.0,
+        "normalized_success": 1,
+        "normalized_success_rate": 1.0
+      }
+    },
+    "by_resolution_path": {
+      "rule": 393,
+      "full": 476,
+      "unresolved": 989
+    },
+    "by_resolution_path_normalized": {
+      "rule_success": 393,
+      "full_success": 476,
+      "unresolved_path_success": 39,
+      "non_success": 950
+    }
+  },
+  "rq3": {
+    "target_clearance_batch_rate": 0.467707,
+    "non_target_regression_proxy_batches": 0,
+    "normalized_target_clearance_batch_rate": 0.488698,
+    "normalized_non_e_only_batches": 0,
+    "normalized_no_code_only_batches": 0
+  },
+  "rq5": {
+    "median_rule_duration_sec": 18.444,
+    "median_full_duration_sec": 43.844,
+    "median_verify_rounds": 1,
+    "llm_attempt_total": 9151,
+    "strict_success_batch_total": 869,
+    "normalized_success_batch_total": 908,
+    "strict_success_batch_rate": 0.467707,
+    "normalized_success_batch_rate": 0.488698,
+    "median_final_stage_duration_strict_success_sec": 23.213,
+    "median_final_stage_duration_normalized_success_sec": 23.61
+  },
+  "rq6": {
+    "model_rows": [
+      {
+        "model": "claude-3-5-haiku-20241022",
+        "attempt_total": 123,
+        "attempt_resolved": 80,
+        "attempt_repair_rate": 0.650407
+      },
+      {
+        "model": "deepseek-v3",
+        "attempt_total": 80,
+        "attempt_resolved": 54,
+        "attempt_repair_rate": 0.675
+      },
+      {
+        "model": "gemini-2.5-flash-nothinking",
+        "attempt_total": 999,
+        "attempt_resolved": 360,
+        "attempt_repair_rate": 0.36036
+      },
+      {
+        "model": "gemini-2.5-flash-thinking",
+        "attempt_total": 70,
+        "attempt_resolved": 42,
+        "attempt_repair_rate": 0.6
+      },
+      {
+        "model": "gpt-3.5-turbo",
+        "attempt_total": 114,
+        "attempt_resolved": 48,
+        "attempt_repair_rate": 0.421053
+      },
+      {
+        "model": "gpt-4.1-mini",
+        "attempt_total": 101,
+        "attempt_resolved": 74,
+        "attempt_repair_rate": 0.732673
+      },
+      {
+        "model": "gpt-4.1-nano",
+        "attempt_total": 128,
+        "attempt_resolved": 88,
+        "attempt_repair_rate": 0.6875
+      },
+      {
+        "model": "gpt-4o-mini",
+        "attempt_total": 121,
+        "attempt_resolved": 62,
+        "attempt_repair_rate": 0.512397
+      },
+      {
+        "model": "gpt-5-nano",
+        "attempt_total": 122,
+        "attempt_resolved": 61,
+        "attempt_repair_rate": 0.5
+      }
+    ],
+    "difficulty_buckets": {
+      "multi_mixed": {
+        "total": 338,
+        "resolved": 63,
+        "repair_rate": 0.186391
+      },
+      "multi_supported_only": {
+        "total": 281,
+        "resolved": 69,
+        "repair_rate": 0.245552
+      },
+      "multi_unsupported_only": {
+        "total": 18,
+        "resolved": 2,
+        "repair_rate": 0.111111
+      },
+      "no_error_code": {
+        "total": 55,
+        "resolved": 6,
+        "repair_rate": 0.109091
+      },
+      "single_error": {
+        "total": 1166,
+        "resolved": 729,
+        "repair_rate": 0.625214
+      }
+    }
+  }
+}

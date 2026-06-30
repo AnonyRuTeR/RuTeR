@@ -1,0 +1,660 @@
+{
+  "generated_at_utc": "2026-05-01T13:59:43+00:00",
+  "scope": "all",
+  "baseline_type": "rug_retry",
+  "source_manifest": "evaluation/phase_1A/frozen/frozen_attempt_manifest.json",
+  "source_rug_runs_root": "evaluation/rug_runs",
+  "success_definition": "later_retry.compile_success == true && later_retry.success == true",
+  "denominator_definition": "Phase1A frozen failed attempts; first generation itself is never counted as retry success",
+  "attempt_level": {
+    "total": 1858,
+    "retry_available_total": 1392,
+    "rug_retry_success_total": 195,
+    "rug_retry_success_rate": 0.104952,
+    "missing_detailed_log_total": 0,
+    "missing_node_total": 0,
+    "attempt_index_mismatch_total": 0
+  },
+  "function_level": {
+    "total": 566,
+    "retry_available_total": 508,
+    "rug_retry_success_total": 100,
+    "rug_retry_success_rate": 0.176678
+  },
+  "by_crate": {
+    "humantime": {
+      "total": 944,
+      "retry_available_total": 831,
+      "rug_retry_success_total": 134,
+      "rug_retry_success_rate": 0.141949
+    },
+    "itoa": {
+      "total": 11,
+      "retry_available_total": 7,
+      "rug_retry_success_total": 3,
+      "rug_retry_success_rate": 0.272727
+    },
+    "log": {
+      "total": 145,
+      "retry_available_total": 92,
+      "rug_retry_success_total": 12,
+      "rug_retry_success_rate": 0.082759
+    },
+    "mio": {
+      "total": 175,
+      "retry_available_total": 119,
+      "rug_retry_success_total": 2,
+      "rug_retry_success_rate": 0.011429
+    },
+    "rand": {
+      "total": 355,
+      "retry_available_total": 187,
+      "rug_retry_success_total": 29,
+      "rug_retry_success_rate": 0.08169
+    },
+    "rust-crc32fast": {
+      "total": 9,
+      "retry_available_total": 8,
+      "rug_retry_success_total": 5,
+      "rug_retry_success_rate": 0.555556
+    },
+    "rustc-demangle": {
+      "total": 150,
+      "retry_available_total": 112,
+      "rug_retry_success_total": 3,
+      "rug_retry_success_rate": 0.02
+    },
+    "ryu": {
+      "total": 14,
+      "retry_available_total": 8,
+      "rug_retry_success_total": 3,
+      "rug_retry_success_rate": 0.214286
+    },
+    "semver": {
+      "total": 55,
+      "retry_available_total": 28,
+      "rug_retry_success_total": 4,
+      "rug_retry_success_rate": 0.072727
+    }
+  },
+  "by_model": {
+    "claude-3-5-haiku-20241022": {
+      "total": 123,
+      "retry_available_total": 107,
+      "rug_retry_success_total": 9,
+      "rug_retry_success_rate": 0.073171
+    },
+    "deepseek-v3": {
+      "total": 80,
+      "retry_available_total": 69,
+      "rug_retry_success_total": 2,
+      "rug_retry_success_rate": 0.025
+    },
+    "gemini-2.5-flash-nothinking": {
+      "total": 999,
+      "retry_available_total": 639,
+      "rug_retry_success_total": 80,
+      "rug_retry_success_rate": 0.08008
+    },
+    "gemini-2.5-flash-thinking": {
+      "total": 70,
+      "retry_available_total": 63,
+      "rug_retry_success_total": 10,
+      "rug_retry_success_rate": 0.142857
+    },
+    "gpt-3.5-turbo": {
+      "total": 114,
+      "retry_available_total": 100,
+      "rug_retry_success_total": 15,
+      "rug_retry_success_rate": 0.131579
+    },
+    "gpt-4.1-mini": {
+      "total": 101,
+      "retry_available_total": 90,
+      "rug_retry_success_total": 29,
+      "rug_retry_success_rate": 0.287129
+    },
+    "gpt-4.1-nano": {
+      "total": 128,
+      "retry_available_total": 113,
+      "rug_retry_success_total": 26,
+      "rug_retry_success_rate": 0.203125
+    },
+    "gpt-4o-mini": {
+      "total": 121,
+      "retry_available_total": 105,
+      "rug_retry_success_total": 10,
+      "rug_retry_success_rate": 0.082645
+    },
+    "gpt-5-nano": {
+      "total": 122,
+      "retry_available_total": 106,
+      "rug_retry_success_total": 14,
+      "rug_retry_success_rate": 0.114754
+    }
+  },
+  "by_run": {
+    "humantime_claude-3-5-haiku-20241022_20251109_133407": {
+      "total": 123,
+      "retry_available_total": 107,
+      "rug_retry_success_total": 9,
+      "rug_retry_success_rate": 0.073171
+    },
+    "humantime_deepseek-v3_20251109_140004": {
+      "total": 80,
+      "retry_available_total": 69,
+      "rug_retry_success_total": 2,
+      "rug_retry_success_rate": 0.025
+    },
+    "humantime_gemini-2.5-flash-nothinking_20251109_134926": {
+      "total": 85,
+      "retry_available_total": 78,
+      "rug_retry_success_total": 19,
+      "rug_retry_success_rate": 0.223529
+    },
+    "humantime_gemini-2.5-flash-thinking_20251109_141506": {
+      "total": 70,
+      "retry_available_total": 63,
+      "rug_retry_success_total": 10,
+      "rug_retry_success_rate": 0.142857
+    },
+    "humantime_gpt-3.5-turbo_20251109_000031": {
+      "total": 114,
+      "retry_available_total": 100,
+      "rug_retry_success_total": 15,
+      "rug_retry_success_rate": 0.131579
+    },
+    "humantime_gpt-4.1-mini_20251109_001052": {
+      "total": 101,
+      "retry_available_total": 90,
+      "rug_retry_success_total": 29,
+      "rug_retry_success_rate": 0.287129
+    },
+    "humantime_gpt-4.1-nano_20251109_132117": {
+      "total": 128,
+      "retry_available_total": 113,
+      "rug_retry_success_total": 26,
+      "rug_retry_success_rate": 0.203125
+    },
+    "humantime_gpt-4o-mini_20251108_234236": {
+      "total": 121,
+      "retry_available_total": 105,
+      "rug_retry_success_total": 10,
+      "rug_retry_success_rate": 0.082645
+    },
+    "humantime_gpt-5-nano_20251109_004846": {
+      "total": 122,
+      "retry_available_total": 106,
+      "rug_retry_success_total": 14,
+      "rug_retry_success_rate": 0.114754
+    },
+    "itoa_gemini-2.5-flash-nothinking_20251127_010109": {
+      "total": 11,
+      "retry_available_total": 7,
+      "rug_retry_success_total": 3,
+      "rug_retry_success_rate": 0.272727
+    },
+    "log_gemini-2.5-flash-nothinking_20251127_025911": {
+      "total": 145,
+      "retry_available_total": 92,
+      "rug_retry_success_total": 12,
+      "rug_retry_success_rate": 0.082759
+    },
+    "mio_gemini-2.5-flash-nothinking_20251127_012706": {
+      "total": 175,
+      "retry_available_total": 119,
+      "rug_retry_success_total": 2,
+      "rug_retry_success_rate": 0.011429
+    },
+    "rand_gemini-2.5-flash-nothinking_20251127_025504": {
+      "total": 355,
+      "retry_available_total": 187,
+      "rug_retry_success_total": 29,
+      "rug_retry_success_rate": 0.08169
+    },
+    "rust-crc32fast_gemini-2.5-flash-nothinking_20251109_235808": {
+      "total": 9,
+      "retry_available_total": 8,
+      "rug_retry_success_total": 5,
+      "rug_retry_success_rate": 0.555556
+    },
+    "rustc-demangle_gemini-2.5-flash-nothinking_20251109_233158": {
+      "total": 150,
+      "retry_available_total": 112,
+      "rug_retry_success_total": 3,
+      "rug_retry_success_rate": 0.02
+    },
+    "ryu_gemini-2.5-flash-nothinking_20251127_013142": {
+      "total": 14,
+      "retry_available_total": 8,
+      "rug_retry_success_total": 3,
+      "rug_retry_success_rate": 0.214286
+    },
+    "semver_gemini-2.5-flash-nothinking_20251127_013324": {
+      "total": 55,
+      "retry_available_total": 28,
+      "rug_retry_success_total": 4,
+      "rug_retry_success_rate": 0.072727
+    }
+  },
+  "by_error_code": {
+    "E0026": {
+      "total": 1,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0027": {
+      "total": 1,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0034": {
+      "total": 1,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0040": {
+      "total": 2,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0046": {
+      "total": 1,
+      "retry_available_total": 0,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0053": {
+      "total": 1,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0061": {
+      "total": 69,
+      "retry_available_total": 47,
+      "rug_retry_success_total": 1,
+      "rug_retry_success_rate": 0.014493
+    },
+    "E0063": {
+      "total": 97,
+      "retry_available_total": 84,
+      "rug_retry_success_total": 1,
+      "rug_retry_success_rate": 0.010309
+    },
+    "E0071": {
+      "total": 1,
+      "retry_available_total": 0,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0107": {
+      "total": 25,
+      "retry_available_total": 17,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0116": {
+      "total": 3,
+      "retry_available_total": 2,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0119": {
+      "total": 15,
+      "retry_available_total": 7,
+      "rug_retry_success_total": 1,
+      "rug_retry_success_rate": 0.066667
+    },
+    "E0133": {
+      "total": 1,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0164": {
+      "total": 1,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0223": {
+      "total": 1,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0252": {
+      "total": 2,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0261": {
+      "total": 25,
+      "retry_available_total": 24,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0277": {
+      "total": 71,
+      "retry_available_total": 52,
+      "rug_retry_success_total": 5,
+      "rug_retry_success_rate": 0.070423
+    },
+    "E0282": {
+      "total": 13,
+      "retry_available_total": 2,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0283": {
+      "total": 15,
+      "retry_available_total": 7,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0284": {
+      "total": 1,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0308": {
+      "total": 203,
+      "retry_available_total": 151,
+      "rug_retry_success_total": 17,
+      "rug_retry_success_rate": 0.083744
+    },
+    "E0369": {
+      "total": 24,
+      "retry_available_total": 21,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0404": {
+      "total": 3,
+      "retry_available_total": 3,
+      "rug_retry_success_total": 1,
+      "rug_retry_success_rate": 0.333333
+    },
+    "E0405": {
+      "total": 6,
+      "retry_available_total": 5,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0407": {
+      "total": 5,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0412": {
+      "total": 39,
+      "retry_available_total": 31,
+      "rug_retry_success_total": 2,
+      "rug_retry_success_rate": 0.051282
+    },
+    "E0423": {
+      "total": 2,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0425": {
+      "total": 17,
+      "retry_available_total": 12,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0432": {
+      "total": 341,
+      "retry_available_total": 250,
+      "rug_retry_success_total": 28,
+      "rug_retry_success_rate": 0.082111
+    },
+    "E0433": {
+      "total": 1082,
+      "retry_available_total": 806,
+      "rug_retry_success_total": 132,
+      "rug_retry_success_rate": 0.121996
+    },
+    "E0434": {
+      "total": 1,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0437": {
+      "total": 1,
+      "retry_available_total": 0,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0533": {
+      "total": 1,
+      "retry_available_total": 0,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0560": {
+      "total": 128,
+      "retry_available_total": 106,
+      "rug_retry_success_total": 14,
+      "rug_retry_success_rate": 0.109375
+    },
+    "E0562": {
+      "total": 2,
+      "retry_available_total": 2,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0574": {
+      "total": 1,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0576": {
+      "total": 1,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0586": {
+      "total": 3,
+      "retry_available_total": 3,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0592": {
+      "total": 1,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0599": {
+      "total": 441,
+      "retry_available_total": 332,
+      "rug_retry_success_total": 9,
+      "rug_retry_success_rate": 0.020408
+    },
+    "E0603": {
+      "total": 27,
+      "retry_available_total": 13,
+      "rug_retry_success_total": 1,
+      "rug_retry_success_rate": 0.037037
+    },
+    "E0608": {
+      "total": 1,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0609": {
+      "total": 6,
+      "retry_available_total": 5,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0614": {
+      "total": 1,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 1,
+      "rug_retry_success_rate": 1.0
+    },
+    "E0615": {
+      "total": 1,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0616": {
+      "total": 1,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0658": {
+      "total": 84,
+      "retry_available_total": 67,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0689": {
+      "total": 1,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0765": {
+      "total": 4,
+      "retry_available_total": 2,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "E0790": {
+      "total": 1,
+      "retry_available_total": 1,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "NO_CODE": {
+      "total": 55,
+      "retry_available_total": 36,
+      "rug_retry_success_total": 1,
+      "rug_retry_success_rate": 0.018182
+    }
+  },
+  "by_difficulty_bucket": {
+    "multi_mixed": {
+      "total": 338,
+      "retry_available_total": 251,
+      "rug_retry_success_total": 8,
+      "rug_retry_success_rate": 0.023669
+    },
+    "multi_supported_only": {
+      "total": 281,
+      "retry_available_total": 198,
+      "rug_retry_success_total": 10,
+      "rug_retry_success_rate": 0.035587
+    },
+    "multi_unsupported_only": {
+      "total": 18,
+      "retry_available_total": 13,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "no_error_code": {
+      "total": 55,
+      "retry_available_total": 36,
+      "rug_retry_success_total": 1,
+      "rug_retry_success_rate": 0.018182
+    },
+    "single_error": {
+      "total": 1166,
+      "retry_available_total": 894,
+      "rug_retry_success_total": 176,
+      "rug_retry_success_rate": 0.150943
+    }
+  },
+  "by_attempt_index": {
+    "1": {
+      "total": 566,
+      "retry_available_total": 508,
+      "rug_retry_success_total": 100,
+      "rug_retry_success_rate": 0.176678
+    },
+    "10": {
+      "total": 37,
+      "retry_available_total": 37,
+      "rug_retry_success_total": 1,
+      "rug_retry_success_rate": 0.027027
+    },
+    "11": {
+      "total": 36,
+      "retry_available_total": 36,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "12": {
+      "total": 36,
+      "retry_available_total": 0,
+      "rug_retry_success_total": 0,
+      "rug_retry_success_rate": 0.0
+    },
+    "2": {
+      "total": 448,
+      "retry_available_total": 269,
+      "rug_retry_success_total": 40,
+      "rug_retry_success_rate": 0.089286
+    },
+    "3": {
+      "total": 255,
+      "retry_available_total": 200,
+      "rug_retry_success_total": 26,
+      "rug_retry_success_rate": 0.101961
+    },
+    "4": {
+      "total": 188,
+      "retry_available_total": 99,
+      "rug_retry_success_total": 14,
+      "rug_retry_success_rate": 0.074468
+    },
+    "5": {
+      "total": 91,
+      "retry_available_total": 91,
+      "rug_retry_success_total": 6,
+      "rug_retry_success_rate": 0.065934
+    },
+    "6": {
+      "total": 87,
+      "retry_available_total": 38,
+      "rug_retry_success_total": 2,
+      "rug_retry_success_rate": 0.022989
+    },
+    "7": {
+      "total": 38,
+      "retry_available_total": 38,
+      "rug_retry_success_total": 2,
+      "rug_retry_success_rate": 0.052632
+    },
+    "8": {
+      "total": 38,
+      "retry_available_total": 38,
+      "rug_retry_success_total": 2,
+      "rug_retry_success_rate": 0.052632
+    },
+    "9": {
+      "total": 38,
+      "retry_available_total": 38,
+      "rug_retry_success_total": 2,
+      "rug_retry_success_rate": 0.052632
+    }
+  }
+}

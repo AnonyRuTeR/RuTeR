@@ -1,0 +1,66 @@
+digraph coordinator_flow {
+    rankdir=LR;
+    fontname="Helvetica";
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=10];
+
+    label="Coordinator 与 Transformer 数据流";
+    labelloc=t;
+    fontsize=14;
+    fontname="Helvetica-Bold";
+
+    // Inputs
+    diag [label="Diagnostic\n(单条)", shape=ellipse, fillcolor="#FFF3E0"];
+    diags_multi [label="Diagnostic[]\n(函数级批量)", shape=ellipse, fillcolor="#FFF3E0"];
+
+    // PatchCoordinator
+    subgraph cluster_coord {
+        label="PatchCoordinator";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#E8F0FE4D";
+        color="#1A73E8";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        plan_single [label="plan()\n单诊断 → 单候选\nGlobalCandidatePlan", fillcolor="#E8F0FE"];
+        plan_topk [label="plan_top_k()\n(E0433: beam search)\n其他: 回退 plan()", fillcolor="#E8F0FE"];
+        apply_planned [label="apply_planned()\n应用 FixAction\n到源文件", fillcolor="#E8F0FE"];
+    }
+
+    // Registry
+    registry [label="PatcherRegistry\nget_patcher(ErrorCode)\n→ dyn Patcher", fillcolor="#FFF9C4"];
+
+    // CodeTransformer
+    subgraph cluster_trans {
+        label="CodeTransformer";
+        labeljust=l;
+        style="rounded,filled";
+        fillcolor="#E8F5E94D";
+        color="#2E7D32";
+        fontname="Helvetica-Bold";
+        fontsize=11;
+
+        conflict [label="ensure_no_conflicts()\n按 (file, offset) 排序\n检测字节范围重叠", fillcolor="#E8F5E9"];
+        apply_rep [label="apply_replacements()\n从右到左应用\n保持字节偏移稳定", fillcolor="#E8F5E9"];
+        validate [label="validate_range()\nUTF-8 字节边界校验", fillcolor="#E8F5E9"];
+    }
+
+    // Outputs
+    gcp [label="GlobalCandidatePlan\ncandidate_id, actions,\ndiagnostic_index, score", shape=box, style="rounded,filled", fillcolor="#C8E6C9"];
+    modified [label="修改后的源码", shape=ellipse, fillcolor="#C8E6C9"];
+
+    // Edges
+    diag -> plan_single;
+    diags_multi -> plan_topk;
+    plan_single -> registry [label="查询"];
+    plan_topk -> registry [label="查询"];
+    registry -> plan_single [label="Patcher", style=dashed];
+    plan_single -> gcp;
+    plan_topk -> gcp;
+    gcp -> apply_planned;
+    apply_planned -> conflict;
+    conflict -> validate;
+    validate -> apply_rep;
+    apply_rep -> modified;
+}
