@@ -87,7 +87,7 @@ target_fn_hard_limit_chars = 8000
 使用 Online 模式时，通过环境变量（或 `.env` 文件）提供凭据：
 
 ```bash
-LLM_API_KEY=sk-...
+LLM_API_KEY=<your-api-key>
 LLM_API_URL=https://api.openai.com/v1/chat/completions
 LLM_MODEL=gpt-4o
 ```

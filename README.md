@@ -21,7 +21,7 @@ ruter fix <crate_path> --artifacts-dir <output_dir>
 ruter --apply fix <crate_path> --artifacts-dir <output_dir>
 
 # With LLM fallback
-RUTER_LLM_API_KEY=your-key ruter --apply fix <crate_path> \
+RUTER_LLM_API_KEY=<your-api-key> ruter --apply fix <crate_path> \
   --enable-llm --llm-mode online \
   --llm-api-url $LLM_API_URL --llm-model $LLM_MODEL \
   --artifacts-dir <output_dir>
@@ -48,7 +48,7 @@ python scripts/build_repair_effectiveness.py --repair artifacts/repair --baselin
 EVAL_DIR=../data python ../scripts/replay_runtime.py
 ```
 
-Pre-computed data is in `data/`. See subdirectories for per-RQ README and results.
+Pre-computed aggregate data is in `data/`. Run `python3 scripts/summarize_paper_tables.py` to print the main paper-facing table checks.
 
 ## License
 

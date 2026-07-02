@@ -1,25 +1,44 @@
 # Experiment Data
 
-This directory contains the aggregate experiment data organized by research question.
+This directory contains the aggregate artifacts used to check the paper-facing
+results for each research question. The files are pre-computed outputs from the
+RuTeR evaluation pipeline; they are intended for result inspection and table
+cross-checking without requiring online LLM APIs.
 
 ## RQ1: Failure Characteristics
-`rq1/` — Compile success rates, error code Pareto distributions, cross-crate/cross-model analysis.
-18 RUG runs across 10 crates and 9 LLM models.
+
+`rq1/` contains aggregate failure-characterization outputs, including:
+
+- `Pre_rug_gen_conclusion.md` — summary of the RUG generation study.
+- `rq1_error_code_occurrence_distribution.csv` — compiler error-code occurrence distribution.
+- `rq1_failure_taxonomy.{csv,md}` — failure-category taxonomy.
 
 ## RQ2: Repair Effectiveness
-`rq2/` — 5-system comparison (RuTeR Full, Rule-only, DirectLLM-1shot, DirectAgent-3round, RUG Retry),
-1,858 frozen attempts each. Per-error, per-crate, per-model repair rates.
 
-## RQ3: Downstream Utility & Generalization
-`rq3/` — Coverage recovery metrics (Lines/Functions/Regions), quality guard metrics (oracle strength),
-cost-utility analysis, and cross-source generalization (5 test generators).
+`rq2/` contains aggregate repair-effectiveness outputs, including:
 
-## Data Completeness
+- `Phase1A_conclusion.md` — paper-facing summary of the frozen replay evaluation.
+- `Phase1A_agent_baseline.md` — DirectAgent-3round baseline summary.
+- `aggregates/all_metrics.json` — Full RuTeR aggregate metrics.
+- `aggregates/rug_retry_baseline_metrics.json` — RUG Retry baseline metrics.
 
-Data completeness (audited 2026-05-27):
-- **RQ1**: 85% — Core data intact; chrono/mio detailed_log missing
-- **RQ2**: 95% — Complete per-attempt data for all 5 systems
-- **RQ3**: 70% — Coverage recovery complete; mutation testing not yet implemented
+## RQ3: Downstream Utility and Generalization
 
-For per-attempt raw data (batch_result.json for each of 9,290 attempts), see the
-accompanying data archive or contact the authors.
+`rq3/` contains aggregate downstream-utility outputs, including:
+
+- `Phase1A_Plus_conclusion.md` and `Phase1B_conclusion.md` — summary reports.
+- `aggregates/coverage_recovery_metrics.json` — canonical coverage-recovery totals.
+- `aggregates/utility_recovery_ratio_*` — utility-recovery ratio tables and summaries.
+- `phase_data/` — Phase 1A+ aggregate CSV/JSON tables used by the downstream analysis.
+
+## Quick aggregate check
+
+Run the repository-level summary script to print the main aggregate values used
+for paper table checks:
+
+```bash
+python3 scripts/summarize_paper_tables.py
+```
+
+The script reads only files committed under `data/` and does not require network
+access or LLM credentials.

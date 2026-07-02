@@ -28,16 +28,16 @@ cp configs/subjects.example.toml configs/subjects.toml
 export RUTER_BIN=/path/to/ruter/target/release/ruter
 
 # Collect diagnostics
-python scripts/collect_diagnostics.py --config configs/subjects.toml
+python scripts/collect_diagnostics.py --manifest configs/subjects.toml --out artifacts/diagnostics
 
 # Run repair (requires LLM API key for online mode)
-python scripts/run_repair.py --config configs/subjects.toml
+python scripts/run_repair.py --manifest configs/subjects.toml --out artifacts/repair
 
 # Run baselines
-python scripts/run_baselines.py --config configs/subjects.toml
+python scripts/run_baselines.py --manifest configs/subjects.toml --out artifacts/baselines
 
 # Build effectiveness report
-python scripts/build_repair_effectiveness.py --artifacts-dir artifacts/
+python scripts/build_repair_effectiveness.py --repair artifacts/repair --baselines artifacts/baselines --out results/rq2
 ```
 
 ## Requirements
