@@ -15,7 +15,7 @@ def load_json(path: Path):
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Run RuTeR over smoke-test subjects for RQ2.")
+    parser = argparse.ArgumentParser(description="Run RuTeR over configured subjects for RQ2.")
     parser.add_argument("--manifest", required=True, help="Subject manifest TOML path")
     parser.add_argument("--out", required=True, help="Repair artifact output root")
     args = parser.parse_args()
@@ -48,7 +48,7 @@ def main() -> int:
             write_json(subject_out / "repair_result.json", repair_result)
             continue
         if subject.source_type != "local_fixture" or resolved is None or not resolved.exists():
-            notes.append("only existing local_fixture subjects are supported by run_repair.py right now")
+            notes.append("only existing local_fixture subjects are supported by this repair runner")
             write_json(subject_out / "repair_result.json", repair_result)
             continue
 

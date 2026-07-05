@@ -150,7 +150,7 @@ def run_rugpatcher_full(subject, out_root: Path, repair_root: Path) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Run honest minimal baselines for RQ2 smoke tests.")
+    parser = argparse.ArgumentParser(description="Run local baselines for RQ2.")
     parser.add_argument("--manifest", required=True, help="Subject manifest TOML path")
     parser.add_argument("--out", required=True, help="Baseline artifact output root")
     args = parser.parse_args()
@@ -165,17 +165,6 @@ def main() -> int:
         run_compiler_suggestion_only(subject, out_root)
         run_rugpatcher_full(subject, out_root, repair_root)
 
-    write_json(
-        out_root / "TODO_baselines.json",
-        {
-            "todo_baselines": [
-                "rule_only",
-                "llm_raw_error",
-                "llm_structured_context",
-            ],
-            "notes": "These baselines are intentionally not implemented yet in the smoke-test pipeline.",
-        },
-    )
     return 0
 
 

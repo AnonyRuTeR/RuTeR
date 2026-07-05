@@ -22,7 +22,7 @@ commit_hash = ""
 rust_toolchain = "stable"
 target_functions = ["src/duration.rs::tests_prepare::sample"]
 expected_error_codes = ["E0433"]
-notes = "Example local fixture entry for smoke-test pipeline development only."
+notes = "Example local fixture entry for validating the local pipeline."
 
 [[subject]]
 subject_id = "example_git_subject"
@@ -31,4 +31,4 @@ source_type = "git"
 repo_url = "https://github.com/example/some-crate.git"
 commit_hash = "0123456789abcdef"
 rust_toolchain = "stable"
-notes = "Future full-dataset entry; not supported by the current smoke-test scripts yet."
+notes = "Template git subject entry for external-dataset manifests."

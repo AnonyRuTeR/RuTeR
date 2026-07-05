@@ -18,7 +18,7 @@ from common import (
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Collect rustc JSON diagnostics for RQ1 smoke tests.")
+    parser = argparse.ArgumentParser(description="Collect rustc JSON diagnostics for RQ1 subjects.")
     parser.add_argument("--manifest", required=True, help="Subject manifest TOML path")
     parser.add_argument("--out", required=True, help="Output diagnostics directory")
     args = parser.parse_args()
@@ -44,7 +44,7 @@ def main() -> int:
             metadata.update(
                 {
                     "status": "unsupported",
-                    "failure_reason": "only existing local_fixture subjects are supported by collect_diagnostics.py right now",
+                    "failure_reason": "only existing local_fixture subjects are supported by this diagnostics runner",
                 }
             )
             write_json(subject_dir / "metadata.json", metadata)

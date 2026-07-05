@@ -4,12 +4,12 @@
     "summary_file": "evaluation/phase_1A/logs/run_summary_refreshed_all_20260316_031806.json",
     "summary_generated_at_utc": "2026-03-15T19:18:06+00:00",
     "selected_batch_total": 1858,
-    "strict_success_total": 866,
-    "normalized_success_total": 906
+    "strict_success_total": 869,
+    "normalized_success_total": 908
   },
   "attempt_total": 1858,
-  "strict_success_total": 866,
-  "normalized_success_total": 906,
+  "strict_success_total": 869,
+  "normalized_success_total": 908,
   "replay_eligible_total": 738,
   "patch_recovery": {
     "full_patch_recovery_failed": 103,
@@ -21,8 +21,8 @@
   },
   "cost_summary": {
     "attempt_total": 1858,
-    "strict_success_total": 866,
-    "normalized_success_total": 906,
+    "strict_success_total": 869,
+    "normalized_success_total": 908,
     "replay_eligible_total": 738,
     "notes": [
       "generation budget uses run-level proxy from detailed_log.json",
