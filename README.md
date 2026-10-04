@@ -50,6 +50,23 @@ EVAL_DIR=../data python ../scripts/replay_runtime.py
 
 Pre-computed aggregate data is in `data/`. Run `python3 scripts/summarize_paper_tables.py` to print the main paper-facing table checks.
 
+## Supplementary Claude Code comparison
+
+The full paired rerun covers 1,858 failed attempts and 566 function units, using
+the same Gemini model/API gateway for RuTeR and the Claude Code agent harness.
+See [the experiment protocol](experiments/CLAUDE_CODE_EXPERIMENT.md) for the
+scripts, prompt, token accounting, success guards and rerun prerequisites.
+
+[The Excel workbook](data/claude_code/claude_code_results.xlsx) and compact
+per-case CSV support offline recomputation, including post-hoc 5×/10× token
+cutoffs and function salvage rates. Raw logs/workspaces are not distributed.
+The supplementary rerun is separate from the original submitted-paper results.
+
+```bash
+python3 experiments/scripts/export_claude_code_results.py \
+  --cases-csv data/claude_code/paired_cases.csv
+```
+
 ## License
 
 MIT — see [LICENSE](LICENSE).

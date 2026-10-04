@@ -1,0 +1,40 @@
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "http://127.0.0.1:18766",
+    "ANTHROPIC_AUTH_TOKEN": "local-token-meter-proxy",
+    "ANTHROPIC_MODEL": "gemini-2.5-flash-nothinking",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "gemini-2.5-flash-nothinking",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "gemini-2.5-flash-nothinking",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "gemini-2.5-flash-nothinking",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "gemini-2.5-flash-nothinking"
+  },
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit",
+      "Glob",
+      "Grep",
+      "Bash(cargo check:*)",
+      "Bash(cargo test:*)",
+      "Bash(cargo metadata:*)"
+    ],
+    "deny": [
+      "WebFetch",
+      "WebSearch"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/verify_repair.py",
+            "timeout": 300,
+            "statusMessage": "Verifying cargo check --tests"
+          }
+        ]
+      }
+    ]
+  }
+}

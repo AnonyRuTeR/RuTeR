@@ -1,6 +1,6 @@
 # Expansion Experiment
 
-This directory contains the setup for the RustTestLab expansion experiment, which adds 10 additional crates to the RuTeR evaluation beyond the original 9 crates in the main paper.
+This directory contains the setup for the RuTeR expansion experiment, which adds 10 additional crates to the RuTeR evaluation beyond the original 9 crates in the main paper.
 
 ## Contents
 

@@ -387,13 +387,22 @@ fn respond_http_status(stream: &mut TcpStream, code: u16, body: &str) {
 
 fn respond_chat_completion_content(stream: &mut TcpStream, content: &str) {
     let body = serde_json::json!({
+        "id": "mock-request-id",
+        "model": "mock-model-returned",
         "choices": [
             {
                 "message": {
                     "content": content
                 }
             }
-        ]
+        ],
+        "usage": {
+            "prompt_tokens": 120,
+            "completion_tokens": 30,
+            "total_tokens": 150,
+            "prompt_tokens_details": {"cached_tokens": 20},
+            "completion_tokens_details": {"reasoning_tokens": 5}
+        }
     })
     .to_string();
     let response = format!(
@@ -663,6 +672,26 @@ fn run_online_rust_fenced_chain_case(case_name: &str) {
                 .unwrap_or(false)
         }),
         "io debug should include fenced rust response"
+    );
+
+    let usage: Value =
+        serde_json::from_str(&fs::read_to_string(artifacts.join("4_llm_usage.json")).unwrap())
+            .unwrap();
+    assert_eq!(
+        usage.pointer("/summary/request_count").and_then(Value::as_u64),
+        Some(1)
+    );
+    assert_eq!(
+        usage.pointer("/summary/input_tokens").and_then(Value::as_u64),
+        Some(120)
+    );
+    assert_eq!(
+        usage.pointer("/summary/output_tokens").and_then(Value::as_u64),
+        Some(30)
+    );
+    assert_eq!(
+        usage.pointer("/summary/total_tokens").and_then(Value::as_u64),
+        Some(150)
     );
 }
 

@@ -56,3 +56,9 @@ __MACOSX/
 
 # Keep the public example environment template.
 !ruter/.env.example
+
+# Private experiment inputs and execution traces; publish only compact tables.
+experiments/inputs/
+experiments/artifacts/
+.claude/settings.local.json
+**/claude.stream.jsonl

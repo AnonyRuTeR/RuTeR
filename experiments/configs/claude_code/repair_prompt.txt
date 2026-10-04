@@ -1,0 +1,21 @@
+A generated Rust test module has been injected into `{source_path}` (module `{module_name}`), and it currently fails to compile.
+
+Fix all compilation errors in that injected test module.
+
+Exact injected test:
+```rust
+{failed_test}
+```
+
+Current compiler errors:
+```text
+{compiler_errors}
+```
+
+Constraints:
+- Edit only code between the TOKEN COST EXPERIMENT INJECTION markers in `{source_path}`.
+- Do not modify production code, Cargo.toml, dependencies, or any other file.
+- Do not delete, disable, ignore, comment out, or weaken tests or assertions.
+- Use only the existing project and dependencies.
+- The test and errors above are sufficient to start; do not read the whole source file unless an edit requires more context.
+- Run `cargo check --tests` after editing. Continue repairing after every nonzero exit; stop only when it exits 0.

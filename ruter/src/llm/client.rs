@@ -1,10 +1,11 @@
-use std::time::Duration;
+use std::time::{Duration, Instant};
 
 use anyhow::{Context, Result, anyhow, bail};
 use reqwest::blocking::Client;
 use serde_json::Value;
 
 use crate::llm::schema::{LlmReplayCandidate, LlmReplayFile, LlmReplayRound};
+use crate::llm::usage::{LlmRequestUsageRecord, extract_token_usage};
 
 #[derive(Debug, Clone)]
 pub struct OnlineLlmClientConfig {
@@ -19,6 +20,12 @@ pub struct OnlineLlmClientConfig {
 pub struct OnlineLlmClient {
     cfg: OnlineLlmClientConfig,
     http: Client,
+}
+
+#[derive(Debug)]
+pub struct OnlineLlmRequestOutcome {
+    pub result: Result<LlmReplayRound>,
+    pub usage: LlmRequestUsageRecord,
 }
 
 impl OnlineLlmClient {
@@ -37,7 +44,7 @@ impl OnlineLlmClient {
         system_prompt: &str,
         user_prompt: &str,
         max_candidates: usize,
-    ) -> Result<LlmReplayRound> {
+    ) -> OnlineLlmRequestOutcome {
         let url = chat_completions_url(&self.cfg.api_url);
         let body = build_chat_completion_body(
             &self.cfg.model,
@@ -45,48 +52,137 @@ impl OnlineLlmClient {
             user_prompt,
             self.cfg.output_token_ratio,
         );
+        let max_output_tokens = body
+            .get("max_tokens")
+            .and_then(Value::as_u64)
+            .unwrap_or(0);
+        let mut usage = LlmRequestUsageRecord::pending(
+            function_id,
+            round,
+            &self.cfg.model,
+            max_output_tokens,
+        );
+        let started = Instant::now();
 
-        let response = self
+        let response = match self
             .http
             .post(url)
             .bearer_auth(&self.cfg.api_key)
             .json(&body)
             .send()
-            .context("online llm request failed")?;
+        {
+            Ok(response) => response,
+            Err(err) => {
+                let error = anyhow::Error::new(err).context("online llm request failed");
+                usage.outcome = "transport_error".to_string();
+                usage.latency_ms = elapsed_millis(started);
+                usage.error = Some(format!("{error:#}"));
+                return OnlineLlmRequestOutcome {
+                    result: Err(error),
+                    usage,
+                };
+            }
+        };
 
         let status = response.status();
-        let response_text = response
-            .text()
-            .context("failed to read online llm response body")?;
+        usage.http_status = Some(status.as_u16());
+        let response_text = match response.text() {
+            Ok(text) => text,
+            Err(err) => {
+                let error =
+                    anyhow::Error::new(err).context("failed to read online llm response body");
+                usage.outcome = "response_read_error".to_string();
+                usage.latency_ms = elapsed_millis(started);
+                usage.error = Some(format!("{error:#}"));
+                return OnlineLlmRequestOutcome {
+                    result: Err(error),
+                    usage,
+                };
+            }
+        };
+
+        let response_json = parse_json_with_fallback(&response_text).ok();
+        if let Some(root) = response_json.as_ref() {
+            usage.request_id = root.get("id").and_then(Value::as_str).map(str::to_string);
+            usage.returned_model = root
+                .get("model")
+                .and_then(Value::as_str)
+                .map(str::to_string);
+            usage.usage = extract_token_usage(root);
+        }
+        usage.latency_ms = elapsed_millis(started);
 
         if !status.is_success() {
-            bail!(
+            let error = anyhow!(
                 "online llm request failed with status {} body={}",
                 status,
                 response_text
             );
+            usage.outcome = "http_error".to_string();
+            usage.error = Some(format!("online llm request failed with status {status}"));
+            return OnlineLlmRequestOutcome {
+                result: Err(error),
+                usage,
+            };
         }
 
-        let response_json = parse_json_with_fallback(&response_text).with_context(|| {
-            format!("failed to parse online llm response as json: {response_text}")
-        })?;
+        let response_json = match response_json {
+            Some(root) => root,
+            None => {
+                let error = anyhow!("failed to parse online llm response as json: {response_text}");
+                usage.outcome = "invalid_transport_json".to_string();
+                usage.error = Some("failed to parse online llm response as json".to_string());
+                return OnlineLlmRequestOutcome {
+                    result: Err(error),
+                    usage,
+                };
+            }
+        };
 
-        let content = extract_chat_content(&response_json)
-            .ok_or_else(|| anyhow!("online llm response missing choices[0].message.content"))?;
+        let content = match extract_chat_content(&response_json) {
+            Some(content) => content,
+            None => {
+                let error = anyhow!("online llm response missing choices[0].message.content");
+                usage.outcome = "invalid_response_content".to_string();
+                usage.error = Some(error.to_string());
+                return OnlineLlmRequestOutcome {
+                    result: Err(error),
+                    usage,
+                };
+            }
+        };
 
-        let candidates = parse_candidates_from_content(&content, function_id, round)?;
+        let candidates = match parse_candidates_from_content(&content, function_id, round) {
+            Ok(candidates) => candidates,
+            Err(error) => {
+                usage.outcome = "invalid_candidate_output".to_string();
+                usage.error = Some(format!("{error:#}"));
+                return OnlineLlmRequestOutcome {
+                    result: Err(error),
+                    usage,
+                };
+            }
+        };
         let mut capped = candidates;
         if capped.len() > max_candidates {
             capped.truncate(max_candidates);
         }
 
-        Ok(LlmReplayRound {
-            round,
-            raw_response: Some(content),
-            raw_transport_response: Some(response_text),
-            candidates: capped,
-        })
+        usage.outcome = "success".to_string();
+        OnlineLlmRequestOutcome {
+            result: Ok(LlmReplayRound {
+                round,
+                raw_response: Some(content),
+                raw_transport_response: Some(response_text),
+                candidates: capped,
+            }),
+            usage,
+        }
     }
+}
+
+fn elapsed_millis(started: Instant) -> u64 {
+    u64::try_from(started.elapsed().as_millis()).unwrap_or(u64::MAX)
 }
 
 fn build_chat_completion_body(

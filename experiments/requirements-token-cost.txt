@@ -1,0 +1,3 @@
+# Optional: only needed to generate the Excel workbook. Experiment runners and
+# CSV-only result recomputation use the Python standard library.
+openpyxl>=3.1,<4

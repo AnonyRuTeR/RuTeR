@@ -56,7 +56,7 @@ cargo +nightly-2022-12-10 build --release
 export PATH="$PWD/target/release:$PATH"
 
 # Set up Python
-cd /path/to/RustTestLab_expansion_2026_06_25
+cd /path/to/RuTeR/expansion
 source venv/bin/activate  # or create a new one
 
 # API config

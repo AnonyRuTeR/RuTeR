@@ -2,6 +2,7 @@ use anyhow::Result;
 
 use crate::cli::Cli;
 use crate::config::LlmMode;
+use crate::llm::usage::LlmUsageArtifact;
 use crate::runtime::artifacts::{ArtifactPaths, write_json};
 
 /// Validate CLI/config combinations for LLM mode before runtime orchestration starts.
@@ -66,6 +67,10 @@ pub fn bootstrap_llm_artifact_if_enabled(
         resolved.llm.max_candidates_per_round,
     );
     write_json(&artifacts.llm_attempts_json, &bootstrap)?;
+    write_json(
+        &artifacts.llm_usage_json,
+        &LlmUsageArtifact::new(mode, resolved.llm.model.clone()),
+    )?;
 
     Ok(())
 }

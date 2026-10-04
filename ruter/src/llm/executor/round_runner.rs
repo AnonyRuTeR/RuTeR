@@ -20,6 +20,7 @@ use crate::llm::schema::{
     LlmAttemptRecord, LlmAttemptsArtifact, LlmFailureKind, LlmReplayCandidate, LlmReplayFile,
     sanitize_path_component, truncate_for_artifact,
 };
+use crate::llm::usage::LlmUsageArtifact;
 use crate::runtime::artifacts::{ArtifactPaths, write_json};
 use crate::runtime::function::index::FunctionIndex;
 use crate::runtime::function::verify::FunctionVerifyRoundRecord;
@@ -503,6 +504,7 @@ pub(super) fn run_llm_stage_with_port(
         cfg.max_rounds,
         cfg.max_candidates_per_round,
     );
+    let mut usage_artifact = LlmUsageArtifact::new(mode_name, cfg.model.clone());
 
     let root_index = FunctionIndex::build(crate_path)?;
     let mut current_plan = initial_plan.clone();
@@ -803,13 +805,16 @@ pub(super) fn run_llm_stage_with_port(
                     let Some(client) = online_client.as_ref() else {
                         unreachable!("online client must exist in online mode")
                     };
-                    let payload = match client.request_round(
+                    let request_outcome = client.request_round(
                         &function_id,
                         round,
                         &prompt.system_prompt,
                         &prompt.user_prompt,
                         cfg.max_candidates_per_round,
-                    ) {
+                    );
+                    usage_artifact.push(request_outcome.usage);
+                    write_json(&artifacts.llm_usage_json, &usage_artifact)?;
+                    let payload = match request_outcome.result {
                         Ok(payload) => payload,
                         Err(err) => {
                             if cfg.debug_dump_full_io {
@@ -1272,6 +1277,26 @@ pub(super) fn run_llm_stage_with_port(
     );
 
     write_json(&artifacts.llm_contexts_json, &context_records)?;
+    usage_artifact.refresh_summary();
+    write_json(&artifacts.llm_usage_json, &usage_artifact)?;
+    reporter.kv(
+        0,
+        "llm_api_request_count",
+        usage_artifact.summary.request_count.to_string(),
+    );
+    reporter.kv(
+        0,
+        "llm_total_tokens",
+        usage_artifact.summary.total_tokens.to_string(),
+    );
+    reporter.kv(
+        0,
+        "llm_usage_missing_request_count",
+        usage_artifact
+            .summary
+            .usage_missing_request_count
+            .to_string(),
+    );
     if cfg.debug_dump_full_io {
         write_json(&artifacts.llm_io_debug_json, &io_debug_records)?;
         reporter.kv(

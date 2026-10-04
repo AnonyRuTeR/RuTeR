@@ -6,6 +6,7 @@ requiring online LLM APIs.
 
 ## Layout
 
+- `claude_code/` — supplementary 1,858-case paired token-cost rerun: Excel workbook, compact per-case CSV and 5×/10× post-hoc repair/salvage tables. Separate from the original submitted-paper aggregates; see `experiments/CLAUDE_CODE_EXPERIMENT.md`.
 - `rq1/analysis/` — aggregate generation-failure reports for the main 10-crate campaign and the `humantime` cross-model pilot.
 - `rq1/rq1_error_code_occurrence_distribution.csv` — compiler error-code occurrence distribution for the main campaign.
 - `rq2/aggregates/` — frozen repair-evaluation aggregates for Full RuTeR and replay baselines.
